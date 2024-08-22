@@ -1,0 +1,1948 @@
+﻿<?xml version="1.0"?>
+<zs:searchRetrieveResponse xmlns:zs="http://www.loc.gov/zing/srw/">
+	<zs:version>1.1</zs:version>
+	<zs:numberOfRecords>177</zs:numberOfRecords>
+	<zs:records>
+		<zs:record>
+			<zs:recordSchema>marcxml</zs:recordSchema>
+			<zs:recordPacking>xml</zs:recordPacking>
+			<zs:recordData>
+				<record xmlns="http://www.loc.gov/MARC21/slim">
+					<leader>02604cim a22005891a 4500</leader>
+					<controlfield tag="001">1093373</controlfield>
+					<controlfield tag="005">20231219115443.0</controlfield>
+					<controlfield tag="007">cr nnannnm|cda</controlfield>
+					<controlfield tag="007">sr nmnnnnnnned</controlfield>
+					<controlfield tag="008">050920s2005    oncnnnneq      zn n eng d</controlfield>
+					<datafield tag="010" ind1=" " ind2=" ">
+						<subfield code="a">  2022998121</subfield>
+					</datafield>
+					<datafield tag="020" ind1=" " ind2=" ">
+						<subfield code="a">0616262477 (CNIB)</subfield>
+					</datafield>
+					<datafield tag="040" ind1=" " ind2=" ">
+						<subfield code="a">DLC-B</subfield>
+						<subfield code="b">eng</subfield>
+						<subfield code="c">DLC-B</subfield>
+					</datafield>
+					<datafield tag="072" ind1=" " ind2="7">
+						<subfield code="a">COOKAN</subfield>
+						<subfield code="2">NBDL</subfield>
+					</datafield>
+					<datafield tag="082" ind1="0" ind2="0">
+						<subfield code="a">641.5882</subfield>
+						<subfield code="a">ANF</subfield>
+						<subfield code="2">19</subfield>
+					</datafield>
+					<datafield tag="084" ind1=" " ind2=" ">
+						<subfield code="a">DBG01539</subfield>
+						<subfield code="2">z</subfield>
+					</datafield>
+					<datafield tag="245" ind1="0" ind2="4">
+						<subfield code="a">The Canadian living microwave cookbook</subfield>
+						<subfield code="h">[sound recording] /</subfield>
+						<subfield code="c">by Margaret Fraser and the food writers of Canadian living magazine.</subfield>
+					</datafield>
+					<datafield tag="260" ind1=" " ind2=" ">
+						<subfield code="a">Toronto :</subfield>
+						<subfield code="b">CNIB,</subfield>
+						<subfield code="c">2005.</subfield>
+					</datafield>
+					<datafield tag="300" ind1=" " ind2=" ">
+						<subfield code="a">1 online resource (audio (11 hours, 3 minutes))</subfield>
+					</datafield>
+					<datafield tag="306" ind1=" " ind2=" ">
+						<subfield code="a">110300</subfield>
+					</datafield>
+					<datafield tag="336" ind1=" " ind2=" ">
+						<subfield code="a">spoken word</subfield>
+						<subfield code="b">spw</subfield>
+						<subfield code="2">rdacontent</subfield>
+					</datafield>
+					<datafield tag="337" ind1=" " ind2=" ">
+						<subfield code="a">audio</subfield>
+						<subfield code="b">s</subfield>
+						<subfield code="2">rdamedia</subfield>
+					</datafield>
+					<datafield tag="337" ind1=" " ind2=" ">
+						<subfield code="a">computer</subfield>
+						<subfield code="b">c</subfield>
+						<subfield code="2">rdamedia</subfield>
+					</datafield>
+					<datafield tag="338" ind1=" " ind2=" ">
+						<subfield code="a">online resource</subfield>
+						<subfield code="b">cr</subfield>
+						<subfield code="2">rdacarrier</subfield>
+					</datafield>
+					<datafield tag="344" ind1=" " ind2=" ">
+						<subfield code="a">digital</subfield>
+						<subfield code="g">mono</subfield>
+						<subfield code="2">rda</subfield>
+					</datafield>
+					<datafield tag="347" ind1=" " ind2=" ">
+						<subfield code="a">audio file</subfield>
+						<subfield code="b">Daisy</subfield>
+						<subfield code="2">rda</subfield>
+					</datafield>
+					<datafield tag="385" ind1=" " ind2=" ">
+						<subfield code="n">age</subfield>
+						<subfield code="a">adults</subfield>
+						<subfield code="2">lcdgt</subfield>
+					</datafield>
+					<datafield tag="500" ind1=" " ind2=" ">
+						<subfield code="a">Accessed by the National Library Service for the Blind and Print Disabled in 2020.</subfield>
+					</datafield>
+					<datafield tag="500" ind1=" " ind2=" ">
+						<subfield code="a">Title made available courtesy of the Canadian National Institute for the Blind via the Marrakesh Treaty in 2020.</subfield>
+					</datafield>
+					<datafield tag="506" ind1=" " ind2=" ">
+						<subfield code="a">Availability restricted to persons meeting the eligibility requirements of the National Library Service for the Blind and Print Disabled, Library of Congress.</subfield>
+					</datafield>
+					<datafield tag="511" ind1="0" ind2=" ">
+						<subfield code="a">Narrated by: Arlene Wilson.</subfield>
+					</datafield>
+					<datafield tag="516" ind1=" " ind2=" ">
+						<subfield code="a">Digital talking book.</subfield>
+					</datafield>
+					<datafield tag="520" ind1=" " ind2=" ">
+						<subfield code="a">A collection of over 175 microwavable recipes from the food writers of the popular Canadian Living magazine. 1988. Unrated. Marrakesh title.</subfield>
+					</datafield>
+					<datafield tag="521" ind1=" " ind2=" ">
+						<subfield code="a">Female narrator.</subfield>
+						<subfield code="b">NLS/BPD</subfield>
+					</datafield>
+					<datafield tag="521" ind1=" " ind2=" ">
+						<subfield code="a">Unrated.</subfield>
+						<subfield code="b">NLS/BPD</subfield>
+					</datafield>
+					<datafield tag="534" ind1=" " ind2=" ">
+						<subfield code="p">Recorded from:</subfield>
+						<subfield code="c">Toronto : Madison Press, c1988.</subfield>
+						<subfield code="z">0394220536.</subfield>
+					</datafield>
+					<datafield tag="538" ind1=" " ind2=" ">
+						<subfield code="a">Full audio with structure.</subfield>
+					</datafield>
+					<datafield tag="538" ind1=" " ind2=" ">
+						<subfield code="a">System requirements: NLS authorized digital talking book player or software. Contact your cooperating library for more information.</subfield>
+					</datafield>
+					<datafield tag="594" ind1=" " ind2=" ">
+						<subfield code="a">CELA</subfield>
+						<subfield code="b">DZ15407</subfield>
+					</datafield>
+					<datafield tag="650" ind1=" " ind2="0">
+						<subfield code="a">Cooking.</subfield>
+					</datafield>
+					<datafield tag="650" ind1=" " ind2="0">
+						<subfield code="a">Microwave cooking.</subfield>
+					</datafield>
+					<datafield tag="655" ind1=" " ind2="4">
+						<subfield code="a">Downloadable books.</subfield>
+					</datafield>
+					<datafield tag="655" ind1=" " ind2="4">
+						<subfield code="a">Nonfiction.</subfield>
+					</datafield>
+					<datafield tag="655" ind1=" " ind2="7">
+						<subfield code="a">Cookbooks.</subfield>
+						<subfield code="2">lcgft</subfield>
+					</datafield>
+					<datafield tag="655" ind1=" " ind2="7">
+						<subfield code="a">Talking books.</subfield>
+						<subfield code="2">lcgft</subfield>
+					</datafield>
+					<datafield tag="700" ind1="1" ind2=" ">
+						<subfield code="a">Fraser, Margaret,</subfield>
+						<subfield code="d">-2012,</subfield>
+						<subfield code="e">author.</subfield>
+					</datafield>
+					<datafield tag="700" ind1="1" ind2=" ">
+						<subfield code="a">Wilson, Arlene</subfield>
+						<subfield code="c">(Narrator),</subfield>
+						<subfield code="e">narrator.</subfield>
+					</datafield>
+					<datafield tag="730" ind1="0" ind2=" ">
+						<subfield code="a">Marrakesh Treaty to Facilitate Access to Published Works for Persons who are Blind, Visually Impaired, or Otherwise Print Disabled</subfield>
+						<subfield code="d">(2013 June 27)</subfield>
+					</datafield>
+					<datafield tag="852" ind1="8" ind2="1">
+						<subfield code="a">DLC-B</subfield>
+						<subfield code="c">DBG01539</subfield>
+						<subfield code="z">NLS/BPD</subfield>
+					</datafield>
+					<datafield tag="856" ind1="4" ind2="0">
+						<subfield code="u">http://hdl.loc.gov/loc.nls/dbg.01539</subfield>
+						<subfield code="3">Downloadable talking book.</subfield>
+						<subfield code="x">bard audio</subfield>
+					</datafield>
+					<datafield tag="906" ind1=" " ind2=" ">
+						<subfield code="a">7</subfield>
+						<subfield code="b">cbc</subfield>
+						<subfield code="c">blndbks</subfield>
+					</datafield>
+					<datafield tag="955" ind1=" " ind2=" ">
+						<subfield code="a">11 JUL 2022 dbg jkozak</subfield>
+					</datafield>
+				</record>
+			</zs:recordData>
+			<zs:recordPosition>1</zs:recordPosition>
+		</zs:record>
+		<zs:record>
+			<zs:recordSchema>marcxml</zs:recordSchema>
+			<zs:recordPacking>xml</zs:recordPacking>
+			<zs:recordData>
+				<record xmlns="http://www.loc.gov/MARC21/slim">
+					<leader>02670nam a22005892a 4500</leader>
+					<controlfield tag="001">1098707</controlfield>
+					<controlfield tag="005">20220831120300.0</controlfield>
+					<controlfield tag="007">cr nn nnn|||aa</controlfield>
+					<controlfield tag="007">fb|a bnnnn</controlfield>
+					<controlfield tag="008">060324s2005    onc    ef     000 0 eng d</controlfield>
+					<datafield tag="010" ind1=" " ind2=" ">
+						<subfield code="a">  2022998453</subfield>
+					</datafield>
+					<datafield tag="020" ind1=" " ind2=" ">
+						<subfield code="a">0616285647</subfield>
+					</datafield>
+					<datafield tag="040" ind1=" " ind2=" ">
+						<subfield code="a">DLC-B</subfield>
+						<subfield code="b">eng</subfield>
+						<subfield code="c">DLC-B</subfield>
+					</datafield>
+					<datafield tag="041" ind1="0" ind2=" ">
+						<subfield code="a">eng</subfield>
+					</datafield>
+					<datafield tag="050" ind1="0" ind2="0">
+						<subfield code="a">BF575.G7</subfield>
+						<subfield code="b">C465 2005</subfield>
+					</datafield>
+					<datafield tag="072" ind1=" " ind2="7">
+						<subfield code="a">INSPAN</subfield>
+						<subfield code="2">NBDL</subfield>
+					</datafield>
+					<datafield tag="072" ind1=" " ind2="7">
+						<subfield code="a">PHILAN</subfield>
+						<subfield code="2">NBDL</subfield>
+					</datafield>
+					<datafield tag="072" ind1=" " ind2="7">
+						<subfield code="a">PSYCAN</subfield>
+						<subfield code="2">NBDL</subfield>
+					</datafield>
+					<datafield tag="082" ind1="0" ind2="0">
+						<subfield code="a">155.937</subfield>
+						<subfield code="a">ANF</subfield>
+						<subfield code="2">21</subfield>
+					</datafield>
+					<datafield tag="084" ind1=" " ind2=" ">
+						<subfield code="a">BRG00630</subfield>
+						<subfield code="2">z</subfield>
+					</datafield>
+					<datafield tag="245" ind1="0" ind2="0">
+						<subfield code="a">Chicken soup for the grieving soul</subfield>
+						<subfield code="h">[braille] :</subfield>
+						<subfield code="b">stories about life, death, and overcoming the loss of a loved one /</subfield>
+						<subfield code="c">[compiled by] Jack Canfield, Mark Victor Hansen.</subfield>
+					</datafield>
+					<datafield tag="260" ind1=" " ind2=" ">
+						<subfield code="a">Toronto :</subfield>
+						<subfield code="b">CNIB,</subfield>
+						<subfield code="c">2005.</subfield>
+					</datafield>
+					<datafield tag="300" ind1=" " ind2=" ">
+						<subfield code="a">3 volumes of braille.</subfield>
+					</datafield>
+					<datafield tag="336" ind1=" " ind2=" ">
+						<subfield code="a">tactile text</subfield>
+						<subfield code="b">tct</subfield>
+						<subfield code="2">rdacontent</subfield>
+					</datafield>
+					<datafield tag="337" ind1=" " ind2=" ">
+						<subfield code="a">unmediated</subfield>
+						<subfield code="b">n</subfield>
+						<subfield code="2">rdamedia</subfield>
+					</datafield>
+					<datafield tag="338" ind1=" " ind2=" ">
+						<subfield code="a">volume</subfield>
+						<subfield code="b">nc</subfield>
+						<subfield code="2">rdacarrier</subfield>
+					</datafield>
+					<datafield tag="385" ind1=" " ind2=" ">
+						<subfield code="n">age</subfield>
+						<subfield code="a">adults</subfield>
+						<subfield code="2">lcdgt</subfield>
+					</datafield>
+					<datafield tag="385" ind1=" " ind2=" ">
+						<subfield code="n">age</subfield>
+						<subfield code="a">teenagers</subfield>
+						<subfield code="2">lcdgt</subfield>
+					</datafield>
+					<datafield tag="500" ind1=" " ind2=" ">
+						<subfield code="a">Accessed by the National Library Service for the Blind and Print Disabled in 2020.</subfield>
+					</datafield>
+					<datafield tag="500" ind1=" " ind2=" ">
+						<subfield code="a">Title made available courtesy of the Canadian National Institute for the Blind via the Marrakesh Treaty in 2020.</subfield>
+					</datafield>
+					<datafield tag="506" ind1=" " ind2=" ">
+						<subfield code="a">Availability restricted to persons meeting the eligibility requirements of the National Library Service for the Blind and Print Disabled, Library of Congress.</subfield>
+					</datafield>
+					<datafield tag="520" ind1=" " ind2=" ">
+						<subfield code="a">Accounts of people who have lost a loved one. Each story details the particular death and explains how the author dealt with grief and found the courage to go on. Sections include "Final Gifts," "Coping and Healing," "Special Moments," and "Living Again." 2003. Unrated. Marrakesh title.</subfield>
+					</datafield>
+					<datafield tag="521" ind1=" " ind2=" ">
+						<subfield code="a">Unrated.</subfield>
+						<subfield code="b">NLS/BPD</subfield>
+					</datafield>
+					<datafield tag="534" ind1=" " ind2=" ">
+						<subfield code="p">Transcription of:</subfield>
+						<subfield code="c">Deerfield Beach, Fla. : Health Communications, 2003.</subfield>
+						<subfield code="z">1558749020.</subfield>
+					</datafield>
+					<datafield tag="546" ind1=" " ind2=" ">
+						<subfield code="b">Contracted braille.</subfield>
+					</datafield>
+					<datafield tag="594" ind1=" " ind2=" ">
+						<subfield code="a">CELA</subfield>
+						<subfield code="b">EB73028</subfield>
+					</datafield>
+					<datafield tag="650" ind1=" " ind2="0">
+						<subfield code="a">Bereavement</subfield>
+						<subfield code="v">Anecdotes.</subfield>
+					</datafield>
+					<datafield tag="650" ind1=" " ind2="0">
+						<subfield code="a">Grief</subfield>
+						<subfield code="v">Anecdotes.</subfield>
+					</datafield>
+					<datafield tag="655" ind1=" " ind2="4">
+						<subfield code="a">Downloadable books.</subfield>
+					</datafield>
+					<datafield tag="655" ind1=" " ind2="4">
+						<subfield code="a">Nonfiction.</subfield>
+					</datafield>
+					<datafield tag="655" ind1=" " ind2="7">
+						<subfield code="a">Anecdotes.</subfield>
+						<subfield code="2">lcgft</subfield>
+					</datafield>
+					<datafield tag="655" ind1=" " ind2="7">
+						<subfield code="a">Braille books.</subfield>
+						<subfield code="2">lcgft</subfield>
+					</datafield>
+					<datafield tag="655" ind1=" " ind2="7">
+						<subfield code="a">Self-help publications.</subfield>
+						<subfield code="2">lcgft</subfield>
+					</datafield>
+					<datafield tag="700" ind1="1" ind2=" ">
+						<subfield code="a">Canfield, Jack,</subfield>
+						<subfield code="d">1944-</subfield>
+						<subfield code="e">compiler.</subfield>
+					</datafield>
+					<datafield tag="700" ind1="1" ind2=" ">
+						<subfield code="a">Hansen, Mark Victor,</subfield>
+						<subfield code="e">compiler.</subfield>
+					</datafield>
+					<datafield tag="730" ind1="0" ind2=" ">
+						<subfield code="a">Marrakesh Treaty to Facilitate Access to Published Works for Persons who are Blind, Visually Impaired, or Otherwise Print Disabled</subfield>
+						<subfield code="d">(2013 June 27)</subfield>
+					</datafield>
+					<datafield tag="852" ind1="8" ind2="1">
+						<subfield code="a">DLC-B</subfield>
+						<subfield code="c">BRG00630</subfield>
+						<subfield code="z">NLS/BPD</subfield>
+					</datafield>
+					<datafield tag="856" ind1="4" ind2="0">
+						<subfield code="u">http://hdl.loc.gov/loc.nls/brg.00630v01</subfield>
+						<subfield code="3">Volume 1.</subfield>
+					</datafield>
+					<datafield tag="856" ind1="4" ind2="0">
+						<subfield code="u">http://hdl.loc.gov/loc.nls/brg.00630v02</subfield>
+						<subfield code="3">Volume 2.</subfield>
+					</datafield>
+					<datafield tag="856" ind1="4" ind2="0">
+						<subfield code="u">http://hdl.loc.gov/loc.nls/brg.00630v03</subfield>
+						<subfield code="3">Volume 3.</subfield>
+					</datafield>
+					<datafield tag="906" ind1=" " ind2=" ">
+						<subfield code="a">7</subfield>
+						<subfield code="b">cbc</subfield>
+						<subfield code="c">blndbks</subfield>
+					</datafield>
+					<datafield tag="955" ind1=" " ind2=" ">
+						<subfield code="a">31 AUG 2022 brg jkozak</subfield>
+					</datafield>
+				</record>
+			</zs:recordData>
+			<zs:recordPosition>2</zs:recordPosition>
+		</zs:record>
+		<zs:record>
+			<zs:recordSchema>marcxml</zs:recordSchema>
+			<zs:recordPacking>xml</zs:recordPacking>
+			<zs:recordData>
+				<record xmlns="http://www.loc.gov/MARC21/slim">
+					<leader>02368cam a22005292a 4500</leader>
+					<controlfield tag="001">1073946</controlfield>
+					<controlfield tag="005">20220811125615.0</controlfield>
+					<controlfield tag="007">cr nn nnn|||aa</controlfield>
+					<controlfield tag="007">fb|a bnnnn</controlfield>
+					<controlfield tag="008">060608s2005    onc    ef  z        engdd</controlfield>
+					<datafield tag="010" ind1=" " ind2=" ">
+						<subfield code="a">  2021996587</subfield>
+					</datafield>
+					<datafield tag="020" ind1=" " ind2=" ">
+						<subfield code="a">0616280068</subfield>
+					</datafield>
+					<datafield tag="040" ind1=" " ind2=" ">
+						<subfield code="a">DLC-B</subfield>
+						<subfield code="b">eng</subfield>
+						<subfield code="c">DLC-B</subfield>
+					</datafield>
+					<datafield tag="072" ind1=" " ind2="7">
+						<subfield code="a">BIOGAN</subfield>
+						<subfield code="2">NBDL</subfield>
+					</datafield>
+					<datafield tag="072" ind1=" " ind2="7">
+						<subfield code="a">BIOLAN</subfield>
+						<subfield code="2">NBDL</subfield>
+					</datafield>
+					<datafield tag="072" ind1=" " ind2="7">
+						<subfield code="a">GENEAN</subfield>
+						<subfield code="2">NBDL</subfield>
+					</datafield>
+					<datafield tag="072" ind1=" " ind2="7">
+						<subfield code="a">TRAVAN</subfield>
+						<subfield code="2">NBDL</subfield>
+					</datafield>
+					<datafield tag="082" ind1="0" ind2="0">
+						<subfield code="a">910.4</subfield>
+						<subfield code="a">ANF</subfield>
+						<subfield code="2">21</subfield>
+					</datafield>
+					<datafield tag="084" ind1=" " ind2=" ">
+						<subfield code="a">BRG01061</subfield>
+						<subfield code="2">z</subfield>
+					</datafield>
+					<datafield tag="100" ind1="1" ind2=" ">
+						<subfield code="a">Abel, Allen J.,</subfield>
+						<subfield code="d">1950-</subfield>
+						<subfield code="e">author.</subfield>
+					</datafield>
+					<datafield tag="245" ind1="1" ind2="0">
+						<subfield code="a">Abel's outback</subfield>
+						<subfield code="h">[braille] :</subfield>
+						<subfield code="b">explorations and misadventures on six continents, 1990-2000 /</subfield>
+						<subfield code="c">by Allen Abel.</subfield>
+					</datafield>
+					<datafield tag="260" ind1=" " ind2=" ">
+						<subfield code="a">Toronto :</subfield>
+						<subfield code="b">CNIB,</subfield>
+						<subfield code="c">2005.</subfield>
+					</datafield>
+					<datafield tag="300" ind1=" " ind2=" ">
+						<subfield code="a">4 volumes of braille.</subfield>
+					</datafield>
+					<datafield tag="336" ind1=" " ind2=" ">
+						<subfield code="a">tactile text</subfield>
+						<subfield code="b">tct</subfield>
+						<subfield code="2">rdacontent</subfield>
+					</datafield>
+					<datafield tag="337" ind1=" " ind2=" ">
+						<subfield code="a">unmediated</subfield>
+						<subfield code="b">n</subfield>
+						<subfield code="2">rdamedia</subfield>
+					</datafield>
+					<datafield tag="338" ind1=" " ind2=" ">
+						<subfield code="a">volume</subfield>
+						<subfield code="b">nc</subfield>
+						<subfield code="2">rdacarrier</subfield>
+					</datafield>
+					<datafield tag="385" ind1=" " ind2=" ">
+						<subfield code="n">age</subfield>
+						<subfield code="a">adults</subfield>
+						<subfield code="2">lcdgt </subfield>
+					</datafield>
+					<datafield tag="500" ind1=" " ind2=" ">
+						<subfield code="a">Accessed by the National Library Service for the Blind and Print Disabled in 2020.</subfield>
+					</datafield>
+					<datafield tag="500" ind1=" " ind2=" ">
+						<subfield code="a">Title made available courtesy of the Canadian National Institute for the Blind via the Marrakesh Treaty in 2020.</subfield>
+					</datafield>
+					<datafield tag="506" ind1=" " ind2=" ">
+						<subfield code="a">Availability restricted to persons meeting the eligibility requirements of the National Library Service for the Blind and Print Disabled, Library of Congress.</subfield>
+					</datafield>
+					<datafield tag="520" ind1=" " ind2=" ">
+						<subfield code="a">For many years, as a news correspondent, television host, and journalist, Allen Abel has travelled to some of the world's most fascinating, remote, or newsworthy spots to bring back his stories. This is a collection of travel pieces about his adventures on all six continents over a ten-year period. 2001. Unrated. Marrakesh title.</subfield>
+					</datafield>
+					<datafield tag="521" ind1=" " ind2=" ">
+						<subfield code="a">Unrated.</subfield>
+						<subfield code="b">NLS/BPD</subfield>
+					</datafield>
+					<datafield tag="534" ind1=" " ind2=" ">
+						<subfield code="p">Transcription of:</subfield>
+						<subfield code="c">Toronto : McClelland &amp; Stewart, c2001.</subfield>
+						<subfield code="z">077100706X.</subfield>
+					</datafield>
+					<datafield tag="546" ind1=" " ind2=" ">
+						<subfield code="b">Contracted braille.</subfield>
+					</datafield>
+					<datafield tag="594" ind1=" " ind2=" ">
+						<subfield code="a">CELA</subfield>
+						<subfield code="b">EB69399</subfield>
+						<subfield code="c">M</subfield>
+					</datafield>
+					<datafield tag="600" ind1="1" ind2="0">
+						<subfield code="a">Abel, Allen J.,</subfield>
+						<subfield code="d">1950-</subfield>
+						<subfield code="x">Travel.</subfield>
+					</datafield>
+					<datafield tag="650" ind1=" " ind2="0">
+						<subfield code="a">Voyages and travels.</subfield>
+					</datafield>
+					<datafield tag="655" ind1=" " ind2="4">
+						<subfield code="a">Downloadable books.</subfield>
+					</datafield>
+					<datafield tag="655" ind1=" " ind2="4">
+						<subfield code="a">Nonfiction.</subfield>
+					</datafield>
+					<datafield tag="655" ind1=" " ind2="7">
+						<subfield code="a">Braille books.</subfield>
+						<subfield code="2">lcgft</subfield>
+					</datafield>
+					<datafield tag="655" ind1=" " ind2="7">
+						<subfield code="a">Travel writing.</subfield>
+						<subfield code="2">lcgft</subfield>
+					</datafield>
+					<datafield tag="852" ind1="8" ind2="1">
+						<subfield code="a">DLC-B</subfield>
+						<subfield code="c">BRG01061</subfield>
+						<subfield code="z">NLS/BPH</subfield>
+					</datafield>
+					<datafield tag="856" ind1="4" ind2="0">
+						<subfield code="u">http://hdl.loc.gov/loc.nls/brg.01061v01</subfield>
+						<subfield code="3">Volume 1.</subfield>
+					</datafield>
+					<datafield tag="856" ind1="4" ind2="0">
+						<subfield code="u">http://hdl.loc.gov/loc.nls/brg.01061v02</subfield>
+						<subfield code="3">Volume 2.</subfield>
+					</datafield>
+					<datafield tag="856" ind1="4" ind2="0">
+						<subfield code="u">http://hdl.loc.gov/loc.nls/brg.01061v03</subfield>
+						<subfield code="3">Volume 3.</subfield>
+					</datafield>
+					<datafield tag="856" ind1="4" ind2="0">
+						<subfield code="u">http://hdl.loc.gov/loc.nls/brg.01061v04</subfield>
+						<subfield code="3">Volume 4.</subfield>
+					</datafield>
+					<datafield tag="955" ind1=" " ind2=" ">
+						<subfield code="a">28 SEP 2021 brg jkozak</subfield>
+					</datafield>
+				</record>
+			</zs:recordData>
+			<zs:recordPosition>3</zs:recordPosition>
+		</zs:record>
+		<zs:record>
+			<zs:recordSchema>marcxml</zs:recordSchema>
+			<zs:recordPacking>xml</zs:recordPacking>
+			<zs:recordData>
+				<record xmlns="http://www.loc.gov/MARC21/slim">
+					<leader>03467cim a22007811a 4500</leader>
+					<controlfield tag="001">1071886</controlfield>
+					<controlfield tag="005">20231219115050.0</controlfield>
+					<controlfield tag="007">cr nnannnm|cda</controlfield>
+					<controlfield tag="007">sr nmnnnnnnned</controlfield>
+					<controlfield tag="008">051205s2005    oncnnnneq      fn n eng d</controlfield>
+					<datafield tag="010" ind1=" " ind2=" ">
+						<subfield code="a">  2021998888</subfield>
+					</datafield>
+					<datafield tag="020" ind1=" " ind2=" ">
+						<subfield code="a">0616265492 (CNIB)</subfield>
+					</datafield>
+					<datafield tag="040" ind1=" " ind2=" ">
+						<subfield code="a">DLC-B</subfield>
+						<subfield code="b">eng</subfield>
+						<subfield code="c">DLC-B</subfield>
+					</datafield>
+					<datafield tag="072" ind1=" " ind2="7">
+						<subfield code="a">HISFAF</subfield>
+						<subfield code="2">NBDL</subfield>
+					</datafield>
+					<datafield tag="072" ind1=" " ind2="7">
+						<subfield code="a">HUMAAF</subfield>
+						<subfield code="2">NBDL</subfield>
+					</datafield>
+					<datafield tag="072" ind1=" " ind2="7">
+						<subfield code="a">POLIAF</subfield>
+						<subfield code="2">NBDL</subfield>
+					</datafield>
+					<datafield tag="072" ind1=" " ind2="7">
+						<subfield code="a">SPIEAF</subfield>
+						<subfield code="2">NBDL</subfield>
+					</datafield>
+					<datafield tag="072" ind1=" " ind2="7">
+						<subfield code="a">MYSTAF</subfield>
+						<subfield code="2">NBDL</subfield>
+					</datafield>
+					<datafield tag="082" ind1="0" ind2="0">
+						<subfield code="a">813.54</subfield>
+						<subfield code="a">AFI</subfield>
+						<subfield code="2">21</subfield>
+					</datafield>
+					<datafield tag="084" ind1=" " ind2=" ">
+						<subfield code="a">DBG04429</subfield>
+						<subfield code="2">z</subfield>
+					</datafield>
+					<datafield tag="100" ind1="1" ind2=" ">
+						<subfield code="a">Adams, Ian,</subfield>
+						<subfield code="d">1937-</subfield>
+						<subfield code="e">author.</subfield>
+					</datafield>
+					<datafield tag="245" ind1="1" ind2="0">
+						<subfield code="a">Agent of influence</subfield>
+						<subfield code="h">[sound recording] :</subfield>
+						<subfield code="b">a true story /</subfield>
+						<subfield code="c">by Ian Adams.</subfield>
+					</datafield>
+					<datafield tag="260" ind1=" " ind2=" ">
+						<subfield code="a">Toronto :</subfield>
+						<subfield code="b">CNIB,</subfield>
+						<subfield code="c">2005.</subfield>
+					</datafield>
+					<datafield tag="300" ind1=" " ind2=" ">
+						<subfield code="a">1 online resource (audio (9 hours, 46 minutes))</subfield>
+					</datafield>
+					<datafield tag="306" ind1=" " ind2=" ">
+						<subfield code="a">094600</subfield>
+					</datafield>
+					<datafield tag="336" ind1=" " ind2=" ">
+						<subfield code="a">spoken word</subfield>
+						<subfield code="b">spw</subfield>
+						<subfield code="2">rdacontent</subfield>
+					</datafield>
+					<datafield tag="337" ind1=" " ind2=" ">
+						<subfield code="a">audio</subfield>
+						<subfield code="b">s</subfield>
+						<subfield code="2">rdamedia</subfield>
+					</datafield>
+					<datafield tag="337" ind1=" " ind2=" ">
+						<subfield code="a">computer</subfield>
+						<subfield code="b">c</subfield>
+						<subfield code="2">rdamedia</subfield>
+					</datafield>
+					<datafield tag="338" ind1=" " ind2=" ">
+						<subfield code="a">online resource</subfield>
+						<subfield code="b">cr</subfield>
+						<subfield code="2">rdacarrier</subfield>
+					</datafield>
+					<datafield tag="344" ind1=" " ind2=" ">
+						<subfield code="a">digital</subfield>
+						<subfield code="g">mono</subfield>
+						<subfield code="2">rda</subfield>
+					</datafield>
+					<datafield tag="347" ind1=" " ind2=" ">
+						<subfield code="a">audio file</subfield>
+						<subfield code="b">Daisy</subfield>
+						<subfield code="2">rda</subfield>
+					</datafield>
+					<datafield tag="385" ind1=" " ind2=" ">
+						<subfield code="n">age</subfield>
+						<subfield code="a">adults</subfield>
+						<subfield code="2">lcdgt </subfield>
+					</datafield>
+					<datafield tag="500" ind1=" " ind2=" ">
+						<subfield code="a">Accessed by the National Library Service for the Blind and Print Disabled in 2020.</subfield>
+					</datafield>
+					<datafield tag="500" ind1=" " ind2=" ">
+						<subfield code="a">Title made available courtesy of the Canadian National Institute for the Blind via the Marrakesh Treaty in 2020.</subfield>
+					</datafield>
+					<datafield tag="506" ind1=" " ind2=" ">
+						<subfield code="a">Availability restricted to persons meeting the eligibility requirements of the National Library Service for the Blind and Print Disabled, Library of Congress.</subfield>
+					</datafield>
+					<datafield tag="511" ind1="0" ind2=" ">
+						<subfield code="a">Narrated by: Mac Samples.</subfield>
+					</datafield>
+					<datafield tag="516" ind1=" " ind2=" ">
+						<subfield code="a">Digital talking book.</subfield>
+					</datafield>
+					<datafield tag="520" ind1=" " ind2=" ">
+						<subfield code="a">A fictionalized account of the interrogation of John Watkins, a former Canadian ambassador to Moscow, in 1964. As a result of the cold war he was taken to a hotel room in Montreal to be debriefed by the RCMP upon his return to Canada. Three days later he was dead. Now Adams presents a fictionalized account of the last days of his life, and of the possible cause of his death. c1999. Unrated. Marrakesh title.</subfield>
+					</datafield>
+					<datafield tag="521" ind1=" " ind2=" ">
+						<subfield code="a">Male narrator.</subfield>
+						<subfield code="b">NLS/BPD</subfield>
+					</datafield>
+					<datafield tag="521" ind1=" " ind2=" ">
+						<subfield code="a">Unrated.</subfield>
+						<subfield code="b">NLS/BPD</subfield>
+					</datafield>
+					<datafield tag="534" ind1=" " ind2=" ">
+						<subfield code="p">Recorded from:</subfield>
+						<subfield code="c">Toronto : Stoddart, c1999.</subfield>
+						<subfield code="z">0773731261.</subfield>
+					</datafield>
+					<datafield tag="538" ind1=" " ind2=" ">
+						<subfield code="a">Full audio with structure.</subfield>
+					</datafield>
+					<datafield tag="538" ind1=" " ind2=" ">
+						<subfield code="a">System requirements: NLS authorized digital talking book player or software. Contact your cooperating library for more information.</subfield>
+					</datafield>
+					<datafield tag="594" ind1=" " ind2=" ">
+						<subfield code="a">CELA</subfield>
+						<subfield code="b">DZ20475</subfield>
+						<subfield code="c">M</subfield>
+					</datafield>
+					<datafield tag="600" ind1="1" ind2="0">
+						<subfield code="a">Watkins, John,</subfield>
+						<subfield code="d">1902-1964</subfield>
+						<subfield code="v">Fiction.</subfield>
+					</datafield>
+					<datafield tag="600" ind1="1" ind2="0">
+						<subfield code="a">Watkins, John,</subfield>
+						<subfield code="d">1902-1964</subfield>
+						<subfield code="x">Death and burial</subfield>
+						<subfield code="v">Fiction.</subfield>
+					</datafield>
+					<datafield tag="610" ind1="2" ind2="0">
+						<subfield code="a">Royal Canadian Mounted Police</subfield>
+						<subfield code="v">Fiction.</subfield>
+					</datafield>
+					<datafield tag="650" ind1=" " ind2="0">
+						<subfield code="a">Ambassadors</subfield>
+						<subfield code="x">Death</subfield>
+						<subfield code="v">Fiction.</subfield>
+					</datafield>
+					<datafield tag="650" ind1=" " ind2="0">
+						<subfield code="a">Ambassadors</subfield>
+						<subfield code="z">Canada</subfield>
+						<subfield code="v">Fiction.</subfield>
+					</datafield>
+					<datafield tag="650" ind1=" " ind2="0">
+						<subfield code="a">Cold War</subfield>
+						<subfield code="v">Fiction.</subfield>
+					</datafield>
+					<datafield tag="650" ind1=" " ind2="0">
+						<subfield code="a">Questioning</subfield>
+						<subfield code="v">Fiction.</subfield>
+					</datafield>
+					<datafield tag="650" ind1=" " ind2="0">
+						<subfield code="a">Espionage, Soviet</subfield>
+						<subfield code="z">Canada</subfield>
+						<subfield code="v">Fiction.</subfield>
+					</datafield>
+					<datafield tag="650" ind1=" " ind2="0">
+						<subfield code="a">World politics</subfield>
+						<subfield code="y">1945-1989</subfield>
+						<subfield code="v">Fiction.</subfield>
+					</datafield>
+					<datafield tag="651" ind1=" " ind2="0">
+						<subfield code="a">Canada</subfield>
+						<subfield code="x">Foreign relations</subfield>
+						<subfield code="z">Soviet Union</subfield>
+						<subfield code="v">Fiction.</subfield>
+					</datafield>
+					<datafield tag="651" ind1=" " ind2="0">
+						<subfield code="a">Canada</subfield>
+						<subfield code="x">Politics and government</subfield>
+						<subfield code="y">1945-1980</subfield>
+						<subfield code="v">Fiction.</subfield>
+					</datafield>
+					<datafield tag="651" ind1=" " ind2="0">
+						<subfield code="a">Montre&#x301;al (Que&#x301;bec)</subfield>
+						<subfield code="v">Fiction.</subfield>
+					</datafield>
+					<datafield tag="655" ind1=" " ind2="7">
+						<subfield code="a">Biographical fiction.</subfield>
+						<subfield code="2">lcgft</subfield>
+					</datafield>
+					<datafield tag="655" ind1=" " ind2="7">
+						<subfield code="a">Historical fiction.</subfield>
+						<subfield code="2">lcgft</subfield>
+					</datafield>
+					<datafield tag="655" ind1=" " ind2="7">
+						<subfield code="a">Political fiction.</subfield>
+						<subfield code="2">lcgft</subfield>
+					</datafield>
+					<datafield tag="655" ind1=" " ind2="7">
+						<subfield code="a">Fiction.</subfield>
+						<subfield code="2">lcgft</subfield>
+					</datafield>
+					<datafield tag="655" ind1=" " ind2="4">
+						<subfield code="a">Downloadable books.</subfield>
+					</datafield>
+					<datafield tag="655" ind1=" " ind2="7">
+						<subfield code="a">Detective and mystery fiction.</subfield>
+						<subfield code="2">lcgft</subfield>
+					</datafield>
+					<datafield tag="655" ind1=" " ind2="7">
+						<subfield code="a">Spy fiction.</subfield>
+						<subfield code="2">lcgft</subfield>
+					</datafield>
+					<datafield tag="655" ind1=" " ind2="7">
+						<subfield code="a">Talking books.</subfield>
+						<subfield code="2">lcgft</subfield>
+					</datafield>
+					<datafield tag="700" ind1="1" ind2=" ">
+						<subfield code="a">Samples, Mac,</subfield>
+						<subfield code="e">narrator.</subfield>
+					</datafield>
+					<datafield tag="852" ind1="8" ind2="1">
+						<subfield code="a">DLC-B</subfield>
+						<subfield code="c">DBG04429</subfield>
+						<subfield code="z">NLS/BPH</subfield>
+					</datafield>
+					<datafield tag="856" ind1="4" ind2="0">
+						<subfield code="u">http://hdl.loc.gov/loc.nls/dbg.04429</subfield>
+						<subfield code="3">Downloadable talking book.</subfield>
+						<subfield code="x">bard audio</subfield>
+					</datafield>
+					<datafield tag="955" ind1=" " ind2=" ">
+						<subfield code="a">06 SEP 2021 dbg jkozak</subfield>
+					</datafield>
+				</record>
+			</zs:recordData>
+			<zs:recordPosition>4</zs:recordPosition>
+		</zs:record>
+		<zs:record>
+			<zs:recordSchema>marcxml</zs:recordSchema>
+			<zs:recordPacking>xml</zs:recordPacking>
+			<zs:recordData>
+				<record xmlns="http://www.loc.gov/MARC21/slim">
+					<leader>02521cam a22005892a 4500</leader>
+					<controlfield tag="001">1065031</controlfield>
+					<controlfield tag="005">20220811125444.0</controlfield>
+					<controlfield tag="007">cr nn nnn|||aa</controlfield>
+					<controlfield tag="007">fb|a bnnnn</controlfield>
+					<controlfield tag="008">060717s2006    onc    ef     000 1 eng d</controlfield>
+					<datafield tag="010" ind1=" " ind2=" ">
+						<subfield code="a">  2021994918</subfield>
+					</datafield>
+					<datafield tag="020" ind1=" " ind2=" ">
+						<subfield code="a">0616297378</subfield>
+					</datafield>
+					<datafield tag="040" ind1=" " ind2=" ">
+						<subfield code="a">DLC-B</subfield>
+						<subfield code="b">eng</subfield>
+						<subfield code="c">DLC-B</subfield>
+					</datafield>
+					<datafield tag="072" ind1=" " ind2="7">
+						<subfield code="a">FAMIAF</subfield>
+						<subfield code="2">NBDL</subfield>
+					</datafield>
+					<datafield tag="072" ind1=" " ind2="7">
+						<subfield code="a">HUMAAF</subfield>
+						<subfield code="2">NBDL</subfield>
+					</datafield>
+					<datafield tag="072" ind1=" " ind2="7">
+						<subfield code="a">RELFAF</subfield>
+						<subfield code="2">NBDL</subfield>
+					</datafield>
+					<datafield tag="082" ind1="0" ind2="0">
+						<subfield code="a">813.54</subfield>
+						<subfield code="a">AFI</subfield>
+						<subfield code="2">21</subfield>
+					</datafield>
+					<datafield tag="084" ind1=" " ind2=" ">
+						<subfield code="a">BRG01474</subfield>
+						<subfield code="2">z</subfield>
+					</datafield>
+					<datafield tag="100" ind1="1" ind2=" ">
+						<subfield code="a">Anderson-Dargatz, Gail,</subfield>
+						<subfield code="d">1963-</subfield>
+						<subfield code="e">author.</subfield>
+					</datafield>
+					<datafield tag="245" ind1="1" ind2="2">
+						<subfield code="a">A rhinestone button</subfield>
+						<subfield code="h">[braille] /</subfield>
+						<subfield code="c">by Gail Anderson-Dargatz.</subfield>
+					</datafield>
+					<datafield tag="260" ind1=" " ind2=" ">
+						<subfield code="a">Toronto :</subfield>
+						<subfield code="b">CNIB,</subfield>
+						<subfield code="c">2005.</subfield>
+					</datafield>
+					<datafield tag="300" ind1=" " ind2=" ">
+						<subfield code="a">4 volumes of braille.</subfield>
+					</datafield>
+					<datafield tag="336" ind1=" " ind2=" ">
+						<subfield code="a">tactile text</subfield>
+						<subfield code="b">tct</subfield>
+						<subfield code="2">rdacontent</subfield>
+					</datafield>
+					<datafield tag="337" ind1=" " ind2=" ">
+						<subfield code="a">unmediated</subfield>
+						<subfield code="b">n</subfield>
+						<subfield code="2">rdamedia</subfield>
+					</datafield>
+					<datafield tag="338" ind1=" " ind2=" ">
+						<subfield code="a">volume</subfield>
+						<subfield code="b">nc</subfield>
+						<subfield code="2">rdacarrier</subfield>
+					</datafield>
+					<datafield tag="385" ind1=" " ind2=" ">
+						<subfield code="n">age</subfield>
+						<subfield code="a">adults</subfield>
+						<subfield code="2">lcdgt </subfield>
+					</datafield>
+					<datafield tag="500" ind1=" " ind2=" ">
+						<subfield code="a">Accessed by the National Library Service for the Blind and Print Disabled in 2020.</subfield>
+					</datafield>
+					<datafield tag="500" ind1=" " ind2=" ">
+						<subfield code="a">Title made available courtesy of the Canadian National Institute for the Blind via the Marrakesh Treaty in 2020.</subfield>
+					</datafield>
+					<datafield tag="506" ind1=" " ind2=" ">
+						<subfield code="a">Availability restricted to persons meeting the eligibility requirements of the National Library Service for the Blind and Print Disabled, Library of Congress.</subfield>
+					</datafield>
+					<datafield tag="520" ind1=" " ind2=" ">
+						<subfield code="a">Job Sunstrom is a religious man who loves the church. When his brother's family moves back into the family farmhouse where Job lives, they bring along an evangelist. Job's brother urges him to become one of the evangelist's religious foot soldiers. But this leaves him wondering if he will ever find love of a more earthly kind. 2002.</subfield>
+					</datafield>
+					<datafield tag="521" ind1=" " ind2=" ">
+						<subfield code="a">Unrated.</subfield>
+						<subfield code="b">NLS/BPH</subfield>
+					</datafield>
+					<datafield tag="534" ind1=" " ind2=" ">
+						<subfield code="p">Transcription of:</subfield>
+						<subfield code="c">Toronto: A.A. Knopf Canada, 2002.</subfield>
+						<subfield code="z">0676975496.</subfield>
+					</datafield>
+					<datafield tag="546" ind1=" " ind2=" ">
+						<subfield code="a">Contracted braille.</subfield>
+					</datafield>
+					<datafield tag="594" ind1=" " ind2=" ">
+						<subfield code="a">CELA</subfield>
+						<subfield code="b">EB71736</subfield>
+						<subfield code="c">M</subfield>
+					</datafield>
+					<datafield tag="650" ind1=" " ind2="0">
+						<subfield code="a">Brothers</subfield>
+						<subfield code="v">Fiction.</subfield>
+					</datafield>
+					<datafield tag="650" ind1=" " ind2="0">
+						<subfield code="a">Christian life</subfield>
+						<subfield code="v">Fiction.</subfield>
+					</datafield>
+					<datafield tag="650" ind1=" " ind2="0">
+						<subfield code="a">Evangelists</subfield>
+						<subfield code="v">Fiction.</subfield>
+					</datafield>
+					<datafield tag="650" ind1=" " ind2="0">
+						<subfield code="a">Families</subfield>
+						<subfield code="v">Fiction.</subfield>
+					</datafield>
+					<datafield tag="650" ind1=" " ind2="0">
+						<subfield code="a">Farmers</subfield>
+						<subfield code="v">Fiction.</subfield>
+					</datafield>
+					<datafield tag="651" ind1=" " ind2="0">
+						<subfield code="a">Alberta</subfield>
+						<subfield code="v">Fiction.</subfield>
+					</datafield>
+					<datafield tag="655" ind1=" " ind2="4">
+						<subfield code="a">Downloadable books.</subfield>
+					</datafield>
+					<datafield tag="655" ind1=" " ind2="7">
+						<subfield code="a">Braille books.</subfield>
+						<subfield code="2">lcgft</subfield>
+					</datafield>
+					<datafield tag="655" ind1=" " ind2="7">
+						<subfield code="a">Christian fiction.</subfield>
+						<subfield code="2">gsafd</subfield>
+					</datafield>
+					<datafield tag="655" ind1=" " ind2="7">
+						<subfield code="a">Domestic fiction.</subfield>
+						<subfield code="2">lcgft</subfield>
+					</datafield>
+					<datafield tag="655" ind1=" " ind2="7">
+						<subfield code="a">Fiction.</subfield>
+						<subfield code="2">lcgft</subfield>
+					</datafield>
+					<datafield tag="655" ind1=" " ind2="7">
+						<subfield code="a">Religious fiction.</subfield>
+						<subfield code="2">lcgft</subfield>
+					</datafield>
+					<datafield tag="852" ind1="8" ind2="1">
+						<subfield code="a">DLC-B</subfield>
+						<subfield code="c">BRG01474</subfield>
+						<subfield code="z">NLS/BPH</subfield>
+					</datafield>
+					<datafield tag="856" ind1="4" ind2="0">
+						<subfield code="u">http://hdl.loc.gov/loc.nls/brg.01474v01</subfield>
+						<subfield code="3">Volume 1.</subfield>
+					</datafield>
+					<datafield tag="856" ind1="4" ind2="0">
+						<subfield code="u">http://hdl.loc.gov/loc.nls/brg.01474v02</subfield>
+						<subfield code="3">Volume 2.</subfield>
+					</datafield>
+					<datafield tag="856" ind1="4" ind2="0">
+						<subfield code="u">http://hdl.loc.gov/loc.nls/brg.01474v03</subfield>
+						<subfield code="3">Volume 3.</subfield>
+					</datafield>
+					<datafield tag="856" ind1="4" ind2="0">
+						<subfield code="u">http://hdl.loc.gov/loc.nls/brg.01474v04</subfield>
+						<subfield code="3">Volume 4.</subfield>
+					</datafield>
+					<datafield tag="955" ind1=" " ind2=" ">
+						<subfield code="a">01 JUN 2021 brg jkozak</subfield>
+					</datafield>
+				</record>
+			</zs:recordData>
+			<zs:recordPosition>5</zs:recordPosition>
+		</zs:record>
+		<zs:record>
+			<zs:recordSchema>marcxml</zs:recordSchema>
+			<zs:recordPacking>xml</zs:recordPacking>
+			<zs:recordData>
+				<record xmlns="http://www.loc.gov/MARC21/slim">
+					<leader>02750cam a22005412a 4500</leader>
+					<controlfield tag="001">1073948</controlfield>
+					<controlfield tag="005">20220811125615.0</controlfield>
+					<controlfield tag="007">cr nn nnn|||aa</controlfield>
+					<controlfield tag="007">fb|a bnnnn</controlfield>
+					<controlfield tag="008">060718s20062001onc    ef  z  000 0dengdd</controlfield>
+					<datafield tag="010" ind1=" " ind2=" ">
+						<subfield code="a">  2021996593</subfield>
+					</datafield>
+					<datafield tag="020" ind1=" " ind2=" ">
+						<subfield code="a">0616297564</subfield>
+					</datafield>
+					<datafield tag="040" ind1=" " ind2=" ">
+						<subfield code="a">DLC-B</subfield>
+						<subfield code="b">eng</subfield>
+						<subfield code="c">DLC-B</subfield>
+					</datafield>
+					<datafield tag="043" ind1=" " ind2=" ">
+						<subfield code="a">sa-----</subfield>
+					</datafield>
+					<datafield tag="072" ind1=" " ind2="7">
+						<subfield code="a">GENEAN</subfield>
+						<subfield code="2">NBDL</subfield>
+					</datafield>
+					<datafield tag="072" ind1=" " ind2="7">
+						<subfield code="a">TRAVAN</subfield>
+						<subfield code="2">NBDL</subfield>
+					</datafield>
+					<datafield tag="082" ind1="0" ind2="0">
+						<subfield code="a">918.110464</subfield>
+						<subfield code="a">ANF</subfield>
+						<subfield code="2">22</subfield>
+					</datafield>
+					<datafield tag="084" ind1=" " ind2=" ">
+						<subfield code="a">BRG01509</subfield>
+						<subfield code="2">z</subfield>
+					</datafield>
+					<datafield tag="100" ind1="1" ind2=" ">
+						<subfield code="a">Angus, Colin,</subfield>
+						<subfield code="e">author.</subfield>
+					</datafield>
+					<datafield tag="245" ind1="1" ind2="0">
+						<subfield code="a">Amazon extreme</subfield>
+						<subfield code="h">[braille] :</subfield>
+						<subfield code="b">three ordinary guys, one rubber raft and the most dangerous river on Earth /</subfield>
+						<subfield code="c">by Colin Angus &amp; Ian Mulgrew.</subfield>
+					</datafield>
+					<datafield tag="260" ind1=" " ind2=" ">
+						<subfield code="a">Toronto :</subfield>
+						<subfield code="b">CNIB,</subfield>
+						<subfield code="c">2005.</subfield>
+					</datafield>
+					<datafield tag="300" ind1=" " ind2=" ">
+						<subfield code="a">3 volumes of braille.</subfield>
+					</datafield>
+					<datafield tag="336" ind1=" " ind2=" ">
+						<subfield code="a">tactile text</subfield>
+						<subfield code="b">tct</subfield>
+						<subfield code="2">rdacontent</subfield>
+					</datafield>
+					<datafield tag="337" ind1=" " ind2=" ">
+						<subfield code="a">unmediated</subfield>
+						<subfield code="b">n</subfield>
+						<subfield code="2">rdamedia</subfield>
+					</datafield>
+					<datafield tag="338" ind1=" " ind2=" ">
+						<subfield code="a">volume</subfield>
+						<subfield code="b">nc</subfield>
+						<subfield code="2">rdacarrier</subfield>
+					</datafield>
+					<datafield tag="385" ind1=" " ind2=" ">
+						<subfield code="n">age</subfield>
+						<subfield code="a">adults</subfield>
+						<subfield code="2">lcdgt</subfield>
+					</datafield>
+					<datafield tag="500" ind1=" " ind2=" ">
+						<subfield code="a">Accessed by the National Library Service for the Blind and Print Disabled in 2020.</subfield>
+					</datafield>
+					<datafield tag="500" ind1=" " ind2=" ">
+						<subfield code="a">Title made available courtesy of the Canadian National Institute for the Blind via the Marrakesh Treaty in 2020.</subfield>
+					</datafield>
+					<datafield tag="506" ind1=" " ind2=" ">
+						<subfield code="a">Availability restricted to persons meeting the eligibility requirements of the National Library Service for the Blind and Print Disabled, Library of Congress.</subfield>
+					</datafield>
+					<datafield tag="520" ind1=" " ind2=" ">
+						<subfield code="a">With no money to speak of and inaccurate, fifty-year-old maps to guide them, a trio of twenty-something adrenaline junkies managed to persevere through violent rapids, guerrilla gunfire, mosquito-infested drinking water, and numerous bouts of sickness in an attempt to become the first team to raft the entire length of the Amazon River - and (barely) live to tell about it. Beginning with the dehydration that nearly did them in as they hiked the Andes to the river's source, the book is an account of the daily challenges, dangers, and triumphs experienced over the course of this five-month expedition. 2004, c2001. Unrated. Marrakesh title.</subfield>
+					</datafield>
+					<datafield tag="521" ind1=" " ind2=" ">
+						<subfield code="a">Unrated.</subfield>
+						<subfield code="b">NLS/BPD</subfield>
+					</datafield>
+					<datafield tag="534" ind1=" " ind2=" ">
+						<subfield code="p">Transcription of:</subfield>
+						<subfield code="c">Toronto : Anchor Canada, 2004, 2001.</subfield>
+						<subfield code="z">038566009X.</subfield>
+					</datafield>
+					<datafield tag="546" ind1=" " ind2=" ">
+						<subfield code="b">Contracted braille.</subfield>
+					</datafield>
+					<datafield tag="594" ind1=" " ind2=" ">
+						<subfield code="a">CELA</subfield>
+						<subfield code="b">EB73425</subfield>
+					</datafield>
+					<datafield tag="600" ind1="1" ind2="0">
+						<subfield code="a">Angus, Colin</subfield>
+						<subfield code="x">Travel</subfield>
+						<subfield code="z">Amazon River.</subfield>
+					</datafield>
+					<datafield tag="650" ind1=" " ind2="0">
+						<subfield code="a">Rafting (Sports)</subfield>
+						<subfield code="z">Amazon River.</subfield>
+					</datafield>
+					<datafield tag="651" ind1=" " ind2="0">
+						<subfield code="a">Amazon River</subfield>
+						<subfield code="x">Description and travel.</subfield>
+					</datafield>
+					<datafield tag="655" ind1=" " ind2="4">
+						<subfield code="a">Downloadable books.</subfield>
+					</datafield>
+					<datafield tag="655" ind1=" " ind2="4">
+						<subfield code="a">Nonfiction.</subfield>
+					</datafield>
+					<datafield tag="655" ind1=" " ind2="7">
+						<subfield code="a">Braille books.</subfield>
+						<subfield code="2">lcgft</subfield>
+					</datafield>
+					<datafield tag="655" ind1=" " ind2="7">
+						<subfield code="a">Travel writing.</subfield>
+						<subfield code="2">lcgft</subfield>
+					</datafield>
+					<datafield tag="700" ind1="1" ind2=" ">
+						<subfield code="a">Mulgrew, Ian,</subfield>
+						<subfield code="d">1957-</subfield>
+						<subfield code="e">author.</subfield>
+					</datafield>
+					<datafield tag="852" ind1="8" ind2="1">
+						<subfield code="a">DLC-B</subfield>
+						<subfield code="c">BRG01509</subfield>
+						<subfield code="z">NLS/BPD</subfield>
+					</datafield>
+					<datafield tag="856" ind1="4" ind2="0">
+						<subfield code="u">http://hdl.loc.gov/loc.nls/brg.01509v01</subfield>
+						<subfield code="3">Volume 1.</subfield>
+					</datafield>
+					<datafield tag="856" ind1="4" ind2="0">
+						<subfield code="u">http://hdl.loc.gov/loc.nls/brg.01509v02</subfield>
+						<subfield code="3">Volume 2.</subfield>
+					</datafield>
+					<datafield tag="856" ind1="4" ind2="0">
+						<subfield code="u">http://hdl.loc.gov/loc.nls/brg.01509v03</subfield>
+						<subfield code="3">Volume 3.</subfield>
+					</datafield>
+					<datafield tag="955" ind1=" " ind2=" ">
+						<subfield code="a">28 SEP 2021 brg jkozak</subfield>
+					</datafield>
+					<datafield tag="955" ind1=" " ind2=" ">
+						<subfield code="a">jkozak e 008 d 072</subfield>
+					</datafield>
+				</record>
+			</zs:recordData>
+			<zs:recordPosition>6</zs:recordPosition>
+		</zs:record>
+		<zs:record>
+			<zs:recordSchema>marcxml</zs:recordSchema>
+			<zs:recordPacking>xml</zs:recordPacking>
+			<zs:recordData>
+				<record xmlns="http://www.loc.gov/MARC21/slim">
+					<leader>03038cam a22006732a 4500</leader>
+					<controlfield tag="001">1096157</controlfield>
+					<controlfield tag="005">20220811130035.0</controlfield>
+					<controlfield tag="007">cr nn nnn|||aa</controlfield>
+					<controlfield tag="007">fb|a bnnnn</controlfield>
+					<controlfield tag="008">060621s2005    onc    ef     000 1 eng d</controlfield>
+					<datafield tag="010" ind1=" " ind2=" ">
+						<subfield code="a">  2022998322</subfield>
+					</datafield>
+					<datafield tag="020" ind1=" " ind2=" ">
+						<subfield code="a">0616301731</subfield>
+					</datafield>
+					<datafield tag="040" ind1=" " ind2=" ">
+						<subfield code="a">DLC-B</subfield>
+						<subfield code="b">eng</subfield>
+						<subfield code="c">DLC-B</subfield>
+					</datafield>
+					<datafield tag="041" ind1="0" ind2=" ">
+						<subfield code="a">eng</subfield>
+					</datafield>
+					<datafield tag="072" ind1=" " ind2="7">
+						<subfield code="a">FANTAF</subfield>
+						<subfield code="2">NBDL</subfield>
+					</datafield>
+					<datafield tag="072" ind1=" " ind2="7">
+						<subfield code="a">OCCFAF</subfield>
+						<subfield code="2">NBDL</subfield>
+					</datafield>
+					<datafield tag="082" ind1="0" ind2="0">
+						<subfield code="a">813.6</subfield>
+						<subfield code="a">AFI</subfield>
+						<subfield code="2">23</subfield>
+					</datafield>
+					<datafield tag="084" ind1=" " ind2=" ">
+						<subfield code="a">BRG01116</subfield>
+						<subfield code="2">z</subfield>
+					</datafield>
+					<datafield tag="100" ind1="1" ind2=" ">
+						<subfield code="a">Armstrong, Kelley,</subfield>
+						<subfield code="e">author.</subfield>
+					</datafield>
+					<datafield tag="245" ind1="1" ind2="0">
+						<subfield code="a">Bitten</subfield>
+						<subfield code="h">[braille] /</subfield>
+						<subfield code="c">by Kelley Armstrong.</subfield>
+					</datafield>
+					<datafield tag="260" ind1=" " ind2=" ">
+						<subfield code="a">Toronto :</subfield>
+						<subfield code="b">CNIB,</subfield>
+						<subfield code="c">2005.</subfield>
+					</datafield>
+					<datafield tag="300" ind1=" " ind2=" ">
+						<subfield code="a">5 volumes of braille.</subfield>
+					</datafield>
+					<datafield tag="336" ind1=" " ind2=" ">
+						<subfield code="a">tactile text</subfield>
+						<subfield code="b">tct</subfield>
+						<subfield code="2">rdacontent</subfield>
+					</datafield>
+					<datafield tag="337" ind1=" " ind2=" ">
+						<subfield code="a">unmediated</subfield>
+						<subfield code="b">n</subfield>
+						<subfield code="2">rdamedia</subfield>
+					</datafield>
+					<datafield tag="338" ind1=" " ind2=" ">
+						<subfield code="a">volume</subfield>
+						<subfield code="b">nc</subfield>
+						<subfield code="2">rdacarrier</subfield>
+					</datafield>
+					<datafield tag="385" ind1=" " ind2=" ">
+						<subfield code="n">age</subfield>
+						<subfield code="a">adults</subfield>
+						<subfield code="2">lcdgt</subfield>
+					</datafield>
+					<datafield tag="385" ind1=" " ind2=" ">
+						<subfield code="n">age</subfield>
+						<subfield code="a">teenagers</subfield>
+						<subfield code="2">lcdgt</subfield>
+					</datafield>
+					<datafield tag="440" ind1=" " ind2="0">
+						<subfield code="a">Women of the Otherworld ;</subfield>
+						<subfield code="v">01</subfield>
+					</datafield>
+					<datafield tag="490" ind1="1" ind2=" ">
+						<subfield code="a">Women of the Otherworld ;</subfield>
+						<subfield code="v">01</subfield>
+					</datafield>
+					<datafield tag="500" ind1=" " ind2=" ">
+						<subfield code="a">Accessed by the National Library Service for the Blind and Print Disabled in 2020.</subfield>
+					</datafield>
+					<datafield tag="500" ind1=" " ind2=" ">
+						<subfield code="a">Title made available courtesy of the Canadian National Institute for the Blind via the Marrakesh Treaty in 2020.</subfield>
+					</datafield>
+					<datafield tag="506" ind1=" " ind2=" ">
+						<subfield code="a">Availability restricted to persons meeting the eligibility requirements of the National Library Service for the Blind and Print Disabled, Library of Congress.</subfield>
+					</datafield>
+					<datafield tag="520" ind1=" " ind2=" ">
+						<subfield code="a">Elena Michaels is a model woman for the 21st century: self-assured, keenly intelligent, fighting fit; and like every modern woman, she has her secrets. She was turned into a werewolf against her will by her lover ten years ago. Some days it feels like a gift, most days it feels like a curse. Violence, descriptions of sex, and some strong language. 2001. Marrakesh title.</subfield>
+					</datafield>
+					<datafield tag="521" ind1=" " ind2=" ">
+						<subfield code="a">Contains descriptions of sex.</subfield>
+						<subfield code="b">NLS/BPD</subfield>
+					</datafield>
+					<datafield tag="521" ind1=" " ind2=" ">
+						<subfield code="a">Contains some strong language.</subfield>
+						<subfield code="b">NLS/BPD</subfield>
+					</datafield>
+					<datafield tag="521" ind1=" " ind2=" ">
+						<subfield code="a">Contains violence.</subfield>
+						<subfield code="b">NLS/BPD</subfield>
+					</datafield>
+					<datafield tag="534" ind1=" " ind2=" ">
+						<subfield code="p">Transcription of:</subfield>
+						<subfield code="c">Toronto : Random House Canada, c2001.</subfield>
+						<subfield code="z">0679310614.</subfield>
+					</datafield>
+					<datafield tag="546" ind1=" " ind2=" ">
+						<subfield code="b">Contracted braille.</subfield>
+					</datafield>
+					<datafield tag="594" ind1=" " ind2=" ">
+						<subfield code="a">CELA</subfield>
+						<subfield code="b">EB68671</subfield>
+					</datafield>
+					<datafield tag="650" ind1=" " ind2="0">
+						<subfield code="a">Deception</subfield>
+						<subfield code="v">Fiction.</subfield>
+					</datafield>
+					<datafield tag="650" ind1=" " ind2="0">
+						<subfield code="a">Man-woman relationships</subfield>
+						<subfield code="v">Fiction.</subfield>
+					</datafield>
+					<datafield tag="650" ind1=" " ind2="0">
+						<subfield code="a">Secrecy</subfield>
+						<subfield code="v">Fiction.</subfield>
+					</datafield>
+					<datafield tag="650" ind1=" " ind2="0">
+						<subfield code="a">Werewolves</subfield>
+						<subfield code="v">Fiction.</subfield>
+					</datafield>
+					<datafield tag="655" ind1=" " ind2="4">
+						<subfield code="a">Downloadable books.</subfield>
+					</datafield>
+					<datafield tag="655" ind1=" " ind2="7">
+						<subfield code="a">Braille books.</subfield>
+						<subfield code="2">lcgft</subfield>
+					</datafield>
+					<datafield tag="655" ind1=" " ind2="7">
+						<subfield code="a">Fantasy fiction.</subfield>
+						<subfield code="2">lcgft</subfield>
+					</datafield>
+					<datafield tag="655" ind1=" " ind2="7">
+						<subfield code="a">Fiction.</subfield>
+						<subfield code="2">lcgft</subfield>
+					</datafield>
+					<datafield tag="655" ind1=" " ind2="7">
+						<subfield code="a">Paranormal fiction.</subfield>
+						<subfield code="2">lcgft</subfield>
+					</datafield>
+					<datafield tag="655" ind1=" " ind2="7">
+						<subfield code="a">Werewolf fiction.</subfield>
+						<subfield code="2">lcgft</subfield>
+					</datafield>
+					<datafield tag="730" ind1="0" ind2=" ">
+						<subfield code="a">Marrakesh Treaty to Facilitate Access to Published Works for Persons who are Blind, Visually Impaired, or Otherwise Print Disabled</subfield>
+						<subfield code="d">(2013 June 27)</subfield>
+					</datafield>
+					<datafield tag="800" ind1="1" ind2=" ">
+						<subfield code="a">Armstrong, Kelley.</subfield>
+						<subfield code="t">Women of the Otherworld ;</subfield>
+						<subfield code="v">01.</subfield>
+					</datafield>
+					<datafield tag="852" ind1="8" ind2="1">
+						<subfield code="a">DLC-B</subfield>
+						<subfield code="c">BRG01116</subfield>
+						<subfield code="z">NLS/BPD</subfield>
+					</datafield>
+					<datafield tag="856" ind1="4" ind2="0">
+						<subfield code="u">http://hdl.loc.gov/loc.nls/brg.01116v01</subfield>
+						<subfield code="3">Volume 1.</subfield>
+					</datafield>
+					<datafield tag="856" ind1="4" ind2="0">
+						<subfield code="u">http://hdl.loc.gov/loc.nls/brg.01116v02</subfield>
+						<subfield code="3">Volume 2.</subfield>
+					</datafield>
+					<datafield tag="856" ind1="4" ind2="0">
+						<subfield code="u">http://hdl.loc.gov/loc.nls/brg.01116v03</subfield>
+						<subfield code="3">Volume 3.</subfield>
+					</datafield>
+					<datafield tag="856" ind1="4" ind2="0">
+						<subfield code="u">http://hdl.loc.gov/loc.nls/brg.01116v04</subfield>
+						<subfield code="3">Volume 4.</subfield>
+					</datafield>
+					<datafield tag="856" ind1="4" ind2="0">
+						<subfield code="u">http://hdl.loc.gov/loc.nls/brg.01116v05</subfield>
+						<subfield code="3">Volume 5.</subfield>
+					</datafield>
+					<datafield tag="906" ind1=" " ind2=" ">
+						<subfield code="a">7</subfield>
+						<subfield code="b">cbc</subfield>
+						<subfield code="c">blndbks</subfield>
+					</datafield>
+					<datafield tag="955" ind1=" " ind2=" ">
+						<subfield code="a">09 AUG 2022 brg jkozak</subfield>
+					</datafield>
+				</record>
+			</zs:recordData>
+			<zs:recordPosition>7</zs:recordPosition>
+		</zs:record>
+		<zs:record>
+			<zs:recordSchema>marcxml</zs:recordSchema>
+			<zs:recordPacking>xml</zs:recordPacking>
+			<zs:recordData>
+				<record xmlns="http://www.loc.gov/MARC21/slim">
+					<leader>02970cam a22006612a 4500</leader>
+					<controlfield tag="001">1096156</controlfield>
+					<controlfield tag="005">20220811130035.0</controlfield>
+					<controlfield tag="007">cr nn nnn|||aa</controlfield>
+					<controlfield tag="007">fb|a bnnnn</controlfield>
+					<controlfield tag="008">060508s2005    onc    ef     000 1 eng d</controlfield>
+					<datafield tag="010" ind1=" " ind2=" ">
+						<subfield code="a">  2022998324</subfield>
+					</datafield>
+					<datafield tag="020" ind1=" " ind2=" ">
+						<subfield code="a">0616295111</subfield>
+					</datafield>
+					<datafield tag="040" ind1=" " ind2=" ">
+						<subfield code="a">DLC-B</subfield>
+						<subfield code="b">eng</subfield>
+						<subfield code="c">DLC-B</subfield>
+					</datafield>
+					<datafield tag="041" ind1="0" ind2=" ">
+						<subfield code="a">eng</subfield>
+					</datafield>
+					<datafield tag="072" ind1=" " ind2="7">
+						<subfield code="a">FANTAF</subfield>
+						<subfield code="2">NBDL</subfield>
+					</datafield>
+					<datafield tag="072" ind1=" " ind2="7">
+						<subfield code="a">OCCFAF</subfield>
+						<subfield code="2">NBDL</subfield>
+					</datafield>
+					<datafield tag="082" ind1="0" ind2="0">
+						<subfield code="a">813.6</subfield>
+						<subfield code="a">AFI</subfield>
+						<subfield code="2">22</subfield>
+					</datafield>
+					<datafield tag="084" ind1=" " ind2=" ">
+						<subfield code="a">BRG00746</subfield>
+						<subfield code="2">z</subfield>
+					</datafield>
+					<datafield tag="100" ind1="1" ind2=" ">
+						<subfield code="a">Armstrong, Kelley,</subfield>
+						<subfield code="e">author.</subfield>
+					</datafield>
+					<datafield tag="245" ind1="1" ind2="0">
+						<subfield code="a">Dime store magic</subfield>
+						<subfield code="h">[braille] /</subfield>
+						<subfield code="c">by Kelley Armstrong.</subfield>
+					</datafield>
+					<datafield tag="260" ind1=" " ind2=" ">
+						<subfield code="a">Toronto :</subfield>
+						<subfield code="b">CNIB,</subfield>
+						<subfield code="c">2005.</subfield>
+					</datafield>
+					<datafield tag="300" ind1=" " ind2=" ">
+						<subfield code="a">4 volumes of braille.</subfield>
+					</datafield>
+					<datafield tag="336" ind1=" " ind2=" ">
+						<subfield code="a">tactile text</subfield>
+						<subfield code="b">tct</subfield>
+						<subfield code="2">rdacontent</subfield>
+					</datafield>
+					<datafield tag="337" ind1=" " ind2=" ">
+						<subfield code="a">unmediated</subfield>
+						<subfield code="b">n</subfield>
+						<subfield code="2">rdamedia</subfield>
+					</datafield>
+					<datafield tag="338" ind1=" " ind2=" ">
+						<subfield code="a">volume</subfield>
+						<subfield code="b">nc</subfield>
+						<subfield code="2">rdacarrier</subfield>
+					</datafield>
+					<datafield tag="385" ind1=" " ind2=" ">
+						<subfield code="n">age</subfield>
+						<subfield code="a">adults</subfield>
+						<subfield code="2">lcdgt</subfield>
+					</datafield>
+					<datafield tag="385" ind1=" " ind2=" ">
+						<subfield code="n">age</subfield>
+						<subfield code="a">teenagers</subfield>
+						<subfield code="2">lcdgt</subfield>
+					</datafield>
+					<datafield tag="440" ind1=" " ind2="0">
+						<subfield code="a">Women of the Otherworld ;</subfield>
+						<subfield code="v">03</subfield>
+					</datafield>
+					<datafield tag="490" ind1="1" ind2=" ">
+						<subfield code="a">Women of the Otherworld ;</subfield>
+						<subfield code="v">03</subfield>
+					</datafield>
+					<datafield tag="500" ind1=" " ind2=" ">
+						<subfield code="a">Accessed by the National Library Service for the Blind and Print Disabled in 2020.</subfield>
+					</datafield>
+					<datafield tag="500" ind1=" " ind2=" ">
+						<subfield code="a">Title made available courtesy of the Canadian National Institute for the Blind via the Marrakesh Treaty in 2020.</subfield>
+					</datafield>
+					<datafield tag="506" ind1=" " ind2=" ">
+						<subfield code="a">Availability restricted to persons meeting the eligibility requirements of the National Library Service for the Blind and Print Disabled, Library of Congress.</subfield>
+					</datafield>
+					<datafield tag="520" ind1=" " ind2=" ">
+						<subfield code="a">Paige, an ordinary twenty-something who runs her own website design company, also happens to a witch. She is the leader of the American Coven and the guardian of Savannah, the teenage daughter of a black witch. When a telekinetic half-demon shows up to fight for the custody of Savannah, she brings supernatural help that Paige is not ready for. Descriptions of sex and violence. 2004. Marrakesh title.</subfield>
+					</datafield>
+					<datafield tag="521" ind1=" " ind2=" ">
+						<subfield code="a">Contains descriptions of sex.</subfield>
+						<subfield code="b">NLS/BPD</subfield>
+					</datafield>
+					<datafield tag="521" ind1=" " ind2=" ">
+						<subfield code="a">Contains violence.</subfield>
+						<subfield code="b">NLS/BPD</subfield>
+					</datafield>
+					<datafield tag="534" ind1=" " ind2=" ">
+						<subfield code="p">Transcription of:</subfield>
+						<subfield code="c">Toronto : Random House Canada, 2004.</subfield>
+						<subfield code="z">0679312951.</subfield>
+					</datafield>
+					<datafield tag="546" ind1=" " ind2=" ">
+						<subfield code="b">Contracted braille.</subfield>
+					</datafield>
+					<datafield tag="594" ind1=" " ind2=" ">
+						<subfield code="a">CELA</subfield>
+						<subfield code="b">EB72895</subfield>
+					</datafield>
+					<datafield tag="650" ind1=" " ind2="0">
+						<subfield code="a">Demonology</subfield>
+						<subfield code="v">Fiction.</subfield>
+					</datafield>
+					<datafield tag="650" ind1=" " ind2="0">
+						<subfield code="a">Guardian and ward</subfield>
+						<subfield code="v">Fiction.</subfield>
+					</datafield>
+					<datafield tag="650" ind1=" " ind2="0">
+						<subfield code="a">Magic</subfield>
+						<subfield code="v">Fiction.</subfield>
+					</datafield>
+					<datafield tag="650" ind1=" " ind2="0">
+						<subfield code="a">Murder</subfield>
+						<subfield code="v">Fiction.</subfield>
+					</datafield>
+					<datafield tag="650" ind1=" " ind2="0">
+						<subfield code="a">Orphans</subfield>
+						<subfield code="v">Fiction.</subfield>
+					</datafield>
+					<datafield tag="650" ind1=" " ind2="0">
+						<subfield code="a">Witches</subfield>
+						<subfield code="v">Fiction.</subfield>
+					</datafield>
+					<datafield tag="655" ind1=" " ind2="4">
+						<subfield code="a">Downloadable books.</subfield>
+					</datafield>
+					<datafield tag="655" ind1=" " ind2="7">
+						<subfield code="a">Braille books.</subfield>
+						<subfield code="2">lcgft</subfield>
+					</datafield>
+					<datafield tag="655" ind1=" " ind2="7">
+						<subfield code="a">Fantasy fiction.</subfield>
+						<subfield code="2">lcgft</subfield>
+					</datafield>
+					<datafield tag="655" ind1=" " ind2="7">
+						<subfield code="a">Fiction.</subfield>
+						<subfield code="2">lcgft</subfield>
+					</datafield>
+					<datafield tag="655" ind1=" " ind2="7">
+						<subfield code="a">Paranormal fiction.</subfield>
+						<subfield code="2">lcgft</subfield>
+					</datafield>
+					<datafield tag="730" ind1="0" ind2=" ">
+						<subfield code="a">Marrakesh Treaty to Facilitate Access to Published Works for Persons who are Blind, Visually Impaired, or Otherwise Print Disabled</subfield>
+						<subfield code="d">(2013 June 27)</subfield>
+					</datafield>
+					<datafield tag="800" ind1="1" ind2=" ">
+						<subfield code="a">Armstrong, Kelley.</subfield>
+						<subfield code="t">Women of the Otherworld ;</subfield>
+						<subfield code="v">03.</subfield>
+					</datafield>
+					<datafield tag="852" ind1="8" ind2="1">
+						<subfield code="a">DLC-B</subfield>
+						<subfield code="c">BRG00746</subfield>
+						<subfield code="z">NLS/BPD</subfield>
+					</datafield>
+					<datafield tag="856" ind1="4" ind2="0">
+						<subfield code="u">http://hdl.loc.gov/loc.nls/brg.00746v01</subfield>
+						<subfield code="3">Volume 1.</subfield>
+					</datafield>
+					<datafield tag="856" ind1="4" ind2="0">
+						<subfield code="u">http://hdl.loc.gov/loc.nls/brg.00746v02</subfield>
+						<subfield code="3">Volume 2.</subfield>
+					</datafield>
+					<datafield tag="856" ind1="4" ind2="0">
+						<subfield code="u">http://hdl.loc.gov/loc.nls/brg.00746v03</subfield>
+						<subfield code="3">Volume 3.</subfield>
+					</datafield>
+					<datafield tag="856" ind1="4" ind2="0">
+						<subfield code="u">http://hdl.loc.gov/loc.nls/brg.00746v04</subfield>
+						<subfield code="3">Volume 4.</subfield>
+					</datafield>
+					<datafield tag="906" ind1=" " ind2=" ">
+						<subfield code="a">7</subfield>
+						<subfield code="b">cbc</subfield>
+						<subfield code="c">blndbks</subfield>
+					</datafield>
+					<datafield tag="955" ind1=" " ind2=" ">
+						<subfield code="a">09 AUG 2022 brg jkozak</subfield>
+					</datafield>
+				</record>
+			</zs:recordData>
+			<zs:recordPosition>8</zs:recordPosition>
+		</zs:record>
+		<zs:record>
+			<zs:recordSchema>marcxml</zs:recordSchema>
+			<zs:recordPacking>xml</zs:recordPacking>
+			<zs:recordData>
+				<record xmlns="http://www.loc.gov/MARC21/slim">
+					<leader>02153cam a22005052a 4500</leader>
+					<controlfield tag="001">1069252</controlfield>
+					<controlfield tag="005">20220811125525.0</controlfield>
+					<controlfield tag="007">cr nn nnn|||aa</controlfield>
+					<controlfield tag="007">fb|a bnnnn</controlfield>
+					<controlfield tag="008">060725s2006    onc    ef  z  000 1 eng d</controlfield>
+					<datafield tag="010" ind1=" " ind2=" ">
+						<subfield code="a">  2021998639</subfield>
+					</datafield>
+					<datafield tag="020" ind1=" " ind2=" ">
+						<subfield code="a">0616306644</subfield>
+					</datafield>
+					<datafield tag="040" ind1=" " ind2=" ">
+						<subfield code="a">DLC-B</subfield>
+						<subfield code="b">eng</subfield>
+						<subfield code="c">DLC-B</subfield>
+					</datafield>
+					<datafield tag="072" ind1=" " ind2="7">
+						<subfield code="a">FANTAF</subfield>
+						<subfield code="2">NBDL</subfield>
+					</datafield>
+					<datafield tag="072" ind1=" " ind2="7">
+						<subfield code="a">HUMAAF</subfield>
+						<subfield code="2">NBDL</subfield>
+					</datafield>
+					<datafield tag="072" ind1=" " ind2="7">
+						<subfield code="a">OCCFAF</subfield>
+						<subfield code="2">NBDL</subfield>
+					</datafield>
+					<datafield tag="072" ind1=" " ind2="7">
+						<subfield code="a">SHORAF</subfield>
+						<subfield code="2">NBDL</subfield>
+					</datafield>
+					<datafield tag="082" ind1="0" ind2="0">
+						<subfield code="a">813.54</subfield>
+						<subfield code="a">AFI</subfield>
+						<subfield code="2">21</subfield>
+					</datafield>
+					<datafield tag="084" ind1=" " ind2=" ">
+						<subfield code="a">BRG01573</subfield>
+						<subfield code="2">z</subfield>
+					</datafield>
+					<datafield tag="100" ind1="1" ind2=" ">
+						<subfield code="a">Arnason, David,</subfield>
+						<subfield code="d">1940-</subfield>
+						<subfield code="e">author.</subfield>
+					</datafield>
+					<datafield tag="245" ind1="1" ind2="4">
+						<subfield code="a">The demon lover</subfield>
+						<subfield code="h">[braille] /</subfield>
+						<subfield code="c">by David Arnason.</subfield>
+					</datafield>
+					<datafield tag="260" ind1=" " ind2=" ">
+						<subfield code="a">Toronto :</subfield>
+						<subfield code="b">CNIB,</subfield>
+						<subfield code="c">2005.</subfield>
+					</datafield>
+					<datafield tag="300" ind1=" " ind2=" ">
+						<subfield code="a">1 volume of braille.</subfield>
+					</datafield>
+					<datafield tag="336" ind1=" " ind2=" ">
+						<subfield code="a">tactile text</subfield>
+						<subfield code="b">tct</subfield>
+						<subfield code="2">rdacontent</subfield>
+					</datafield>
+					<datafield tag="337" ind1=" " ind2=" ">
+						<subfield code="a">unmediated</subfield>
+						<subfield code="b">n</subfield>
+						<subfield code="2">rdamedia</subfield>
+					</datafield>
+					<datafield tag="338" ind1=" " ind2=" ">
+						<subfield code="a">volume</subfield>
+						<subfield code="b">nc</subfield>
+						<subfield code="2">rdacarrier</subfield>
+					</datafield>
+					<datafield tag="385" ind1=" " ind2=" ">
+						<subfield code="n">age</subfield>
+						<subfield code="a">adults</subfield>
+						<subfield code="2">lcdgt </subfield>
+					</datafield>
+					<datafield tag="500" ind1=" " ind2=" ">
+						<subfield code="a">Accessed by the National Library Service for the Blind and Print Disabled in 2020.</subfield>
+					</datafield>
+					<datafield tag="500" ind1=" " ind2=" ">
+						<subfield code="a">Title made available courtesy of the Canadian National Institute for the Blind via the Marrakesh Treaty in 2020.</subfield>
+					</datafield>
+					<datafield tag="506" ind1=" " ind2=" ">
+						<subfield code="a">Availability restricted to persons meeting the eligibility requirements of the National Library Service for the Blind and Print Disabled, Library of Congress.</subfield>
+					</datafield>
+					<datafield tag="520" ind1=" " ind2=" ">
+						<subfield code="a">From a chilly Canadian city to an ancient Icelandic village, these short stories span worlds both mythological and real. In one tale, a serpentine demon lover tempts women with his own style of forbidden fruit, while throughout, giants and other strange characters are pitted against a mischievous higher power. 2002. Unrated. Marrakesh title.</subfield>
+					</datafield>
+					<datafield tag="521" ind1=" " ind2=" ">
+						<subfield code="a">Unrated.</subfield>
+						<subfield code="b">NLS/BPD</subfield>
+					</datafield>
+					<datafield tag="534" ind1=" " ind2=" ">
+						<subfield code="p">Transcription of:</subfield>
+						<subfield code="c">Winnipeg: Turnstone Press, c2002.</subfield>
+						<subfield code="z">0888012780.</subfield>
+					</datafield>
+					<datafield tag="546" ind1=" " ind2=" ">
+						<subfield code="a">Contracted braille.</subfield>
+					</datafield>
+					<datafield tag="594" ind1=" " ind2=" ">
+						<subfield code="a">CELA</subfield>
+						<subfield code="b">EB71939</subfield>
+						<subfield code="c">M</subfield>
+					</datafield>
+					<datafield tag="650" ind1=" " ind2="0">
+						<subfield code="a">Demonology</subfield>
+						<subfield code="v">Fiction.</subfield>
+					</datafield>
+					<datafield tag="655" ind1=" " ind2="4">
+						<subfield code="a">Downloadable books.</subfield>
+					</datafield>
+					<datafield tag="655" ind1=" " ind2="7">
+						<subfield code="a">Braille books.</subfield>
+						<subfield code="2">lcgft</subfield>
+					</datafield>
+					<datafield tag="655" ind1=" " ind2="7">
+						<subfield code="a">Fantasy fiction.</subfield>
+						<subfield code="2">lcgft</subfield>
+					</datafield>
+					<datafield tag="655" ind1=" " ind2="7">
+						<subfield code="a">Paranormal fiction.</subfield>
+						<subfield code="2">lcgft</subfield>
+					</datafield>
+					<datafield tag="655" ind1=" " ind2="7">
+						<subfield code="a">Fiction.</subfield>
+						<subfield code="2">lcgft</subfield>
+					</datafield>
+					<datafield tag="655" ind1=" " ind2="7">
+						<subfield code="a">Short stories.</subfield>
+						<subfield code="2">lcgft</subfield>
+					</datafield>
+					<datafield tag="852" ind1="8" ind2="1">
+						<subfield code="a">DLC-B</subfield>
+						<subfield code="c">BRG01573</subfield>
+						<subfield code="z">NLS/BPH</subfield>
+					</datafield>
+					<datafield tag="856" ind1="4" ind2="0">
+						<subfield code="u">http://hdl.loc.gov/loc.nls/brg.01573v01</subfield>
+						<subfield code="3">Volume 1.</subfield>
+					</datafield>
+					<datafield tag="955" ind1=" " ind2=" ">
+						<subfield code="a">27 JUL 2021 brg jkozak</subfield>
+					</datafield>
+				</record>
+			</zs:recordData>
+			<zs:recordPosition>9</zs:recordPosition>
+		</zs:record>
+		<zs:record>
+			<zs:recordSchema>marcxml</zs:recordSchema>
+			<zs:recordPacking>xml</zs:recordPacking>
+			<zs:recordData>
+				<record xmlns="http://www.loc.gov/MARC21/slim">
+					<leader>02624cim a22006611a 4500</leader>
+					<controlfield tag="001">1080219</controlfield>
+					<controlfield tag="005">20231219115215.0</controlfield>
+					<controlfield tag="007">cr nnannnm|cda</controlfield>
+					<controlfield tag="007">sr nmnnnnnnned</controlfield>
+					<controlfield tag="008">051006s2005    oncnnnneq      pn n eng d</controlfield>
+					<datafield tag="010" ind1=" " ind2=" ">
+						<subfield code="a">  2022990053</subfield>
+					</datafield>
+					<datafield tag="020" ind1=" " ind2=" ">
+						<subfield code="a">0616263317 (CNIB)</subfield>
+					</datafield>
+					<datafield tag="040" ind1=" " ind2=" ">
+						<subfield code="a">DLC-B</subfield>
+						<subfield code="b">eng</subfield>
+						<subfield code="c">DLC-B</subfield>
+					</datafield>
+					<datafield tag="050" ind1="0" ind2="0">
+						<subfield code="a">PR9199.3.A8</subfield>
+						<subfield code="b">M67 2005</subfield>
+					</datafield>
+					<datafield tag="072" ind1=" " ind2="7">
+						<subfield code="a">GENEAN</subfield>
+						<subfield code="2">NBDL</subfield>
+					</datafield>
+					<datafield tag="072" ind1=" " ind2="7">
+						<subfield code="a">POETAN</subfield>
+						<subfield code="2">NBDL</subfield>
+					</datafield>
+					<datafield tag="082" ind1="0" ind2="0">
+						<subfield code="a">811.54</subfield>
+						<subfield code="a">ANF</subfield>
+						<subfield code="2">20</subfield>
+					</datafield>
+					<datafield tag="084" ind1=" " ind2=" ">
+						<subfield code="a">DBG02475</subfield>
+						<subfield code="2">z</subfield>
+					</datafield>
+					<datafield tag="100" ind1="1" ind2=" ">
+						<subfield code="a">Atwood, Margaret,</subfield>
+						<subfield code="d">1939-</subfield>
+						<subfield code="e">author.</subfield>
+					</datafield>
+					<datafield tag="245" ind1="1" ind2="0">
+						<subfield code="a">Morning in the burned house</subfield>
+						<subfield code="h">[sound recording] /</subfield>
+						<subfield code="c">by Margaret Atwood.</subfield>
+					</datafield>
+					<datafield tag="260" ind1=" " ind2=" ">
+						<subfield code="a">Toronto :</subfield>
+						<subfield code="b">CNIB,</subfield>
+						<subfield code="c">2005.</subfield>
+					</datafield>
+					<datafield tag="300" ind1=" " ind2=" ">
+						<subfield code="a">1 online resource (audio (1 hour, 43 minutes))</subfield>
+					</datafield>
+					<datafield tag="306" ind1=" " ind2=" ">
+						<subfield code="a">014300</subfield>
+					</datafield>
+					<datafield tag="336" ind1=" " ind2=" ">
+						<subfield code="a">spoken word</subfield>
+						<subfield code="b">spw</subfield>
+						<subfield code="2">rdacontent</subfield>
+					</datafield>
+					<datafield tag="337" ind1=" " ind2=" ">
+						<subfield code="a">audio</subfield>
+						<subfield code="b">s</subfield>
+						<subfield code="2">rdamedia</subfield>
+					</datafield>
+					<datafield tag="337" ind1=" " ind2=" ">
+						<subfield code="a">computer</subfield>
+						<subfield code="b">c</subfield>
+						<subfield code="2">rdamedia</subfield>
+					</datafield>
+					<datafield tag="338" ind1=" " ind2=" ">
+						<subfield code="a">online resource</subfield>
+						<subfield code="b">cr</subfield>
+						<subfield code="2">rdacarrier</subfield>
+					</datafield>
+					<datafield tag="344" ind1=" " ind2=" ">
+						<subfield code="a">digital</subfield>
+						<subfield code="g">mono</subfield>
+						<subfield code="2">rda</subfield>
+					</datafield>
+					<datafield tag="347" ind1=" " ind2=" ">
+						<subfield code="a">audio file</subfield>
+						<subfield code="b">Daisy</subfield>
+						<subfield code="2">rda</subfield>
+					</datafield>
+					<datafield tag="385" ind1=" " ind2=" ">
+						<subfield code="n">age</subfield>
+						<subfield code="a">adults</subfield>
+						<subfield code="2">lcdgt</subfield>
+					</datafield>
+					<datafield tag="500" ind1=" " ind2=" ">
+						<subfield code="a">Accessed by the National Library Service for the Blind and Print Disabled in 2020.</subfield>
+					</datafield>
+					<datafield tag="500" ind1=" " ind2=" ">
+						<subfield code="a">Title made available courtesy of the Canadian National Institute for the Blind via the Marrakesh Treaty in 2020.</subfield>
+					</datafield>
+					<datafield tag="506" ind1=" " ind2=" ">
+						<subfield code="a">Availability restricted to persons meeting the eligibility requirements of the National Library Service for the Blind and Print Disabled, Library of Congress.</subfield>
+					</datafield>
+					<datafield tag="511" ind1="0" ind2=" ">
+						<subfield code="a">Narrated by: Kathleen Miller.</subfield>
+					</datafield>
+					<datafield tag="516" ind1=" " ind2=" ">
+						<subfield code="a">Digital talking book.</subfield>
+					</datafield>
+					<datafield tag="520" ind1=" " ind2=" ">
+						<subfield code="a">Atwood's first book of poetry in a decade draws on mythology, love, the fragility of nature, and death. 1995. Unrated. Marrakesh title.</subfield>
+					</datafield>
+					<datafield tag="521" ind1=" " ind2=" ">
+						<subfield code="a">Female narrator.</subfield>
+						<subfield code="b">NLS/BPD</subfield>
+					</datafield>
+					<datafield tag="521" ind1=" " ind2=" ">
+						<subfield code="a">Unrated.</subfield>
+						<subfield code="b">NLS/BPD</subfield>
+					</datafield>
+					<datafield tag="534" ind1=" " ind2=" ">
+						<subfield code="p">Recorded from:</subfield>
+						<subfield code="c">Toronto : McClelland &amp; Stewart, c1995.</subfield>
+						<subfield code="z">0771008309.</subfield>
+					</datafield>
+					<datafield tag="538" ind1=" " ind2=" ">
+						<subfield code="a">Full audio with structure.</subfield>
+					</datafield>
+					<datafield tag="538" ind1=" " ind2=" ">
+						<subfield code="a">System requirements: NLS authorized digital talking book player or software. Contact your cooperating library for more information.</subfield>
+					</datafield>
+					<datafield tag="594" ind1=" " ind2=" ">
+						<subfield code="a">CELA</subfield>
+						<subfield code="b">DZ12739</subfield>
+					</datafield>
+					<datafield tag="650" ind1=" " ind2="0">
+						<subfield code="a">Canadian poetry</subfield>
+						<subfield code="y">20th century.</subfield>
+					</datafield>
+					<datafield tag="650" ind1=" " ind2="0">
+						<subfield code="a">Death</subfield>
+						<subfield code="v">Poetry.</subfield>
+					</datafield>
+					<datafield tag="650" ind1=" " ind2="0">
+						<subfield code="a">Love</subfield>
+						<subfield code="v">Poetry.</subfield>
+					</datafield>
+					<datafield tag="650" ind1=" " ind2="0">
+						<subfield code="a">Mythology</subfield>
+						<subfield code="v">Poetry.</subfield>
+					</datafield>
+					<datafield tag="650" ind1=" " ind2="0">
+						<subfield code="a">Nature</subfield>
+						<subfield code="v">Poetry.</subfield>
+					</datafield>
+					<datafield tag="655" ind1=" " ind2="4">
+						<subfield code="a">Downloadable books.</subfield>
+					</datafield>
+					<datafield tag="655" ind1=" " ind2="4">
+						<subfield code="a">Nonfiction.</subfield>
+					</datafield>
+					<datafield tag="655" ind1=" " ind2="7">
+						<subfield code="a">Love poetry.</subfield>
+						<subfield code="2">lcgft</subfield>
+					</datafield>
+					<datafield tag="655" ind1=" " ind2="7">
+						<subfield code="a">Nature poetry.</subfield>
+						<subfield code="2">lcgft</subfield>
+					</datafield>
+					<datafield tag="655" ind1=" " ind2="7">
+						<subfield code="a">Poetry.</subfield>
+						<subfield code="2">lcgft</subfield>
+					</datafield>
+					<datafield tag="655" ind1=" " ind2="7">
+						<subfield code="a">Talking books.</subfield>
+						<subfield code="2">lcgft</subfield>
+					</datafield>
+					<datafield tag="700" ind1="1" ind2=" ">
+						<subfield code="a">Miller, Kathleen,</subfield>
+						<subfield code="e">narrator.</subfield>
+					</datafield>
+					<datafield tag="852" ind1="8" ind2="1">
+						<subfield code="a">DLC-B</subfield>
+						<subfield code="c">DBG02475</subfield>
+						<subfield code="z">NLS/BPD</subfield>
+					</datafield>
+					<datafield tag="856" ind1="4" ind2="0">
+						<subfield code="u">http://hdl.loc.gov/loc.nls/dbg.02475</subfield>
+						<subfield code="3">Downloadable talking book.</subfield>
+						<subfield code="x">bard audio</subfield>
+					</datafield>
+					<datafield tag="906" ind1=" " ind2=" ">
+						<subfield code="a">7</subfield>
+						<subfield code="b">cbc</subfield>
+						<subfield code="c">blndbks</subfield>
+					</datafield>
+					<datafield tag="955" ind1=" " ind2=" ">
+						<subfield code="a">18 JAN 2021 dbg jkozak</subfield>
+					</datafield>
+				</record>
+			</zs:recordData>
+			<zs:recordPosition>10</zs:recordPosition>
+		</zs:record>
+	</zs:records>
+	<zs:nextRecordPosition>11</zs:nextRecordPosition>
+	<zs:echoedSearchRetrieveRequest>
+		<zs:version>1.1</zs:version>
+		<zs:query>dc.publisher=CNIB AND dc.date=2005</zs:query>
+		<zs:maximumRecords>10</zs:maximumRecords>
+		<zs:recordPacking>xml</zs:recordPacking>
+		<zs:recordSchema>marcxml</zs:recordSchema>
+	</zs:echoedSearchRetrieveRequest>
+</zs:searchRetrieveResponse>

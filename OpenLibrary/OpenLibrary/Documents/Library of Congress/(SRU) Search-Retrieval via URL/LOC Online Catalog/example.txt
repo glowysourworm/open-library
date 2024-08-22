@@ -1,0 +1,6 @@
+﻿Library of Congress Online Catalog
+
+SRU Base URL (and Explain record): http://lx2.loc.gov:210/LCDB?
+
+Sample search. "Marv Throneberry", return 2 MODS records
+http://lx2.loc.gov:210/lcdb?version=1.1&operation=searchRetrieve&query="Marv Throneberry"&startRecord=1&maximumRecords=5&recordSchema=mods

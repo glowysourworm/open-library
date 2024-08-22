@@ -1,0 +1,6 @@
+﻿National Library Service for the Blind and Print Disabled
+
+SRU Base URL (and Explain record): http://lx2.loc.gov:210/NLSBPH?
+
+Sample search. Search for: Publisher=CNIB and date=2005; return 10 MARCXML records
+http://lx2.loc.gov:210/NLSBPH?operation=searchRetrieve&version=1.1&query=dc.publisher=CNIB%20AND%20dc.date=2005&maximumRecords=10&recordSchema=marcxml

@@ -1,0 +1,894 @@
+﻿<?xml version="1.0"?>
+<zs:searchRetrieveResponse xmlns:zs="http://www.loc.gov/zing/srw/">
+	<zs:version>1.1</zs:version>
+	<zs:numberOfRecords>22</zs:numberOfRecords>
+	<zs:records>
+		<zs:record>
+			<zs:recordSchema>mads</zs:recordSchema>
+			<zs:recordPacking>xml</zs:recordPacking>
+			<zs:recordData>
+				<mads:mads xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mads="http://www.loc.gov/mads/v2" version="2.0" xsi:schemaLocation="http://www.loc.gov/mads/v2 http://www.loc.gov/standards/mads/mads-2-0.xsd">
+					<mads:authority xmlns:xlink="http://www.w3.org/1999/xlink">
+						<mads:genre authority="lcgft">Actualities (Motion pictures)</mads:genre>
+					</mads:authority>
+					<mads:related xmlns:xlink="http://www.w3.org/1999/xlink" type="broader">
+						<mads:genre>Short films</mads:genre>
+					</mads:related>
+					<mads:related xmlns:xlink="http://www.w3.org/1999/xlink" type="broader">
+						<mads:genre>Silent films</mads:genre>
+					</mads:related>
+					<mads:related xmlns:xlink="http://www.w3.org/1999/xlink" type="broader">
+						<mads:genre>Nonfiction films</mads:genre>
+					</mads:related>
+					<mads:related xmlns:xlink="http://www.w3.org/1999/xlink" type="other">
+						<mads:genre>Documentary films</mads:genre>
+					</mads:related>
+					<mads:related xmlns:xlink="http://www.w3.org/1999/xlink" type="other">
+						<mads:genre>Newsreels</mads:genre>
+					</mads:related>
+					<mads:variant xmlns:xlink="http://www.w3.org/1999/xlink" type="other">
+						<mads:genre>Actualite&#x301;s (Motion pictures)</mads:genre>
+					</mads:variant>
+					<mads:variant xmlns:xlink="http://www.w3.org/1999/xlink" type="other">
+						<mads:genre>Actuality films</mads:genre>
+					</mads:variant>
+					<mads:note xmlns:xlink="http://www.w3.org/1999/xlink" type="source">Yee, M.M. Moving image materials, 1988 (Actualities; use for early, usually short silent films in which the cameria was positioned to record events or everyday life)</mads:note>
+					<mads:note xmlns:xlink="http://www.w3.org/1999/xlink" type="source">Lopez, D. Films by genre, c1993 (Actuality (Actualite, Actualities, Actuality film, Documentaire, Educational, Interest film, News film, News item, Topical) the filming of "actual" events or the normal activities of people at work or at leisure; the actuality film is an early form of the documentary film; an actuality shows something that happened at the time of filming; a topical film records an event that is newsworthy; an interest film implies some measure of interpretation of its subject by the maker of the film)</mads:note>
+					<mads:note xmlns:xlink="http://www.w3.org/1999/xlink">Short, unedited, silent films, primarily from the period of early cinema, that portray daily life or specific events or occurrences as filmed by a camera in a fixed location without commentary</mads:note>
+					<mads:identifier type="lccn">gf2011026007</mads:identifier>
+					<mads:identifier type="lccn" invalid="yes">sh2007025011</mads:identifier>
+					<mads:recordInfo xmlns:xlink="http://www.w3.org/1999/xlink">
+						<mads:recordOrigin>Converted from MARCXML to MADS version 2.0 (Revision 2.13)</mads:recordOrigin>
+						<mads:recordContentSource authority="marcorg">DLC</mads:recordContentSource>
+						<mads:recordChangeDate encoding="iso8601">20151202053141.0</mads:recordChangeDate>
+						<mads:recordIdentifier source="DLC">gf2011026007</mads:recordIdentifier>
+						<mads:languageOfCataloging>
+							<mads:languageTerm authority="iso639-2b" type="code">eng</mads:languageTerm>
+						</mads:languageOfCataloging>
+					</mads:recordInfo>
+				</mads:mads>
+			</zs:recordData>
+			<zs:recordPosition>1</zs:recordPosition>
+		</zs:record>
+		<zs:record>
+			<zs:recordSchema>mads</zs:recordSchema>
+			<zs:recordPacking>xml</zs:recordPacking>
+			<zs:recordData>
+				<mads:mads xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mads="http://www.loc.gov/mads/v2" version="2.0" xsi:schemaLocation="http://www.loc.gov/mads/v2 http://www.loc.gov/standards/mads/mads-2-0.xsd">
+					<mads:authority xmlns:xlink="http://www.w3.org/1999/xlink">
+						<mads:genre authority="lcgft">Cine&#x301;ma ve&#x301;rite&#x301; films</mads:genre>
+					</mads:authority>
+					<mads:related xmlns:xlink="http://www.w3.org/1999/xlink" type="broader">
+						<mads:genre>Documentary films</mads:genre>
+					</mads:related>
+					<mads:variant xmlns:xlink="http://www.w3.org/1999/xlink" type="other">
+						<mads:genre>Direct cinema films</mads:genre>
+					</mads:variant>
+					<mads:variant xmlns:xlink="http://www.w3.org/1999/xlink" type="other">
+						<mads:genre>Truth cinema films</mads:genre>
+					</mads:variant>
+					<mads:note xmlns:xlink="http://www.w3.org/1999/xlink" type="source">Work cat.: Cine&#x301;ma ve&#x301;rite&#x301; [VR] : defining the moment, c1999: pkg. (The cine&#x301;ma ve&#x301;rite&#x301; (or direct cinema) movement of the '50s and '60s was driven by a group of rebel filmmakers tired of stilted documentaries. They wanted to show life as it really is: raw, gritty, dramatic.)</mads:note>
+					<mads:note xmlns:xlink="http://www.w3.org/1999/xlink" type="source">Britannica online, July 24, 2000 (Cine&#x301;ma ve&#x301;rite&#x301;: (French: "truth cinema"), French film movement of the 1960s that showed people in everyday situations with authentic dialogue and naturalness of action)</mads:note>
+					<mads:note xmlns:xlink="http://www.w3.org/1999/xlink" type="source">Internet movie database film glossary, via WWW, Jan. 22, 2001 (Cinema Verite&#x301;. Literally: Cinema Truth. A documentary style in which no directorial control is exerted. The term is frequently misused to describe new-wave "handheld" camera techniques.)</mads:note>
+					<mads:note xmlns:xlink="http://www.w3.org/1999/xlink" type="source">Mamber, S. Cinema verite in America : studies in uncontrolled documentary, 1974</mads:note>
+					<mads:identifier type="lccn">gf2011026134</mads:identifier>
+					<mads:identifier type="lccn" invalid="yes">sh2007025001</mads:identifier>
+					<mads:recordInfo xmlns:xlink="http://www.w3.org/1999/xlink">
+						<mads:recordOrigin>Converted from MARCXML to MADS version 2.0 (Revision 2.13)</mads:recordOrigin>
+						<mads:recordContentSource authority="marcorg">DLC</mads:recordContentSource>
+						<mads:recordChangeDate encoding="iso8601">20151224053140.0</mads:recordChangeDate>
+						<mads:recordIdentifier source="DLC">gf2011026134</mads:recordIdentifier>
+						<mads:languageOfCataloging>
+							<mads:languageTerm authority="iso639-2b" type="code">eng</mads:languageTerm>
+						</mads:languageOfCataloging>
+					</mads:recordInfo>
+				</mads:mads>
+			</zs:recordData>
+			<zs:recordPosition>2</zs:recordPosition>
+		</zs:record>
+		<zs:record>
+			<zs:recordSchema>mads</zs:recordSchema>
+			<zs:recordPacking>xml</zs:recordPacking>
+			<zs:recordData>
+				<mads:mads xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mads="http://www.loc.gov/mads/v2" version="2.0" xsi:schemaLocation="http://www.loc.gov/mads/v2 http://www.loc.gov/standards/mads/mads-2-0.xsd">
+					<mads:authority xmlns:xlink="http://www.w3.org/1999/xlink">
+						<mads:genre authority="lcgft">Documentary films</mads:genre>
+					</mads:authority>
+					<mads:related xmlns:xlink="http://www.w3.org/1999/xlink" type="broader">
+						<mads:genre>Nonfiction films</mads:genre>
+					</mads:related>
+					<mads:related xmlns:xlink="http://www.w3.org/1999/xlink" type="other">
+						<mads:genre>Actualities (Motion pictures)</mads:genre>
+					</mads:related>
+					<mads:variant xmlns:xlink="http://www.w3.org/1999/xlink" type="other">
+						<mads:genre>Documentaries, Motion picture</mads:genre>
+					</mads:variant>
+					<mads:variant xmlns:xlink="http://www.w3.org/1999/xlink" type="other">
+						<mads:genre>Factual films</mads:genre>
+					</mads:variant>
+					<mads:variant xmlns:xlink="http://www.w3.org/1999/xlink" type="other">
+						<mads:genre>Motion picture documentaries</mads:genre>
+					</mads:variant>
+					<mads:note xmlns:xlink="http://www.w3.org/1999/xlink" type="source">Moving image genre-form guide online, April 27, 2007: (documentary: Grounded in some aspect of real life, documentaries may vary from a very deliberate account of facts to an extremely interpretive rendering of a subject, advocating a particular viewpoint on a political, social, or historical issue)</mads:note>
+					<mads:note xmlns:xlink="http://www.w3.org/1999/xlink" type="source">Yee, M.M. Moving image materials, 1988 (Documentaries and factual works. Use for films and programs which depict actual persons and/or events. Exclude frank historical re-creations, but do not attempt to judge the "truth" of the depiction in a film purporting to be factual or documentary in character)</mads:note>
+					<mads:note xmlns:xlink="http://www.w3.org/1999/xlink" type="source">Lopez, D. Films by genre, c1993: p. 77 (Documentary (Docu, Documentary Film, Factual Film, Non-Fiction Film, Realist Film); the term documentary is applied to and includes a vast array of different types of nonfiction or semifictional films; it stretches from the objective presentation of factual material to the subjective use of film for propaganda purposes)</mads:note>
+					<mads:identifier type="lccn">gf2011026205</mads:identifier>
+					<mads:identifier type="lccn" invalid="yes">sh2007025014</mads:identifier>
+					<mads:recordInfo xmlns:xlink="http://www.w3.org/1999/xlink">
+						<mads:recordOrigin>Converted from MARCXML to MADS version 2.0 (Revision 2.13)</mads:recordOrigin>
+						<mads:recordContentSource authority="marcorg">DLC</mads:recordContentSource>
+						<mads:recordChangeDate encoding="iso8601">20151224053141.0</mads:recordChangeDate>
+						<mads:recordIdentifier source="DLC">gf2011026205</mads:recordIdentifier>
+						<mads:languageOfCataloging>
+							<mads:languageTerm authority="iso639-2b" type="code">eng</mads:languageTerm>
+						</mads:languageOfCataloging>
+					</mads:recordInfo>
+				</mads:mads>
+			</zs:recordData>
+			<zs:recordPosition>3</zs:recordPosition>
+		</zs:record>
+		<zs:record>
+			<zs:recordSchema>mads</zs:recordSchema>
+			<zs:recordPacking>xml</zs:recordPacking>
+			<zs:recordData>
+				<mads:mads xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mads="http://www.loc.gov/mads/v2" version="2.0" xsi:schemaLocation="http://www.loc.gov/mads/v2 http://www.loc.gov/standards/mads/mads-2-0.xsd">
+					<mads:authority xmlns:xlink="http://www.w3.org/1999/xlink">
+						<mads:genre authority="lcgft">Documentary radio programs</mads:genre>
+					</mads:authority>
+					<mads:related xmlns:xlink="http://www.w3.org/1999/xlink" type="broader">
+						<mads:genre>Nonfiction radio programs</mads:genre>
+					</mads:related>
+					<mads:variant xmlns:xlink="http://www.w3.org/1999/xlink" type="other">
+						<mads:genre>Documentaries, Radio</mads:genre>
+					</mads:variant>
+					<mads:variant xmlns:xlink="http://www.w3.org/1999/xlink" type="other">
+						<mads:genre>Radio documentaries</mads:genre>
+					</mads:variant>
+					<mads:note xmlns:xlink="http://www.w3.org/1999/xlink" type="source">Radio form/genre terms guide, via WWW, Dec. 5, 2007 (Documentaries: Nonfictional programs that present political, social or historical subject matter in a factual and informative manner; often consist of actual news reports, actualities, and/or interviews; often contain narration. Examples: The war that did not come, Army hour, The challenge of our prisons, Yalta papers story)</mads:note>
+					<mads:note xmlns:xlink="http://www.w3.org/1999/xlink" type="source">Johnson, J. Modern radio station practices, c1972: p. 72 (Documentary; a program which integrates narration, comments, or statements with music or sound effects, as appropriate, into program form for the purpose of exploring an issue, synthesizing a body of material, or structuring material about an event or issue)</mads:note>
+					<mads:note xmlns:xlink="http://www.w3.org/1999/xlink" type="source">LCSH, Dec. 5, 2007 (hdg: Radio documentaries)</mads:note>
+					<mads:identifier type="lccn">gf2011026206</mads:identifier>
+					<mads:identifier type="lccn" invalid="yes">sh2007025627</mads:identifier>
+					<mads:recordInfo xmlns:xlink="http://www.w3.org/1999/xlink">
+						<mads:recordOrigin>Converted from MARCXML to MADS version 2.0 (Revision 2.13)</mads:recordOrigin>
+						<mads:recordContentSource authority="marcorg">DLC</mads:recordContentSource>
+						<mads:recordChangeDate encoding="iso8601">20110519074657.0</mads:recordChangeDate>
+						<mads:recordIdentifier source="DLC">gf2011026206</mads:recordIdentifier>
+						<mads:languageOfCataloging>
+							<mads:languageTerm authority="iso639-2b" type="code">eng</mads:languageTerm>
+						</mads:languageOfCataloging>
+					</mads:recordInfo>
+				</mads:mads>
+			</zs:recordData>
+			<zs:recordPosition>4</zs:recordPosition>
+		</zs:record>
+		<zs:record>
+			<zs:recordSchema>mads</zs:recordSchema>
+			<zs:recordPacking>xml</zs:recordPacking>
+			<zs:recordData>
+				<mads:mads xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mads="http://www.loc.gov/mads/v2" version="2.0" xsi:schemaLocation="http://www.loc.gov/mads/v2 http://www.loc.gov/standards/mads/mads-2-0.xsd">
+					<mads:authority xmlns:xlink="http://www.w3.org/1999/xlink">
+						<mads:genre authority="lcgft">Documentary television programs</mads:genre>
+					</mads:authority>
+					<mads:related xmlns:xlink="http://www.w3.org/1999/xlink" type="broader">
+						<mads:genre>Nonfiction television programs</mads:genre>
+					</mads:related>
+					<mads:variant xmlns:xlink="http://www.w3.org/1999/xlink" type="other">
+						<mads:genre>Documentaries, Television</mads:genre>
+					</mads:variant>
+					<mads:variant xmlns:xlink="http://www.w3.org/1999/xlink" type="other">
+						<mads:genre>Documentary programs, Television</mads:genre>
+					</mads:variant>
+					<mads:variant xmlns:xlink="http://www.w3.org/1999/xlink" type="other">
+						<mads:genre>Telementaries</mads:genre>
+					</mads:variant>
+					<mads:variant xmlns:xlink="http://www.w3.org/1999/xlink" type="other">
+						<mads:genre>Television documentaries</mads:genre>
+					</mads:variant>
+					<mads:variant xmlns:xlink="http://www.w3.org/1999/xlink" type="other">
+						<mads:genre>Television documentary programs</mads:genre>
+					</mads:variant>
+					<mads:note xmlns:xlink="http://www.w3.org/1999/xlink" type="source">Moving image genre-form guide online, June 11, 2007: (Documentary: Nonfiction work defined by documentary pioneer John Grierson as the creative treatment of actuality. Grounded in some aspect of real life, documentaries may vary from a very deliberate account of facts to an extremely interpretive rendering of a subject, advocating a particular viewpoint on a political, social, or historical issue.)</mads:note>
+					<mads:note xmlns:xlink="http://www.w3.org/1999/xlink" type="source">Lopez, D. Films by genre, c1993: p. 77 (Documentary (Docu, Documentary Film, Factual Film, Non-Fiction Film, Realist Film); The word 'telementary' has been used to describe a documentary made for television. Documentaries may seek to document and inform, teach or educate on some subject or other, or simply record for posterity the doings of people and nature.)</mads:note>
+					<mads:identifier type="lccn">gf2011026207</mads:identifier>
+					<mads:identifier type="lccn" invalid="yes">sh2007025010</mads:identifier>
+					<mads:recordInfo xmlns:xlink="http://www.w3.org/1999/xlink">
+						<mads:recordOrigin>Converted from MARCXML to MADS version 2.0 (Revision 2.13)</mads:recordOrigin>
+						<mads:recordContentSource authority="marcorg">DLC</mads:recordContentSource>
+						<mads:recordChangeDate encoding="iso8601">20151224053142.0</mads:recordChangeDate>
+						<mads:recordIdentifier source="DLC">gf2011026207</mads:recordIdentifier>
+						<mads:languageOfCataloging>
+							<mads:languageTerm authority="iso639-2b" type="code">eng</mads:languageTerm>
+						</mads:languageOfCataloging>
+					</mads:recordInfo>
+				</mads:mads>
+			</zs:recordData>
+			<zs:recordPosition>5</zs:recordPosition>
+		</zs:record>
+		<zs:record>
+			<zs:recordSchema>mads</zs:recordSchema>
+			<zs:recordPacking>xml</zs:recordPacking>
+			<zs:recordData>
+				<mads:mads xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mads="http://www.loc.gov/mads/v2" version="2.0" xsi:schemaLocation="http://www.loc.gov/mads/v2 http://www.loc.gov/standards/mads/mads-2-0.xsd">
+					<mads:authority xmlns:xlink="http://www.w3.org/1999/xlink">
+						<mads:genre authority="lcgft">Documentary-style films</mads:genre>
+					</mads:authority>
+					<mads:related xmlns:xlink="http://www.w3.org/1999/xlink" type="broader">
+						<mads:genre>Fiction films</mads:genre>
+					</mads:related>
+					<mads:variant xmlns:xlink="http://www.w3.org/1999/xlink" type="other">
+						<mads:genre>Documentaries, Fake (Motion pictures)</mads:genre>
+					</mads:variant>
+					<mads:variant xmlns:xlink="http://www.w3.org/1999/xlink" type="other">
+						<mads:genre>Documentary films, Fake</mads:genre>
+					</mads:variant>
+					<mads:variant xmlns:xlink="http://www.w3.org/1999/xlink" type="other">
+						<mads:genre>Documentary films, Fictionalized</mads:genre>
+					</mads:variant>
+					<mads:variant xmlns:xlink="http://www.w3.org/1999/xlink" type="other">
+						<mads:genre>Documentary films, Mock</mads:genre>
+					</mads:variant>
+					<mads:variant xmlns:xlink="http://www.w3.org/1999/xlink" type="other">
+						<mads:genre>Fake documentaries (Motion pictures)</mads:genre>
+					</mads:variant>
+					<mads:variant xmlns:xlink="http://www.w3.org/1999/xlink" type="other">
+						<mads:genre>Fake documentary films</mads:genre>
+					</mads:variant>
+					<mads:variant xmlns:xlink="http://www.w3.org/1999/xlink" type="other">
+						<mads:genre>Fictionalized documentary films</mads:genre>
+					</mads:variant>
+					<mads:variant xmlns:xlink="http://www.w3.org/1999/xlink" type="other">
+						<mads:genre>Mock documentary films</mads:genre>
+					</mads:variant>
+					<mads:variant xmlns:xlink="http://www.w3.org/1999/xlink" type="other">
+						<mads:genre>Mockumentaries</mads:genre>
+					</mads:variant>
+					<mads:variant xmlns:xlink="http://www.w3.org/1999/xlink" type="other">
+						<mads:genre>Mockumentary films</mads:genre>
+					</mads:variant>
+					<mads:variant xmlns:xlink="http://www.w3.org/1999/xlink" type="other">
+						<mads:genre>Pseudo-documentary films</mads:genre>
+					</mads:variant>
+					<mads:variant xmlns:xlink="http://www.w3.org/1999/xlink" type="other">
+						<mads:genre>Quasi-documentary films</mads:genre>
+					</mads:variant>
+					<mads:variant xmlns:xlink="http://www.w3.org/1999/xlink" type="other">
+						<mads:genre>Semidocumentary films</mads:genre>
+					</mads:variant>
+					<mads:note xmlns:xlink="http://www.w3.org/1999/xlink" type="source">Filmunlimited Web site, Oct 13, 2000 (mockumentary)</mads:note>
+					<mads:note xmlns:xlink="http://www.w3.org/1999/xlink" type="source">Films by genre, 1993 (documenary-style film (fictionalized documentary, pseudo-documentary, quasi-documentary, semidocumentary) terms used to describe films which combine documentary techniques with the dramatic. In some instances, documentary material is mixed with fictional scenes, or events that have been taken place are reconstructed or recreated in films which resemble documentaries)</mads:note>
+					<mads:note xmlns:xlink="http://www.w3.org/1999/xlink" type="source">Internet movie database, Nov. 28, 2000 (fake-documentary)</mads:note>
+					<mads:note xmlns:xlink="http://www.w3.org/1999/xlink" type="source">Yahoo!, Nov. 28, 2000 (category: Entertainment &gt; Movies and Film &gt; Genres &gt; Mockumentaries; terms in linked resources: mock documentary; mockumentaries; fake documentary; fake documentary films)</mads:note>
+					<mads:note xmlns:xlink="http://www.w3.org/1999/xlink">Fictional films made to resemble documentary films</mads:note>
+					<mads:identifier type="lccn">gf2011026208</mads:identifier>
+					<mads:identifier type="lccn" invalid="yes">sh2007004856</mads:identifier>
+					<mads:recordInfo xmlns:xlink="http://www.w3.org/1999/xlink">
+						<mads:recordOrigin>Converted from MARCXML to MADS version 2.0 (Revision 2.13)</mads:recordOrigin>
+						<mads:recordContentSource authority="marcorg">DLC</mads:recordContentSource>
+						<mads:recordChangeDate encoding="iso8601">20151203053150.0</mads:recordChangeDate>
+						<mads:recordIdentifier source="DLC">gf2011026208</mads:recordIdentifier>
+						<mads:languageOfCataloging>
+							<mads:languageTerm authority="iso639-2b" type="code">eng</mads:languageTerm>
+						</mads:languageOfCataloging>
+					</mads:recordInfo>
+				</mads:mads>
+			</zs:recordData>
+			<zs:recordPosition>6</zs:recordPosition>
+		</zs:record>
+		<zs:record>
+			<zs:recordSchema>mads</zs:recordSchema>
+			<zs:recordPacking>xml</zs:recordPacking>
+			<zs:recordData>
+				<mads:mads xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mads="http://www.loc.gov/mads/v2" version="2.0" xsi:schemaLocation="http://www.loc.gov/mads/v2 http://www.loc.gov/standards/mads/mads-2-0.xsd">
+					<mads:authority xmlns:xlink="http://www.w3.org/1999/xlink">
+						<mads:genre authority="lcgft">Documentary-style television programs</mads:genre>
+					</mads:authority>
+					<mads:related xmlns:xlink="http://www.w3.org/1999/xlink" type="broader">
+						<mads:genre>Fiction television programs</mads:genre>
+					</mads:related>
+					<mads:variant xmlns:xlink="http://www.w3.org/1999/xlink" type="other">
+						<mads:genre>Documentaries, Fake (Television programs)</mads:genre>
+					</mads:variant>
+					<mads:variant xmlns:xlink="http://www.w3.org/1999/xlink" type="other">
+						<mads:genre>Documentary television programs, Fake</mads:genre>
+					</mads:variant>
+					<mads:variant xmlns:xlink="http://www.w3.org/1999/xlink" type="other">
+						<mads:genre>Documentary television programs, Fictionalized</mads:genre>
+					</mads:variant>
+					<mads:variant xmlns:xlink="http://www.w3.org/1999/xlink" type="other">
+						<mads:genre>Documentary television programs, Mock</mads:genre>
+					</mads:variant>
+					<mads:variant xmlns:xlink="http://www.w3.org/1999/xlink" type="other">
+						<mads:genre>Fake documentaries (Television programs)</mads:genre>
+					</mads:variant>
+					<mads:variant xmlns:xlink="http://www.w3.org/1999/xlink" type="other">
+						<mads:genre>Fake documentary television programs</mads:genre>
+					</mads:variant>
+					<mads:variant xmlns:xlink="http://www.w3.org/1999/xlink" type="other">
+						<mads:genre>Fictionalized documentary television programs</mads:genre>
+					</mads:variant>
+					<mads:variant xmlns:xlink="http://www.w3.org/1999/xlink" type="other">
+						<mads:genre>Mock documentary television programs</mads:genre>
+					</mads:variant>
+					<mads:variant xmlns:xlink="http://www.w3.org/1999/xlink" type="other">
+						<mads:genre>Mockumentaries (Television programs)</mads:genre>
+					</mads:variant>
+					<mads:variant xmlns:xlink="http://www.w3.org/1999/xlink" type="other">
+						<mads:genre>Mockumentary television programs</mads:genre>
+					</mads:variant>
+					<mads:variant xmlns:xlink="http://www.w3.org/1999/xlink" type="other">
+						<mads:genre>Pseudo-documentary television programs</mads:genre>
+					</mads:variant>
+					<mads:variant xmlns:xlink="http://www.w3.org/1999/xlink" type="other">
+						<mads:genre>Quasi-documentary television programs</mads:genre>
+					</mads:variant>
+					<mads:variant xmlns:xlink="http://www.w3.org/1999/xlink" type="other">
+						<mads:genre>Semidocumentary television programs</mads:genre>
+					</mads:variant>
+					<mads:note xmlns:xlink="http://www.w3.org/1999/xlink" type="source">Work cat.: Clowns (Television program : 1970). I clowns [VR] 1993</mads:note>
+					<mads:note xmlns:xlink="http://www.w3.org/1999/xlink" type="source">Internet movie database, Jan. 29, 2009 (Clowns, I (1971 [sic]) (TV); "a semi documentary extravaganza of, forgive the expression, Felliniesque proportions!")</mads:note>
+					<mads:note xmlns:xlink="http://www.w3.org/1999/xlink" type="source">Wikipedia, Jan. 29, 2009 (I clowns (also known as The Clowns) is a 1970 television film by Federico Fellini; it is a part-documentary, part fantasy)</mads:note>
+					<mads:note xmlns:xlink="http://www.w3.org/1999/xlink" type="source">Lo&#x301;pez, D. Films by genre, c1993 (documentary-style film (fictionalized documentary, pseudo-documentary, quasi-documentary, semidocumentary) terms used to describe films which combine documentary techniques with the dramatic. In some instances, documentary material is mixed with fictional scenes, or events that have taken place and then are reconstructed or recreated in films which resemble documentaries)</mads:note>
+					<mads:note xmlns:xlink="http://www.w3.org/1999/xlink">Fictional television programs made to resemble documentary television programs</mads:note>
+					<mads:identifier type="lccn">gf2011026209</mads:identifier>
+					<mads:identifier type="lccn" invalid="yes">sh2009025032</mads:identifier>
+					<mads:recordInfo xmlns:xlink="http://www.w3.org/1999/xlink">
+						<mads:recordOrigin>Converted from MARCXML to MADS version 2.0 (Revision 2.13)</mads:recordOrigin>
+						<mads:recordContentSource authority="marcorg">DLC</mads:recordContentSource>
+						<mads:recordChangeDate encoding="iso8601">20151203053150.0</mads:recordChangeDate>
+						<mads:recordIdentifier source="DLC">gf2011026209</mads:recordIdentifier>
+						<mads:languageOfCataloging>
+							<mads:languageTerm authority="iso639-2b" type="code">eng</mads:languageTerm>
+						</mads:languageOfCataloging>
+					</mads:recordInfo>
+				</mads:mads>
+			</zs:recordData>
+			<zs:recordPosition>7</zs:recordPosition>
+		</zs:record>
+		<zs:record>
+			<zs:recordSchema>mads</zs:recordSchema>
+			<zs:recordPacking>xml</zs:recordPacking>
+			<zs:recordData>
+				<mads:mads xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mads="http://www.loc.gov/mads/v2" version="2.0" xsi:schemaLocation="http://www.loc.gov/mads/v2 http://www.loc.gov/standards/mads/mads-2-0.xsd">
+					<mads:authority xmlns:xlink="http://www.w3.org/1999/xlink">
+						<mads:genre authority="lcgft">Educational films</mads:genre>
+					</mads:authority>
+					<mads:related xmlns:xlink="http://www.w3.org/1999/xlink" type="broader">
+						<mads:genre>Documentary films</mads:genre>
+					</mads:related>
+					<mads:related xmlns:xlink="http://www.w3.org/1999/xlink" type="broader">
+						<mads:genre>Instructional and educational works</mads:genre>
+					</mads:related>
+					<mads:variant xmlns:xlink="http://www.w3.org/1999/xlink" type="other">
+						<mads:genre>Informational films</mads:genre>
+					</mads:variant>
+					<mads:note xmlns:xlink="http://www.w3.org/1999/xlink" type="source">Moving image genre/form guide via WWW, June 6, 2008 (educational: Largely nontheatrical work intended for teaching and related informational purposes. Educational work includes classroom films and videos, historical recreations and dramatizations primarily intended to educate rather than entertain, and video or television broadcasting courses; they may be sponsored as well. Historically prolific producers of educational films include Eastman Kodak, Encyclopaedia Britannica, Coronet, and PBS; RTs: Industrial, Instructional, Social guidance, and Training)</mads:note>
+					<mads:note xmlns:xlink="http://www.w3.org/1999/xlink" type="source">Moving image materials, 1988 (educational/cultural works: Use for works which are intended primarily to inform or edify rather than to entertain, and which do not utilize an instructional format. The work should be intended for a general audience, may have cultural content, and may incidentally entertain. RT Children's works; Dance; Instruction; Music; Plays; Readings)</mads:note>
+					<mads:note xmlns:xlink="http://www.w3.org/1999/xlink">Films that are intended to impart knowledge and information, including those for classroom viewing. For films that use a structured format to teach or train the audience see Instructional films</mads:note>
+					<mads:note xmlns:xlink="http://www.w3.org/1999/xlink" type="subject example">Note under Instructional films</mads:note>
+					<mads:identifier type="lccn">gf2011026219</mads:identifier>
+					<mads:identifier type="lccn" invalid="yes">sh2008025614</mads:identifier>
+					<mads:recordInfo xmlns:xlink="http://www.w3.org/1999/xlink">
+						<mads:recordOrigin>Converted from MARCXML to MADS version 2.0 (Revision 2.13)</mads:recordOrigin>
+						<mads:recordContentSource authority="marcorg">DLC</mads:recordContentSource>
+						<mads:recordChangeDate encoding="iso8601">20160206053140.0</mads:recordChangeDate>
+						<mads:recordIdentifier source="DLC">gf2011026219</mads:recordIdentifier>
+						<mads:languageOfCataloging>
+							<mads:languageTerm authority="iso639-2b" type="code">eng</mads:languageTerm>
+						</mads:languageOfCataloging>
+					</mads:recordInfo>
+				</mads:mads>
+			</zs:recordData>
+			<zs:recordPosition>8</zs:recordPosition>
+		</zs:record>
+		<zs:record>
+			<zs:recordSchema>mads</zs:recordSchema>
+			<zs:recordPacking>xml</zs:recordPacking>
+			<zs:recordData>
+				<mads:mads xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mads="http://www.loc.gov/mads/v2" version="2.0" xsi:schemaLocation="http://www.loc.gov/mads/v2 http://www.loc.gov/standards/mads/mads-2-0.xsd">
+					<mads:authority xmlns:xlink="http://www.w3.org/1999/xlink">
+						<mads:genre authority="lcgft">Educational television programs</mads:genre>
+					</mads:authority>
+					<mads:related xmlns:xlink="http://www.w3.org/1999/xlink" type="broader">
+						<mads:genre>Documentary television programs</mads:genre>
+					</mads:related>
+					<mads:related xmlns:xlink="http://www.w3.org/1999/xlink" type="broader">
+						<mads:genre>Instructional and educational works</mads:genre>
+					</mads:related>
+					<mads:variant xmlns:xlink="http://www.w3.org/1999/xlink" type="other">
+						<mads:genre>Informational television programs</mads:genre>
+					</mads:variant>
+					<mads:note xmlns:xlink="http://www.w3.org/1999/xlink" type="source">Moving image genre-form guide online, November 15, 2007 (Educational: largely nontheatrical work intended for teaching and related informational purposes. Educational work includes classroom films and videos, historical recreations and dramatizations primarily intended to educate rather than entertain, and video or television broadcasting courses)</mads:note>
+					<mads:note xmlns:xlink="http://www.w3.org/1999/xlink" type="source">Yee, M.M. Moving image materials, 1988: p. 44 (Educational/cultural films and video: works which are intended primarily to inform or edify rather than to entertain, and which do not utilize an instructional format)</mads:note>
+					<mads:note xmlns:xlink="http://www.w3.org/1999/xlink">Television programs intended to impart knowledge and information. For television programs that use a structured format to teach or train the audience see Instructional television programs</mads:note>
+					<mads:note xmlns:xlink="http://www.w3.org/1999/xlink" type="subject example">Note under Instructional television programs</mads:note>
+					<mads:identifier type="lccn">gf2011026221</mads:identifier>
+					<mads:identifier type="lccn" invalid="yes">sh2007025575</mads:identifier>
+					<mads:recordInfo xmlns:xlink="http://www.w3.org/1999/xlink">
+						<mads:recordOrigin>Converted from MARCXML to MADS version 2.0 (Revision 2.13)</mads:recordOrigin>
+						<mads:recordContentSource authority="marcorg">DLC</mads:recordContentSource>
+						<mads:recordChangeDate encoding="iso8601">20160206053142.0</mads:recordChangeDate>
+						<mads:recordIdentifier source="DLC">gf2011026221</mads:recordIdentifier>
+						<mads:languageOfCataloging>
+							<mads:languageTerm authority="iso639-2b" type="code">eng</mads:languageTerm>
+						</mads:languageOfCataloging>
+					</mads:recordInfo>
+				</mads:mads>
+			</zs:recordData>
+			<zs:recordPosition>9</zs:recordPosition>
+		</zs:record>
+		<zs:record>
+			<zs:recordSchema>mads</zs:recordSchema>
+			<zs:recordPacking>xml</zs:recordPacking>
+			<zs:recordData>
+				<mads:mads xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mads="http://www.loc.gov/mads/v2" version="2.0" xsi:schemaLocation="http://www.loc.gov/mads/v2 http://www.loc.gov/standards/mads/mads-2-0.xsd">
+					<mads:authority xmlns:xlink="http://www.w3.org/1999/xlink">
+						<mads:genre authority="lcgft">Ethnographic films</mads:genre>
+					</mads:authority>
+					<mads:related xmlns:xlink="http://www.w3.org/1999/xlink" type="broader">
+						<mads:genre>Documentary films</mads:genre>
+					</mads:related>
+					<mads:related xmlns:xlink="http://www.w3.org/1999/xlink" type="broader">
+						<mads:genre>Ethnographies</mads:genre>
+					</mads:related>
+					<mads:variant xmlns:xlink="http://www.w3.org/1999/xlink" type="other">
+						<mads:genre>Anthropological films</mads:genre>
+					</mads:variant>
+					<mads:variant xmlns:xlink="http://www.w3.org/1999/xlink" type="other">
+						<mads:genre>Ethnological films</mads:genre>
+					</mads:variant>
+					<mads:note xmlns:xlink="http://www.w3.org/1999/xlink" type="source">Work cat.: Dead birds [VR] 199-, c1964 (Describes a photographic and ethnographic study which was sponsored by the Peabody Museum from Feb. 1961 to Nov. 1963 of the Dani, a people dwelling in the Grand Valley of the Baliem, high in the mountains of West New Guinea)</mads:note>
+					<mads:note xmlns:xlink="http://www.w3.org/1999/xlink" type="source">Hosay Trinidad [VR] 1999: container ("An ethnographic film about the observance of Shi&#x2BB;ite Muharram rites on the island of Trinidad")</mads:note>
+					<mads:note xmlns:xlink="http://www.w3.org/1999/xlink" type="source">A l'ombre du soleil [VR] 1998: container ("A film about a Dogon funeral and enthronement ritual.")</mads:note>
+					<mads:note xmlns:xlink="http://www.w3.org/1999/xlink" type="source">Lopez, D. Films by genre, c1993: p. 79 (subcategory Ethnographic Film (Anthropological Film, Nature Film) in category Documentary. Ethnographic films deal with the cultural and sociological aspects of different peoples. They may focus on primitive or modern societies, but they always seek to fathom the beliefs and societal systems by which the societies operate so that others may learn to understand them. In this respect, they are different from most travel films which concentrate superficially on a cultural group or on its most glamorous aspects)</mads:note>
+					<mads:note xmlns:xlink="http://www.w3.org/1999/xlink" type="source">Yee, M.M. Moving image materials, 1988 (Anthropological works. Use for nonfiction film or video whose subject is or prominently includes the study of man, his physical character, races, environmental and social relations, and culture. Use to describe field footage generated by anthropologists for study and research purposes. UF Ethnographic works. BT Documentaries and factual works)</mads:note>
+					<mads:note xmlns:xlink="http://www.w3.org/1999/xlink" type="source">Taves, B. The moving image genre-form guide, via WWW, Mar. 27, 2002 (Ethnographic. Nonfiction work documenting specific cultures or types of peoples, including field footage by cultural anthropologists or researchers and edited, analytical work seeking to understand the beliefs, customs, and social systems of various cultures or ethnic groups. Note: Do not use for general histories or analyses of man. For superficial appearances of cultures in work focusing on travel and places, use Travelogue. Not necessary to also use Documentary, since that is implied by the term Ethnographic. Film examples: The ax fight; The holy ghost people; Nanook of the North; The Nuer)</mads:note>
+					<mads:identifier type="lccn">gf2011026232</mads:identifier>
+					<mads:identifier type="lccn" invalid="yes">sh2007025002</mads:identifier>
+					<mads:recordInfo xmlns:xlink="http://www.w3.org/1999/xlink">
+						<mads:recordOrigin>Converted from MARCXML to MADS version 2.0 (Revision 2.13)</mads:recordOrigin>
+						<mads:recordContentSource authority="marcorg">DLC</mads:recordContentSource>
+						<mads:recordChangeDate encoding="iso8601">20180417053559.0</mads:recordChangeDate>
+						<mads:recordIdentifier source="DLC">gf2011026232</mads:recordIdentifier>
+						<mads:languageOfCataloging>
+							<mads:languageTerm authority="iso639-2b" type="code">eng</mads:languageTerm>
+						</mads:languageOfCataloging>
+					</mads:recordInfo>
+				</mads:mads>
+			</zs:recordData>
+			<zs:recordPosition>10</zs:recordPosition>
+		</zs:record>
+		<zs:record>
+			<zs:recordSchema>mads</zs:recordSchema>
+			<zs:recordPacking>xml</zs:recordPacking>
+			<zs:recordData>
+				<mads:mads xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mads="http://www.loc.gov/mads/v2" version="2.0" xsi:schemaLocation="http://www.loc.gov/mads/v2 http://www.loc.gov/standards/mads/mads-2-0.xsd">
+					<mads:authority xmlns:xlink="http://www.w3.org/1999/xlink">
+						<mads:genre authority="lcgft">Ethnographic television programs</mads:genre>
+					</mads:authority>
+					<mads:related xmlns:xlink="http://www.w3.org/1999/xlink" type="broader">
+						<mads:genre>Documentary television programs</mads:genre>
+					</mads:related>
+					<mads:related xmlns:xlink="http://www.w3.org/1999/xlink" type="broader">
+						<mads:genre>Ethnographies</mads:genre>
+					</mads:related>
+					<mads:variant xmlns:xlink="http://www.w3.org/1999/xlink" type="other">
+						<mads:genre>Anthropological television programs</mads:genre>
+					</mads:variant>
+					<mads:variant xmlns:xlink="http://www.w3.org/1999/xlink" type="other">
+						<mads:genre>Ethnological television programs</mads:genre>
+					</mads:variant>
+					<mads:note xmlns:xlink="http://www.w3.org/1999/xlink" type="source">Taves, B. The moving image genre-form guide, via WWW, Mar. 27, 2002 (Ethnographic. Nonfiction work documenting specific cultures or types of peoples, including field footage by cultural anthropologists or researchers and edited, analytical work seeking to understand the beliefs, customs, and social systems of various cultures or ethnic groups. Note: Do not use for general histories or analyses of man. For superficial appearances of cultures in work focusing on travel and places, use Travelogue. Not necessary to also use Documentary, since that is implied by the term Ethnographic. TV examples: An American family; Bushmen of the Kalahari)</mads:note>
+					<mads:note xmlns:xlink="http://www.w3.org/1999/xlink" type="source">Yee, M.M. Moving image materials, 1988 (Anthropological works. Use for nonfiction film or video whose subject is or prominently includes the study of man, his physical character, races, environmental and social relations, and culture. Use to describe field footage generated by anthropologists for study and research purposes. UF Ethnographic works. BT Documentaries and factual works)</mads:note>
+					<mads:note xmlns:xlink="http://www.w3.org/1999/xlink" type="source">Lopez, D. Films by genre, c1993: p. 79 (subcategory Ethnographic Film (Anthropological Film, Nature Film) in category Documentary. Ethnographic films deal with the cultural and sociological aspects of different peoples. They may focus on primitive or modern societies, but they always seek to fathom the beliefs and societal systems by which the societies operate so that others may learn to understand them. In this respect, they are different from most travel films which concentrate superficially on a cultural group or on its most glamorous aspects)</mads:note>
+					<mads:identifier type="lccn">gf2011026233</mads:identifier>
+					<mads:identifier type="lccn" invalid="yes">sh2007025291</mads:identifier>
+					<mads:recordInfo xmlns:xlink="http://www.w3.org/1999/xlink">
+						<mads:recordOrigin>Converted from MARCXML to MADS version 2.0 (Revision 2.13)</mads:recordOrigin>
+						<mads:recordContentSource authority="marcorg">DLC</mads:recordContentSource>
+						<mads:recordChangeDate encoding="iso8601">20180417053600.0</mads:recordChangeDate>
+						<mads:recordIdentifier source="DLC">gf2011026233</mads:recordIdentifier>
+						<mads:languageOfCataloging>
+							<mads:languageTerm authority="iso639-2b" type="code">eng</mads:languageTerm>
+						</mads:languageOfCataloging>
+					</mads:recordInfo>
+				</mads:mads>
+			</zs:recordData>
+			<zs:recordPosition>11</zs:recordPosition>
+		</zs:record>
+		<zs:record>
+			<zs:recordSchema>mads</zs:recordSchema>
+			<zs:recordPacking>xml</zs:recordPacking>
+			<zs:recordData>
+				<mads:mads xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mads="http://www.loc.gov/mads/v2" version="2.0" xsi:schemaLocation="http://www.loc.gov/mads/v2 http://www.loc.gov/standards/mads/mads-2-0.xsd">
+					<mads:authority xmlns:xlink="http://www.w3.org/1999/xlink">
+						<mads:genre authority="lcgft">Historical reenactments (Motion pictures)</mads:genre>
+					</mads:authority>
+					<mads:related xmlns:xlink="http://www.w3.org/1999/xlink" type="broader">
+						<mads:genre>Documentary films</mads:genre>
+					</mads:related>
+					<mads:related xmlns:xlink="http://www.w3.org/1999/xlink" type="broader">
+						<mads:genre>Historical films</mads:genre>
+					</mads:related>
+					<mads:variant xmlns:xlink="http://www.w3.org/1999/xlink" type="other">
+						<mads:genre>Reenactments, Historical (Motion picture)</mads:genre>
+					</mads:variant>
+					<mads:note xmlns:xlink="http://www.w3.org/1999/xlink" type="source">Work cat.: West to Oregon [VR] : along the Oregon Trail, 1993 (documentary film that includes costumed reenactments)</mads:note>
+					<mads:note xmlns:xlink="http://www.w3.org/1999/xlink" type="source">LCSH (Historical reenactments)</mads:note>
+					<mads:identifier type="lccn">gf2011026313</mads:identifier>
+					<mads:identifier type="lccn" invalid="yes">sh2009025043</mads:identifier>
+					<mads:recordInfo xmlns:xlink="http://www.w3.org/1999/xlink">
+						<mads:recordOrigin>Converted from MARCXML to MADS version 2.0 (Revision 2.13)</mads:recordOrigin>
+						<mads:recordContentSource authority="marcorg">DLC</mads:recordContentSource>
+						<mads:recordChangeDate encoding="iso8601">20111027074631.0</mads:recordChangeDate>
+						<mads:recordIdentifier source="DLC">gf2011026313</mads:recordIdentifier>
+						<mads:languageOfCataloging>
+							<mads:languageTerm authority="iso639-2b" type="code">eng</mads:languageTerm>
+						</mads:languageOfCataloging>
+					</mads:recordInfo>
+				</mads:mads>
+			</zs:recordData>
+			<zs:recordPosition>12</zs:recordPosition>
+		</zs:record>
+		<zs:record>
+			<zs:recordSchema>mads</zs:recordSchema>
+			<zs:recordPacking>xml</zs:recordPacking>
+			<zs:recordData>
+				<mads:mads xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mads="http://www.loc.gov/mads/v2" version="2.0" xsi:schemaLocation="http://www.loc.gov/mads/v2 http://www.loc.gov/standards/mads/mads-2-0.xsd">
+					<mads:authority xmlns:xlink="http://www.w3.org/1999/xlink">
+						<mads:genre authority="lcgft">Historical reenactments (Television programs)</mads:genre>
+					</mads:authority>
+					<mads:related xmlns:xlink="http://www.w3.org/1999/xlink" type="broader">
+						<mads:genre>Documentary television programs</mads:genre>
+					</mads:related>
+					<mads:related xmlns:xlink="http://www.w3.org/1999/xlink" type="broader">
+						<mads:genre>Historical television programs</mads:genre>
+					</mads:related>
+					<mads:variant xmlns:xlink="http://www.w3.org/1999/xlink" type="other">
+						<mads:genre>Reenactments, Historical (Television programs)</mads:genre>
+					</mads:variant>
+					<mads:variant xmlns:xlink="http://www.w3.org/1999/xlink" type="other">
+						<mads:genre>Television historical reenactments</mads:genre>
+					</mads:variant>
+					<mads:note xmlns:xlink="http://www.w3.org/1999/xlink" type="source">Work cat.: D-Day, 6.6.44 [VR] 2005 (documentary that includes historical reenactments)</mads:note>
+					<mads:note xmlns:xlink="http://www.w3.org/1999/xlink" type="source">Holocaust on trial [VR] c2000 (documentary that includes a reenactment of courtroom proceedings)</mads:note>
+					<mads:note xmlns:xlink="http://www.w3.org/1999/xlink" type="source">Dunkirk [VR] 2005 (documentary that combines contemporary footage and reenactments to tell the story in 3 episodes)</mads:note>
+					<mads:note xmlns:xlink="http://www.w3.org/1999/xlink" type="source">LCSH (Historical reenactments)</mads:note>
+					<mads:identifier type="lccn">gf2011026314</mads:identifier>
+					<mads:identifier type="lccn" invalid="yes">sh2009025042</mads:identifier>
+					<mads:recordInfo xmlns:xlink="http://www.w3.org/1999/xlink">
+						<mads:recordOrigin>Converted from MARCXML to MADS version 2.0 (Revision 2.13)</mads:recordOrigin>
+						<mads:recordContentSource authority="marcorg">DLC</mads:recordContentSource>
+						<mads:recordChangeDate encoding="iso8601">20111027074631.0</mads:recordChangeDate>
+						<mads:recordIdentifier source="DLC">gf2011026314</mads:recordIdentifier>
+						<mads:languageOfCataloging>
+							<mads:languageTerm authority="iso639-2b" type="code">eng</mads:languageTerm>
+						</mads:languageOfCataloging>
+					</mads:recordInfo>
+				</mads:mads>
+			</zs:recordData>
+			<zs:recordPosition>13</zs:recordPosition>
+		</zs:record>
+		<zs:record>
+			<zs:recordSchema>mads</zs:recordSchema>
+			<zs:recordPacking>xml</zs:recordPacking>
+			<zs:recordData>
+				<mads:mads xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mads="http://www.loc.gov/mads/v2" version="2.0" xsi:schemaLocation="http://www.loc.gov/mads/v2 http://www.loc.gov/standards/mads/mads-2-0.xsd">
+					<mads:authority xmlns:xlink="http://www.w3.org/1999/xlink">
+						<mads:genre authority="lcgft">Rock concert films</mads:genre>
+					</mads:authority>
+					<mads:related xmlns:xlink="http://www.w3.org/1999/xlink" type="broader">
+						<mads:genre>Concert films</mads:genre>
+					</mads:related>
+					<mads:variant xmlns:xlink="http://www.w3.org/1999/xlink" type="other">
+						<mads:genre>Rock concert documentaries</mads:genre>
+					</mads:variant>
+					<mads:variant xmlns:xlink="http://www.w3.org/1999/xlink" type="other">
+						<mads:genre>Rock concert documentary films</mads:genre>
+					</mads:variant>
+					<mads:variant xmlns:xlink="http://www.w3.org/1999/xlink" type="other">
+						<mads:genre>Rock docs (Motion pictures)</mads:genre>
+					</mads:variant>
+					<mads:variant xmlns:xlink="http://www.w3.org/1999/xlink" type="other">
+						<mads:genre>Rock documentaries</mads:genre>
+					</mads:variant>
+					<mads:variant xmlns:xlink="http://www.w3.org/1999/xlink" type="other">
+						<mads:genre>Rock documentary films</mads:genre>
+					</mads:variant>
+					<mads:note xmlns:xlink="http://www.w3.org/1999/xlink" type="source">Work cat.: Talking Heads (Musical group). Stop making sense [VR] 1999 (film of the Talking Heads in concert)</mads:note>
+					<mads:note xmlns:xlink="http://www.w3.org/1999/xlink" type="source">The last waltz [VR] 2002 (The Band, one of rock's superstar groups, decided to call it quits after sixteen grueling years on the road. The group held this farewell concert on Thanksgiving Day, 1976, at San Francisco's Winterland, the site of their first performance.)</mads:note>
+					<mads:note xmlns:xlink="http://www.w3.org/1999/xlink" type="source">Gimme shelter [VR] 2000 (A documentary film of the Rolling Stones on tour in 1969, focusing on the concert at the Altamont Speedway in California)</mads:note>
+					<mads:note xmlns:xlink="http://www.w3.org/1999/xlink" type="source">Woodstock [VR] c1997</mads:note>
+					<mads:note xmlns:xlink="http://www.w3.org/1999/xlink" type="source">Lopez, D. Films by genre, c1993: subgenre listed under Musical Rock Concert Films (Concert Film, Rock-Concert Documentary, Rock Doc. They fall under the category of documentaries and are a permanent record of the actual performance or happening in which folk or rock music is played to its audience, either in the open air or in enclosed locales. See also Rock Film)</mads:note>
+					<mads:note xmlns:xlink="http://www.w3.org/1999/xlink" type="source">Konigsberg, I. The complete film dict., 1998: concert film (A film that records a live musical performance before a public audience. In commercial cinema, the form has largely been relegated to such rock documentaries as Michael Wadleigh's Woodstock (1970) ... and Jonathan Demme's Stop Making Sense (1984), a purer record of a concert by the Talking Heads; rock documentary: A type of concert film that presents a performance of rock music, frequently employing filmic technique to create for the audience the experience of attending such a performance while also seeming to make some kind of social statement about the music and the culture which produces it)</mads:note>
+					<mads:identifier type="lccn">gf2011026538</mads:identifier>
+					<mads:identifier type="lccn" invalid="yes">sh2007006486</mads:identifier>
+					<mads:recordInfo xmlns:xlink="http://www.w3.org/1999/xlink">
+						<mads:recordOrigin>Converted from MARCXML to MADS version 2.0 (Revision 2.13)</mads:recordOrigin>
+						<mads:recordContentSource authority="marcorg">DLC</mads:recordContentSource>
+						<mads:recordChangeDate encoding="iso8601">20151229053138.0</mads:recordChangeDate>
+						<mads:recordIdentifier source="DLC">gf2011026538</mads:recordIdentifier>
+						<mads:languageOfCataloging>
+							<mads:languageTerm authority="iso639-2b" type="code">eng</mads:languageTerm>
+						</mads:languageOfCataloging>
+					</mads:recordInfo>
+				</mads:mads>
+			</zs:recordData>
+			<zs:recordPosition>14</zs:recordPosition>
+		</zs:record>
+		<zs:record>
+			<zs:recordSchema>mads</zs:recordSchema>
+			<zs:recordPacking>xml</zs:recordPacking>
+			<zs:recordData>
+				<mads:mads xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mads="http://www.loc.gov/mads/v2" version="2.0" xsi:schemaLocation="http://www.loc.gov/mads/v2 http://www.loc.gov/standards/mads/mads-2-0.xsd">
+					<mads:authority xmlns:xlink="http://www.w3.org/1999/xlink">
+						<mads:genre authority="lcgft">Travelogues (Motion pictures)</mads:genre>
+					</mads:authority>
+					<mads:related xmlns:xlink="http://www.w3.org/1999/xlink" type="broader">
+						<mads:genre>Documentary films</mads:genre>
+					</mads:related>
+					<mads:related xmlns:xlink="http://www.w3.org/1999/xlink" type="broader">
+						<mads:genre>Informational works</mads:genre>
+					</mads:related>
+					<mads:variant xmlns:xlink="http://www.w3.org/1999/xlink" type="other">
+						<mads:genre>Film travelogues</mads:genre>
+					</mads:variant>
+					<mads:variant xmlns:xlink="http://www.w3.org/1999/xlink" type="other">
+						<mads:genre>Travel lecture films</mads:genre>
+					</mads:variant>
+					<mads:variant xmlns:xlink="http://www.w3.org/1999/xlink" type="other">
+						<mads:genre>Travelogs (Motion pictures)</mads:genre>
+					</mads:variant>
+					<mads:variant xmlns:xlink="http://www.w3.org/1999/xlink" type="other">
+						<mads:genre>Travelogue films</mads:genre>
+					</mads:variant>
+					<mads:note xmlns:xlink="http://www.w3.org/1999/xlink" type="source">Moving image genre-form guide online, February 21, 2008 (Travelogue: nonfiction work featuring or promoting geographic or cultural location(s), often in a romanticized manner. Includes early silent scenic films; moving images that accompany "tour" lectures; travel documentaries; and sponsored work by transportation companies, travel agencies, chambers of commerce, national parks, and other entities that promote modes of transportation, resorts, vacation areas, and other locations)</mads:note>
+					<mads:note xmlns:xlink="http://www.w3.org/1999/xlink" type="source">Yee, M.M. Moving image materials, 1988: p. 100 (Travelogues: use for nonfiction films or video which record travels. UF Travel works (Nonfiction); Travelogs)</mads:note>
+					<mads:note xmlns:xlink="http://www.w3.org/1999/xlink" type="source">African paradise, 2007: container (travel lecture film)</mads:note>
+					<mads:note xmlns:xlink="http://www.w3.org/1999/xlink">Nonfiction films that depict travel, peoples, and places</mads:note>
+					<mads:identifier type="lccn">gf2011026704</mads:identifier>
+					<mads:identifier type="lccn" invalid="yes">sh2008025534</mads:identifier>
+					<mads:recordInfo xmlns:xlink="http://www.w3.org/1999/xlink">
+						<mads:recordOrigin>Converted from MARCXML to MADS version 2.0 (Revision 2.13)</mads:recordOrigin>
+						<mads:recordContentSource authority="marcorg">DLC</mads:recordContentSource>
+						<mads:recordChangeDate encoding="iso8601">20160218053147.0</mads:recordChangeDate>
+						<mads:recordIdentifier source="DLC">gf2011026704</mads:recordIdentifier>
+						<mads:languageOfCataloging>
+							<mads:languageTerm authority="iso639-2b" type="code">eng</mads:languageTerm>
+						</mads:languageOfCataloging>
+					</mads:recordInfo>
+				</mads:mads>
+			</zs:recordData>
+			<zs:recordPosition>15</zs:recordPosition>
+		</zs:record>
+		<zs:record>
+			<zs:recordSchema>mads</zs:recordSchema>
+			<zs:recordPacking>xml</zs:recordPacking>
+			<zs:recordData>
+				<mads:mads xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mads="http://www.loc.gov/mads/v2" version="2.0" xsi:schemaLocation="http://www.loc.gov/mads/v2 http://www.loc.gov/standards/mads/mads-2-0.xsd">
+					<mads:authority xmlns:xlink="http://www.w3.org/1999/xlink">
+						<mads:genre authority="lcgft">Travelogues (Radio programs)</mads:genre>
+					</mads:authority>
+					<mads:related xmlns:xlink="http://www.w3.org/1999/xlink" type="broader">
+						<mads:genre>Documentary radio programs</mads:genre>
+					</mads:related>
+					<mads:related xmlns:xlink="http://www.w3.org/1999/xlink" type="broader">
+						<mads:genre>Informational works</mads:genre>
+					</mads:related>
+					<mads:variant xmlns:xlink="http://www.w3.org/1999/xlink" type="other">
+						<mads:genre>Travel radio programs</mads:genre>
+					</mads:variant>
+					<mads:variant xmlns:xlink="http://www.w3.org/1999/xlink" type="other">
+						<mads:genre>Travelogs (Radio programs)</mads:genre>
+					</mads:variant>
+					<mads:variant xmlns:xlink="http://www.w3.org/1999/xlink" type="other">
+						<mads:genre>Travelogue radio programs</mads:genre>
+					</mads:variant>
+					<mads:note xmlns:xlink="http://www.w3.org/1999/xlink" type="source">Radio form/genre terms guide, via WWW, Nov. 29, 2007 (Travelogues: SN Nonfictional programs that record trips and/or describe travels; Examples: Where have you been?; Pan American holiday; Vagabond traveller; Television travelogue)</mads:note>
+					<mads:note xmlns:xlink="http://www.w3.org/1999/xlink">Nonfiction radio programs that depict travel, peoples, and places</mads:note>
+					<mads:identifier type="lccn">gf2011026705</mads:identifier>
+					<mads:identifier type="lccn" invalid="yes">sh2007025605</mads:identifier>
+					<mads:recordInfo xmlns:xlink="http://www.w3.org/1999/xlink">
+						<mads:recordOrigin>Converted from MARCXML to MADS version 2.0 (Revision 2.13)</mads:recordOrigin>
+						<mads:recordContentSource authority="marcorg">DLC</mads:recordContentSource>
+						<mads:recordChangeDate encoding="iso8601">20160218053147.0</mads:recordChangeDate>
+						<mads:recordIdentifier source="DLC">gf2011026705</mads:recordIdentifier>
+						<mads:languageOfCataloging>
+							<mads:languageTerm authority="iso639-2b" type="code">eng</mads:languageTerm>
+						</mads:languageOfCataloging>
+					</mads:recordInfo>
+				</mads:mads>
+			</zs:recordData>
+			<zs:recordPosition>16</zs:recordPosition>
+		</zs:record>
+		<zs:record>
+			<zs:recordSchema>mads</zs:recordSchema>
+			<zs:recordPacking>xml</zs:recordPacking>
+			<zs:recordData>
+				<mads:mads xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mads="http://www.loc.gov/mads/v2" version="2.0" xsi:schemaLocation="http://www.loc.gov/mads/v2 http://www.loc.gov/standards/mads/mads-2-0.xsd">
+					<mads:authority xmlns:xlink="http://www.w3.org/1999/xlink">
+						<mads:genre authority="lcgft">Travelogues (Television programs)</mads:genre>
+					</mads:authority>
+					<mads:related xmlns:xlink="http://www.w3.org/1999/xlink" type="broader">
+						<mads:genre>Documentary television programs</mads:genre>
+					</mads:related>
+					<mads:related xmlns:xlink="http://www.w3.org/1999/xlink" type="broader">
+						<mads:genre>Informational works</mads:genre>
+					</mads:related>
+					<mads:variant xmlns:xlink="http://www.w3.org/1999/xlink" type="other">
+						<mads:genre>Television travelogues</mads:genre>
+					</mads:variant>
+					<mads:variant xmlns:xlink="http://www.w3.org/1999/xlink" type="other">
+						<mads:genre>Travel shows</mads:genre>
+					</mads:variant>
+					<mads:variant xmlns:xlink="http://www.w3.org/1999/xlink" type="other">
+						<mads:genre>Travelogs (Television programs)</mads:genre>
+					</mads:variant>
+					<mads:variant xmlns:xlink="http://www.w3.org/1999/xlink" type="other">
+						<mads:genre>Travelogue television programs</mads:genre>
+					</mads:variant>
+					<mads:note xmlns:xlink="http://www.w3.org/1999/xlink" type="source">Moving image genre-form guide online, February 21, 2008 (Travelogue: nonfiction work featuring or promoting geographic or cultural location(s), often in a romanticized manner. Includes early silent scenic films; moving images that accompany "tour" lectures; travel documentaries; and sponsored work by transportation companies, travel agencies, chambers of commerce, national parks, and other entities that promote modes of transportation, resorts, vacation areas, and other locations)</mads:note>
+					<mads:note xmlns:xlink="http://www.w3.org/1999/xlink" type="source">Yee, M.M. Moving image materials, 1988: p. 100 (Travelogues: use for nonfiction films or video which record travels. UF Travel works (Nonfiction); Travelogs)</mads:note>
+					<mads:note xmlns:xlink="http://www.w3.org/1999/xlink">Nonfiction television programs that depict travel, peoples, and places</mads:note>
+					<mads:identifier type="lccn">gf2011026706</mads:identifier>
+					<mads:identifier type="lccn" invalid="yes">sh2008025535</mads:identifier>
+					<mads:recordInfo xmlns:xlink="http://www.w3.org/1999/xlink">
+						<mads:recordOrigin>Converted from MARCXML to MADS version 2.0 (Revision 2.13)</mads:recordOrigin>
+						<mads:recordContentSource authority="marcorg">DLC</mads:recordContentSource>
+						<mads:recordChangeDate encoding="iso8601">20160218053147.0</mads:recordChangeDate>
+						<mads:recordIdentifier source="DLC">gf2011026706</mads:recordIdentifier>
+						<mads:languageOfCataloging>
+							<mads:languageTerm authority="iso639-2b" type="code">eng</mads:languageTerm>
+						</mads:languageOfCataloging>
+					</mads:recordInfo>
+				</mads:mads>
+			</zs:recordData>
+			<zs:recordPosition>17</zs:recordPosition>
+		</zs:record>
+		<zs:record>
+			<zs:recordSchema>mads</zs:recordSchema>
+			<zs:recordPacking>xml</zs:recordPacking>
+			<zs:recordData>
+				<mads:mads xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mads="http://www.loc.gov/mads/v2" version="2.0" xsi:schemaLocation="http://www.loc.gov/mads/v2 http://www.loc.gov/standards/mads/mads-2-0.xsd">
+					<mads:authority xmlns:xlink="http://www.w3.org/1999/xlink">
+						<mads:genre authority="lcgft">Documentary comics</mads:genre>
+					</mads:authority>
+					<mads:related xmlns:xlink="http://www.w3.org/1999/xlink" type="broader">
+						<mads:genre>Nonfiction comics</mads:genre>
+					</mads:related>
+					<mads:note xmlns:xlink="http://www.w3.org/1999/xlink" type="source">LCSH, Oct. 21, 2014 (Documentary comic books, strips, etc.)</mads:note>
+					<mads:note xmlns:xlink="http://www.w3.org/1999/xlink" type="source">Key Terms in comics studies, 2022: p. 93 ("In comics studies the term documentary has emerged in response to the notable expansion in comics works that uses witnessing as methodology and presents 'encounter' as a prominent feature. However, documentary can also describe the process of using archival sources to retrospectively construct a narrative"; "Documentary comics have been situated in relation to a range of historical precursors, including but not limited to illustrated journalism"; "The umbrella term documentary captures concerns shared by comics journalism, biography, autobiography and comics performing advocacy: narrative construction and notions of authenticity, credibility and claims to truth, questions of intent, affect and the ethics of representation")</mads:note>
+					<mads:note xmlns:xlink="http://www.w3.org/1999/xlink" type="source">Pedri, N. A concise dictionary of comics, 2022: p. 29 ("Documentary comics: comics that claim to truthfully represent historical people, sociohistorical issues, and events in specific, actual contexts")</mads:note>
+					<mads:note xmlns:xlink="http://www.w3.org/1999/xlink" type="source">Mickwitz, N. Documentary comics : graphic truth-telling in a skeptical age, 2016: p. 7 ("documentary comics" concerned with "the politics of representation historically embedded in social realism") p. 8 ("'documentary manga'" as "manga with pedagogical aims and factual content") p. 9 ("those comics that take the actual and historical real as their subject and documentary (more commonly assumed to be identified by its use of recording technologies) share an ambition to narrate and visually represent real people, events, and experiences, and consequently offer their readers and audiences comparable positions"; "documentary involves construction rather than transparent duplication of the reality it records")</mads:note>
+					<mads:note xmlns:xlink="http://www.w3.org/1999/xlink" type="source">Jordan Schnitzer Museum of Art. Art of the news : comics journalism, 2021: p. 311 (Peruvian comics artist Jesus Cossio prefers "to call what I do documentary comics" because he "did not do any journalistic fieldwork, but looked for [already created] documentation" about the topics of his comics)</mads:note>
+					<mads:note xmlns:xlink="http://www.w3.org/1999/xlink" type="source">Schlichting, L. Authorship in comics journalism, 2021: p. 42 (journalistic comics "are sometimes wrongly equated with 'documentary comics.' But while documentary 'is about the presentation of evidence' ... the journalistic form of reportage negotiates between 'artistically reshaped journalism and journalistically legitimized art'")</mads:note>
+					<mads:note xmlns:xlink="http://www.w3.org/1999/xlink" type="source">Oxford English dictionary, viewed May 15, 2023 (Documentary: 4. "Factual, realistic; applied esp. to a film or literary work, etc., based on real events or circumstances, and intended primarily for instruction or record purposes")</mads:note>
+					<mads:note xmlns:xlink="http://www.w3.org/1999/xlink" type="source">Schlichting, L. Introduction to graphic realities : comics as documentary, history, and journalism, in ImageText v. 11, iss. 1, 2019, viewed May 18, 2023 ("with the pioneering work of Joe Sacco, comics has also been fruitfully employed to materialize the experiences of others, often from marginalized groups. Yet, as this special issue shows, graphic narrative forms a long-standing tradition of addressing 'realities' that precedes the current format of the graphic reportage. Comics have been analyzed and theorized as works of documentary ..., history ... and journalism"; "These different genres all face the challenge to do justice to the lives of other people, with a keen awareness of their responsibilities to the encountered witnesses")</mads:note>
+					<mads:note xmlns:xlink="http://www.w3.org/1999/xlink">Comics intended to document reality to instruct, educate, or maintain a historical record. For comics that employ journalistic techniques, such as interviews, to report on news or nonfiction topics, see Comics journalism</mads:note>
+					<mads:note xmlns:xlink="http://www.w3.org/1999/xlink" type="subject example">Note under Comics journalism</mads:note>
+					<mads:identifier type="lccn">gf2014026292</mads:identifier>
+					<mads:recordInfo xmlns:xlink="http://www.w3.org/1999/xlink">
+						<mads:recordOrigin>Converted from MARCXML to MADS version 2.0 (Revision 2.13)</mads:recordOrigin>
+						<mads:recordContentSource authority="marcorg">IlChALCS</mads:recordContentSource>
+						<mads:recordChangeDate encoding="iso8601">20230811121809.1</mads:recordChangeDate>
+						<mads:recordIdentifier source="DLC">gf2014026292</mads:recordIdentifier>
+						<mads:languageOfCataloging>
+							<mads:languageTerm authority="iso639-2b" type="code">eng</mads:languageTerm>
+						</mads:languageOfCataloging>
+					</mads:recordInfo>
+				</mads:mads>
+			</zs:recordData>
+			<zs:recordPosition>18</zs:recordPosition>
+		</zs:record>
+		<zs:record>
+			<zs:recordSchema>mads</zs:recordSchema>
+			<zs:recordPacking>xml</zs:recordPacking>
+			<zs:recordData>
+				<mads:mads xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mads="http://www.loc.gov/mads/v2" version="2.0" xsi:schemaLocation="http://www.loc.gov/mads/v2 http://www.loc.gov/standards/mads/mads-2-0.xsd">
+					<mads:authority xmlns:xlink="http://www.w3.org/1999/xlink">
+						<mads:genre authority="lcgft">Historical drama</mads:genre>
+					</mads:authority>
+					<mads:related xmlns:xlink="http://www.w3.org/1999/xlink" type="broader">
+						<mads:genre>Drama</mads:genre>
+					</mads:related>
+					<mads:variant xmlns:xlink="http://www.w3.org/1999/xlink" type="other">
+						<mads:genre>Chronicle histories (Drama)</mads:genre>
+					</mads:variant>
+					<mads:variant xmlns:xlink="http://www.w3.org/1999/xlink" type="other">
+						<mads:genre>Docudramas (Literature)</mads:genre>
+					</mads:variant>
+					<mads:variant xmlns:xlink="http://www.w3.org/1999/xlink" type="other">
+						<mads:genre>Documentary drama (Literature)</mads:genre>
+					</mads:variant>
+					<mads:note xmlns:xlink="http://www.w3.org/1999/xlink" type="source">Wilson, E. The theater experience, c2004, via McGraw-Hill Higher Education online learning center, Nov. 14, 2012: glossary (History play: In the broadest sense, a play set in a historical milieu which deals with historical events and personages)</mads:note>
+					<mads:note xmlns:xlink="http://www.w3.org/1999/xlink" type="source">LCSH, Oct. 22, 2014 (Historical drama. UF Chronicle histories (Drama); Chronicle plays; Docudrama; Documentary plays; Historical plays; Verbatim plays)</mads:note>
+					<mads:note xmlns:xlink="http://www.w3.org/1999/xlink" type="source">Arader, M. Reality show : the diverging paths of documentary theater, c2001, viewed online Apr. 17, 2012 (Also known as documentary drama, reality theater, and theatrical journalism, today the term documentary theater seems to indicate that most of the dialogue for a piece is verbatim transcription of what people actually said. Beyond that, documentary theater may take many of the same dramatic licenses allowed fiction pieces.)</mads:note>
+					<mads:note xmlns:xlink="http://www.w3.org/1999/xlink">Plays set during a recognizable time period prior to the time in which they were written</mads:note>
+					<mads:identifier type="lccn">gf2014026369</mads:identifier>
+					<mads:recordInfo xmlns:xlink="http://www.w3.org/1999/xlink">
+						<mads:recordOrigin>Converted from MARCXML to MADS version 2.0 (Revision 2.13)</mads:recordOrigin>
+						<mads:recordContentSource authority="marcorg">IlChALCS</mads:recordContentSource>
+						<mads:recordChangeDate encoding="iso8601">20181212053715.0</mads:recordChangeDate>
+						<mads:recordIdentifier source="DLC">gf2014026369</mads:recordIdentifier>
+						<mads:languageOfCataloging>
+							<mads:languageTerm authority="iso639-2b" type="code">eng</mads:languageTerm>
+						</mads:languageOfCataloging>
+					</mads:recordInfo>
+				</mads:mads>
+			</zs:recordData>
+			<zs:recordPosition>19</zs:recordPosition>
+		</zs:record>
+		<zs:record>
+			<zs:recordSchema>mads</zs:recordSchema>
+			<zs:recordPacking>xml</zs:recordPacking>
+			<zs:recordData>
+				<mads:mads xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mads="http://www.loc.gov/mads/v2" version="2.0" xsi:schemaLocation="http://www.loc.gov/mads/v2 http://www.loc.gov/standards/mads/mads-2-0.xsd">
+					<mads:authority xmlns:xlink="http://www.w3.org/1999/xlink">
+						<mads:genre authority="lcgft">Nonfiction novels</mads:genre>
+					</mads:authority>
+					<mads:related xmlns:xlink="http://www.w3.org/1999/xlink" type="broader">
+						<mads:genre>Creative nonfiction</mads:genre>
+					</mads:related>
+					<mads:related xmlns:xlink="http://www.w3.org/1999/xlink" type="broader">
+						<mads:genre>Fiction</mads:genre>
+					</mads:related>
+					<mads:variant xmlns:xlink="http://www.w3.org/1999/xlink" type="other">
+						<mads:genre>Documentary fiction</mads:genre>
+					</mads:variant>
+					<mads:variant xmlns:xlink="http://www.w3.org/1999/xlink" type="other">
+						<mads:genre>Faction (Nonfiction novels)</mads:genre>
+					</mads:variant>
+					<mads:variant xmlns:xlink="http://www.w3.org/1999/xlink" type="other">
+						<mads:genre>Fictional non-fiction</mads:genre>
+					</mads:variant>
+					<mads:variant xmlns:xlink="http://www.w3.org/1999/xlink" type="other">
+						<mads:genre>Fictional nonfiction</mads:genre>
+					</mads:variant>
+					<mads:variant xmlns:xlink="http://www.w3.org/1999/xlink" type="other">
+						<mads:genre>Journalistic novels</mads:genre>
+					</mads:variant>
+					<mads:variant xmlns:xlink="http://www.w3.org/1999/xlink" type="other">
+						<mads:genre>Non-fiction novels</mads:genre>
+					</mads:variant>
+					<mads:variant xmlns:xlink="http://www.w3.org/1999/xlink" type="other">
+						<mads:genre>Non-fictional fiction</mads:genre>
+					</mads:variant>
+					<mads:note xmlns:xlink="http://www.w3.org/1999/xlink" type="source">Oxford dictionary of literary terms, via Oxford reference online, Nov. 2, 2012 (new journalism: genre of journalism also known as 'faction' or 'non-fiction novel' developed in the United States in the 1960s and 1970s involving a new blend of fictional presentation with journalistic research and reportage; faction: a short&#x2010;lived portmanteau word denoting works that present verifiably factual contents in the form of a fictional novel; although still sometimes used by journalists, the term suffers from the disadvantage of already meaning something else (i.e. a conspiratorial group within a divided organization), so the preferred term is New Journalism)</mads:note>
+					<mads:note xmlns:xlink="http://www.w3.org/1999/xlink" type="source">Cuddon, J. A dictionary of literary terms and literary theory, 5th ed., via Wiley online, Aug. 26, 2014 (non-fiction novel/documentary fiction: a novel based on real events and people, which largely draws on documentary evidence such as newspaper articles, official papers, personal letters, and interviews. Elements of the story's narrative, however--in particular the conversations and thoughts of the protagonists--are the author's invention)</mads:note>
+					<mads:note xmlns:xlink="http://www.w3.org/1999/xlink" type="source">OCLC, Nov. 2, 2012 (titles: The nonfiction novel; The mythopoeic reality : the postwar American nonfiction novel; Fact &amp; fiction : the new journalism and the nonfiction novel)</mads:note>
+					<mads:note xmlns:xlink="http://www.w3.org/1999/xlink" type="source">LCSH, Oct. 20, 2014 (Nonfiction novel. UF Journalistic novel; New journalism. BT Fiction; Reportage literature)</mads:note>
+					<mads:note xmlns:xlink="http://www.w3.org/1999/xlink" type="source">Britannica online, Apr. 27, 2017: Nonfiction novel (literary genre; story of actual people and actual events told with the dramatic techniques of a novel) New Journalism (New Journalism, American literary movement in the 1960s and '70s that pushed the boundaries of traditional journalism and nonfiction writing. The genre combined journalistic research with the techniques of fiction writing in the reporting of stories about real-life events. The writers often credited with beginning the movement include Tom Wolfe, Truman Capote, and Gay Talese; writers in the genre immersed themselves in their subjects, at times spending months in the field gathering facts through research, interviews, and observation. Their finished works were very different, however, from the feature stories typically published in newspapers and magazines of the time. Instead of employing traditional journalistic story structures and an institutional voice, they constructed well-developed characters, sustained dialogue, vivid scenes, and strong plotlines marked with dramatic tension. They also wrote in voices that were distinctly their own. Their writing style, and the time and money that their in-depth research and long stories required, did not fit the needs or budgets of most newspapers ... Many of those writers went on to publish their stories in anthologies or to write what became known as "nonfiction novels")</mads:note>
+					<mads:note xmlns:xlink="http://www.w3.org/1999/xlink" type="source">Nonfiction novel: definition &amp; examples, via Study.com website, Apr. 20, 2017 (Nonfiction is a genre in literature in which real events are depicted using story-telling techniques. Though the people and situations written about are true, the writer has creative license with how to tell the story. This makes the genre's definition rather flexible. Many nonfiction novels are written in such categories as biographies, historical events, travel, science, religion, philosophy, and art; captures the drama of the novel, only with true life facts)</mads:note>
+					<mads:note xmlns:xlink="http://www.w3.org/1999/xlink" type="source">Wikipedia, Apr. 20, 2017: Non-fiction novel (The non-fiction novel is a literary genre which, broadly speaking, depicts real historical figures and actual events woven together with fictitious conversations and using the storytelling techniques of fiction. The non-fiction novel is an otherwise loosely defined and flexible genre. The genre is sometimes referred to using the slang term "faction", a portmanteau of the words fact and fiction)</mads:note>
+					<mads:note xmlns:xlink="http://www.w3.org/1999/xlink" type="source">Kluge, A. "Wer ein Wort des Trostes spricht, ist ein Verra&#x308;ter", 2013 (short stories about the Holocaust that blur the line between storytelling and reportage; examples of "nonfiction short stories" as opposed to "nonfiction novels")</mads:note>
+					<mads:note xmlns:xlink="http://www.w3.org/1999/xlink" type="source">Mike, E.C. Words are forever in the heart : fiction and non-fiction short stories, 2007</mads:note>
+					<mads:note xmlns:xlink="http://www.w3.org/1999/xlink" type="source">The postmodern short story, 2003: p. 23 (fictional nonfiction and nonfictional fiction; one of the predominant themes of postmodernism is the blurring of lines between fiction and nonfiction; writers of this genre know that it is obvious to the reader that they are lying to tell the truth; in her essay "Facts and Fancy: The 'Nonfiction Short Story,'" Michele Morano explores short stories and essays that blur distinctions between fiction and nonfiction and offer the reader a meta-awareness of "genre negotiation." Morano identifies nonfiction short stories as having the "reality warp" of fiction complicated by nonfictional elements that induce "double vision" in the reader)</mads:note>
+					<mads:note xmlns:xlink="http://www.w3.org/1999/xlink" type="source">Why we write : the politics and practice of writing for social change, &#xA9;2006: pp. 87-88 (Microhistories and nonfiction short stories; both genres emerged in the 1970s; narrative journalism and the nonfiction short story were reactions against investigative journalism's emphasis on fact finding over prose style; both microhistories and nonfiction short stories tend to concern themselves with the everyday experiences of ordinary people; both genres self-consciously employ the techniques of dramatic fiction, including character development, plotting, and conflict resolution; microhistories are not nonfiction short stories; they are micro in focus, not in length)</mads:note>
+					<mads:note xmlns:xlink="http://www.w3.org/1999/xlink" type="source">Arluke, A. Inside animal hoarding : the case of Barbara Erickson and her 552 dogs, &#xA9;2009: p. 2 (The first part of the book is an in-depth portrait of Barbara Erickson that tells her story and captures her voice ... written by a journalist in a nonfiction novella form)</mads:note>
+					<mads:note xmlns:xlink="http://www.w3.org/1999/xlink" type="source">Black cool : one thousand streams of Blackness, 2012: p. 156 (Mat Johnson is a novelist who sometimes writes other things. He is the author of ... the nonfiction novella The Great Negro Plot)</mads:note>
+					<mads:note xmlns:xlink="http://www.w3.org/1999/xlink" type="source">Upwork website, Apr. 20, 2017 (under Tuba Arshad: I write fictional and non-fictional short stories and novels, along with informative and entertaining articles for magazines; under Joan Mukhwana: An intuitive, innovative and dynamic creative writer who has written several fictional and non-fictional short stories, poetry and is presently working on a novel)</mads:note>
+					<mads:note xmlns:xlink="http://www.w3.org/1999/xlink">Fiction of any length that intentionally blends verifiably factual journalistic research with fictional elements</mads:note>
+					<mads:identifier type="lccn">gf2014026454</mads:identifier>
+					<mads:recordInfo xmlns:xlink="http://www.w3.org/1999/xlink">
+						<mads:recordOrigin>Converted from MARCXML to MADS version 2.0 (Revision 2.13)</mads:recordOrigin>
+						<mads:recordContentSource authority="marcorg">IlChALCS</mads:recordContentSource>
+						<mads:recordChangeDate encoding="iso8601">20170714053447.0</mads:recordChangeDate>
+						<mads:recordIdentifier source="DLC">gf2014026454</mads:recordIdentifier>
+						<mads:languageOfCataloging>
+							<mads:languageTerm authority="iso639-2b" type="code">eng</mads:languageTerm>
+						</mads:languageOfCataloging>
+					</mads:recordInfo>
+				</mads:mads>
+			</zs:recordData>
+			<zs:recordPosition>20</zs:recordPosition>
+		</zs:record>
+	</zs:records>
+	<zs:nextRecordPosition>21</zs:nextRecordPosition>
+	<zs:echoedSearchRetrieveRequest>
+		<zs:version>1.1</zs:version>
+		<zs:query>bath.subjectGenre=documentary</zs:query>
+		<zs:maximumRecords>20</zs:maximumRecords>
+		<zs:recordPacking>xml</zs:recordPacking>
+		<zs:recordSchema>mads</zs:recordSchema>
+	</zs:echoedSearchRetrieveRequest>
+</zs:searchRetrieveResponse>

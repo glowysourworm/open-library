@@ -1,0 +1,6 @@
+﻿Handbook of Latin American Studies
+
+SRU Base URL (and Explain record): http://lx2.loc.gov:210/HLAS?
+
+Sample search. Search for: Geographic Name=Peru ; return 3 Dublin Core records
+http://lx2.loc.gov:210/HLAS?operation=searchRetrieve&version=1.1&query=bath.geographicName=Peru&maximumRecords=3&recordSchema=dc

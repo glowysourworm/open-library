@@ -1,0 +1,131 @@
+﻿<?xml version="1.0"?>
+<zs:explainResponse xmlns:zs="http://docs.oasis-open.org/ns/search-ws/sruResponse">
+	<zs:version>2.0</zs:version>
+	<zs:record>
+		<zs:recordSchema>http://explain.z3950.org/dtd/2.0/</zs:recordSchema>
+		<zs:recordXMLEscaping>xml</zs:recordXMLEscaping>
+		<zs:recordData>
+			<explain xmlns="http://explain.z3950.org/dtd/2.0/">
+				<serverInfo>
+					<host>lx2.loc.gov</host>
+					<port>210</port>
+				</serverInfo>
+				<databaseInfo>
+					<title>SAF -- Library of Congress Subject Authority File</title>
+					<description lang="en" primary="true">
+						SRU/Z39.50 Gateway to the Library of Congress Subject Authority File
+					</description>
+				</databaseInfo>
+				<indexInfo>
+					<set identifier="info:srw/cql-context-set/1/cql-v1.1" name="cql"/>
+					<set identifier="info:srw/cql-context-set/1/dc-v1.1" name="dc"/>
+					<set identifier="http://zing.z3950.org/cql/bath/2.0" name="bath"/>
+					<set identifier="http://zing.z3950.org/cql/local/1.1" name="local"/>
+					<index id="1016">
+						<title>Any Indexed Field</title>
+						<map>
+							<name set="cql">anywhere</name>
+						</map>
+					</index>
+					<index id="21">
+						<title>Subject</title>
+						<map>
+							<name set="dc">subject</name>
+						</map>
+					</index>
+					<index id="4">
+						<title>title</title>
+						<map>
+							<name set="dc">title</name>
+						</map>
+					</index>
+					<index id="1002">
+						<title>Name</title>
+						<map>
+							<name set="bath">name</name>
+						</map>
+					</index>
+					<index id="1009">
+						<title>Subject Personal Name</title>
+						<map>
+							<name set="local">subjectPersonalName</name>
+						</map>
+					</index>
+					<index id="1074">
+						<title>Subject Corporate Name</title>
+						<map>
+							<name set="local">subjectCorporateName</name>
+						</map>
+					</index>
+					<index id="1073">
+						<title>Subject Conference Name</title>
+						<map>
+							<name set="local">subjectConferenceName</name>
+						</map>
+					</index>
+					<index id="1076">
+						<title>Subject Geographic Name</title>
+						<map>
+							<name set="local">subjectGeographicName</name>
+						</map>
+					</index>
+					<index id="1075">
+						<title>Subject Genre</title>
+						<map>
+							<name set="local">subjectGenre</name>
+						</map>
+					</index>
+					<index id="1079">
+						<title>Subject Topical</title>
+						<map>
+							<name set="local">subjectTopical</name>
+						</map>
+					</index>
+					<index id="47">
+						<title>Subject Subdivision</title>
+						<map>
+							<name set="local">subjectSubdivision</name>
+						</map>
+					</index>
+					<index id="5075">
+						<title>Subject Subdivision Form</title>
+						<map>
+							<name set="local">subjectSubdivisionForm</name>
+						</map>
+					</index>
+					<index id="5076">
+						<title>Subject Subdivision Geographical</title>
+						<map>
+							<name set="local">subjectSubdivisionGeographical</name>
+						</map>
+					</index>
+					<index id="5077">
+						<title>Subject Subdivision Chronological</title>
+						<map>
+							<name set="local">subjectSubdivisionChronological</name>
+						</map>
+					</index>
+					<index id="5079">
+						<title>Subject Subdivision General</title>
+						<map>
+							<name set="local">subjectSubdivisionGeneral</name>
+						</map>
+					</index>
+				</indexInfo>
+				<schemaInfo>
+					<schema identifier="info:srw/schema/1/marcxml-v1.1" sort="false" name="marcxml">
+						<title>MARCXML</title>
+					</schema>
+					<schema identifier="info:srw/schema/1/mads-v1.0" sort="false" name="mads">
+						<title>MADS</title>
+					</schema>
+				</schemaInfo>
+			</explain>
+		</zs:recordData>
+		<zs:recordPosition>1</zs:recordPosition>
+	</zs:record>
+	<zs:echoedExplainRequest>
+		<zs:version>2.0</zs:version>
+		<zs:recordXMLEscaping>xml</zs:recordXMLEscaping>
+	</zs:echoedExplainRequest>
+</zs:explainResponse>

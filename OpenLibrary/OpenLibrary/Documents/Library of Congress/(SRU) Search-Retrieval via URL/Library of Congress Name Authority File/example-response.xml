@@ -1,0 +1,1037 @@
+﻿<?xml version="1.0"?>
+<zs:searchRetrieveResponse xmlns:zs="http://www.loc.gov/zing/srw/">
+	<zs:version>1.1</zs:version>
+	<zs:numberOfRecords>341</zs:numberOfRecords>
+	<zs:records>
+		<zs:record>
+			<zs:recordSchema>mads</zs:recordSchema>
+			<zs:recordPacking>xml</zs:recordPacking>
+			<zs:recordData>
+				<mads:mads xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mads="http://www.loc.gov/mads/v2" version="2.0" xsi:schemaLocation="http://www.loc.gov/mads/v2 http://www.loc.gov/standards/mads/mads-2-0.xsd">
+					<mads:authority xmlns:xlink="http://www.w3.org/1999/xlink" geographicSubdivision="not applicable">
+						<mads:name type="personal" authority="naf">
+							<mads:namePart>Braithwaite, T. R. (Theodore R.)</mads:namePart>
+							<mads:namePart type="date">1902-1964</mads:namePart>
+						</mads:name>
+					</mads:authority>
+					<mads:variant xmlns:xlink="http://www.w3.org/1999/xlink" type="other">
+						<mads:name type="personal">
+							<mads:namePart>Braithwaite, Theodore Roosevelt</mads:namePart>
+							<mads:namePart type="date">1902-1964</mads:namePart>
+						</mads:name>
+					</mads:variant>
+					<mads:note xmlns:xlink="http://www.w3.org/1999/xlink" type="source">Braithwaite, Theodore Roosevelt. The art of T. R. Braithwaite, 1999: t.p. (T.R. Braithwaite) p. 7 (Theodore Roosevelt Braithwaite; b. 1902 in Brooklyn, N.Y.; died in 1964)</mads:note>
+					<mads:identifier type="lccn">n  00007447 </mads:identifier>
+					<mads:recordInfo xmlns:xlink="http://www.w3.org/1999/xlink">
+						<mads:recordOrigin>Converted from MARCXML to MADS version 2.0 (Revision 2.13)</mads:recordOrigin>
+						<mads:recordContentSource authority="marcorg">DLC</mads:recordContentSource>
+						<mads:recordChangeDate encoding="iso8601">20000919081916.0</mads:recordChangeDate>
+						<mads:recordIdentifier source="DLC">n  00007447 </mads:recordIdentifier>
+						<mads:languageOfCataloging>
+							<mads:languageTerm authority="iso639-2b" type="code">eng</mads:languageTerm>
+						</mads:languageOfCataloging>
+						<mads:descriptionStandard>aacr2</mads:descriptionStandard>
+					</mads:recordInfo>
+				</mads:mads>
+			</zs:recordData>
+			<zs:recordPosition>1</zs:recordPosition>
+		</zs:record>
+		<zs:record>
+			<zs:recordSchema>mads</zs:recordSchema>
+			<zs:recordPacking>xml</zs:recordPacking>
+			<zs:recordData>
+				<mads:mads xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mads="http://www.loc.gov/mads/v2" version="2.0" xsi:schemaLocation="http://www.loc.gov/mads/v2 http://www.loc.gov/standards/mads/mads-2-0.xsd">
+					<mads:authority xmlns:xlink="http://www.w3.org/1999/xlink" geographicSubdivision="not applicable">
+						<mads:name type="personal" authority="naf">
+							<mads:namePart>Roosevelt, Franklin D. (Franklin Delano)</mads:namePart>
+							<mads:namePart type="date">1882-1945</mads:namePart>
+						</mads:name>
+						<mads:titleInfo authority="naf">
+							<mads:title>Roosevelt, Franklin D. Address of Franklin D. Roosevelt, president of the United States, Chautauqua, N.Y., August 14, 1936</mads:title>
+						</mads:titleInfo>
+					</mads:authority>
+					<mads:variant xmlns:xlink="http://www.w3.org/1999/xlink" type="other">
+						<mads:name type="personal">
+							<mads:namePart>Roosevelt, Franklin D. (Franklin Delano)</mads:namePart>
+							<mads:namePart type="date">1882-1945</mads:namePart>
+						</mads:name>
+						<mads:titleInfo>
+							<mads:title>Roosevelt, Franklin D. Address of the president of the United States at Chautauqua, New York on August 14, 1936 on the subjects of the foreign relations of the United States and of war</mads:title>
+						</mads:titleInfo>
+					</mads:variant>
+					<mads:note xmlns:xlink="http://www.w3.org/1999/xlink" type="source">Roosevelt, Franklin D. The address of the president of the United States at Chautauqua, New York on August 14, 1936 on the subjects of the foreign relations of the United States and of war, 1936</mads:note>
+					<mads:identifier type="lccn">n  00068263 </mads:identifier>
+					<mads:recordInfo xmlns:xlink="http://www.w3.org/1999/xlink">
+						<mads:recordOrigin>Converted from MARCXML to MADS version 2.0 (Revision 2.13)</mads:recordOrigin>
+						<mads:recordContentSource authority="marcorg">DLC</mads:recordContentSource>
+						<mads:recordChangeDate encoding="iso8601">20001208154355.0</mads:recordChangeDate>
+						<mads:recordIdentifier source="DLC">n  00068263 </mads:recordIdentifier>
+						<mads:languageOfCataloging>
+							<mads:languageTerm authority="iso639-2b" type="code">eng</mads:languageTerm>
+						</mads:languageOfCataloging>
+						<mads:descriptionStandard>aacr2</mads:descriptionStandard>
+					</mads:recordInfo>
+				</mads:mads>
+			</zs:recordData>
+			<zs:recordPosition>2</zs:recordPosition>
+		</zs:record>
+		<zs:record>
+			<zs:recordSchema>mads</zs:recordSchema>
+			<zs:recordPacking>xml</zs:recordPacking>
+			<zs:recordData>
+				<mads:mads xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mads="http://www.loc.gov/mads/v2" version="2.0" xsi:schemaLocation="http://www.loc.gov/mads/v2 http://www.loc.gov/standards/mads/mads-2-0.xsd">
+					<mads:authority xmlns:xlink="http://www.w3.org/1999/xlink" geographicSubdivision="not applicable">
+						<mads:name type="personal" authority="naf">
+							<mads:namePart>Roosevelt, Ruth Barrons</mads:namePart>
+						</mads:name>
+					</mads:authority>
+					<mads:note xmlns:xlink="http://www.w3.org/1999/xlink" type="source">Roosevelt, Ruth Barrons. Exceptional trading, 1999: t.p. (Ruth Barrons Roosevelt)</mads:note>
+					<mads:note xmlns:xlink="http://www.w3.org/1999/xlink" type="source">LC database, 10-19-00 (hdg.: Roosevelt, Ruth; usage: Ruth Roosevelt)</mads:note>
+					<mads:identifier type="lccn">n  00110134 </mads:identifier>
+					<mads:recordInfo xmlns:xlink="http://www.w3.org/1999/xlink">
+						<mads:recordOrigin>Converted from MARCXML to MADS version 2.0 (Revision 2.13)</mads:recordOrigin>
+						<mads:recordContentSource authority="marcorg">DLC</mads:recordContentSource>
+						<mads:recordChangeDate encoding="iso8601">20001019132319.0</mads:recordChangeDate>
+						<mads:recordIdentifier source="DLC">n  00110134 </mads:recordIdentifier>
+						<mads:languageOfCataloging>
+							<mads:languageTerm authority="iso639-2b" type="code">eng</mads:languageTerm>
+						</mads:languageOfCataloging>
+						<mads:descriptionStandard>aacr2</mads:descriptionStandard>
+					</mads:recordInfo>
+				</mads:mads>
+			</zs:recordData>
+			<zs:recordPosition>3</zs:recordPosition>
+		</zs:record>
+		<zs:record>
+			<zs:recordSchema>mads</zs:recordSchema>
+			<zs:recordPacking>xml</zs:recordPacking>
+			<zs:recordData>
+				<mads:mads xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mads="http://www.loc.gov/mads/v2" version="2.0" xsi:schemaLocation="http://www.loc.gov/mads/v2 http://www.loc.gov/standards/mads/mads-2-0.xsd">
+					<mads:authority xmlns:xlink="http://www.w3.org/1999/xlink" geographicSubdivision="not applicable">
+						<mads:name type="personal" authority="naf">
+							<mads:namePart>Colton, Raymond R. (Raymond Roosevelt)</mads:namePart>
+						</mads:name>
+					</mads:authority>
+					<mads:variant xmlns:xlink="http://www.w3.org/1999/xlink" type="other">
+						<mads:name type="personal">
+							<mads:namePart>Colton, Raymond Roosevelt</mads:namePart>
+						</mads:name>
+					</mads:variant>
+					<mads:note xmlns:xlink="http://www.w3.org/1999/xlink" type="source">Arkin, H. Statistical methods ... c1934</mads:note>
+					<mads:note xmlns:xlink="http://www.w3.org/1999/xlink" type="source">His Industrial purchasing and effective materials management, c1985: CIP t.p. (Raymond R. Colton)</mads:note>
+					<mads:note xmlns:xlink="http://www.w3.org/1999/xlink" type="source">Tables of squares, square roots, cubes, and cube roots, 1942: title page (Raymond R. Colton, The College of the City of New York)</mads:note>
+					<mads:note xmlns:xlink="http://www.w3.org/1999/xlink" type="source">OCLC database, Apr. 21, 2020 (access point: Colton, Raymond Roosevelt; usage: Raymond R. Colton)</mads:note>
+					<mads:identifier type="lccn">n  50031906 </mads:identifier>
+					<mads:recordInfo xmlns:xlink="http://www.w3.org/1999/xlink">
+						<mads:recordOrigin>Converted from MARCXML to MADS version 2.0 (Revision 2.13)</mads:recordOrigin>
+						<mads:recordContentSource authority="marcorg">DLC</mads:recordContentSource>
+						<mads:recordChangeDate encoding="iso8601">20200422070431.0</mads:recordChangeDate>
+						<mads:recordIdentifier source="DLC">n  50031906 </mads:recordIdentifier>
+						<mads:languageOfCataloging>
+							<mads:languageTerm authority="iso639-2b" type="code">eng</mads:languageTerm>
+						</mads:languageOfCataloging>
+						<mads:descriptionStandard>rda</mads:descriptionStandard>
+						<mads:descriptionStandard>other rules</mads:descriptionStandard>
+					</mads:recordInfo>
+				</mads:mads>
+			</zs:recordData>
+			<zs:recordPosition>4</zs:recordPosition>
+		</zs:record>
+		<zs:record>
+			<zs:recordSchema>mads</zs:recordSchema>
+			<zs:recordPacking>xml</zs:recordPacking>
+			<zs:recordData>
+				<mads:mads xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mads="http://www.loc.gov/mads/v2" version="2.0" xsi:schemaLocation="http://www.loc.gov/mads/v2 http://www.loc.gov/standards/mads/mads-2-0.xsd">
+					<mads:authority xmlns:xlink="http://www.w3.org/1999/xlink" geographicSubdivision="not applicable">
+						<mads:name type="personal" authority="naf">
+							<mads:namePart>Roosevelt, Elliott</mads:namePart>
+							<mads:namePart type="date">1910-1990</mads:namePart>
+						</mads:name>
+					</mads:authority>
+					<mads:note xmlns:xlink="http://www.w3.org/1999/xlink" type="source">His As he saw it ... 1946</mads:note>
+					<mads:note xmlns:xlink="http://www.w3.org/1999/xlink" type="source">His A royal murder, 1994: CIP t.p. (Elliott Roosevelt) fact sheet (son of Franklin and Eleanor; was a former rancher and writer; d. 1990; left behind a number of unpublished mysteries)</mads:note>
+					<mads:note xmlns:xlink="http://www.w3.org/1999/xlink" type="source">An untold story: The Roosevelt of hyde park, 1973: title page (Elliot Roosevelt)</mads:note>
+					<mads:identifier type="lccn">n  50048408 </mads:identifier>
+					<mads:classification xmlns:xlink="http://www.w3.org/1999/xlink">PS3535.O549</mads:classification>
+					<mads:extension>
+						<mads:profession>
+							<mads:professionTerm>Authors</mads:professionTerm>
+						</mads:profession>
+					</mads:extension>
+					<mads:recordInfo xmlns:xlink="http://www.w3.org/1999/xlink">
+						<mads:recordOrigin>Converted from MARCXML to MADS version 2.0 (Revision 2.13)</mads:recordOrigin>
+						<mads:recordContentSource authority="marcorg">DLC</mads:recordContentSource>
+						<mads:recordChangeDate encoding="iso8601">20230906064940.0</mads:recordChangeDate>
+						<mads:recordIdentifier source="DLC">n  50048408 </mads:recordIdentifier>
+						<mads:languageOfCataloging>
+							<mads:languageTerm authority="iso639-2b" type="code">eng</mads:languageTerm>
+						</mads:languageOfCataloging>
+						<mads:descriptionStandard>rda</mads:descriptionStandard>
+						<mads:descriptionStandard>other rules</mads:descriptionStandard>
+					</mads:recordInfo>
+				</mads:mads>
+			</zs:recordData>
+			<zs:recordPosition>5</zs:recordPosition>
+		</zs:record>
+		<zs:record>
+			<zs:recordSchema>mads</zs:recordSchema>
+			<zs:recordPacking>xml</zs:recordPacking>
+			<zs:recordData>
+				<mads:mads xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mads="http://www.loc.gov/mads/v2" version="2.0" xsi:schemaLocation="http://www.loc.gov/mads/v2 http://www.loc.gov/standards/mads/mads-2-0.xsd">
+					<mads:authority xmlns:xlink="http://www.w3.org/1999/xlink" geographicSubdivision="not applicable">
+						<mads:name type="personal" authority="naf">
+							<mads:namePart>Grier, Rosey</mads:namePart>
+						</mads:name>
+					</mads:authority>
+					<mads:variant xmlns:xlink="http://www.w3.org/1999/xlink" type="other">
+						<mads:name type="personal">
+							<mads:namePart>Grier, Roosevelt</mads:namePart>
+						</mads:name>
+					</mads:variant>
+					<mads:note xmlns:xlink="http://www.w3.org/1999/xlink" type="source">Data from Churchill Films for Rosey Grier ... [MP] 1978 (subj.) (Rosey Grier)</mads:note>
+					<mads:note xmlns:xlink="http://www.w3.org/1999/xlink" type="source">His Rosey, c1986: t.p. (Roosevelt "Rosey" Grier) p. 4 (b. 7/14/32; professional athlete)</mads:note>
+					<mads:note xmlns:xlink="http://www.w3.org/1999/xlink" type="source">African American National Biography, accessed December 21, 2014, via Oxford African American Studies Center database: (Grier, Rosey; Roosevelt Grier; football player, social reformer, author, singer-actor, celebrity; born 14 July 1932 in Cuthbert, Georgia, United States; enrolled in Penn State University and studied psychology, music, and education (1950); received first-team All-American football honors (1955); set an Intercollegiate Association of Amateur Athletics of America shot-put record (fifty-eight feet) in track and field; signed with the National Football League's New York Giants; won East Conference titles (1958, 1959, 1961, and 1962); was sent to the Los Angeles Rams (1964) where he earned two All-Pro titles; retired from football (1968); became a published songwriter, guitarist, pianist, and singer; performed at New York's Carnegie Hall (1963); hosted his own pioneering half-hour talk show, &#x201C;The Rosey Grier Show&#x201D; (1969); campaigned with Senator Robert Kennedy during his bid for the presidency (1968); had a starring role in the science fiction cult classic &#x201C;The Thing with Two Heads&#x201D; (1972); his book &#x201C;The Rosey Grier Needlepoint Book for Men&#x201D; was a best seller (1973); was ordained as a minister (1983) and devoted himself to religious and community causes; served on the board of the Special Olympics and the Kennedy Foundation for the Mentally Retarded; founded the American Neighborhood Enterprises (ANE) and served as chairman of the board for Impact Urban America; was a spiritual adviser for O. J. Simpson (1994-1995))</mads:note>
+					<mads:identifier type="lccn">n  78090831 </mads:identifier>
+					<mads:classification xmlns:xlink="http://www.w3.org/1999/xlink">PS3557.R48838</mads:classification>
+					<mads:affiliation>
+						<mads:position>Pennsylvania State University</mads:position>
+						<mads:dateValid point="start"/>
+						<mads:dateValid point="end"/>
+					</mads:affiliation>
+					<mads:affiliation>
+						<mads:position>Kennedy Foundation for the Mentally Retarded</mads:position>
+						<mads:dateValid point="start"/>
+						<mads:dateValid point="end"/>
+					</mads:affiliation>
+					<mads:extension>
+						<mads:profession>
+							<mads:professionTerm>Football players</mads:professionTerm>
+						</mads:profession>
+					</mads:extension>
+					<mads:recordInfo xmlns:xlink="http://www.w3.org/1999/xlink">
+						<mads:recordOrigin>Converted from MARCXML to MADS version 2.0 (Revision 2.13)</mads:recordOrigin>
+						<mads:recordContentSource authority="marcorg">DLC</mads:recordContentSource>
+						<mads:recordChangeDate encoding="iso8601">20230908064619.0</mads:recordChangeDate>
+						<mads:recordIdentifier source="DLC">n  78090831 </mads:recordIdentifier>
+						<mads:languageOfCataloging>
+							<mads:languageTerm authority="iso639-2b" type="code">eng</mads:languageTerm>
+						</mads:languageOfCataloging>
+						<mads:descriptionStandard>rda</mads:descriptionStandard>
+						<mads:descriptionStandard>other rules</mads:descriptionStandard>
+					</mads:recordInfo>
+				</mads:mads>
+			</zs:recordData>
+			<zs:recordPosition>6</zs:recordPosition>
+		</zs:record>
+		<zs:record>
+			<zs:recordSchema>mads</zs:recordSchema>
+			<zs:recordPacking>xml</zs:recordPacking>
+			<zs:recordData>
+				<mads:mads xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mads="http://www.loc.gov/mads/v2" version="2.0" xsi:schemaLocation="http://www.loc.gov/mads/v2 http://www.loc.gov/standards/mads/mads-2-0.xsd">
+					<mads:authority xmlns:xlink="http://www.w3.org/1999/xlink" geographicSubdivision="not applicable">
+						<mads:name type="corporate" authority="naf">
+							<mads:namePart>New York (State)</mads:namePart>
+							<mads:namePart>Governor (1929-1932 : Roosevelt)</mads:namePart>
+						</mads:name>
+					</mads:authority>
+					<mads:related xmlns:xlink="http://www.w3.org/1999/xlink" type="other">
+						<mads:name type="personal">
+							<mads:namePart>Roosevelt, Franklin D. (Franklin Delano)</mads:namePart>
+							<mads:namePart type="date">1882-1945</mads:namePart>
+						</mads:name>
+					</mads:related>
+					<mads:variant xmlns:xlink="http://www.w3.org/1999/xlink" type="other">
+						<mads:name type="corporate">
+							<mads:namePart>New York (State)</mads:namePart>
+							<mads:namePart>Governor, 1929-1932 (Franklin D. Roosevelt)</mads:namePart>
+						</mads:name>
+					</mads:variant>
+					<mads:note xmlns:xlink="http://www.w3.org/1999/xlink" type="nonpublic">SUBJECT USAGE: This heading is not valid for use as a subject. Works about this person are entered under Roosevelt, Franklin D. (Franklin Delano), 1882-1945</mads:note>
+					<mads:note xmlns:xlink="http://www.w3.org/1999/xlink" type="source">Its Inauguration of Franklin D. Roosevelt, January first, 1929, 1929</mads:note>
+					<mads:identifier type="lccn">n  79022930 </mads:identifier>
+					<mads:recordInfo xmlns:xlink="http://www.w3.org/1999/xlink">
+						<mads:recordOrigin>Converted from MARCXML to MADS version 2.0 (Revision 2.13)</mads:recordOrigin>
+						<mads:recordContentSource authority="marcorg">DLC</mads:recordContentSource>
+						<mads:recordChangeDate encoding="iso8601">20230819064610.0</mads:recordChangeDate>
+						<mads:recordIdentifier source="DLC">n  79022930 </mads:recordIdentifier>
+						<mads:languageOfCataloging>
+							<mads:languageTerm authority="iso639-2b" type="code">eng</mads:languageTerm>
+						</mads:languageOfCataloging>
+						<mads:descriptionStandard>rda</mads:descriptionStandard>
+						<mads:descriptionStandard>other rules</mads:descriptionStandard>
+					</mads:recordInfo>
+				</mads:mads>
+			</zs:recordData>
+			<zs:recordPosition>7</zs:recordPosition>
+		</zs:record>
+		<zs:record>
+			<zs:recordSchema>mads</zs:recordSchema>
+			<zs:recordPacking>xml</zs:recordPacking>
+			<zs:recordData>
+				<mads:mads xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mads="http://www.loc.gov/mads/v2" version="2.0" xsi:schemaLocation="http://www.loc.gov/mads/v2 http://www.loc.gov/standards/mads/mads-2-0.xsd">
+					<mads:authority xmlns:xlink="http://www.w3.org/1999/xlink" geographicSubdivision="not applicable">
+						<mads:name type="corporate">
+							<mads:namePart>United States</mads:namePart>
+							<mads:namePart>President (1933-1945 : Roosevelt)</mads:namePart>
+						</mads:name>
+					</mads:authority>
+					<mads:related xmlns:xlink="http://www.w3.org/1999/xlink" type="other">
+						<mads:name type="personal">
+							<mads:namePart>Roosevelt, Franklin D. (Franklin Delano)</mads:namePart>
+							<mads:namePart type="date">1882-1945</mads:namePart>
+						</mads:name>
+					</mads:related>
+					<mads:note xmlns:xlink="http://www.w3.org/1999/xlink" type="nonpublic">SUBJECT USAGE: This heading is not valid for use as a subject.  Works about this person are entered under Roosevelt, Franklin D. (Franklin Delano), 1882-1945</mads:note>
+					<mads:note xmlns:xlink="http://www.w3.org/1999/xlink" type="source">Message from the President of the United States...1945</mads:note>
+					<mads:identifier type="lccn">n  79022931 </mads:identifier>
+					<mads:recordInfo xmlns:xlink="http://www.w3.org/1999/xlink">
+						<mads:recordOrigin>Converted from MARCXML to MADS version 2.0 (Revision 2.13)</mads:recordOrigin>
+						<mads:recordContentSource authority="marcorg">DLC</mads:recordContentSource>
+						<mads:recordChangeDate encoding="iso8601">20160729053322.0</mads:recordChangeDate>
+						<mads:recordIdentifier source="DLC">n  79022931 </mads:recordIdentifier>
+						<mads:languageOfCataloging>
+							<mads:languageTerm authority="iso639-2b" type="code">eng</mads:languageTerm>
+						</mads:languageOfCataloging>
+						<mads:descriptionStandard>rda</mads:descriptionStandard>
+						<mads:descriptionStandard>other rules</mads:descriptionStandard>
+					</mads:recordInfo>
+				</mads:mads>
+			</zs:recordData>
+			<zs:recordPosition>8</zs:recordPosition>
+		</zs:record>
+		<zs:record>
+			<zs:recordSchema>mads</zs:recordSchema>
+			<zs:recordPacking>xml</zs:recordPacking>
+			<zs:recordData>
+				<mads:mads xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mads="http://www.loc.gov/mads/v2" version="2.0" xsi:schemaLocation="http://www.loc.gov/mads/v2 http://www.loc.gov/standards/mads/mads-2-0.xsd">
+					<mads:authority xmlns:xlink="http://www.w3.org/1999/xlink" geographicSubdivision="not applicable">
+						<mads:name type="personal" authority="naf">
+							<mads:namePart>Roosevelt, Franklin D. (Franklin Delano)</mads:namePart>
+							<mads:namePart type="date">1882-1945</mads:namePart>
+						</mads:name>
+					</mads:authority>
+					<mads:related xmlns:xlink="http://www.w3.org/1999/xlink" type="other">
+						<mads:name type="corporate">
+							<mads:namePart>New York (State)</mads:namePart>
+							<mads:namePart>Governor (1929-1932 : Roosevelt)</mads:namePart>
+						</mads:name>
+					</mads:related>
+					<mads:related xmlns:xlink="http://www.w3.org/1999/xlink" type="other">
+						<mads:name type="corporate">
+							<mads:namePart>United States</mads:namePart>
+							<mads:namePart>President (1933-1945 : Roosevelt)</mads:namePart>
+						</mads:name>
+					</mads:related>
+					<mads:variant xmlns:xlink="http://www.w3.org/1999/xlink" type="other">
+						<mads:name type="personal">
+							<mads:namePart>Ruzvel&#x2B9;t, Franklin</mads:namePart>
+							<mads:namePart type="date">1882-1945</mads:namePart>
+						</mads:name>
+					</mads:variant>
+					<mads:variant xmlns:xlink="http://www.w3.org/1999/xlink" type="other">
+						<mads:name type="personal">
+							<mads:namePart>Ru&#x304;zvilt, Franklin Dila&#x304;nu&#x304;</mads:namePart>
+							<mads:namePart type="date">1882-1945</mads:namePart>
+						</mads:name>
+					</mads:variant>
+					<mads:variant xmlns:xlink="http://www.w3.org/1999/xlink" type="other">
+						<mads:name type="personal">
+							<mads:namePart>Ru&#x304;zfilt, Franklin Dila&#x304;nu&#x304;</mads:namePart>
+							<mads:namePart type="date">1882-1945</mads:namePart>
+						</mads:name>
+					</mads:variant>
+					<mads:variant xmlns:xlink="http://www.w3.org/1999/xlink" type="other">
+						<mads:name type="personal">
+							<mads:namePart>Lo-ssu-fu</mads:namePart>
+							<mads:namePart type="date">1882-1945</mads:namePart>
+						</mads:name>
+					</mads:variant>
+					<mads:variant xmlns:xlink="http://www.w3.org/1999/xlink" type="other">
+						<mads:name type="personal">
+							<mads:namePart>Luosifu</mads:namePart>
+							<mads:namePart type="date">1882-1945</mads:namePart>
+						</mads:name>
+					</mads:variant>
+					<mads:variant xmlns:xlink="http://www.w3.org/1999/xlink" type="other">
+						<mads:name type="personal">
+							<mads:namePart>F. D. R. (Franklin Delano Roosevelt)</mads:namePart>
+							<mads:namePart type="date">1882-1945</mads:namePart>
+						</mads:name>
+					</mads:variant>
+					<mads:variant xmlns:xlink="http://www.w3.org/1999/xlink" type="other">
+						<mads:name type="personal">
+							<mads:namePart>R., F. D. (Franklin Delano Roosevelt)</mads:namePart>
+							<mads:namePart type="date">1882-1945</mads:namePart>
+						</mads:name>
+					</mads:variant>
+					<mads:variant xmlns:xlink="http://www.w3.org/1999/xlink" type="other">
+						<mads:name type="personal">
+							<mads:namePart>FDR (Franklin Delano Roosevelt)</mads:namePart>
+							<mads:namePart type="date">1882-1945</mads:namePart>
+						</mads:name>
+					</mads:variant>
+					<mads:variant xmlns:xlink="http://www.w3.org/1999/xlink" type="other">
+						<mads:name type="personal">
+							<mads:namePart>&#x5E8;&#x5D5;&#x5D6;&#x5D5;&#x5D5;&#x5E2;&#x5DC;&#x5D8;, &#x5E4;&#x5E8;&#x5D0;&#x5E0;&#x5E7;&#x5DC;&#x5D9;&#x5DF; &#x5D3;</mads:namePart>
+						</mads:name>
+					</mads:variant>
+					<mads:variant xmlns:xlink="http://www.w3.org/1999/xlink" type="other">
+						<mads:name type="personal">
+							<mads:namePart>&#x5E8;&#x5D5;&#x5D6;&#x5D5;&#x5D5;&#x5E2;&#x5DC;&#x5D8;</mads:namePart>
+							<mads:namePart type="termsOfAddress">&#x5E4;&#x5E8;&#x5E2;&#x5D6;&#x5D9;&#x5D3;&#x5E2;&#x5E0;&#x5D8;</mads:namePart>
+						</mads:name>
+					</mads:variant>
+					<mads:variant xmlns:xlink="http://www.w3.org/1999/xlink" type="other">
+						<mads:name type="personal">
+							<mads:namePart>Roosevelt, F. (Franklin Delano)</mads:namePart>
+							<mads:namePart type="date">1882-1945</mads:namePart>
+						</mads:name>
+					</mads:variant>
+					<mads:variant xmlns:xlink="http://www.w3.org/1999/xlink" type="other">
+						<mads:name type="personal">
+							<mads:namePart>Roosevelt, F. D. (Franklin Delano)</mads:namePart>
+							<mads:namePart type="date">1882-1945</mads:namePart>
+						</mads:name>
+					</mads:variant>
+					<mads:note xmlns:xlink="http://www.w3.org/1999/xlink" type="nonpublic">Machine-derived non-Latin script reference project</mads:note>
+					<mads:note xmlns:xlink="http://www.w3.org/1999/xlink" type="nonpublic">Non-Latin script references not evaluated</mads:note>
+					<mads:note xmlns:xlink="http://www.w3.org/1999/xlink" type="source">Scientific American. The United States navy ... 1914</mads:note>
+					<mads:note xmlns:xlink="http://www.w3.org/1999/xlink" type="source">FDR's utopian, c1987: CIP t.p. (FDR)</mads:note>
+					<mads:note xmlns:xlink="http://www.w3.org/1999/xlink" type="source">Frank&#x323;lin D. Ruzv&#x323;elt&#x323;, c1945</mads:note>
+					<mads:note xmlns:xlink="http://www.w3.org/1999/xlink" type="source">FDR, 2006: container (Franklin Delano Roosevelt)</mads:note>
+					<mads:note xmlns:xlink="http://www.w3.org/1999/xlink" type="source">Rupture des styles et continuite&#x301; de l'action, 2008: t.p. (F. Roosevelt) back cover (Franklin D. Roosevelt)</mads:note>
+					<mads:note xmlns:xlink="http://www.w3.org/1999/xlink" type="source">English Wikipedia website, viewed Apr. 30, 2012 (Franklin Delano Roosevelt (Jan. 30, 1882--Apr. 12, 1945), also known by his initials, FDR, was the 32nd President of the United States (1933-1945); Born: Franklin Delano Roosevelt, Jan. 30, 1882, Hyde Park, New York; Died: Apr. 12, 1945 (aged 63), Warm Springs, Georgia; occupation [before politics]: corporate lawyer)</mads:note>
+					<mads:note xmlns:xlink="http://www.w3.org/1999/xlink" type="source">F.D. Roosevelt, 1947: cover (F.D. Roosevelt)</mads:note>
+					<mads:identifier type="lccn">n  79022932 </mads:identifier>
+					<mads:identifier type="wikidata">Q8007</mads:identifier>
+					<mads:identifier type="uri">http://www.wikidata.org/entity/Q8007</mads:identifier>
+					<mads:identifier type="uri">http://dbpedia.org/resource/Franklin_D._Roosevelt</mads:identifier>
+					<mads:identifier type="nndb">115/000024043</mads:identifier>
+					<mads:identifier type="gettyulan">500354971</mads:identifier>
+					<mads:identifier type="uri">http://vocab.getty.edu/ulan/500354971</mads:identifier>
+					<mads:identifier type="bbcth">bcc85108-7dc5-49f0-a556-337ddfe80e9e</mads:identifier>
+					<mads:identifier type="uri">http://www.bbc.co.uk/things/bcc85108-7dc5-49f0-a556-337ddfe80e9e#id</mads:identifier>
+					<mads:identifier type="fast">32031</mads:identifier>
+					<mads:identifier type="uri">http://id.worldcat.org/fast/32031</mads:identifier>
+					<mads:identifier type="viaf">29542759</mads:identifier>
+					<mads:identifier type="uri">http://viaf.org/viaf/29542759</mads:identifier>
+					<mads:identifier type="uri">http://data.bibliotheken.nl/id/thes/p068805640</mads:identifier>
+					<mads:identifier type="imdb">nm0740483</mads:identifier>
+					<mads:identifier type="discogs">856289</mads:identifier>
+					<mads:identifier type="snac">w6pc30cw</mads:identifier>
+					<mads:identifier type="uri">http://n2t.net/ark:/99166/w61s7dgz</mads:identifier>
+					<mads:identifier type="uri">https://collections.tepapa.govt.nz/agent/35032</mads:identifier>
+					<mads:identifier type="amnbo">0600567</mads:identifier>
+					<mads:identifier type="uri">https://doi.org/10.1093/anb/9780198606697.article.0600567</mads:identifier>
+					<mads:identifier type="musicb">afac40dc-7788-4da7-9229-61d660e77dd3</mads:identifier>
+					<mads:identifier type="uri">http://musicbrainz.org/artist/afac40dc-7788-4da7-9229-61d660e77dd3#_</mads:identifier>
+					<mads:identifier type="npg">mp84624</mads:identifier>
+					<mads:identifier type="munzing">00000000090</mads:identifier>
+					<mads:identifier type="findagr">897</mads:identifier>
+					<mads:identifier type="gec">0056735</mads:identifier>
+					<mads:identifier type="isni">0000000121258471</mads:identifier>
+					<mads:identifier type="isni">https://isni.org/isni/0000000121258471</mads:identifier>
+					<mads:fieldOfActivity xmlns:xlink="http://www.w3.org/1999/xlink">United States--Politics and government New York (State)--Politics and government-</mads:fieldOfActivity>
+					<mads:extension>
+						<mads:profession>
+							<mads:professionTerm>Presidents</mads:professionTerm>
+						</mads:profession>
+					</mads:extension>
+					<mads:extension>
+						<mads:profession>
+							<mads:professionTerm>Presidents (Rulers)</mads:professionTerm>
+						</mads:profession>
+					</mads:extension>
+					<mads:extension>
+						<mads:profession>
+							<mads:professionTerm>Lawyers</mads:professionTerm>
+						</mads:profession>
+					</mads:extension>
+					<mads:extension>
+						<mads:profession>
+							<mads:professionTerm>Governors</mads:professionTerm>
+						</mads:profession>
+					</mads:extension>
+					<mads:recordInfo xmlns:xlink="http://www.w3.org/1999/xlink">
+						<mads:recordOrigin>Converted from MARCXML to MADS version 2.0 (Revision 2.13)</mads:recordOrigin>
+						<mads:recordContentSource authority="marcorg">DLC</mads:recordContentSource>
+						<mads:recordChangeDate encoding="iso8601">20230107064529.0</mads:recordChangeDate>
+						<mads:recordIdentifier source="DLC">n  79022932 </mads:recordIdentifier>
+						<mads:languageOfCataloging>
+							<mads:languageTerm authority="iso639-2b" type="code">eng</mads:languageTerm>
+						</mads:languageOfCataloging>
+						<mads:descriptionStandard>rda</mads:descriptionStandard>
+						<mads:descriptionStandard>other rules</mads:descriptionStandard>
+					</mads:recordInfo>
+				</mads:mads>
+			</zs:recordData>
+			<zs:recordPosition>9</zs:recordPosition>
+		</zs:record>
+		<zs:record>
+			<zs:recordSchema>mads</zs:recordSchema>
+			<zs:recordPacking>xml</zs:recordPacking>
+			<zs:recordData>
+				<mads:mads xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mads="http://www.loc.gov/mads/v2" version="2.0" xsi:schemaLocation="http://www.loc.gov/mads/v2 http://www.loc.gov/standards/mads/mads-2-0.xsd">
+					<mads:authority xmlns:xlink="http://www.w3.org/1999/xlink" geographicSubdivision="not applicable">
+						<mads:name type="personal" authority="naf">
+							<mads:namePart>Roosevelt, Theodore</mads:namePart>
+							<mads:namePart type="date">1858-1919</mads:namePart>
+						</mads:name>
+					</mads:authority>
+					<mads:related xmlns:xlink="http://www.w3.org/1999/xlink" type="other">
+						<mads:name type="corporate">
+							<mads:namePart>United States</mads:namePart>
+							<mads:namePart>President (1901-1909 : Roosevelt)</mads:namePart>
+						</mads:name>
+					</mads:related>
+					<mads:related xmlns:xlink="http://www.w3.org/1999/xlink" type="other">
+						<mads:name type="corporate">
+							<mads:namePart>New York (State)</mads:namePart>
+							<mads:namePart>Governor (1899-1901 : Roosevelt)</mads:namePart>
+						</mads:name>
+					</mads:related>
+					<mads:variant xmlns:xlink="http://www.w3.org/1999/xlink" type="other">
+						<mads:name type="personal">
+							<mads:namePart>Ruzvel&#x2B9;t, Teodor</mads:namePart>
+							<mads:namePart type="date">1858-1919</mads:namePart>
+						</mads:name>
+					</mads:variant>
+					<mads:variant xmlns:xlink="http://www.w3.org/1999/xlink" type="other">
+						<mads:name type="personal">
+							<mads:namePart>Lo-ssu&#x306;-fu, Hsi-ao-t&#x2BB;e&#x302;</mads:namePart>
+							<mads:namePart type="date">1858-1919</mads:namePart>
+						</mads:name>
+					</mads:variant>
+					<mads:variant xmlns:xlink="http://www.w3.org/1999/xlink" type="other">
+						<mads:name type="personal">
+							<mads:namePart>Roosevelt, Theodore</mads:namePart>
+							<mads:namePart type="termsOfAddress">Pres. U.S</mads:namePart>
+							<mads:namePart type="date">1858-1919</mads:namePart>
+						</mads:name>
+					</mads:variant>
+					<mads:variant xmlns:xlink="http://www.w3.org/1999/xlink" type="other">
+						<mads:name type="personal">
+							<mads:namePart>Roosevelt, Teddy</mads:namePart>
+							<mads:namePart type="date">1858-1919</mads:namePart>
+						</mads:name>
+					</mads:variant>
+					<mads:variant xmlns:xlink="http://www.w3.org/1999/xlink" type="other">
+						<mads:name type="personal">
+							<mads:namePart>Roosevelt, Teodoro</mads:namePart>
+							<mads:namePart type="date">1858-1919</mads:namePart>
+						</mads:name>
+					</mads:variant>
+					<mads:note xmlns:xlink="http://www.w3.org/1999/xlink" type="source">The power of enthusiasm, c1981: t.p. (Theodore Roosevelt) p. 5 (Teddy)</mads:note>
+					<mads:note xmlns:xlink="http://www.w3.org/1999/xlink" type="source">Cipriano Castro y Teodoro Roosevelt, 1986</mads:note>
+					<mads:note xmlns:xlink="http://www.w3.org/1999/xlink" type="source">Public papers of Theodore Roosevelt, governor, 1899, 1899: t.p. (State of New York)</mads:note>
+					<mads:note xmlns:xlink="http://www.w3.org/1999/xlink" type="source">Wikipedia, Dec. 7, 2010 (Theodore Roosevelt; Theodore "Teddy" Roosevelt; b. Oct. 27, 1858 in New York, N.Y.; d. Jan. 6, 1919 at Oyster Bay, N.Y.; politician, explorer, soldier, hunter, naturalist, and author)</mads:note>
+					<mads:note xmlns:xlink="http://www.w3.org/1999/xlink" type="history">Theodore Roosevelt (1858-1919) was a politician, soldier, explorer, naturalist, and author. He served as president of the United States from 1901 to 1909</mads:note>
+					<mads:identifier type="lccn">n  79027239 </mads:identifier>
+					<mads:extension>
+						<mads:profession>
+							<mads:professionTerm>Politicians</mads:professionTerm>
+						</mads:profession>
+					</mads:extension>
+					<mads:extension>
+						<mads:profession>
+							<mads:professionTerm>Explorers</mads:professionTerm>
+						</mads:profession>
+					</mads:extension>
+					<mads:extension>
+						<mads:profession>
+							<mads:professionTerm>Soldiers</mads:professionTerm>
+						</mads:profession>
+					</mads:extension>
+					<mads:extension>
+						<mads:profession>
+							<mads:professionTerm>Naturalists</mads:professionTerm>
+						</mads:profession>
+					</mads:extension>
+					<mads:extension>
+						<mads:profession>
+							<mads:professionTerm>Authors</mads:professionTerm>
+						</mads:profession>
+					</mads:extension>
+					<mads:recordInfo xmlns:xlink="http://www.w3.org/1999/xlink">
+						<mads:recordOrigin>Converted from MARCXML to MADS version 2.0 (Revision 2.13)</mads:recordOrigin>
+						<mads:recordContentSource authority="marcorg">DLC</mads:recordContentSource>
+						<mads:recordChangeDate encoding="iso8601">20230908064728.0</mads:recordChangeDate>
+						<mads:recordIdentifier source="DLC">n  79027239 </mads:recordIdentifier>
+						<mads:languageOfCataloging>
+							<mads:languageTerm authority="iso639-2b" type="code">eng</mads:languageTerm>
+						</mads:languageOfCataloging>
+						<mads:descriptionStandard>rda</mads:descriptionStandard>
+						<mads:descriptionStandard>other rules</mads:descriptionStandard>
+					</mads:recordInfo>
+				</mads:mads>
+			</zs:recordData>
+			<zs:recordPosition>10</zs:recordPosition>
+		</zs:record>
+		<zs:record>
+			<zs:recordSchema>mads</zs:recordSchema>
+			<zs:recordPacking>xml</zs:recordPacking>
+			<zs:recordData>
+				<mads:mads xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mads="http://www.loc.gov/mads/v2" version="2.0" xsi:schemaLocation="http://www.loc.gov/mads/v2 http://www.loc.gov/standards/mads/mads-2-0.xsd">
+					<mads:authority xmlns:xlink="http://www.w3.org/1999/xlink" geographicSubdivision="not applicable">
+						<mads:name type="corporate">
+							<mads:namePart>United States</mads:namePart>
+							<mads:namePart>President (1901-1909 : Roosevelt)</mads:namePart>
+						</mads:name>
+					</mads:authority>
+					<mads:related xmlns:xlink="http://www.w3.org/1999/xlink" type="other">
+						<mads:name type="personal">
+							<mads:namePart>Roosevelt, Theodore</mads:namePart>
+							<mads:namePart type="date">1858-1919</mads:namePart>
+						</mads:name>
+					</mads:related>
+					<mads:note xmlns:xlink="http://www.w3.org/1999/xlink" type="nonpublic">SUBJECT USAGE: This heading is not valid for use as a subject.  Works about this person are entered under Roosevelt, Theodore, 1858-1919</mads:note>
+					<mads:note xmlns:xlink="http://www.w3.org/1999/xlink" type="nonpublic">Restoration of the White House : message of the President of the United States transmitting the report of the architects, 1903</mads:note>
+					<mads:identifier type="lccn">n  79027240 </mads:identifier>
+					<mads:recordInfo xmlns:xlink="http://www.w3.org/1999/xlink">
+						<mads:recordOrigin>Converted from MARCXML to MADS version 2.0 (Revision 2.13)</mads:recordOrigin>
+						<mads:recordContentSource authority="marcorg">DLC</mads:recordContentSource>
+						<mads:recordChangeDate encoding="iso8601">20101006074644.0</mads:recordChangeDate>
+						<mads:recordIdentifier source="DLC">n  79027240 </mads:recordIdentifier>
+						<mads:languageOfCataloging>
+							<mads:languageTerm authority="iso639-2b" type="code">eng</mads:languageTerm>
+						</mads:languageOfCataloging>
+						<mads:descriptionStandard>aacr2</mads:descriptionStandard>
+					</mads:recordInfo>
+				</mads:mads>
+			</zs:recordData>
+			<zs:recordPosition>11</zs:recordPosition>
+		</zs:record>
+		<zs:record>
+			<zs:recordSchema>mads</zs:recordSchema>
+			<zs:recordPacking>xml</zs:recordPacking>
+			<zs:recordData>
+				<mads:mads xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mads="http://www.loc.gov/mads/v2" version="2.0" xsi:schemaLocation="http://www.loc.gov/mads/v2 http://www.loc.gov/standards/mads/mads-2-0.xsd">
+					<mads:authority xmlns:xlink="http://www.w3.org/1999/xlink" geographicSubdivision="not applicable">
+						<mads:name type="personal" authority="naf">
+							<mads:namePart>Roosevelt, Kermit</mads:namePart>
+							<mads:namePart type="date">1916-2000</mads:namePart>
+						</mads:name>
+					</mads:authority>
+					<mads:variant xmlns:xlink="http://www.w3.org/1999/xlink" type="other">
+						<mads:name type="personal">
+							<mads:namePart>Roosevelt, Kim</mads:namePart>
+							<mads:namePart type="date">1916-2000</mads:namePart>
+						</mads:name>
+					</mads:variant>
+					<mads:note xmlns:xlink="http://www.w3.org/1999/xlink" type="source">His Partition of Palestine, 1948</mads:note>
+					<mads:note xmlns:xlink="http://www.w3.org/1999/xlink" type="source">Sentimental safari, 1963 t.p. (Kermit Roosevelt)  p. xi (grandson of Theodore Roosevelt; his father Kermit Roosevelt was Theodore Roosevelt's third child and second son) xii (christened Kermit Roosevelt Junior, but the Army Induction Center knocked the Junior off name when ... recorded that father was dead ... Since childhood known to family and friends as Kim.  Son Kermit inherited the Junior)</mads:note>
+					<mads:note xmlns:xlink="http://www.w3.org/1999/xlink" type="source">WWW Counterpunch page, viewed July 30, 2002 (Kermit "Kim" Roosevelt b. in Buenos Aires; grandson of Thoedore Roosevelt; former CIA agent b. in 1916; died on June 8, 2000 aged 84; mastermind of the CIA coup that put the Shah of Iran back on Peacock Throne in 1953)</mads:note>
+					<mads:note xmlns:xlink="http://www.w3.org/1999/xlink" type="source">WWW TR Genealogy "Family and Descendants of Theodore Roosevelt" page, viewed July 30, 2002 (Kermit "Kim" Roosevelt, Jr. (Feb. 16, 1916-June 8, 2000)</mads:note>
+					<mads:identifier type="lccn">n  79039903 </mads:identifier>
+					<mads:recordInfo xmlns:xlink="http://www.w3.org/1999/xlink">
+						<mads:recordOrigin>Converted from MARCXML to MADS version 2.0 (Revision 2.13)</mads:recordOrigin>
+						<mads:recordContentSource authority="marcorg">DLC</mads:recordContentSource>
+						<mads:recordChangeDate encoding="iso8601">20020731111354.0</mads:recordChangeDate>
+						<mads:recordIdentifier source="DLC">n  79039903 </mads:recordIdentifier>
+						<mads:descriptionStandard>aacr2</mads:descriptionStandard>
+					</mads:recordInfo>
+				</mads:mads>
+			</zs:recordData>
+			<zs:recordPosition>12</zs:recordPosition>
+		</zs:record>
+		<zs:record>
+			<zs:recordSchema>mads</zs:recordSchema>
+			<zs:recordPacking>xml</zs:recordPacking>
+			<zs:recordData>
+				<mads:mads xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mads="http://www.loc.gov/mads/v2" version="2.0" xsi:schemaLocation="http://www.loc.gov/mads/v2 http://www.loc.gov/standards/mads/mads-2-0.xsd">
+					<mads:authority xmlns:xlink="http://www.w3.org/1999/xlink" geographicSubdivision="not applicable">
+						<mads:name type="personal" authority="naf">
+							<mads:namePart>Vellozo, Roosevelt</mads:namePart>
+						</mads:name>
+					</mads:authority>
+					<mads:variant xmlns:xlink="http://www.w3.org/1999/xlink" type="other">
+						<mads:name type="personal">
+							<mads:namePart>Velloso, Roosevelt</mads:namePart>
+						</mads:name>
+					</mads:variant>
+					<mads:note xmlns:xlink="http://www.w3.org/1999/xlink" type="source">Ezequiel Filho. Milharal de Nico Souza, 1975 (a.e.) t.p. (Roosevelt Vellozo) cover (Roosevelt Velloso) p. 7 (Roosevelt Vellozo)</mads:note>
+					<mads:note xmlns:xlink="http://www.w3.org/1999/xlink" type="source">Tel. dir., Brasi&#x301;lia, 1978 (Velloso, Roosevelt)</mads:note>
+					<mads:identifier type="lccn">n  79070892 </mads:identifier>
+					<mads:recordInfo xmlns:xlink="http://www.w3.org/1999/xlink">
+						<mads:recordOrigin>Converted from MARCXML to MADS version 2.0 (Revision 2.13)</mads:recordOrigin>
+						<mads:recordContentSource authority="marcorg">DLC</mads:recordContentSource>
+						<mads:recordChangeDate encoding="iso8601">20090226080339.0</mads:recordChangeDate>
+						<mads:recordIdentifier source="DLC">n  79070892 </mads:recordIdentifier>
+						<mads:languageOfCataloging>
+							<mads:languageTerm authority="iso639-2b" type="code">eng</mads:languageTerm>
+						</mads:languageOfCataloging>
+						<mads:descriptionStandard>aacr2</mads:descriptionStandard>
+					</mads:recordInfo>
+				</mads:mads>
+			</zs:recordData>
+			<zs:recordPosition>13</zs:recordPosition>
+		</zs:record>
+		<zs:record>
+			<zs:recordSchema>mads</zs:recordSchema>
+			<zs:recordPacking>xml</zs:recordPacking>
+			<zs:recordData>
+				<mads:mads xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mads="http://www.loc.gov/mads/v2" version="2.0" xsi:schemaLocation="http://www.loc.gov/mads/v2 http://www.loc.gov/standards/mads/mads-2-0.xsd">
+					<mads:authority xmlns:xlink="http://www.w3.org/1999/xlink" geographicSubdivision="not applicable">
+						<mads:name type="personal" authority="naf">
+							<mads:namePart>Roosevelt, Edith Kermit Carow</mads:namePart>
+							<mads:namePart type="date">1861-1948</mads:namePart>
+						</mads:name>
+					</mads:authority>
+					<mads:variant xmlns:xlink="http://www.w3.org/1999/xlink" type="other">
+						<mads:name type="personal">
+							<mads:namePart>Roosevelt, Theodore</mads:namePart>
+							<mads:namePart type="termsOfAddress">Mrs</mads:namePart>
+							<mads:namePart type="date">1861-1948</mads:namePart>
+						</mads:name>
+					</mads:variant>
+					<mads:note xmlns:xlink="http://www.w3.org/1999/xlink" type="source">Her Cleared for strange ports, 1927: t.p. (Mrs. Theodore Roosevelt, Sr.)</mads:note>
+					<mads:note xmlns:xlink="http://www.w3.org/1999/xlink" type="source">Her American backlogs, 1928: t.p. (Mrs. Theodore Roosevelt)</mads:note>
+					<mads:note xmlns:xlink="http://www.w3.org/1999/xlink" type="source">LC data base, 10-10-92 (hdg.: Roosevelt, Edith Kermit Carow, 1861-1948; usage: Edith Kermit Carow Roosevelt, Edith Kermit Roosevelt)</mads:note>
+					<mads:identifier type="lccn">n  79085128 </mads:identifier>
+					<mads:recordInfo xmlns:xlink="http://www.w3.org/1999/xlink">
+						<mads:recordOrigin>Converted from MARCXML to MADS version 2.0 (Revision 2.13)</mads:recordOrigin>
+						<mads:recordContentSource authority="marcorg">DLC</mads:recordContentSource>
+						<mads:recordChangeDate encoding="iso8601">20130802070218.0</mads:recordChangeDate>
+						<mads:recordIdentifier source="DLC">n  79085128 </mads:recordIdentifier>
+						<mads:languageOfCataloging>
+							<mads:languageTerm authority="iso639-2b" type="code">eng</mads:languageTerm>
+						</mads:languageOfCataloging>
+						<mads:descriptionStandard>rda</mads:descriptionStandard>
+						<mads:descriptionStandard>other rules</mads:descriptionStandard>
+					</mads:recordInfo>
+				</mads:mads>
+			</zs:recordData>
+			<zs:recordPosition>14</zs:recordPosition>
+		</zs:record>
+		<zs:record>
+			<zs:recordSchema>mads</zs:recordSchema>
+			<zs:recordPacking>xml</zs:recordPacking>
+			<zs:recordData>
+				<mads:mads xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mads="http://www.loc.gov/mads/v2" version="2.0" xsi:schemaLocation="http://www.loc.gov/mads/v2 http://www.loc.gov/standards/mads/mads-2-0.xsd">
+					<mads:authority xmlns:xlink="http://www.w3.org/1999/xlink" geographicSubdivision="not applicable">
+						<mads:name type="personal" authority="naf">
+							<mads:namePart>Miles, Roosevelt</mads:namePart>
+						</mads:name>
+					</mads:authority>
+					<mads:note xmlns:xlink="http://www.w3.org/1999/xlink" type="source">Texas. Laws, statutes, etc. Texas laws relating to minors, c1978 (a.e.) t.p. (Roosevelt Miles)</mads:note>
+					<mads:identifier type="lccn">n  79087766 </mads:identifier>
+					<mads:recordInfo xmlns:xlink="http://www.w3.org/1999/xlink">
+						<mads:recordOrigin>Converted from MARCXML to MADS version 2.0 (Revision 2.13)</mads:recordOrigin>
+						<mads:recordContentSource authority="marcorg">DLC</mads:recordContentSource>
+						<mads:recordChangeDate encoding="iso8601">20090221080455.0</mads:recordChangeDate>
+						<mads:recordIdentifier source="DLC">n  79087766 </mads:recordIdentifier>
+						<mads:languageOfCataloging>
+							<mads:languageTerm authority="iso639-2b" type="code">eng</mads:languageTerm>
+						</mads:languageOfCataloging>
+						<mads:descriptionStandard>aacr2</mads:descriptionStandard>
+					</mads:recordInfo>
+				</mads:mads>
+			</zs:recordData>
+			<zs:recordPosition>15</zs:recordPosition>
+		</zs:record>
+		<zs:record>
+			<zs:recordSchema>mads</zs:recordSchema>
+			<zs:recordPacking>xml</zs:recordPacking>
+			<zs:recordData>
+				<mads:mads xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mads="http://www.loc.gov/mads/v2" version="2.0" xsi:schemaLocation="http://www.loc.gov/mads/v2 http://www.loc.gov/standards/mads/mads-2-0.xsd">
+					<mads:authority xmlns:xlink="http://www.w3.org/1999/xlink" geographicSubdivision="not applicable">
+						<mads:name type="personal" authority="naf">
+							<mads:namePart>Roosevelt, Anna Curtenius</mads:namePart>
+						</mads:name>
+					</mads:authority>
+					<mads:note xmlns:xlink="http://www.w3.org/1999/xlink" type="source">New York (City). Mus. of the Amer. Ind., Heye Foundat. The ancestors, c1979 (a.e.) t.p. (Anna Curtenius Roosevelt) introd. (curator, Museum of the Amer. Indian)</mads:note>
+					<mads:note xmlns:xlink="http://www.w3.org/1999/xlink" type="source">Amazonian Indians from prehistory to the present, c1994: CIP t.p. (Anna Roosevelt)</mads:note>
+					<mads:note xmlns:xlink="http://www.w3.org/1999/xlink" type="source">Amaz'hommes, c2010: t.p. (Anna Roosevelt) p. 5 (Department of Anthropology, University of Illinois, Chicago)</mads:note>
+					<mads:note xmlns:xlink="http://www.w3.org/1999/xlink" type="source">Ancient civilizations of the Amazon, 2021: title page (Anna Curtenius Roosevelt) page 2 of cover (four-field anthropologist interested in soial and biological evolution, human-environment interaction, and human rights; Professor of Anthropology at the University of Illinois, Chicago, since 1994; previously held curatorships at the Museum of the American Indian, Field Museum, and American Museum of Natural History, and lectureships at NYU, Harvard, and University of Florida; research interests: history and prehistory of the tropical forests and the peopling of the Americas)</mads:note>
+					<mads:identifier type="lccn">n  79115057 </mads:identifier>
+					<mads:affiliation>
+						<mads:position>University of Illinois at Chicago</mads:position>
+						<mads:dateValid point="start">1994</mads:dateValid>
+						<mads:dateValid point="end"/>
+					</mads:affiliation>
+					<mads:extension>
+						<mads:profession>
+							<mads:professionTerm>Anthropologists</mads:professionTerm>
+						</mads:profession>
+					</mads:extension>
+					<mads:recordInfo xmlns:xlink="http://www.w3.org/1999/xlink">
+						<mads:recordOrigin>Converted from MARCXML to MADS version 2.0 (Revision 2.13)</mads:recordOrigin>
+						<mads:recordContentSource authority="marcorg">DLC</mads:recordContentSource>
+						<mads:recordChangeDate encoding="iso8601">20220812064536.0</mads:recordChangeDate>
+						<mads:recordIdentifier source="DLC">n  79115057 </mads:recordIdentifier>
+						<mads:languageOfCataloging>
+							<mads:languageTerm authority="iso639-2b" type="code">eng</mads:languageTerm>
+						</mads:languageOfCataloging>
+						<mads:descriptionStandard>rda</mads:descriptionStandard>
+						<mads:descriptionStandard>other rules</mads:descriptionStandard>
+					</mads:recordInfo>
+				</mads:mads>
+			</zs:recordData>
+			<zs:recordPosition>16</zs:recordPosition>
+		</zs:record>
+		<zs:record>
+			<zs:recordSchema>mads</zs:recordSchema>
+			<zs:recordPacking>xml</zs:recordPacking>
+			<zs:recordData>
+				<mads:mads xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mads="http://www.loc.gov/mads/v2" version="2.0" xsi:schemaLocation="http://www.loc.gov/mads/v2 http://www.loc.gov/standards/mads/mads-2-0.xsd">
+					<mads:authority xmlns:xlink="http://www.w3.org/1999/xlink" geographicSubdivision="not applicable">
+						<mads:name type="personal" authority="naf">
+							<mads:namePart>Schlottmann, Jeanette</mads:namePart>
+						</mads:name>
+					</mads:authority>
+					<mads:variant xmlns:xlink="http://www.w3.org/1999/xlink" type="other">
+						<mads:name type="personal">
+							<mads:namePart>Roosevelt, Jeanette Schlottmann</mads:namePart>
+						</mads:name>
+					</mads:variant>
+					<mads:note xmlns:xlink="http://www.w3.org/1999/xlink" type="source">Duggan, A. S. The folk dance library, 1948</mads:note>
+					<mads:note xmlns:xlink="http://www.w3.org/1999/xlink" type="source">Her Interview with Louis Horst [SR], 1959-1960 (Jeanette Schlottmann Roosevelt)</mads:note>
+					<mads:note xmlns:xlink="http://www.w3.org/1999/xlink" type="source">Dance magazine, June 1961: p. 5 (Jeanette Schlottmann; m. Curtis Roosevelt in 1961; director, Dance Dept., Connecticut College)</mads:note>
+					<mads:identifier type="lccn">n  79122688 </mads:identifier>
+					<mads:recordInfo xmlns:xlink="http://www.w3.org/1999/xlink">
+						<mads:recordOrigin>Converted from MARCXML to MADS version 2.0 (Revision 2.13)</mads:recordOrigin>
+						<mads:recordContentSource authority="marcorg">DLC</mads:recordContentSource>
+						<mads:recordChangeDate encoding="iso8601">20141209073156.0</mads:recordChangeDate>
+						<mads:recordIdentifier source="DLC">n  79122688 </mads:recordIdentifier>
+						<mads:languageOfCataloging>
+							<mads:languageTerm authority="iso639-2b" type="code">eng</mads:languageTerm>
+						</mads:languageOfCataloging>
+						<mads:descriptionStandard>rda</mads:descriptionStandard>
+						<mads:descriptionStandard>other rules</mads:descriptionStandard>
+					</mads:recordInfo>
+				</mads:mads>
+			</zs:recordData>
+			<zs:recordPosition>17</zs:recordPosition>
+		</zs:record>
+		<zs:record>
+			<zs:recordSchema>mads</zs:recordSchema>
+			<zs:recordPacking>xml</zs:recordPacking>
+			<zs:recordData>
+				<mads:mads xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mads="http://www.loc.gov/mads/v2" version="2.0" xsi:schemaLocation="http://www.loc.gov/mads/v2 http://www.loc.gov/standards/mads/mads-2-0.xsd">
+					<mads:authority xmlns:xlink="http://www.w3.org/1999/xlink" geographicSubdivision="not applicable">
+						<mads:name type="personal" authority="naf">
+							<mads:namePart>Robinson, Jackie</mads:namePart>
+							<mads:namePart type="date">1919-1972</mads:namePart>
+						</mads:name>
+					</mads:authority>
+					<mads:variant xmlns:xlink="http://www.w3.org/1999/xlink" type="other">
+						<mads:name type="personal">
+							<mads:namePart>Robinson, Jack Roosevelt</mads:namePart>
+							<mads:namePart type="date">1919-1972</mads:namePart>
+						</mads:name>
+					</mads:variant>
+					<mads:variant xmlns:xlink="http://www.w3.org/1999/xlink" type="other">
+						<mads:name type="personal">
+							<mads:namePart>Robinson, Jack</mads:namePart>
+							<mads:namePart type="date">1919-1972</mads:namePart>
+						</mads:name>
+					</mads:variant>
+					<mads:variant xmlns:xlink="http://www.w3.org/1999/xlink" type="other">
+						<mads:name type="personal">
+							<mads:namePart>Robinson, Jack</mads:namePart>
+							<mads:namePart type="termsOfAddress">(Baseball player)</mads:namePart>
+						</mads:name>
+					</mads:variant>
+					<mads:variant xmlns:xlink="http://www.w3.org/1999/xlink" type="other">
+						<mads:name type="personal">
+							<mads:namePart>Robinson, John Roosevelt</mads:namePart>
+							<mads:namePart type="date">1919-1972</mads:namePart>
+						</mads:name>
+					</mads:variant>
+					<mads:variant xmlns:xlink="http://www.w3.org/1999/xlink" type="other">
+						<mads:name type="personal">
+							<mads:namePart>Robinson, John</mads:namePart>
+							<mads:namePart type="date">1919-1972</mads:namePart>
+						</mads:name>
+					</mads:variant>
+					<mads:variant xmlns:xlink="http://www.w3.org/1999/xlink" type="other">
+						<mads:name type="personal">
+							<mads:namePart>Robinson, John</mads:namePart>
+							<mads:namePart type="termsOfAddress">(Baseball player)</mads:namePart>
+						</mads:name>
+					</mads:variant>
+					<mads:note xmlns:xlink="http://www.w3.org/1999/xlink" type="nonpublic">URIs added to this record for the PCC URI MARC Pilot. Please do not remove or edit the URIs</mads:note>
+					<mads:note xmlns:xlink="http://www.w3.org/1999/xlink" type="source">Jackie Robinson of the Brooklyn Dodgers, 1957</mads:note>
+					<mads:note xmlns:xlink="http://www.w3.org/1999/xlink" type="source">Jackie Robinson, 1984: CIP t.p. (Jackie Robinson) galley (Jack Roosevelt Robinson)</mads:note>
+					<mads:note xmlns:xlink="http://www.w3.org/1999/xlink" type="source">Jackie Robinson, the official site, via WWW, Feb. 29, 2012 (b. Jan. 31, 1919 in Cairo, Georgia; d. Oct. 24, 1972 in Stamford, Connecticut; born Jack Roosevelt Robinson; attended UCLA)</mads:note>
+					<mads:note xmlns:xlink="http://www.w3.org/1999/xlink" type="source">Wikipedia, via WWW, Feb. 29, 2012 (American baseball player; attended John Muir High School, Pasadena Junior College--graduating in 1939, and UCLA; first African-American to play in the major leagues in 60 years, playing for the Brooklyn Dodgers; television analyst for Major League Baseball; vice-president of Freedom National Bank)</mads:note>
+					<mads:note xmlns:xlink="http://www.w3.org/1999/xlink" type="source">African American National Biography, accessed April 7, 2015, via Oxford African American Studies Center database: (Robinson, Jackie; Jack Roosevelt Robinson; baseball player; born 31 January, 1919 in Cairo, Georgia, United States; graduated from Pasadena Junior College in 1939, was exceptional multi-sport athlete, won junior college All-American honors in football; attended University of California, Los Angeles (UCLA) (1939-1941); played four sports in UCLA, led twice the Southern Division of the Pacific Coast Conference in basketball, running back in football team, and won the National Collegiate Athletic Association (NCAA) broad-jump championship in track and field; served in the U.S. Army as second lieutenant (1942-1944); played shortstop for Kansas City Monarchs, Negro Leagues (1945); received a tryout at Boston Red Sox (1945); baseball player for Montreal Royals, top Dodgers minor-league club, Montreal (1946), won the league batting championship; starting first baseman and second baseman for Dodgers (1947-1956), was subjected to extraordinary verbal and physical abuse, won Most Valuable Player award (1949), won six National League pennants and the World Series (1955); retired from baseball (1957); vice president, Chock Full O'Nuts food company (1957-1964); helped establish Freedom National Bank in Harlem; spokesman for civil rights issues; fund-raiser for the National Association for the Advancement of Colored People; wrote autobiography I Never Had It Made; became the first black player to win election to the National Baseball Hall of Fame (1962), Major League Baseball retired his number 42 in perpetuity on fiftieth anniversary of his first major-league game (1997); died 24 October, 1972 in Stamford, Connecticut, United States)</mads:note>
+					<mads:note xmlns:xlink="http://www.w3.org/1999/xlink" type="source">National Baseball Hall of Fame website, 31 May 2021: entry for Jackie Robinson (Jack Roosevelt Robinson; inducted into the National Baseball Hall of Fame and Museum in 1962)</mads:note>
+					<mads:note xmlns:xlink="http://www.w3.org/1999/xlink" type="source">New York times, 15 Apr. 2022: in an article entitled, "Hall of Fame to re-examine perspectives of Black players" on page B9 (Jackie Robinson lived only a decade as a Hall of Famer; he integrated the major leagues a quarter-century before, and he never stopped striving for social justice)</mads:note>
+					<mads:note xmlns:xlink="http://www.w3.org/1999/xlink" type="history">Individual was a National Baseball Hall of Fame inductee</mads:note>
+					<mads:identifier type="lccn">n  79141359 </mads:identifier>
+					<mads:identifier type="isni">000000008137088X</mads:identifier>
+					<mads:identifier type="isni">http://isni.org/isni/000000008137088X</mads:identifier>
+					<mads:identifier type="viaf">57427186</mads:identifier>
+					<mads:identifier type="viaf">http://viaf.org/viaf/57427186</mads:identifier>
+					<mads:identifier type="wikidata">Q221048</mads:identifier>
+					<mads:identifier type="wikidata">http://www.wikidata.org/entity/</mads:identifier>
+					<mads:fieldOfActivity xmlns:xlink="http://www.w3.org/1999/xlink">Social justice-</mads:fieldOfActivity>
+					<mads:affiliation>
+						<mads:position>Brooklyn Dodgers (Baseball team)</mads:position>
+						<mads:dateValid point="start">1947</mads:dateValid>
+						<mads:dateValid point="end">1956</mads:dateValid>
+					</mads:affiliation>
+					<mads:affiliation>
+						<mads:position>Pasadena Junior College (Pasadena, Calif.)</mads:position>
+						<mads:dateValid point="start"/>
+						<mads:dateValid point="end">1939</mads:dateValid>
+					</mads:affiliation>
+					<mads:affiliation>
+						<mads:position>University of California, Los Angeles</mads:position>
+						<mads:dateValid point="start"/>
+						<mads:dateValid point="end"/>
+					</mads:affiliation>
+					<mads:affiliation>
+						<mads:position>National Baseball Hall of Fame and Museum</mads:position>
+						<mads:dateValid point="start">1962</mads:dateValid>
+						<mads:dateValid point="end"/>
+					</mads:affiliation>
+					<mads:extension>
+						<mads:profession>
+							<mads:professionTerm>Baseball players</mads:professionTerm>
+						</mads:profession>
+					</mads:extension>
+					<mads:extension>
+						<mads:profession>
+							<mads:professionTerm>Columnist</mads:professionTerm>
+						</mads:profession>
+					</mads:extension>
+					<mads:recordInfo xmlns:xlink="http://www.w3.org/1999/xlink">
+						<mads:recordOrigin>Converted from MARCXML to MADS version 2.0 (Revision 2.13)</mads:recordOrigin>
+						<mads:recordContentSource authority="marcorg">DLC</mads:recordContentSource>
+						<mads:recordChangeDate encoding="iso8601">20230919064616.0</mads:recordChangeDate>
+						<mads:recordIdentifier source="DLC">n  79141359 </mads:recordIdentifier>
+						<mads:languageOfCataloging>
+							<mads:languageTerm authority="iso639-2b" type="code">eng</mads:languageTerm>
+						</mads:languageOfCataloging>
+						<mads:descriptionStandard>rda</mads:descriptionStandard>
+						<mads:descriptionStandard>other rules</mads:descriptionStandard>
+					</mads:recordInfo>
+				</mads:mads>
+			</zs:recordData>
+			<zs:recordPosition>18</zs:recordPosition>
+		</zs:record>
+		<zs:record>
+			<zs:recordSchema>mads</zs:recordSchema>
+			<zs:recordPacking>xml</zs:recordPacking>
+			<zs:recordData>
+				<mads:mads xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mads="http://www.loc.gov/mads/v2" version="2.0" xsi:schemaLocation="http://www.loc.gov/mads/v2 http://www.loc.gov/standards/mads/mads-2-0.xsd">
+					<mads:authority xmlns:xlink="http://www.w3.org/1999/xlink" geographicSubdivision="not applicable">
+						<mads:name type="personal" authority="naf">
+							<mads:namePart>Roosevelt, Eleanor</mads:namePart>
+							<mads:namePart type="date">1884-1962</mads:namePart>
+						</mads:name>
+					</mads:authority>
+					<mads:variant xmlns:xlink="http://www.w3.org/1999/xlink" type="other">
+						<mads:name type="personal">
+							<mads:namePart>Roosevelt, Eleanor Roosevelt</mads:namePart>
+							<mads:namePart type="date">1884-1962</mads:namePart>
+						</mads:name>
+					</mads:variant>
+					<mads:variant xmlns:xlink="http://www.w3.org/1999/xlink" type="other">
+						<mads:name type="personal">
+							<mads:namePart>Roosevelt, Anna Eleanor Roosevelt</mads:namePart>
+							<mads:namePart type="date">1884-1962</mads:namePart>
+						</mads:name>
+					</mads:variant>
+					<mads:variant xmlns:xlink="http://www.w3.org/1999/xlink" type="other">
+						<mads:name type="personal">
+							<mads:namePart>Roosevelt, Franklin D</mads:namePart>
+							<mads:namePart type="termsOfAddress">Mrs</mads:namePart>
+							<mads:namePart type="date">1884-1962</mads:namePart>
+						</mads:name>
+					</mads:variant>
+					<mads:variant xmlns:xlink="http://www.w3.org/1999/xlink" type="other">
+						<mads:name type="personal">
+							<mads:namePart>&#x5E8;&#x5D5;&#x5D6;&#x5D1;&#x5DC;&#x5D8;, &#x5D0;&#x5DC;&#x5D9;&#x5E0;&#x5D5;&#x5E8;</mads:namePart>
+						</mads:name>
+					</mads:variant>
+					<mads:note xmlns:xlink="http://www.w3.org/1999/xlink" type="nonpublic">Machine-derived non-Latin script reference project</mads:note>
+					<mads:note xmlns:xlink="http://www.w3.org/1999/xlink" type="nonpublic">Non-Latin script reference not evaluated</mads:note>
+					<mads:note xmlns:xlink="http://www.w3.org/1999/xlink" type="source">When you grow up to vote, 1932: t.p. (Eleanor Roosevelt (Mrs. Franklin D. Roosevelt))</mads:note>
+					<mads:note xmlns:xlink="http://www.w3.org/1999/xlink" type="source">Wikipedia, July 21, 2010 (Eleanor Roosevelt; Anna Eleanor Roosevelt; born Oct. 11, 1884 in New York City in Manhattan; died Nov. 7, 1962; was the First Lady of the United States from 1933 to 1945; she supported the New Deal policies of her husband, Franklin Delano Roosevelt, and became an advocate for civil rights. After her husband's death in 1945, Roosevelt continued to be an internationally prominent author, speaker, politician, and activist for the New Deal coalition)</mads:note>
+					<mads:identifier type="lccn">n  79144645 </mads:identifier>
+					<mads:classification xmlns:xlink="http://www.w3.org/1999/xlink">PS3535.O5487</mads:classification>
+					<mads:extension>
+						<mads:profession>
+							<mads:professionTerm>Presidents' spouses</mads:professionTerm>
+						</mads:profession>
+					</mads:extension>
+					<mads:recordInfo xmlns:xlink="http://www.w3.org/1999/xlink">
+						<mads:recordOrigin>Converted from MARCXML to MADS version 2.0 (Revision 2.13)</mads:recordOrigin>
+						<mads:recordContentSource authority="marcorg">DLC</mads:recordContentSource>
+						<mads:recordChangeDate encoding="iso8601">20230919064623.0</mads:recordChangeDate>
+						<mads:recordIdentifier source="DLC">n  79144645 </mads:recordIdentifier>
+						<mads:languageOfCataloging>
+							<mads:languageTerm authority="iso639-2b" type="code">eng</mads:languageTerm>
+						</mads:languageOfCataloging>
+						<mads:descriptionStandard>rda</mads:descriptionStandard>
+						<mads:descriptionStandard>other rules</mads:descriptionStandard>
+					</mads:recordInfo>
+				</mads:mads>
+			</zs:recordData>
+			<zs:recordPosition>19</zs:recordPosition>
+		</zs:record>
+		<zs:record>
+			<zs:recordSchema>mads</zs:recordSchema>
+			<zs:recordPacking>xml</zs:recordPacking>
+			<zs:recordData>
+				<mads:mads xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mads="http://www.loc.gov/mads/v2" version="2.0" xsi:schemaLocation="http://www.loc.gov/mads/v2 http://www.loc.gov/standards/mads/mads-2-0.xsd">
+					<mads:authority xmlns:xlink="http://www.w3.org/1999/xlink" geographicSubdivision="not applicable">
+						<mads:name type="personal" authority="naf">
+							<mads:namePart>Roosevelt, James</mads:namePart>
+							<mads:namePart type="date">1907-1991</mads:namePart>
+						</mads:name>
+					</mads:authority>
+					<mads:note xmlns:xlink="http://www.w3.org/1999/xlink" type="source">His Affectionately, F. D. R., 1959</mads:note>
+					<mads:note xmlns:xlink="http://www.w3.org/1999/xlink" type="source">NUCMC data from Franklin Roosevelt Libr. for His Papers, 1935-1967 (James Roosevelt, 1907-1991)</mads:note>
+					<mads:note xmlns:xlink="http://www.w3.org/1999/xlink" type="source">SSDI, Mar. 14, 2006 (Roosevelt, James; b. Dec. 23, 1907; d. Aug. 13, 1991)</mads:note>
+					<mads:note xmlns:xlink="http://www.w3.org/1999/xlink" type="source">Biographical Directory of the United States Congress, via WWW, November 13, 2013 (Roosevelt, James (1907 - 1991); son of President Franklin D. Roosevelt and brother of Franklin D. Roosevelt, Jr.; a Representative from California; born in New York City December 23, 1907; attended schools in New York and St. Albans School of Washington, D.C.; was graduated from Groton School in 1926 and from Harvard University in 1930; in 1930 became an insurance broker in Boston, Mass.; organized Roosevelt &amp; Sargent, Inc., and served as president until January 1937; secretary to father, President Franklin D. Roosevelt, in 1937 and 1938; motion picture industry November 1938-November 1940; went on active duty as a captain in the United States Marine Corps in November 1940; promoted to colonel April 13, 1944, and served in the Pacific Theater; released from active duty in August 1945; brigadier general United States Marine Corps Reserve, retired; rejoined Roosevelt &amp; Sargent, Inc., as executive vice president and established an office in Los Angeles, Calif., in June 1946; served as chairman of the board, Roosevelt &amp; Haines, Inc.; was an unsuccessful Democratic candidate for Governor of California in 1950; delegate to the Democratic National Conventions in 1948, 1952, 1956, and 1960; elected as a Democrat to the Eighty-fourth and to the five succeeding Congresses and served from January 3, 1955, to September 30, 1965; unsuccessful candidate for Democratic nomination for mayor of Los Angeles, Calif., in April 1965; resigned from Congress effective September 30, 1965, to become United States representative to United Nations Economic and Social Council, resigning in December 1966; public relations consultant; was a resident of Newport Beach, Calif., until his death there on August 13, 1991)</mads:note>
+					<mads:identifier type="lccn">n  80017801 </mads:identifier>
+					<mads:fieldOfActivity xmlns:xlink="http://www.w3.org/1999/xlink">Motion picture industry-1938-11 1940-11</mads:fieldOfActivity>
+					<mads:affiliation>
+						<mads:position>United States. Marine Corps</mads:position>
+						<mads:dateValid point="start">1940-11</mads:dateValid>
+						<mads:dateValid point="end">1945-08</mads:dateValid>
+					</mads:affiliation>
+					<mads:affiliation>
+						<mads:position>United States. Congress. House</mads:position>
+						<mads:dateValid point="start">19550103</mads:dateValid>
+						<mads:dateValid point="end">19650930</mads:dateValid>
+					</mads:affiliation>
+					<mads:affiliation>
+						<mads:position>United Nations. Economic and Social Council</mads:position>
+						<mads:dateValid point="start">1965</mads:dateValid>
+						<mads:dateValid point="end">1966-12</mads:dateValid>
+					</mads:affiliation>
+					<mads:extension>
+						<mads:profession>
+							<mads:professionTerm>Independent insurance agents</mads:professionTerm>
+						</mads:profession>
+					</mads:extension>
+					<mads:recordInfo xmlns:xlink="http://www.w3.org/1999/xlink">
+						<mads:recordOrigin>Converted from MARCXML to MADS version 2.0 (Revision 2.13)</mads:recordOrigin>
+						<mads:recordContentSource authority="marcorg">DLC</mads:recordContentSource>
+						<mads:recordChangeDate encoding="iso8601">20230919064712.0</mads:recordChangeDate>
+						<mads:recordIdentifier source="DLC">n  80017801 </mads:recordIdentifier>
+						<mads:languageOfCataloging>
+							<mads:languageTerm authority="iso639-2b" type="code">eng</mads:languageTerm>
+						</mads:languageOfCataloging>
+						<mads:descriptionStandard>rda</mads:descriptionStandard>
+						<mads:descriptionStandard>other rules</mads:descriptionStandard>
+					</mads:recordInfo>
+				</mads:mads>
+			</zs:recordData>
+			<zs:recordPosition>20</zs:recordPosition>
+		</zs:record>
+	</zs:records>
+	<zs:nextRecordPosition>21</zs:nextRecordPosition>
+	<zs:echoedSearchRetrieveRequest>
+		<zs:version>1.1</zs:version>
+		<zs:query>query=bath.personalName=roosevelt</zs:query>
+		<zs:maximumRecords>20</zs:maximumRecords>
+		<zs:recordPacking>xml</zs:recordPacking>
+		<zs:recordSchema>mads</zs:recordSchema>
+	</zs:echoedSearchRetrieveRequest>
+</zs:searchRetrieveResponse>

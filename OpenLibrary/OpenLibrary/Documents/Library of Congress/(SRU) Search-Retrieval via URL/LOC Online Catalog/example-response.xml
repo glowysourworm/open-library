@@ -1,0 +1,141 @@
+﻿<?xml version="1.0"?>
+<zs:searchRetrieveResponse xmlns:zs="http://www.loc.gov/zing/srw/">
+	<zs:version>1.1</zs:version>
+	<zs:numberOfRecords>2</zs:numberOfRecords>
+	<zs:records>
+		<zs:record>
+			<zs:recordSchema>mods</zs:recordSchema>
+			<zs:recordPacking>xml</zs:recordPacking>
+			<zs:recordData>
+				<mods xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.loc.gov/mods/v3" version="3.8" xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/v3/mods-3-8.xsd">
+					<titleInfo>
+						<nonSort xml:space="preserve">The </nonSort>
+						<title>Batty world of baseball</title>
+					</titleInfo>
+					<name type="corporate">
+						<namePart>Coca-Cola Company Collection (Library of Congress)</namePart>
+					</name>
+					<typeOfResource>moving image</typeOfResource>
+					<genre authority="marcgt">videorecording</genre>
+					<originInfo>
+						<place>
+							<placeTerm type="code" authority="marccountry">xxu</placeTerm>
+						</place>
+						<issuance>monographic</issuance>
+						<place>
+							<placeTerm type="text">United States</placeTerm>
+						</place>
+						<agent>
+							<namePart>Columbia Pictures Home Entertainment</namePart>
+						</agent>
+						<dateIssued>1982</dateIssued>
+					</originInfo>
+					<language>
+						<languageTerm authority="iso639-2b" type="code">eng</languageTerm>
+					</language>
+					<physicalDescription>
+						<form authority="marccategory">videorecording</form>
+						<extent>1 videocassette of 1 (Beta) : sd., col. ; 1/2 in. viewing copy.</extent>
+					</physicalDescription>
+					<abstract type="Summary">The Batty World of Baseball takes a sidewise glance at the personalities that make the game great. Harry Caray narrates vintage footag of eccentric managers like hot-head John McGraw, the ever-eloquent Casey Stengel and the irascible Billy Martin; a rarely-seen side of Babe Ruth, Hollywood star and team comedian.</abstract>
+					<note type="statement of responsibility">Major League Baseball Productions.</note>
+					<note>Copyright notices on cassette box: Major League Baseball Productions ; 1981; Columbia Pictures Industries, Inc. ; 1981; Columbia Pictures Industries, Inc. ; 1982.</note>
+					<note>Summary taken from cassette box.</note>
+					<note>Source used: cassette box.</note>
+					<note type="creation/production credits">Narrated by Harry Caray.</note>
+					<note type="performers">John McGraw, Babe Ruth, Casey Stengel, Marv Throneberry and Choo-Choo Coleman.</note>
+					<note type="acquisition">Received: 10/29/90; gift; viewing copy; Coca-Cola Company Collection..</note>
+					<classification authority="lcc">VAC 7273 (viewing copy)</classification>
+					<identifier type="lccn">93505888</identifier>
+					<recordInfo>
+						<descriptionStandard>aacr</descriptionStandard>
+						<descriptionStandard>amim</descriptionStandard>
+						<recordContentSource authority="marcorg">DLC</recordContentSource>
+						<recordCreationDate encoding="marc">930429</recordCreationDate>
+						<recordChangeDate encoding="iso8601">00000000000000.0</recordChangeDate>
+						<recordIdentifier>11617736</recordIdentifier>
+						<recordOrigin>
+							Converted from MARCXML to MODS version 3.8 using MARC21slim2MODS3-8_XSLT1-0.xsl
+							(Revision 1.172 20230208)
+						</recordOrigin>
+					</recordInfo>
+				</mods>
+			</zs:recordData>
+			<zs:recordPosition>1</zs:recordPosition>
+		</zs:record>
+		<zs:record>
+			<zs:recordSchema>mods</zs:recordSchema>
+			<zs:recordPacking>xml</zs:recordPacking>
+			<zs:recordData>
+				<mods xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.loc.gov/mods/v3" version="3.8" xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/v3/mods-3-8.xsd">
+					<titleInfo>
+						<title>Once upon a time-- the early years of the New York Mets</title>
+					</titleInfo>
+					<titleInfo type="uniform" nameTitleGroup="1">
+						<title>Once upon the Polo Grounds</title>
+					</titleInfo>
+					<name type="personal" usage="primary" nameTitleGroup="1">
+						<namePart>Shecter, Leonard.</namePart>
+					</name>
+					<typeOfResource>text</typeOfResource>
+					<originInfo>
+						<place>
+							<placeTerm type="code" authority="marccountry">nyu</placeTerm>
+						</place>
+						<dateIssued encoding="marc">1983</dateIssued>
+						<issuance>monographic</issuance>
+						<place>
+							<placeTerm type="text">New York, N.Y</placeTerm>
+						</place>
+						<agent>
+							<namePart>Dial Press</namePart>
+						</agent>
+						<dateIssued>[1983] c1970</dateIssued>
+					</originInfo>
+					<language>
+						<languageTerm authority="iso639-2b" type="code">eng</languageTerm>
+					</language>
+					<physicalDescription>
+						<form authority="marcform">print</form>
+						<extent>xi, 141 p. : ill. ; 21 cm.</extent>
+					</physicalDescription>
+					<note type="statement of responsibility">Leonard Shecter ; introduction by Marv Throneberry.</note>
+					<note>Previously published as: Once upon the Polo Grounds. 1970.</note>
+					<subject>
+						<geographicCode authority="marcgac">n-us-ny</geographicCode>
+					</subject>
+					<subject authority="lcsh">
+						<name type="corporate">
+							<namePart>New York Mets (Baseball team)</namePart>
+						</name>
+						<topic>History</topic>
+					</subject>
+					<classification authority="lcc">GV875.N45 S5 1983</classification>
+					<classification authority="ddc" edition="19">796.357/64/097471</classification>
+					<identifier type="isbn">0385279302 (pbk.) :</identifier>
+					<identifier type="lccn">82022045</identifier>
+					<recordInfo>
+						<descriptionStandard>aacr</descriptionStandard>
+						<recordContentSource authority="marcorg">DLC</recordContentSource>
+						<recordCreationDate encoding="marc">821103</recordCreationDate>
+						<recordChangeDate encoding="iso8601">19830412000000.0</recordChangeDate>
+						<recordIdentifier>916881</recordIdentifier>
+						<recordOrigin>
+							Converted from MARCXML to MODS version 3.8 using MARC21slim2MODS3-8_XSLT1-0.xsl
+							(Revision 1.172 20230208)
+						</recordOrigin>
+					</recordInfo>
+				</mods>
+			</zs:recordData>
+			<zs:recordPosition>2</zs:recordPosition>
+		</zs:record>
+	</zs:records>
+	<zs:echoedSearchRetrieveRequest>
+		<zs:version>1.1</zs:version>
+		<zs:query>"Marv Throneberry"</zs:query>
+		<zs:startRecord>1</zs:startRecord>
+		<zs:maximumRecords>5</zs:maximumRecords>
+		<zs:recordPacking>xml</zs:recordPacking>
+		<zs:recordSchema>mods</zs:recordSchema>
+	</zs:echoedSearchRetrieveRequest>
+</zs:searchRetrieveResponse>

@@ -1,0 +1,84 @@
+﻿<?xml version="1.0"?>
+<zs:searchRetrieveResponse xmlns:zs="http://www.loc.gov/zing/srw/">
+	<zs:version>1.1</zs:version>
+	<zs:numberOfRecords>10000</zs:numberOfRecords>
+	<zs:records>
+		<zs:record>
+			<zs:recordSchema>dc</zs:recordSchema>
+			<zs:recordPacking>xml</zs:recordPacking>
+			<zs:recordData>
+				<srw_dc:dc xmlns:srw_dc="info:srw/schema/1/dc-schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="info:srw/schema/1/dc-schema http://www.loc.gov/standards/sru/resources/dc-schema.xsd">
+					<title xmlns="http://purl.org/dc/elements/1.1/">10 an&#x303;os de paz: Ecuador-Peru&#x301;.</title>
+					<creator xmlns="http://purl.org/dc/elements/1.1/">Hurtado, Osvaldo</creator>
+					<creator xmlns="http://purl.org/dc/elements/1.1/">Corporacio&#x301;n de Estudios para el Desarrollo (Ecuador)</creator>
+					<type xmlns="http://purl.org/dc/elements/1.1/">text</type>
+					<publisher xmlns="http://purl.org/dc/elements/1.1/">Quito: Corporacio&#x301;n de Estudios para el Desarrollo,</publisher>
+					<date xmlns="http://purl.org/dc/elements/1.1/">2009.</date>
+					<language xmlns="http://purl.org/dc/elements/1.1/">spa</language>
+					<description xmlns="http://purl.org/dc/elements/1.1/">To commemorate the tenth anniversary of the peace agreement between Ecuador and Peru, this book offers a testimonial compilation that comprises five essays authored by former foreign ministers and heads of state linked to the bilateral peace process between the Andean countries. Following a short introduction, the book's first chapter discusses the reasons why and how interstate peace was achieved in this long-running conflict. The second chapter discusses the historical background of Ecuador's role in the peace process with Peru. The third chapter presents a personal account of one of the architects of the peace process during the negotiations in Brasi&#x301;lia in 1998. Chapter four traces the position of multiple heads of state in the peace process culminating in 1998. Chapter five assesses the spillover benefits from the consolidation of interstate peace between Ecuador and Peru.</description>
+					<description xmlns="http://purl.org/dc/elements/1.1/">Proceedings from a conference held Sept. 17-18, 2008.</description>
+					<description xmlns="http://purl.org/dc/elements/1.1/">Includes bibliographical references.</description>
+					<subject xmlns="http://purl.org/dc/elements/1.1/">International Relations--Ecuador/Peru</subject>
+					<coverage xmlns="http://purl.org/dc/elements/1.1/">Ecuador--Foreign relations--Peru.</coverage>
+					<coverage xmlns="http://purl.org/dc/elements/1.1/">Peru--Foreign relations--Ecuador.</coverage>
+					<identifier xmlns="http://purl.org/dc/elements/1.1/">URN:ISBN:9789978961469</identifier>
+				</srw_dc:dc>
+			</zs:recordData>
+			<zs:recordPosition>1</zs:recordPosition>
+		</zs:record>
+		<zs:record>
+			<zs:recordSchema>dc</zs:recordSchema>
+			<zs:recordPacking>xml</zs:recordPacking>
+			<zs:recordData>
+				<srw_dc:dc xmlns:srw_dc="info:srw/schema/1/dc-schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="info:srw/schema/1/dc-schema http://www.loc.gov/standards/sru/resources/dc-schema.xsd">
+					<title xmlns="http://purl.org/dc/elements/1.1/">100 an&#x303;os, Sociedad Filarmo&#x301;nica de Lima.</title>
+					<creator xmlns="http://purl.org/dc/elements/1.1/">Ascher, Heriberto.</creator>
+					<creator xmlns="http://purl.org/dc/elements/1.1/">Herna&#x301;ndez Astete, Francisco</creator>
+					<creator xmlns="http://purl.org/dc/elements/1.1/">Sociedad Filarmo&#x301;nica de Lima.</creator>
+					<type xmlns="http://purl.org/dc/elements/1.1/">text</type>
+					<publisher xmlns="http://purl.org/dc/elements/1.1/">Lima: Sociedad Filarmo&#x301;nica de Lima,</publisher>
+					<date xmlns="http://purl.org/dc/elements/1.1/">2006.</date>
+					<language xmlns="http://purl.org/dc/elements/1.1/">spa</language>
+					<description xmlns="http://purl.org/dc/elements/1.1/">A well-illustrated, large format book published to commemorate the 100th anniversary of the Philharmonic Society in Lima. The first quarter of the book, written by noted Peruvian musicologists Aurelio Tello, Enrique Iturriaga, and Juan Carlos Estenssoro, traces the history of Western art music in Peru from the early colonial period through the end of the 19th century. The second and longer section covers the history of the Philharmonic Society itself during its first century.</description>
+					<description xmlns="http://purl.org/dc/elements/1.1/">Includes bibliographical references (p. 190-196).</description>
+					<description xmlns="http://purl.org/dc/elements/1.1/">La mu&#x301;sica en el Peru&#x301; hasta 1907 -- La Sociedad Filarmo&#x301;nica de Lima 1907-2007 -- A modo de colofo&#x301;n : El presente de un centenaria institucio&#x301;n.</description>
+					<subject xmlns="http://purl.org/dc/elements/1.1/">Sociedad Filarmo&#x301;nica de Lima</subject>
+					<subject xmlns="http://purl.org/dc/elements/1.1/">Sociedad Filarmo&#x301;nica de Lima.</subject>
+					<subject xmlns="http://purl.org/dc/elements/1.1/">Orchestral Music--Peru</subject>
+					<subject xmlns="http://purl.org/dc/elements/1.1/">Music--Peru--History and criticism.</subject>
+					<identifier xmlns="http://purl.org/dc/elements/1.1/">URN:ISBN:9972292401</identifier>
+				</srw_dc:dc>
+			</zs:recordData>
+			<zs:recordPosition>2</zs:recordPosition>
+		</zs:record>
+		<zs:record>
+			<zs:recordSchema>dc</zs:recordSchema>
+			<zs:recordPacking>xml</zs:recordPacking>
+			<zs:recordData>
+				<srw_dc:dc xmlns:srw_dc="info:srw/schema/1/dc-schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="info:srw/schema/1/dc-schema http://www.loc.gov/standards/sru/resources/dc-schema.xsd">
+					<title xmlns="http://purl.org/dc/elements/1.1/">1821, Me&#x301;xico vs Peru&#x301;.</title>
+					<creator xmlns="http://purl.org/dc/elements/1.1/">Chust Calero, Manuel, editor.</creator>
+					<type xmlns="http://purl.org/dc/elements/1.1/">text</type>
+					<publisher xmlns="http://purl.org/dc/elements/1.1/">Madrid: Si&#x301;lex,</publisher>
+					<date xmlns="http://purl.org/dc/elements/1.1/">2020.</date>
+					<language xmlns="http://purl.org/dc/elements/1.1/">spa</language>
+					<description xmlns="http://purl.org/dc/elements/1.1/">Includes bibliographical references.</description>
+					<coverage xmlns="http://purl.org/dc/elements/1.1/">Mexico--History--Wars of Independence, 1810-1821.</coverage>
+					<coverage xmlns="http://purl.org/dc/elements/1.1/">Peru--History--War of Independence, 1820-1829.</coverage>
+					<coverage xmlns="http://purl.org/dc/elements/1.1/">Mexico--Politics and government--19th century.</coverage>
+					<coverage xmlns="http://purl.org/dc/elements/1.1/">Peru--Politics and government--19th century.</coverage>
+					<identifier xmlns="http://purl.org/dc/elements/1.1/">URN:ISBN:9788477375548</identifier>
+				</srw_dc:dc>
+			</zs:recordData>
+			<zs:recordPosition>3</zs:recordPosition>
+		</zs:record>
+	</zs:records>
+	<zs:nextRecordPosition>4</zs:nextRecordPosition>
+	<zs:echoedSearchRetrieveRequest>
+		<zs:version>1.1</zs:version>
+		<zs:query>bath.geographicName=Peru</zs:query>
+		<zs:maximumRecords>3</zs:maximumRecords>
+		<zs:recordPacking>xml</zs:recordPacking>
+		<zs:recordSchema>dc</zs:recordSchema>
+	</zs:echoedSearchRetrieveRequest>
+</zs:searchRetrieveResponse>
