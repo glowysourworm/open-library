@@ -1,0 +1,338 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"
+      xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">
+
+	<title>Chronicling America Page Search Results</title>
+	<link href="https://chroniclingamerica.loc.gov/search/pages/results/?andtext=thomas&amp;format=atom&amp;page=11" rel="self" />
+	<id>https://chroniclingamerica.loc.gov/search/pages/results/?andtext=thomas&amp;format=atom&amp;page=11</id>
+	<updated>2024-08-22T15:42:43-04:00</updated>
+	<opensearch:totalResults>7743984</opensearch:totalResults>
+	<opensearch:startIndex>201</opensearch:startIndex>
+	<opensearch:itemsPerPage>10</opensearch:itemsPerPage>
+	<link rel="search" type="application/opensearchdescription+xml" href="/search/pages/opensearch.xml" />
+	<link type="application/atom+xml" rel="previous" href="https://chroniclingamerica.loc.gov/search/pages/results/?andtext=thomas&amp;page=10&amp;format=atom" />
+	<link rel="next" type="application/atom+xml" href="https://chroniclingamerica.loc.gov/search/pages/results/?andtext=thomas&amp;page=12&amp;format=atom" />
+
+
+	<entry>
+		<title>St. Croix avis. [volume] (Christiansted, St. Croix [V.I.]) 1844-current, December 16, 1874, Image 2</title>
+		<link href="https://chroniclingamerica.loc.gov/lccn/sn84037526/1874-12-16/ed-1/seq-2/" />
+		<id>info:lc/ndnp/lccn/sn84037526/1874-12-16/ed-1/seq-2/</id>
+		<author>
+			<uri>https://chroniclingamerica.loc.gov/awardees/vnstcsc/</uri>
+			<name>University of the Virgin Islands</name>
+		</author>
+		<updated>2021-02-16T16:13:31-05:00</updated>
+		<content type="xhtml">
+			<div xmlns="http://www.w3.org/1999/xhtml">
+				<img src="https://chroniclingamerica.loc.govhttps://chroniclingamerica.loc.gov/iiif/2/vnstcsc_adelphi_ver01%2Fdata%2Fsn84037526%2F00414219913%2F1874121601%2F0450.jp2/full/200,/0/default.jpg" />
+			</div>
+		</content>
+	</entry>
+
+	<entry>
+		<title>St. Croix avis. [volume] (Christiansted, St. Croix [V.I.]) 1844-current, March 06, 1909, Image 2</title>
+		<link href="https://chroniclingamerica.loc.gov/lccn/sn84037526/1909-03-06/ed-1/seq-2/" />
+		<id>info:lc/ndnp/lccn/sn84037526/1909-03-06/ed-1/seq-2/</id>
+		<author>
+			<uri>https://chroniclingamerica.loc.gov/awardees/vnstcsc/</uri>
+			<name>University of the Virgin Islands</name>
+		</author>
+		<updated>2021-12-13T10:41:15-05:00</updated>
+		<content type="xhtml">
+			<div xmlns="http://www.w3.org/1999/xhtml">
+				<img src="https://chroniclingamerica.loc.govhttps://chroniclingamerica.loc.gov/iiif/2/vnstcsc_christiansted_ver02%2Fdata%2Fsn84037526%2F00414180917%2F1909030601%2F0077.jp2/full/200,/0/default.jpg" />
+			</div>
+		</content>
+	</entry>
+
+	<entry>
+		<title>St. Croix avis. [volume] (Christiansted, St. Croix [V.I.]) 1844-current, February 24, 1894, Image 2</title>
+		<link href="https://chroniclingamerica.loc.gov/lccn/sn84037526/1894-02-24/ed-1/seq-2/" />
+		<id>info:lc/ndnp/lccn/sn84037526/1894-02-24/ed-1/seq-2/</id>
+		<author>
+			<uri>https://chroniclingamerica.loc.gov/awardees/vnstcsc/</uri>
+			<name>University of the Virgin Islands</name>
+		</author>
+		<updated>2021-05-11T19:27:34-04:00</updated>
+		<content type="xhtml">
+			<div xmlns="http://www.w3.org/1999/xhtml">
+				<img src="https://chroniclingamerica.loc.govhttps://chroniclingamerica.loc.gov/iiif/2/vnstcsc_belvedere_ver03%2Fdata%2Fsn84037526%2F00414180176%2F1894022401%2F0058.jp2/full/200,/0/default.jpg" />
+			</div>
+		</content>
+	</entry>
+
+	<entry>
+		<title>The Montgomery advertiser. [volume] (Montgomery, Ala.) 1885-1982, May 04, 1924, MAGAZINE SECTION, Image 41</title>
+		<link href="https://chroniclingamerica.loc.gov/lccn/sn84020645/1924-05-04/ed-1/seq-41/" />
+		<id>info:lc/ndnp/lccn/sn84020645/1924-05-04/ed-1/seq-41/</id>
+		<author>
+			<uri>https://chroniclingamerica.loc.gov/awardees/au/</uri>
+			<name>University of Alabama Libraries, Tuscaloosa, AL</name>
+		</author>
+		<updated>2024-02-21T14:39:46-05:00</updated>
+		<content type="xhtml">
+			<div xmlns="http://www.w3.org/1999/xhtml">
+				<img src="https://chroniclingamerica.loc.govhttps://chroniclingamerica.loc.gov/iiif/2/au_hurston_ver01%2Fdata%2Fsn84020645%2F00517018016%2F1924050401%2F0082.jp2/full/200,/0/default.jpg" />
+			</div>
+		</content>
+	</entry>
+
+	<entry>
+		<title>The day book. [volume] (Chicago, Ill.) 1911-1917, January 10, 1913, Image 18</title>
+		<link href="https://chroniclingamerica.loc.gov/lccn/sn83045487/1913-01-10/ed-1/seq-18/" />
+		<id>info:lc/ndnp/lccn/sn83045487/1913-01-10/ed-1/seq-18/</id>
+		<author>
+			<uri>https://chroniclingamerica.loc.gov/awardees/iune/</uri>
+			<name>University of Illinois at Urbana-Champaign Library, Urbana, IL</name>
+		</author>
+		<updated>2017-12-30T08:17:02-05:00</updated>
+		<content type="xhtml">
+			<div xmlns="http://www.w3.org/1999/xhtml">
+				<img src="https://chroniclingamerica.loc.govhttps://chroniclingamerica.loc.gov/iiif/2/iune_foxtrot_ver01%2Fdata%2Fsn83045487%2F00280761394%2F1913011001%2F0277.jp2/full/200,/0/default.jpg" />
+			</div>
+		</content>
+	</entry>
+
+	<entry>
+		<title>The West end news. [volume] (Frederiksted, St. Croix [V.I.]) 1912-1973, December 01, 1962, Image 4</title>
+		<link href="https://chroniclingamerica.loc.gov/lccn/sn84037548/1962-12-01/ed-1/seq-4/" />
+		<id>info:lc/ndnp/lccn/sn84037548/1962-12-01/ed-1/seq-4/</id>
+		<author>
+			<uri>https://chroniclingamerica.loc.gov/awardees/vnstcsc/</uri>
+			<name>University of the Virgin Islands</name>
+		</author>
+		<updated>2023-10-03T17:29:09-04:00</updated>
+		<content type="xhtml">
+			<div xmlns="http://www.w3.org/1999/xhtml">
+				<img src="https://chroniclingamerica.loc.govhttps://chroniclingamerica.loc.gov/iiif/2/vnstcsc_fredensdal_ver01%2Fdata%2Fsn84037548%2F00517170501%2F1962120101%2F0578.jp2/full/200,/0/default.jpg" />
+			</div>
+		</content>
+	</entry>
+
+	<entry>
+		<title>The West end news. [volume] (Frederiksted, St. Croix [V.I.]) 1912-1973, December 04, 1962, Image 4</title>
+		<link href="https://chroniclingamerica.loc.gov/lccn/sn84037548/1962-12-04/ed-1/seq-4/" />
+		<id>info:lc/ndnp/lccn/sn84037548/1962-12-04/ed-1/seq-4/</id>
+		<author>
+			<uri>https://chroniclingamerica.loc.gov/awardees/vnstcsc/</uri>
+			<name>University of the Virgin Islands</name>
+		</author>
+		<updated>2023-10-03T17:29:28-04:00</updated>
+		<content type="xhtml">
+			<div xmlns="http://www.w3.org/1999/xhtml">
+				<img src="https://chroniclingamerica.loc.govhttps://chroniclingamerica.loc.gov/iiif/2/vnstcsc_fredensdal_ver01%2Fdata%2Fsn84037548%2F00517170501%2F1962120401%2F0582.jp2/full/200,/0/default.jpg" />
+			</div>
+		</content>
+	</entry>
+
+	<entry>
+		<title>The Columbia herald. [volume] (Columbia, Tenn.) 18??-1935, March 15, 1901, Image 7</title>
+		<link href="https://chroniclingamerica.loc.gov/lccn/sn96091104/1901-03-15/ed-1/seq-7/" />
+		<id>info:lc/ndnp/lccn/sn96091104/1901-03-15/ed-1/seq-7/</id>
+		<author>
+			<uri>https://chroniclingamerica.loc.gov/awardees/tu/</uri>
+			<name>University of Tennessee</name>
+		</author>
+		<updated>2018-01-03T10:54:01-05:00</updated>
+		<content type="xhtml">
+			<div xmlns="http://www.w3.org/1999/xhtml">
+				<img src="https://chroniclingamerica.loc.govhttps://chroniclingamerica.loc.gov/iiif/2/tu_jimmy_ver02%2Fdata%2Fsn96091104%2F00296020849%2F1901031501%2F0928.jp2/full/200,/0/default.jpg" />
+			</div>
+		</content>
+	</entry>
+
+	<entry>
+		<title>St. Croix avis. [volume] (Christiansted, St. Croix [V.I.]) 1844-current, June 09, 1865, Image 4</title>
+		<link href="https://chroniclingamerica.loc.gov/lccn/sn84037526/1865-06-09/ed-1/seq-4/" />
+		<id>info:lc/ndnp/lccn/sn84037526/1865-06-09/ed-1/seq-4/</id>
+		<author>
+			<uri>https://chroniclingamerica.loc.gov/awardees/vnstcsc/</uri>
+			<name>University of the Virgin Islands</name>
+		</author>
+		<updated>2021-02-16T14:56:11-05:00</updated>
+		<content type="xhtml">
+			<div xmlns="http://www.w3.org/1999/xhtml">
+				<img src="https://chroniclingamerica.loc.govhttps://chroniclingamerica.loc.gov/iiif/2/vnstcsc_adelphi_ver01%2Fdata%2Fsn84037526%2F00414219834%2F1865060901%2F0184.jp2/full/200,/0/default.jpg" />
+			</div>
+		</content>
+	</entry>
+
+	<entry>
+		<title>St. Croix avis. [volume] (Christiansted, St. Croix [V.I.]) 1844-current, April 24, 1958, Image 2</title>
+		<link href="https://chroniclingamerica.loc.gov/lccn/sn84037526/1958-04-24/ed-1/seq-2/" />
+		<id>info:lc/ndnp/lccn/sn84037526/1958-04-24/ed-1/seq-2/</id>
+		<author>
+			<uri>https://chroniclingamerica.loc.gov/awardees/vnstcsc/</uri>
+			<name>University of the Virgin Islands</name>
+		</author>
+		<updated>2023-03-20T09:20:16-04:00</updated>
+		<content type="xhtml">
+			<div xmlns="http://www.w3.org/1999/xhtml">
+				<img src="https://chroniclingamerica.loc.govhttps://chroniclingamerica.loc.gov/iiif/2/vnstcsc_duggan_ver01%2Fdata%2Fsn84037526%2F00513681343%2F1958042401%2F0372.jp2/full/200,/0/default.jpg" />
+			</div>
+		</content>
+	</entry>
+
+	<entry>
+		<title>St. Croix avis. [volume] (Christiansted, St. Croix [V.I.]) 1844-current, January 04, 1949, Image 4</title>
+		<link href="https://chroniclingamerica.loc.gov/lccn/sn84037526/1949-01-04/ed-1/seq-4/" />
+		<id>info:lc/ndnp/lccn/sn84037526/1949-01-04/ed-1/seq-4/</id>
+		<author>
+			<uri>https://chroniclingamerica.loc.gov/awardees/vnstcsc/</uri>
+			<name>University of the Virgin Islands</name>
+		</author>
+		<updated>2023-03-20T12:52:00-04:00</updated>
+		<content type="xhtml">
+			<div xmlns="http://www.w3.org/1999/xhtml">
+				<img src="https://chroniclingamerica.loc.govhttps://chroniclingamerica.loc.gov/iiif/2/vnstcsc_canaan_ver01%2Fdata%2Fsn84037526%2F00513681252%2F1949010401%2F0008.jp2/full/200,/0/default.jpg" />
+			</div>
+		</content>
+	</entry>
+
+	<entry>
+		<title>St. Croix avis. [volume] (Christiansted, St. Croix [V.I.]) 1844-current, December 01, 1948, Image 2</title>
+		<link href="https://chroniclingamerica.loc.gov/lccn/sn84037526/1948-12-01/ed-1/seq-2/" />
+		<id>info:lc/ndnp/lccn/sn84037526/1948-12-01/ed-1/seq-2/</id>
+		<author>
+			<uri>https://chroniclingamerica.loc.gov/awardees/vnstcsc/</uri>
+			<name>University of the Virgin Islands</name>
+		</author>
+		<updated>2023-03-20T12:49:20-04:00</updated>
+		<content type="xhtml">
+			<div xmlns="http://www.w3.org/1999/xhtml">
+				<img src="https://chroniclingamerica.loc.govhttps://chroniclingamerica.loc.gov/iiif/2/vnstcsc_canaan_ver01%2Fdata%2Fsn84037526%2F00513681240%2F1948120101%2F1078.jp2/full/200,/0/default.jpg" />
+			</div>
+		</content>
+	</entry>
+
+	<entry>
+		<title>The Daily news of the Virgin Islands. [volume] (Charlotte Amalie, St. Thomas, V.I.) 1955-1978, August 09, 1962, Image 7</title>
+		<link href="https://chroniclingamerica.loc.gov/lccn/sn83025327/1962-08-09/ed-1/seq-7/" />
+		<id>info:lc/ndnp/lccn/sn83025327/1962-08-09/ed-1/seq-7/</id>
+		<author>
+			<uri>https://chroniclingamerica.loc.gov/awardees/vnstcsc/</uri>
+			<name>University of the Virgin Islands</name>
+		</author>
+		<updated>2023-08-07T12:26:25-04:00</updated>
+		<content type="xhtml">
+			<div xmlns="http://www.w3.org/1999/xhtml">
+				<img src="https://chroniclingamerica.loc.govhttps://chroniclingamerica.loc.gov/iiif/2/vnstcsc_ensomned_ver01%2Fdata%2Fsn83025327%2F00513689834%2F1962080901%2F0281.jp2/full/200,/0/default.jpg" />
+			</div>
+		</content>
+	</entry>
+
+	<entry>
+		<title>The home journal. [volume] (Charlotte Amalie, St. Thomas, V.I.) 1951-1973, October 13, 1954, Image 4</title>
+		<link href="https://chroniclingamerica.loc.gov/lccn/sn84037503/1954-10-13/ed-1/seq-4/" />
+		<id>info:lc/ndnp/lccn/sn84037503/1954-10-13/ed-1/seq-4/</id>
+		<author>
+			<uri>https://chroniclingamerica.loc.gov/awardees/vnstcsc/</uri>
+			<name>University of the Virgin Islands</name>
+		</author>
+		<updated>2023-08-07T18:12:12-04:00</updated>
+		<content type="xhtml">
+			<div xmlns="http://www.w3.org/1999/xhtml">
+				<img src="https://chroniclingamerica.loc.govhttps://chroniclingamerica.loc.gov/iiif/2/vnstcsc_ensomned_ver01%2Fdata%2Fsn84037503%2F00517170471%2F1954101301%2F1398.jp2/full/200,/0/default.jpg" />
+			</div>
+		</content>
+	</entry>
+
+	<entry>
+		<title>The home journal. [volume] (Charlotte Amalie, St. Thomas, V.I.) 1951-1973, August 22, 1953, Image 6</title>
+		<link href="https://chroniclingamerica.loc.gov/lccn/sn84037503/1953-08-22/ed-1/seq-6/" />
+		<id>info:lc/ndnp/lccn/sn84037503/1953-08-22/ed-1/seq-6/</id>
+		<author>
+			<uri>https://chroniclingamerica.loc.gov/awardees/vnstcsc/</uri>
+			<name>University of the Virgin Islands</name>
+		</author>
+		<updated>2023-08-07T17:55:43-04:00</updated>
+		<content type="xhtml">
+			<div xmlns="http://www.w3.org/1999/xhtml">
+				<img src="https://chroniclingamerica.loc.govhttps://chroniclingamerica.loc.gov/iiif/2/vnstcsc_ensomned_ver01%2Fdata%2Fsn84037503%2F00517170471%2F1953082201%2F0752.jp2/full/200,/0/default.jpg" />
+			</div>
+		</content>
+	</entry>
+
+	<entry>
+		<title>The Daily news of the Virgin Islands. [volume] (Charlotte Amalie, St. Thomas, V.I.) 1955-1978, August 13, 1962, Image 8</title>
+		<link href="https://chroniclingamerica.loc.gov/lccn/sn83025327/1962-08-13/ed-1/seq-8/" />
+		<id>info:lc/ndnp/lccn/sn83025327/1962-08-13/ed-1/seq-8/</id>
+		<author>
+			<uri>https://chroniclingamerica.loc.gov/awardees/vnstcsc/</uri>
+			<name>University of the Virgin Islands</name>
+		</author>
+		<updated>2023-08-07T12:28:10-04:00</updated>
+		<content type="xhtml">
+			<div xmlns="http://www.w3.org/1999/xhtml">
+				<img src="https://chroniclingamerica.loc.govhttps://chroniclingamerica.loc.gov/iiif/2/vnstcsc_ensomned_ver01%2Fdata%2Fsn83025327%2F00513689834%2F1962081301%2F0312.jp2/full/200,/0/default.jpg" />
+			</div>
+		</content>
+	</entry>
+
+	<entry>
+		<title>Los Angeles herald. [microfilm reel] (Los Angeles [Calif.]) 1900-1911, September 03, 1907, Image 10</title>
+		<link href="https://chroniclingamerica.loc.gov/lccn/sn85042462/1907-09-03/ed-1/seq-10/" />
+		<id>info:lc/ndnp/lccn/sn85042462/1907-09-03/ed-1/seq-10/</id>
+		<author>
+			<uri>https://chroniclingamerica.loc.gov/awardees/curiv/</uri>
+			<name>University of California, Riverside; Riverside, CA</name>
+		</author>
+		<updated>2017-12-29T18:25:39-05:00</updated>
+		<content type="xhtml">
+			<div xmlns="http://www.w3.org/1999/xhtml">
+				<img src="https://chroniclingamerica.loc.govhttps://chroniclingamerica.loc.gov/iiif/2/curiv_pomo_ver01%2Fdata%2Fsn85042462%2F00175047475%2F1907090301%2F0067.jp2/full/200,/0/default.jpg" />
+			</div>
+		</content>
+	</entry>
+
+	<entry>
+		<title>The San Francisco call. [volume] (San Francisco [Calif.]) 1895-1913, May 14, 1906, Image 12</title>
+		<link href="https://chroniclingamerica.loc.gov/lccn/sn85066387/1906-05-14/ed-1/seq-12/" />
+		<id>info:lc/ndnp/lccn/sn85066387/1906-05-14/ed-1/seq-12/</id>
+		<author>
+			<uri>https://chroniclingamerica.loc.gov/awardees/curiv/</uri>
+			<name>University of California, Riverside; Riverside, CA</name>
+		</author>
+		<updated>2017-12-29T20:41:33-05:00</updated>
+		<content type="xhtml">
+			<div xmlns="http://www.w3.org/1999/xhtml">
+				<img src="https://chroniclingamerica.loc.govhttps://chroniclingamerica.loc.gov/iiif/2/curiv_hercules_ver01%2Fdata%2Fsn85066387%2F00100480761%2F1906051401%2F0171.jp2/full/200,/0/default.jpg" />
+			</div>
+		</content>
+	</entry>
+
+	<entry>
+		<title>The San Francisco call. [volume] (San Francisco [Calif.]) 1895-1913, May 13, 1906, Image 14</title>
+		<link href="https://chroniclingamerica.loc.gov/lccn/sn85066387/1906-05-13/ed-1/seq-14/" />
+		<id>info:lc/ndnp/lccn/sn85066387/1906-05-13/ed-1/seq-14/</id>
+		<author>
+			<uri>https://chroniclingamerica.loc.gov/awardees/curiv/</uri>
+			<name>University of California, Riverside; Riverside, CA</name>
+		</author>
+		<updated>2017-12-29T20:41:33-05:00</updated>
+		<content type="xhtml">
+			<div xmlns="http://www.w3.org/1999/xhtml">
+				<img src="https://chroniclingamerica.loc.govhttps://chroniclingamerica.loc.gov/iiif/2/curiv_hercules_ver01%2Fdata%2Fsn85066387%2F00100480761%2F1906051301%2F0157.jp2/full/200,/0/default.jpg" />
+			</div>
+		</content>
+	</entry>
+
+	<entry>
+		<title>Lyon County times. [volume] (Silver City, Nev.) 1874-1907, July 20, 1875, Image 2</title>
+		<link href="https://chroniclingamerica.loc.gov/lccn/sn84022053/1875-07-20/ed-1/seq-2/" />
+		<id>info:lc/ndnp/lccn/sn84022053/1875-07-20/ed-1/seq-2/</id>
+		<author>
+			<uri>https://chroniclingamerica.loc.gov/awardees/nvln/</uri>
+			<name>University of Nevada Las Vegas University Libraries</name>
+		</author>
+		<updated>2018-12-07T18:34:24-05:00</updated>
+		<content type="xhtml">
+			<div xmlns="http://www.w3.org/1999/xhtml">
+				<img src="https://chroniclingamerica.loc.govhttps://chroniclingamerica.loc.gov/iiif/2/nvln_tonopah_ver01%2Fdata%2Fsn84022053%2F00279554619%2F1875072001%2F0712.jp2/full/200,/0/default.jpg" />
+			</div>
+		</content>
+	</entry>
+
+
+</feed>

@@ -1,0 +1,41 @@
+﻿Searching the directory and newspaper pages using OpenSearch
+
+The directory of newspaper titles contains nearly 140,000 records of newspapers and libraries that hold copies of these newspapers. The title records are based on MARC data gathered and enhanced as part of the NDNP program.
+
+Searching the title records is possible using the OpenSearch protocol. This is advertised in a LINK header element of the site's HTML template as "NDNP Title Search", using this OpenSearch Description document.
+
+Title search parameters:
+
+    terms: the search query
+    format: 'html' (default), 'json', or 'atom' (optional)
+    page: for paging results (optional)
+
+Examples:
+
+Note that all example URLs below use the same protocol and server name, https://chroniclingamerica.loc.gov/. We only show the URL paths and parameters below to save space.
+
+    /search/titles/results/?terms=michigan
+    search for "michigan", HTML response
+    /search/titles/results/?terms=michigan&format=atom
+    search for "michigan", Atom response
+    /search/titles/results/?terms=michigan&format=json&page=5
+    search for "michigan", JSON response, starting at page 5
+
+There are millions of digitized newspaper pages in Chronicling America. These pages span several decades and many U.S. states and territories. New batches of data come in from partner institutions throughout the year and are added to the site regularly.
+
+Searching newspaper pages is also possible via OpenSearch. This is advertised in a LINK header element of the site's HTML template as "NDNP Page Search", using this OpenSearch Description document.
+
+Page search parameters:
+
+    andtext: the search query
+    format: 'html' (default), or 'json', or 'atom' (optional)
+    page: for paging results (optional)
+
+Examples:
+
+    /search/pages/results/?andtext=thomas
+    search for "thomas", HTML response
+    /search/pages/results/?andtext=thomas&format=atom
+    search for "thomas", Atom response
+    /search/pages/results/?andtext=thomas&format=atom&page=11
+    search for "thomas", Atom response, starting at page 11

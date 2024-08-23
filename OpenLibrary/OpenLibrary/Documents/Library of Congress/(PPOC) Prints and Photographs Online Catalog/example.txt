@@ -1,0 +1,665 @@
+﻿Service Endpoint:  https://www.loc.gov/pictures/
+
+Service API:  https://www.loc.gov/pictures/api
+
+Services: home, search, related, item resource, collections, collection, index
+
+    Home http://loc.gov/pictures/?fo=json 
+    
+    Provides a list of featured collections, a list of all collections, and a list of global indexes.
+   
+    There are 12 featured collections and over 60 collections in all so the lists are shortened for brevity
+    "featured"
+
+    [{
+        "code": "hlb",
+        "thumb": "https://www.loc.gov/pictures/static/data/hlb/thumb.png",
+        "title": "Cartoon Drawings: Herblock Collection",
+        "thumb_featured": "https://www.loc.gov/pictures/static/data/hlb/featured.png",
+        "link": "https://www.loc.gov/pictures/collection/hlb/",
+        "thumb_large": "https://www.loc.gov/pictures/static/data/hlb/thumb_large.png"
+    }]
+
+    "collections" (same schema)
+    "indexes"
+    {
+        "link": "https://www.loc.gov/pictures/index/names/", 
+        "title": "names"
+    }
+
+    This is a list of available indexes.  Globally there are always three, though a given collection may have 
+    more or fewer indexes. See indexes for a detailed example of the response object.
+
+    "links"
+
+    Provides a set of links which provide additional serializations of the current url.  There are generally 2, 
+    json and html, but search and related provide additional links.
+
+    {
+        "json": "https://loc.gov/pictures/?fo=json",
+        "html": "https://loc.gov/pictures/"
+    } 
+
+
+
+
+    Search http://loc.gov/pictures/search/?q=<query>&fo=json
+
+    Search Options
+    q - query, search terms (None)
+    fa - facets, format = <field>|<facet value> (None)
+    co - collection (None)
+    co! - _not_ collection (None)
+    op - operator (AND)
+    va - variants, (True)
+    fi - fields (None/"text")
+
+    Results Options
+    c - count (20)
+    st - style, (list)
+    sp - start page, (1)
+    si - start index (1)
+    fo - format
+    sb - sort by (relevance)
+
+    Response
+
+    "search"
+    {
+        "type": "search",
+        "query": "sioux indians",
+        "field": null,
+        "sort_by": null,  
+        "hits": "9"
+    }
+
+    "links"
+    {
+        "json": "https://loc.gov/pictures/search?q=sioux%20indians&fo=json",
+        "html": "https://loc.gov/pictures/search?q=sioux%20indians"
+        "rss": "https://loc.gov/pictures/search?q=sioux%20indians&fo=rss"
+    } 
+
+    "views"
+    {
+    "current": "list",
+    "grid": "https://loc.gov/pictures/search/?q=sioux+indians&st=grid",
+    "list": "https://loc.gov/pictures/search/?q=sioux+indians",
+    "gallery": "https://loc.gov/pictures/search/?q=sioux+indians&st=gallery",
+    "slideshow": "https://loc.gov/pictures/search/?q=sioux+indians&st=slideshow"
+    }
+
+
+    "focus"
+    {
+        "index": 2,
+    } 
+
+    "results"
+    [{
+        "index": 1,
+        "medium": "5 photoprints (postcards) : gelatin silver ; 14 x 19 cm. or smaller.",
+        "reproduction_number": "",
+        "title": "Studio portraits of Comanche and Sioux Indians in native dress",
+        "creator": "Bates Studio (Lawton, Okla.)",
+        "call_number": "LOT 12743 (F) [P&P]",
+        "medium_brief": "5 photoprints (postcards) :",
+        "pk": "89705331",
+        "created_published_date": "c1910-c1911.",
+        "links": {
+            "item": "https://loc.gov/pictures/item/89705331/",
+            "resource": "https://loc.gov/pictures/item/89705331/resource/",
+        },
+
+        "image": {
+            "full": "https://loc.gov/pictures/static/images/item/500x500_grouprecord.png",
+            "thumb": "http://loc.gov/pictures/static/images/item/grouprecord_thumb_large.jpg",
+            "square": "http://loc.gov/pictures/static/images/item/grouprecord_square.png",
+            "alt": "group item thumbnail",
+        },
+        "subjects": [
+        "Indians of North America--Clothing & dress--1910-1920.",
+        "Infants--1910-1920.",
+        "Comanche Indians--1910-1920.",
+        "Dakota Indians--1910-1920."
+    ]
+    },{
+        "index": 2,
+        "medium": "1 photographic print.",
+        "reproduction_number": "LC-USZ62-105379 (b&w film copy neg.)",
+        "title": "[In the land of the Sioux]",
+        "creator": "Curtis, Edward S., 1868-1952",
+        "call_number": "LOT 12319 <item> [P&P] [P&P]",
+        "medium_brief": "1 photographic print.",
+        "pk": "92511248",
+        "created_published_date": "c1905.",
+        "links": {
+            "item": "http://loc.gov/pictures/item/92511248/",
+            "resource": "https://loc.gov/pictures/item/92511248/resource/",
+    },
+    "image": {
+        "full": "http://loc.gov/pictures/lcweb2/service/pnp/cph/3c00000/3c05000/3c05300/3c05379r.jpg",
+        "thumb": "http://www.loc.gov/pictures/static/data/media/925/925112/92511248/92511248/gallery.jpg",
+        "square": "http://www.loc.gov/pictures/static/data/media/925/925112/92511248/92511248/square.jpg",
+        "alt": "digitized item thumbnail",
+    },
+    "subjects": [
+    "Indians of North America--Great Plains--1900-1910.",
+    "Dakota Indians--1900-1910.",
+    "Horseback riding--Great Plains--1900-1910."
+    ]
+    }]
+
+    "pages"
+    {
+        "perpage": 2,
+        "last": "https://loc.gov/pictures/search/?q=sioux&sp=3",
+        "results": "1 - 2",
+        "next": "https://loc.gov/pictures/search/?q=sioux&sp=2",
+        "current": 1,
+        "page_list": [{
+            "url": null,
+            "number": 1
+        },{
+            "url": "https://loc.gov/pictures/search/?q=sioux&sp=2",
+            "number": 2
+        },{
+            "url": "https://loc.gov/pictures/search/?q=sioux&sp=3",
+            "number": 3
+        }],
+        "previous": null,
+        "total": 3,
+        "first": null
+    }
+
+    "collection"
+    Provides collection metadata when the collection/<code> or ?co=<code> was provided. The index_terms are restricted 
+    to terms from this collections indexes. See collection for the response objects details.
+
+
+    Related  http://loc.gov/pictures/related?fi=<field>&q=<term>&fo=json
+
+    Related is very similar to search. While search utilizes full text indexing, and provides some field-specific searching, 
+    related finds items that have exact matches for the provided term in the field specified by <field>. Related makes use 
+    of the relations in the PPOC domain model and is useful for finding close fits in fields with controlled values.
+
+    Another feature that is supported through Related, is "browse neighboring call numbers". In this case a list of items near
+    Options
+
+    Search Options
+    q - query, related term (None)
+    co - collection (None)
+    co! - _not_ collection (None)
+    fi - must be one of: [subject|name|format](fi or pk required)
+    pk - primary key of item to use as basis for call number browse. Must be the primary key (control number) of a valid, 
+         existing item. (fi or pk required)
+
+    Results Options
+    c - count (20)
+    st - style, (list)
+    sp - start page, (1)
+    si - start index (1)
+    fo - format
+
+    Response
+    "search"
+        See Search "search".
+    "links"
+        See Search "links".
+    "views"
+        See Search "views".
+    "results"
+        See Search "results".
+    "pages"
+        See Search "pages"/
+    "collection"
+        Like Search "collection", provides collection metadata when the collection/<code> or ?co=<code> was provided. 
+        The index_terms are restricted to terms from this collections indexes. See collection for the response objects details.
+
+
+
+    Item:  describe item options and response json
+
+    Options
+
+    collection/<code> or ?co=<code>
+
+    Response
+
+    "item"
+
+        {
+
+        "title": "[Portrait of Henri Matisse]",
+        "control_number": "2004663297",
+        "date": "1933 May 20.",
+        "summary": "",
+        "medium_brief": "1 photographic print :",
+        "link": "https://loc.gov/pictures/item/2004663297",
+        "marc": "https://loc.gov/pictures/item/2004663297/marc",
+        "call_number": "LOT 12735, no. 781 [P&P]",
+        "display_offsite": true,
+        "created_published": "1933 May 20.",
+        "restriction": "",
+        "reproduction_number": "LC-USZ62-103699 (b&w film copy neg.)",
+        "part_of": "Van Vechten, Carl, 1880-1964. Portrait photographs of celebrities",
+        "thumb_gallery": "https://loc.gov/pictures/static/data/media/200/200466/200466329/2004663297/gallery.jpg",
+        "other_number": "",
+        "title_translation": "",
+        "id": "2004663297",
+        "contents": "",
+        "sort_date": "1500-01-01",
+        "stmt_of_responsibility": "",
+        "other_titles": "",
+        "repository": "Library of Congress Prints and Photographs Division Washington, D.C. 20540 USA",
+        "rights_information": "For publication information see \"Carl Van Vechten Photographs (Lots 12735 and 12736)\" http://www.loc.gov/rr/print/res/079_vanv.html",
+        "terms": [],
+        "related_names": [],
+        "related_items": [],
+        "resource_links": [
+            "https://hdl.loc.gov/loc.pnp/van.5a52380",
+            "https://hdl.loc.gov/loc.pnp/cph.3c03699"
+        ],
+        "formats": [{
+            "link": "https://loc.gov/pictures/related?fi=format&q=Portrait photographs.",
+            "title": "Portrait photographs."
+        }],
+        "mediums": [{
+            "medium": "1 photographic print : gelatin silver.",
+            "label": null
+        }],
+        "creators": [{
+            "role": "photographer",
+            "title": "Van Vechten, Carl, 1880-1964",
+            "link": "https://loc.gov/pictures/related?fi=name&q=Van Vechten, Carl, 1880-1964"
+        }],
+        "subjects": [{
+            "title": "Matisse, Henri,--1869-1954.",
+            "link": "https://loc.gov/pictures/related?fi=subject&q=Matisse, Henri,--1869-1954."
+
+        }],
+        "collections": [{
+            "code": "van",
+            "title": "Van Vechten Collection",
+            "link": "https://loc.gov/pictures/collection/van"
+        }],
+        "notes": [{
+            "note": "Title derived from information on verso of photographic print.",
+            "label": null
+        },{
+            "note": "Van Vechten number: XXIII C 7.",
+            "label": null
+        },{
+            "note": "Also available on microfilm.",
+            "label": null
+        },{
+            "note": "Gift; Carl Van Vechten Estate; 1966.",
+            "label": null
+        },{
+            "note": "Forms part of: Portrait photographs of celebrities, a LOT which in turn forms part of the Carl Van Vechten photograph collection (Library of Congress).",
+            "label": null
+        }]
+    }
+
+    "links"
+
+    Provides a set of links which provide additional serializations of the current url.  There are generally 2, 
+    json and html, but search and related provide additional links. See links for more details and an example.
+
+    "thesaurus_entry"
+    
+    This will be null unless this item is from the Thesaurus of Graphical Material
+
+    {
+        "count": 0,
+        "term": "Ablution fountains",
+        "used_for": [{
+            "count": 3,
+            "type": "Related Term",
+            "related": "Bathing"
+        },{
+            "count": 10,
+            "type": "Related Term",
+            "related": "Fountains"
+        },{
+            "count": 23,
+            "type": "Related Term",
+            "related": "Rites & ceremonies"
+        },{
+            "count": 0,
+            "type": "Used For",
+            "related": "Fountains, Ablution"
+        }],
+        "preferred_terms": [],
+        "related_terms": [],
+        "narrower_terms": [],
+        "broader_terms": [{
+            "count": 5,
+            "type": "Broader Term",
+            "related": "Religious architectural elements"
+        }],
+        "facet_notes": [
+            "--[country or state]--[city]"
+        ],
+        "scope_notes": [],
+        "hisory_notes": []
+    } 
+
+    "current_search"
+
+    {
+
+        "current": 2,    
+        "total": 17,
+        "search_link": "https://loc.gov/pictures/search/?q=henri",
+        "next": "https://loc.gov/pictures/item/2002707053/",
+        "previous": "https://loc.gov/pictures/item/2002724877/",
+        "next_img": "https://www.loc.gov/pictures/static/data/media/200/200270/200270705/2002707053/thumb.jpg",
+        "previous_img": "https://www.loc.gov/pictures/static/data/media/200/200272/200272487/2002724877/thumb.jpg",
+
+    }
+
+    "related"
+
+    {
+        "lot_link": null,
+        "neighbors": "https://loc.gov/pictures/related?&pk=2002706200&st=gallery&sb=call_number#focus",
+        "group_record": null
+    }
+
+    "collection"
+
+    Provides collection metadata when the collection/<code> or ?co=<code> was provided. The index_terms are 
+    restricted to terms from this collections indexes. See collection for the response objects details.
+
+    "resources"
+
+    May be an empty array if the item is not digitized, or if the item is from a collection like look, group, 
+    etc.  There can be 0 or more resources.
+
+    [{
+        //see resource for field details and example
+    },{
+        //see resource for field details and example
+    }] 
+
+    "unrestricted"
+
+    true if the resources are all provided, false if some resources have been hidden (for example exclusion of 
+    links to high resolution tiffs)
+
+
+
+
+
+    Resource
+
+    http://loc.gov/pictures/resource/ppmsc.03034?fo=json
+
+    A Resource is used to describe a digitization of an item.  A photo or image may have been scanned several 
+    different ways, and those scans are in turn used to generate derivatives like thumbnails for view on the web.
+
+    Options
+
+    resource/<resource_id> *required ?co=<code>
+
+    Here are some example urls for clarity:
+
+        http://loc.gov/pictures/resource/ppmsc.03034?fo=json
+        http://loc.gov/pictures/resource/cph.3a49538/?co=lomax&fo=json
+
+    Response
+
+    Provides a detailed description of this specific digital resource
+
+    "resource"
+
+    {
+
+        "id": "ppmsc.03034",
+        "aggregate": "ppmsc",
+        "external": null,
+        "url": "https://hdl.loc.gov/loc.pnp/ppmsc.03034",
+        "link": "https://loc.gov/pictures/resource/ppmsc.03034",
+        "note": "original",
+        "item": "03034",
+        "small_s": 17029,
+        "medium_s": 69892,
+        "large_s": 139894,
+        "larger_s": 34239356,
+        "largest_s": 0,
+        "small": "https://lcweb2.loc.gov/service/pnp/ppmsc/03000/03034t.gif",
+        "medium": "https://lcweb2.loc.gov/service/pnp/ppmsc/03000/03034r.jpg",
+        "large": "https://lcweb2.loc.gov/service/pnp/ppmsc/03000/03034v.jpg",
+        "larger": "https://lcweb2.loc.gov/master/pnp/ppmsc/03000/03034u.tif",
+        "largest": "https://memory.loc.gov/pp/notdig.gif"
+       
+    } 
+
+    "item"
+
+    Provides a detailed bibliographic description of the item. See item for more details and an example.
+
+    "links"
+
+    Provides a set of links which provide additional serializations of the current url.  There are generally 2, 
+    json and html, but search and related provide additional links. See links for more details and an example.
+
+
+
+    Collections
+    
+    http://loc.gov/pictures/collections?fo=json
+
+    Provides a list of all available collections along with a brief summary and a number of additional details.
+
+    Options
+
+    No options
+
+    Response
+
+    Note there are over 60 collections, so the array below is truncated for brevity.
+
+    "collections"
+
+    [{
+
+        //see collection for field details and examples
+
+    },{ //...there are over 60 collections, shortened for brevity
+
+        //see collection for field details and examples
+
+    }]
+
+    "links"
+
+    Provides a set of links which provide additional serializations of the current url.  
+    There are generally 2, json and html, but search and related provide additional links. 
+    See links for more details and an example.
+
+
+
+    Collection
+
+    http://loc.gov/pictures/collection/<code>?fo=json
+
+    Provides a summary of information about the collection (specified by the <code>) as well as 
+    links to additional resources such as html essays, indexes, and standard search entry points.
+
+    Options
+
+    collection/<code> or ?co=<code>
+
+    Response
+
+    All links provided by the resources link property provide the same resources, collection, and 
+    indexes properties, but the essay property will contain the html content for the specified 
+    collection resource.
+
+    "collection"
+
+    {
+        "code": "ecur",
+        "digitized": "All",
+        "display_offsite": "Yes",
+        "title": "Curtis (Edward S.) Collection",
+        "link": "https://loc.gov/pictures/collection/ecur",
+        "banner_item": "https://loc.gov/pictures/item/94504691",
+        "banner_title": "Shows As He Goes. Edward S. Curtis, 1905.",
+        "banner": "https://loc.gov/pictures/static/data/ecur/banner.jpg",
+        "from_date": "1890",
+        "to_date": "1929",
+        "view_all": "https://loc.gov/pictures/search?st=grid&c=100&co=ecur",
+        "extent": "about 1,000 photographic prints (selection from full collection)",
+        "rights": "https://www.loc.gov/rr/print/res/369_curt.html",
+        "thumb": "https://loc.gov/pictures/static/data/ecur/thumb.png",
+        "thumb_item": "",
+        "thumb_large_item": "",
+        "thumb_large": "https://loc.gov/pictures/static/data/ecur/thumb_large.png",
+        "brief": "Native Americans in the Pacific Northwest, New Southwest, Great Basin, Great Plains, Plateau Region, California, and Alaska. Features studio and field photographs. Selected images are primarily those for which copy photos have been produced."
+    }
+
+    "links"
+
+    Provides a set of links which provide additional serializations of the current url.  There are 
+    generally 2, json and html, but search and related provide additional links. See links for more 
+    details and an example.
+
+    "resources"
+
+    Provides a list of essays and supplemental resources about this collection.
+
+    [{
+
+      "title": "About this Collection",
+      "link": "https://loc.gov/pictures/collection/ecur/about.html",
+      "content": "https://loc.gov/pictures/static/data/ecur/resources/about.html"
+
+    },{//there are many more, shortened here for brevity
+
+      "title": "Tribe Index",
+      "link": "https://loc.gov/pictures/collection/ecur/tribeindex.html",
+      "content": "https://loc.gov/pictures/static/data/ecur/resources/tribeindex.html"
+       
+    }] 
+
+    "indexes"
+
+    This is a list of available indexes.  Globally there are always three, though a given 
+    collection may have more or fewer indexes. See indexes for a detailed example of the response object.
+
+    "current_resource"
+
+    The html content of the resource.
+
+    {
+        "link": "https://loc.gov/pictures/collection/ecur/about.html",
+        "content": "\n <h2>About this Collection</h2>\n\n <p>The Edward S. Curtis Collection offers a unique glimpse\n into Curtis's work with indigenous cultures. The more than\n 2,400 silver-gelatin photographic prints were acquired by\n the Library of Congress through copyright deposit from\n about 1900 through 1930. About two-thirds (1,608) of these\n images were not published in Curtis's multi-volume work,\n <cite>The North American Indian</cite>. The collection includes\n a large number of individual or group portraits, as well as\n traditional and ceremonial dress, dwellings and other\n structures, agriculture, arts and crafts, rites and\n ceremonies, dances, games, food preparation,\n transportation, and scenery. The portion of the collection\n that is cataloged online represents those photographs for\n which copy negatives or transparencies exist.</p>\n "
+       
+    }
+
+
+
+    Index
+
+    Indexes may be accessed http://loc.gov/pictures/index/subjects/<start>?fo=json, where <start> is an 
+    optional letter or the beginning of a word.  For example http://loc.gov/pictures/index/subjects/b?fo=json 
+    will give me all subjects starting with 'b', while http://loc.gov/pictures/index/subjects/baby?fo=json will 
+    return only the index entries which begin with 'baby'.
+
+        http://loc.gov/pictures/index/subjects/?fo=json
+        http://loc.gov/pictures/index/subjects/a?fo=json
+        http://loc.gov/pictures/index/subjects/arch?fo=json
+        http://loc.gov/pictures/collection/brum/index/subjects/?fo=json
+
+    Options
+
+    index/<type> - specifies the type of index.  standard options are:
+
+        subjects
+        names
+        formats
+
+    collection/<code> or ?co=<code> - limits index selection to specific collection
+
+    /<search_term> or ?q=<search_term> - limits the index to entries beginning with the search_term
+
+    Response
+
+    The response properties below are taken from:
+    http://loc.gov/pictures/collection/lomax/index/subjects/african?fo=json
+
+    or its equivalent form:
+    http://www.loc.gov/pictures/collection/lomax/index/subjects/?q=african&fo=json
+
+    "current"
+
+    The current term being used to filter the index when provided.  Defaults to 'a'
+
+    "african"
+
+    "index_title"
+    The title of the index currently being browsed.
+
+    "subjects"
+
+
+    "terms"
+
+    [{
+        "count": 1,
+        "field": "subjects",
+        "value": "African Americans--1930-1940.",
+        "url": "https://loc.gov/pictures/related?q=African%20Americans--1930-1940.&fi=subjects&co=lomax"
+    },
+
+    //..there are many more, shortened for brevity
+    {
+        "count": 1,
+        "field": "subjects",
+        "value": "African Americans--Women--1940.",
+        "url": "https://loc.gov/pictures/related?q=African%20Americans--Women--1940.&fi=subjects&co=lomax"
+    }]
+
+    "pages"
+
+    Provides a list of letters for which an index exists
+
+    ["a", "b", "c", "f", "h", "i", "l", "m", "o", "r", "s", "v", "w"]
+
+    "resources"
+
+    Provides links to additional resources, like essays for a specific collection.  This is only available when 
+    the collection/<code> or ?co=<code> was provided. See resources for the response objects details.
+
+    "collection"
+
+    Provides collection metadata when the collection/<code> or ?co=<code> was provided. The index_terms are 
+    restricted to terms from this collections indexes. See collection for the response objects details.
+
+    "indexes"
+
+    This is a list of available indexes.  Globally there are always three, though a given collection may have more 
+    or fewer indexes.
+
+    [{
+      "count": 1,
+      "link": "https://loc.gov/pictures/collection/brum/index/formats/",
+      "title": "formats"
+    },{
+      "count": 1,
+      "link": "https://loc.gov/pictures/collection/brum/index/names/",
+      "title": "names"
+    },{
+      "count": 53,
+      "link": "https://loc.gov/pictures/collection/brum/index/subjects/",
+      "title": "subjects"
+    }] 
+
+    "links"
+
+    Provides a set of links which provide additional serializations of the current url.  There are 
+    generally 2, json and html, but search and related provide additional links. See links for more 
+    details and an example.

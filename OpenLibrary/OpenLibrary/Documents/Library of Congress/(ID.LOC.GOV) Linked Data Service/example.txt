@@ -1,0 +1,166 @@
+﻿Linked Data Service:  https://id.loc.gov/
+
+ENORMOUS mapping data set to hub-together the following data archives.
+
+------------- (Each of these is extensively mapped using json / xml schema maps)
+
+BIBFRAME
+
+    BIBFRAME Works
+    BIBFRAME Instances
+    BIBFRAME Hubs
+
+Subjects, Thesauri, Classification
+
+    LC Subject Headings (LCSH)
+    LC Classification (LCC)
+    LC Children's Subject Headings
+    LC Medium of Performance Thesaurus for Music (LCMPT)
+    LC Demographic Group Terms (LCDGT)
+    Thesaurus for Graphic Materials (TGM)
+    AFS Ethnographic Thesaurus
+    Subject Schemes
+    Classification Schemes
+
+Agents
+
+    LC Name Authority File (LCNAF)
+    Cultural Heritage Organizations
+
+Genre
+
+    LC Genre/Form Terms (LCGFT)
+    MARC Genre Terms
+    Genre/Form Schemes
+    RBMS Controlled Vocabulary
+
+Languages
+
+    MARC Languages
+    ISO639-1 Languages
+    ISO639-2 Languages
+    ISO639-5 Languages
+
+Geographic
+
+    MARC Countries
+    MARC Geographic Areas (GAC)
+
+Cataloging
+
+    Aspect Ratio
+    Authentication Action
+    Book Format
+    Broadcast Standard
+    Carriers
+    Color Content
+    Content Types
+    Description Conventions
+    Sound Capture and Storage
+    Encoding Format
+    Encoding Level
+    File Type
+    Font Size
+    Generation
+    Government Publication Type
+    Groove Width/Pitch/Cutting
+    Illustrative Content
+    Intended Audience
+    Issuance
+    Layout
+    Media Types
+    Music Notation
+    Notated Music Form
+    Note Type
+    Playback
+    Playing Speed
+    Polarity
+    Presentation Format
+    Production Method
+    Projection
+    Publication Frequencies
+    Recording Medium
+    Recording Type
+    Reduction Ratio
+    Regional Encoding
+    RBMS Relationship Designators
+    Relationship
+    Relators
+    Relief
+    Resource Components
+    Scale
+    Script
+    Serial Publication Type
+    Sound Content
+    Special Playback Characteristics
+    Status codes
+    Supplementary Content
+    Support Material
+    Tactile Notation
+    Tape Configuration
+    Technique
+    Video Format
+
+
+
+
+
+Ontologies
+
+    BIBFRAME Ontology
+    BIBFRAME LC Extension Ontology
+    MADS/RDF Ontology
+    PREMIS Ontology
+
+Data Types
+
+    Extended Date/Time Format Datatypes Scheme
+    Code Datatypes
+    Identifier Datatypes
+
+Preservation Vocabularies
+
+    Preservation Vocabs (all)
+    Actions Granted
+    Agent Type
+    Event Outcome
+    Preservation Level
+    Content Location Type
+    Copyright Status
+    Cryptographic Hash Functions
+    Environment Characteristic
+    Environment Function Type
+    Environment Purpose
+    Environment Registry Role
+    Event Related Agent Role
+    Event Related Object Role
+    Event Type
+    Format Registry Role
+    Hardware Type
+    Inhibitor Target
+    Inhibitor Type
+    Linking Agent Role Event
+    Linking Environment Role
+    Object Category
+    Preservation Level Role
+    Relationship SubType
+    Relationship Type
+    Rights Basis
+    Rights Related Agent Role
+    Signature Encoding
+    Signature Method
+    Software Type
+    Storage Medium
+
+Other
+
+    Accessibility Content Source Codes
+    Access Restriction Term Source Codes
+    Fingerprint Scheme Source Codes
+    Language Code and Term Source Codes
+    Musical Composition Form Code Source Codes
+    Musical Instrumentation and Voice Code Source Codes
+    Name and Title Authority Source Codes
+    National Bibliography Number Source Codes
+    Resource Types Scheme
+    Standard Identifier Schemes

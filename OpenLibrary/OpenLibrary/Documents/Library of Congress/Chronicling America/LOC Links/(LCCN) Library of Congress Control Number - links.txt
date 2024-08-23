@@ -1,0 +1,107 @@
+﻿Link to Chronicling America Resources
+
+The Chronicling America Web site uses links that follow a straightforward pattern. You can use this pattern to construct links into specific newspaper titles, to any of its available issues and their editions, and even to specific pages. These links can be readily bookmarked and shared on other sites.
+
+We are committed to supporting this link pattern over time, so even if we change how the site works, we will redirect any requests to the system using this specific pattern into the new site. We established redirect rules for links into the previous version of the site when we released a new version in early 2009, and we intend to sustain those rules.
+
+The link pattern uses LCCNs, dates, issue numbers, edition numbers, and page sequence numbers.
+
+Examples:
+
+    /lccn/sn86069873/
+    title information for LCCN sn 86069873
+    /lccn/sn86069873/issues/
+    calendar view of available issues
+    /lccn/sn86069873/issues/first_pages/
+    browse first pages of available issues
+    /lccn/sn86069873/1900-01-05/ed-1/
+    first available edition from January 5, 1900
+    /lccn/sn86069873/1900-01-05/ed-1/seq-3/
+    third available page from first edition, January 5, 1900
+
+
+
+=====================
+
+LCCN (https://www.loc.gov/marc/lccn.html)
+
+=====================
+
+
+LIBRARY OF CONGRESS CONTROL NUMBER (LCCN)--
+RESTRUCTURING TO ACCOMMODATE CENTURY CHANGE
+October 1999
+Network Development MARC Standards Office
+Library of Congress
+CURRENT STRUCTURE OF THE LCCN
+
+The Library of Congress began to print catalog cards in 1898 and began to distribute them in 1901. The Library of Congress Card Number was the number used to identify and control catalog cards. With the development of the MARC format and the first distribution of machine-readable records for book materials in the late 1960s, the name of the LCCN was changed to Library of Congress Control Number. LCCNs are used for authority, bibliographic and classification records and are currently structured as follows:
+
+             Element                   Length             Positions
+
+             Alphabetic Prefix         3                  00-02
+             Year                      2                  03-04
+             Serial Number             6                  05-10
+             Supplement Number         1                  11
+
+The uniqueness of the LCCN is determined by the first 11 positions (positions 00-10). The Supplement Number has never been used by the Library of Congress and this position is always blank. The Supplement Number may be followed by two kinds of variable length data known as Suffix/Alphabetic Identifier and Revision Date. Each Suffix/Alphabetic Identifier is preceded by a slash as is Revision Date. If there is no Suffix/Alphabetic Identifier, the Revision Date is preceded by two slashes. Examples:
+
+###95156543#          May be displayed as: 95-156543
+###94014580#/AC/r95   May be displayed as: 94-14580/AC/r95
+###79310919#//r86     May be displayed as: 79-310919//r86
+gm#71005810#          May be displayed as: gm71-5810
+
+For more details on the current and future structure of the Library of Congress Control Number, see the Structure of the Library of Congress Control Number.
+
+INTERIM SOLUTION
+
+With the year portion of the LCCN stated as two digits, there is no means of distinguishing numbers assigned in different centuries, e.g., 98-1, and therefore the numbers duplicate one another. As an interim solution to this problem, the Library has taken steps to minimize the possibility that LCCNs assigned in 1898, 1899, 1900, etc. are re-assigned in the years 1998, 1999, 2000, etc. This is not a significant group of numbers for the years 1998, 1999, and 2000 because fewer than 8000 numbers were assigned in each of the years 1898, 1899, and 1900. However, beginning in 1901, the group of numbers increases substantially.
+With respect to "blocks" of Serial Numbers, the Library's current practice is to allocate the first 100,000 numbers in each year to the Cataloging in Publication Division (CIP). This will change slightly in 1998 and 1999 in that the first CIP numbers assigned in these years will be greater than the last Serial Number assigned in 1898 or 1899 (this approach will be followed as long as the interim solution is in place at the Library).
+
+LONG-TERM SOLUTION (RESTRUCTURE LCCN)
+
+Although the interim solution could probably be managed for several years into the twenty-first century, the Library recognizes that this is not an adequate long-term solution. Therefore, the Library has decided to restructure newly assigned LCCNs such that the prefix portion will be reduced to two positions, and the year portion will be expanded to four digits (e.g., ##2000000001). There will no longer be a position defined for "Supplement Number," and use of the variable data elements Suffix/Alphabetic Identifier and Revision Date will be discontinued. The new structure will be:
+
+             Element                   Length             Positions
+
+             Alphabetic Prefix         2                  00-01
+             Year                      4                  02-05
+             Serial Number             6                  06-11
+
+Examples:    ##2005256543        May be displayed as: 2005-256543
+             ##2010014580        May be displayed as: 2010-14580
+             gm2005005810        May be displayed as: gm2005-5810
+
+If the Library is able to implement the new LCCN structure by the year 2000, only the relatively few numbers assigned in 1898 and 1899 would not be readily distinguishable from those assigned in 1998 and 1999. If the implementation occurs later, numbers assigned in 1900, 1901, etc. would not be readily distinguishable from those assigned in 2000, 2001, etc.
+
+Some of the considerations in choosing this alternative are:
+
+    A four-digit year is unambiguous, easy to read, and easy to interpret.
+
+    Previously assigned LCCNs will not be changed to the new structure. This should minimize the impact of the LCCN change for systems that use LCCNs to link records or to point to records.
+
+For more details on the current and future structure of the Library of Congress Control Number, see the Structure of the Library of Congress Control Number.
+
+TIMING OF THE RESTRUCTURING
+
+The Library is well aware of the impact this change will have on other systems and is, therefore, attempting to provide adequate lead-time.
+
+The actual date for implementing this change has now been set at January 1, 2001.
+
+COMMENTS/QUESTIONS/SUGGESTIONS
+
+Please send any comments, questions, or suggestions to:
+
+             Cataloging Policy and Support Office
+             Library of Congress
+             Washington, D.C.
+             20540-4305
+      
+             Electronic mail address: cpso@loc.gov
+
+Go to the MARC Home Page
+
+Go to the Library of Congress Home Page
+
+Library of Congress
+Library of Congress Help Desk (10/08/99)
