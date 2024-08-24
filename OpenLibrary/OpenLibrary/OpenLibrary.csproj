@@ -2,9 +2,22 @@
 
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
-    <TargetFramework>net6.0-windows</TargetFramework>
-    <Nullable>enable</Nullable>
+    <TargetFramework>net4.8</TargetFramework>
     <UseWPF>true</UseWPF>
   </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="EntityFramework" Version="6.2.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\wpf-custom-utilities\src\WpfCustomUtilities\WpfCustomUtilities.csproj" />
+    <ProjectReference Include="..\OpenLibrary.Data\OpenLibrary.Data.csproj" />
+    <ProjectReference Include="..\OpenLibrary.Service\OpenLibrary.Service.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="System.Data.Entity" />
+  </ItemGroup>
 
 </Project>
