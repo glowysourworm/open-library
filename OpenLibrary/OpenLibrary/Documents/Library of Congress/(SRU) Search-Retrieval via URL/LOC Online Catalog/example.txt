@@ -5,6 +5,10 @@ SRU Base URL (and Explain record): http://lx2.loc.gov:210/LCDB?
 Sample search. "Marv Throneberry", return 2 MODS records
 http://lx2.loc.gov:210/lcdb?version=1.1&operation=searchRetrieve&query="Marv Throneberry"&startRecord=1&maximumRecords=5&recordSchema=mods
 
+(HAD TO FIGURE THIS OUT! - SSL) (modify URL, remove port, add /sru)
+
+https://lx2.loc.gov/sru/lcdb?version=1.1&operation=searchRetrieve&query="Marv Throneberry"&startRecord=1&maximumRecords=5&recordSchema=mods
+
 (NOT IN SERVICE)
 
 Please note: In July 2015, the Library updated its Z39.50 Metaproxy server. This process resulted in deprecation of the static IP originally 
