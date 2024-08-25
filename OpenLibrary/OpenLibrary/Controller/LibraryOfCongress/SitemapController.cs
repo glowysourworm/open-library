@@ -6,9 +6,9 @@ using System.Windows;
 using OpenLibrary.Controller.Interface;
 using OpenLibrary.Controller.LibraryOfCongress.Event;
 using OpenLibrary.Data;
-using OpenLibrary.Service.Crawler;
-using OpenLibrary.Service.Crawler.Event;
-using OpenLibrary.Service.WebReader;
+using OpenLibrary.Web.Crawler;
+using OpenLibrary.Web.Crawler.Event;
+using OpenLibrary.Web.WebReader;
 
 using WpfCustomUtilities.Extensions.Event;
 
@@ -24,7 +24,8 @@ namespace OpenLibrary.Controller.LibraryOfCongress
         public event SimpleEventHandler<string, bool> WebMessageEvent;
         public event SimpleEventHandler<WebBotEventData> WebUpdateEvent;
 
-        readonly Dictionary<Sitemap, Sitemap> _childParentTodoDict;
+        readonly Dictionary<Sitemap, Sitemap> _childParentDict;
+        readonly Dictionary<Sitemap, Sitemap> _childParentDictNext;
 
         readonly string _xPath = "/*/*";    // sitemapindex -> sitemap -> loc
 
@@ -33,7 +34,8 @@ namespace OpenLibrary.Controller.LibraryOfCongress
             this.Name = name;
             this.Status = ControllerStatus.Stopped;
 
-            _childParentTodoDict = new Dictionary<Sitemap, Sitemap>();
+            _childParentDict = new Dictionary<Sitemap, Sitemap>();
+            _childParentDictNext = new Dictionary<Sitemap, Sitemap>();
             _crawler = null;
 
             using (var entities = new OpenLibraryEntities())
@@ -51,7 +53,7 @@ namespace OpenLibrary.Controller.LibraryOfCongress
                     entities.SaveChanges();
                 }
 
-                _childParentTodoDict.Add(parent, null);
+                _childParentDictNext.Add(parent, null);
             }
         }
 
@@ -63,7 +65,18 @@ namespace OpenLibrary.Controller.LibraryOfCongress
             }
 
             // Take child nodes ready to crawl
-            var urls = _childParentTodoDict.Keys.Select(x => x.Url).ToList();
+            var urls = _childParentDictNext.Keys.Select(x => x.Url).ToList();
+
+            // Transfer nodes from Next dictionary
+            _childParentDict.Clear();
+            foreach (var pair in _childParentDictNext)
+            {
+                _childParentDict.Add(pair.Key, pair.Value);
+            }
+
+            // Clear Todo dictionary
+            _childParentDictNext.Clear();
+
 
             _crawler = new SitemapCrawler(urls, _xPath);
 
@@ -120,7 +133,7 @@ namespace OpenLibrary.Controller.LibraryOfCongress
                 this.WebUpdateEvent(new WebBotEventData()
                 {
                     Name = this.Name,
-                    QueueCount = _childParentTodoDict.Keys.Count,
+                    QueueCount = _childParentDict.Count + _childParentDictNext.Count,
                     Status = this.Status
                 });
         }
@@ -148,7 +161,7 @@ namespace OpenLibrary.Controller.LibraryOfCongress
 
                 var reader = new SitemapWebReader();
 
-                var parentSitemap = _childParentTodoDict.Keys.FirstOrDefault(x => x.Url == parentUrl);
+                var parentSitemap = _childParentDict.Keys.FirstOrDefault(x => x.Url == parentUrl);
                 if (parentSitemap == null)
                     throw new Exception("Unable to locate sitemap returned from SitemapWebService:  " + payload.Url);
 
@@ -176,7 +189,7 @@ namespace OpenLibrary.Controller.LibraryOfCongress
 
                     // Queue if child is sitemap
                     if (child.Url.EndsWith("sitemap.xml"))
-                        _childParentTodoDict.Add(child, parent);
+                        _childParentDictNext.Add(child, parent);
 
                     entities.SaveChanges();
 
@@ -202,7 +215,7 @@ namespace OpenLibrary.Controller.LibraryOfCongress
                 MessageEventHandler("Sitemap Controller completed with errors!", false);
 
             // TODO: Deal with error situations
-            if (_childParentTodoDict.Count > 0)
+            if (_childParentDictNext.Count > 0)
             {
                 Start();
             }

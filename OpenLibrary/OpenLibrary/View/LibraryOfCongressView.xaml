@@ -1,0 +1,65 @@
+﻿<UserControl x:Class="OpenLibrary.View.LibraryOfCongressView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:viewModelWeb="clr-namespace:OpenLibrary.ViewModel.Web">
+    
+    <UserControl.Resources>
+
+        <Style x:Key="LabelStyle" TargetType="TextBlock">
+            <Setter Property="Foreground" Value="DimGray" />
+            <Setter Property="FontSize" Value="14" />
+        </Style>
+        <Style x:Key="ValueStyle" TargetType="TextBlock">
+            <Setter Property="Foreground" Value="DimGray" />
+            <Setter Property="FontSize" Value="14" />
+            <Setter Property="TextWrapping" Value="Wrap" />
+            <Setter Property="TextTrimming" Value="CharacterEllipsis" />
+        </Style>
+    </UserControl.Resources>
+    
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <!-- SRU Web Services -->
+        <Border>
+            <StackPanel>
+                
+                <TextBlock Text="SRU Web Services" 
+                           Foreground="DimGray" 
+                           FontSize="18" />
+                
+                <ListView ItemsSource="{Binding WebServices}">
+                    <ListView.ItemTemplate>
+                        <DataTemplate DataType="{x:Type viewModelWeb:WebServiceViewModel}">
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="200" />
+                                    <ColumnDefinition Width="*" />
+                                </Grid.ColumnDefinitions>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="Auto" />
+                                    <RowDefinition Height="Auto" />
+                                    <RowDefinition Height="Auto" />
+                                    <RowDefinition Height="Auto" />
+                                </Grid.RowDefinitions>
+
+                                <TextBlock Text="Name" Style="{StaticResource LabelStyle}" />
+                                <TextBlock Text="Description" Style="{StaticResource LabelStyle}" Grid.Row="1" />
+                                <TextBlock Text="Endpoint" Style="{StaticResource LabelStyle}" Grid.Row="2" />
+                                <TextBlock Text="Standards URL" Style="{StaticResource LabelStyle}" Grid.Row="3" />
+
+                                <TextBlock Text="{Binding Name}" Style="{StaticResource ValueStyle}" Grid.Column="1" />
+                                <TextBlock Text="{Binding Description}" Style="{StaticResource ValueStyle}" Grid.Row="1" Grid.Column="1" />
+                                <TextBlock Text="{Binding Endpoint}" Style="{StaticResource ValueStyle}" Grid.Row="2" Grid.Column="1" />
+                                <TextBlock Text="{Binding ReferenceUrl}" Style="{StaticResource ValueStyle}" Grid.Row="3" Grid.Column="1" />
+                            </Grid>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+            </StackPanel>
+        </Border>
+        
+    </Grid>
+</UserControl>

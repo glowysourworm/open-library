@@ -1,0 +1,80 @@
+﻿(LOC Website) https://www.loc.gov/standards/sru/explain/
+
+(TRY THIS FOR THE FOLLOWING REQUEST - LOOK FOR FIELD EXPLANATIONS)
+
+http://z3950.loc.gov:7090/voyager?version=1.1&operation=searchRetrieve&query="marv Throneberry"&startRecord=1&maximumRecords=5&recordSchema=mods
+
+THIS APPEARS TO BE AN SRU REQUEST:  (See sruRequest.xsd) or, probably SRU 1.2 (https://www.loc.gov/standards/sru/sru-1-2.html)
+
+Explain Operation
+
+The Explain operation allows a client to retrieve a description of the facilities available at an SRU server. 
+It can then be used by the client to self-configure and provide an appopriate interface to the user. The record 
+is in XML and follows the ZeeRex Schema.
+
+There are two methods for getting the explain record:
+
+    Via the SRU Explain Operation. 
+    Via the http GET request at the base URL for the service (no parameters).
+    This can be considered an SRU request (and hence have a default recordPacking of 'xml'), with no extraRequestData 
+    and leaving it up to the server to determine the version of the response.
+    Otherwise, the response is identical to an SRU explainResponse message.
+
+
+
+REQUEST PARAMETERS
+------------------
+
+Name 	            Mandatory/Optional? 	    Description
+
+operation 	        Mandatory 	                The string: 'explain'.
+
+version 	        Mandatory 	                The version of the request, and a statement by the client that it wants the 
+                                                response to be less than, or preferably equal to, that version. See Versions.
+
+recordPacking 	    Optional 	                A string to determine how the explain record should be escaped in the response. 
+                                                Defined values are 'string' and 'xml'. The default is 'xml'. See Records.
+
+stylesheet 	        Optional 	                A URL for a stylesheet. The client requests that the server simply return this 
+                                                URL in the response. See Stylesheets.
+
+extraRequestData 	Optional 	                Provides additional information for the server to process. See Extensions.
+
+
+RESPONSE PARAMETERS
+-------------------
+
+Name 	                Type 	                    Mandatory? 	                    Description
+
+version 	            xsd:string 	                Mandatory 	                    The version of the response. This MUST be less 
+                                                                                    than or equal to the version requested by the client.
+>> See Versions.
+
+record 	                record 	                    Mandatory 	                    A single Explain record, wrapped in the record metadata 
+                                                                                    fields. >> See Records.
+
+extraResponseData 	    xmlFragment 	            Optional 	                    Additional information returned by the server. >> See Extensions.
+
+echoedExplainRequest 	<echoedExplainRequest> 	    Optional 	                    The request parameters echoed back to the client in a simple XML 
+                                                                                    form. >> See Echoing the Request.
+
+ZEEREX FOR SRU
+
+ZeeRex/SRU Summary:
+
+    The protocol attribute on the serverInfo element MUST have the value: SRU
+
+    The transport attribute on the serverInfo element MUST be one of: http or https
+
+    The method attribute on the serverInfo element MUST be a space separated list, comprising 
+    any number of the following values: GET POST SOAP
+
+    The database element within serverInfo MUST contain the path section of the URL to the server, 
+    without the first / and up to the ?
+
+    The set element within indexInfo is used to define the short names of context sets.
+
+    Indexes are described by including the name of the index in the name element within map, 
+    and the short name for the context set in the set attribute on that element.
+
+    The schemaInfo section is used to described the schemas supported by the server.

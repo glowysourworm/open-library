@@ -6,12 +6,13 @@ using OpenLibrary.Controller.LibraryOfCongress;
 using OpenLibrary.Controller.LibraryOfCongress.Event;
 using OpenLibrary.Data;
 using OpenLibrary.ViewModel;
+using OpenLibrary.ViewModel.Web;
 
 namespace OpenLibrary.Controller
 {
     public class OpenLibraryController : IDisposable
     {
-        IWebBotController<Sitemap> _webBotController;
+        //IWebBotController<Sitemap> _webBotController;
         OpenLibraryViewModel _viewModel;
 
         public OpenLibraryController(OpenLibraryViewModel viewModel)
@@ -29,10 +30,10 @@ namespace OpenLibrary.Controller
             });
 
             // TODO: Configuration for sitemap crawlers
-            _webBotController = new SitemapController(crawlerName, "https://loc.gov/sitemap.xml");
+            //_webBotController = new SitemapController(crawlerName, "https://loc.gov/sitemap.xml");
 
-            _webBotController.WebMessageEvent += OnMessageEvent;
-            _webBotController.WebUpdateEvent += OnUpdateEvent;
+            //_webBotController.WebMessageEvent += OnMessageEvent;
+            //_webBotController.WebUpdateEvent += OnUpdateEvent;
         }
 
         private void OnUpdateEvent(WebBotEventData eventData)
@@ -45,7 +46,7 @@ namespace OpenLibrary.Controller
 
         public void StartWebBots()
         {
-            _webBotController.Start();
+            //_webBotController.Start();
 
             OnMessageEvent("Web crawlers started...", false);
         }
@@ -57,17 +58,20 @@ namespace OpenLibrary.Controller
                 IsError = error,
                 Message = DateTime.Now.ToLongTimeString() + "    " + message
             });
+
+            if (_viewModel.LogMessages.Count > 10000)
+                _viewModel.LogMessages.RemoveAt(_viewModel.LogMessages.Count - 1);
         }
 
         public void Dispose()
         {
-            if (_webBotController != null)
-            {
-                _webBotController.Stop(true);
-                _webBotController = null;
-            }
-            else
-                throw new Exception("OpenLibraryController has already been disposed");
+            //if (_webBotController != null)
+            //{
+            //    _webBotController.Stop(true);
+            //    _webBotController = null;
+            //}
+            //else
+            //    throw new Exception("OpenLibraryController has already been disposed");
         }
     }
 }

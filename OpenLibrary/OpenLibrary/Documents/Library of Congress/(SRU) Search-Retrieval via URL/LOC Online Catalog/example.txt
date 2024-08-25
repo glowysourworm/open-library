@@ -4,3 +4,17 @@ SRU Base URL (and Explain record): http://lx2.loc.gov:210/LCDB?
 
 Sample search. "Marv Throneberry", return 2 MODS records
 http://lx2.loc.gov:210/lcdb?version=1.1&operation=searchRetrieve&query="Marv Throneberry"&startRecord=1&maximumRecords=5&recordSchema=mods
+
+(NOT IN SERVICE)
+
+Please note: In July 2015, the Library updated its Z39.50 Metaproxy server. This process resulted in deprecation of the static IP originally 
+associated with the lx2.loc.gov DSN name. After September 28, 2015, institutions using this deprecated static IP (140.147.249.67) will no 
+longer be able to access LC catalog metadata unless they modify the Z39.50 target information in their applications. 
+
+(FOUND THIS ONE)
+
+Here:  https://loc.gov/standards/sru/resources/listOfServers.html
+
+This should be the equivalent resquest, with the current server (8/24/2024)
+
+http://z3950.loc.gov:7090/voyager?version=1.1&operation=searchRetrieve&query="marv Throneberry"&startRecord=1&maximumRecords=5&recordSchema=mods

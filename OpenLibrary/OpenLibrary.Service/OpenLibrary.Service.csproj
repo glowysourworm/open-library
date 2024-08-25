@@ -31,7 +31,23 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="AgileObjects.AgileMapper, Version=1.8.1.0, Culture=neutral, PublicKeyToken=40b730fcfbe52fee, processorArchitecture=MSIL">
+      <HintPath>..\packages\AgileObjects.AgileMapper.1.8.1\lib\net40\AgileObjects.AgileMapper.dll</HintPath>
+    </Reference>
+    <Reference Include="AgileObjects.NetStandardPolyfills, Version=1.5.0.0, Culture=neutral, PublicKeyToken=06131ac1c008ad4e, processorArchitecture=MSIL">
+      <HintPath>..\packages\AgileObjects.NetStandardPolyfills.1.5.0\lib\net40\AgileObjects.NetStandardPolyfills.dll</HintPath>
+    </Reference>
+    <Reference Include="AgileObjects.ReadableExpressions, Version=2.6.0.0, Culture=neutral, PublicKeyToken=9f54ad81db69da8e, processorArchitecture=MSIL">
+      <HintPath>..\packages\AgileObjects.ReadableExpressions.2.6.0\lib\net40\AgileObjects.ReadableExpressions.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.Data.Entity" />
     <Reference Include="System.Xml.Linq" />
@@ -42,14 +58,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Crawler\Constants.cs" />
-    <Compile Include="Crawler\Event\CrawlerResultEventData.cs" />
-    <Compile Include="Crawler\Interface\IWebCrawler.cs" />
-    <Compile Include="Crawler\SitemapCrawler.cs" />
-    <Compile Include="WebReader\Interface\IWebReader.cs" />
-    <Compile Include="WebReader\SitemapWebReader.cs" />
-    <Compile Include="Web\Interface\IWebService.cs" />
-    <Compile Include="Web\UrlWebService.cs" />
+    <Compile Include="Database\Entity\Interface\IRepository.cs" />
+    <Compile Include="Database\Entity\Repository.cs" />
+    <Compile Include="LibraryOfCongress\SruService_v1_2.cs" />
+    <Compile Include="LibraryOfCongress\Interface\ILibraryOfCongressService.cs" />
+    <Compile Include="LibraryOfCongress\Interface\ISruService.cs" />
+    <Compile Include="LibraryOfCongress\LibraryOfCongressService.cs" />
+    <Compile Include="LibraryOfCongress\Schema\sruRequest.Designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -61,6 +76,39 @@
       <Project>{A35B4FCF-E43D-493C-9F31-2FC4727178D3}</Project>
       <Name>OpenLibrary.Data</Name>
     </ProjectReference>
+    <ProjectReference Include="..\OpenLibrary.Web\OpenLibrary.Web.csproj">
+      <Project>{2AB9CF76-D6E0-4DCB-B839-2ECC35DF5829}</Project>
+      <Name>OpenLibrary.Web</Name>
+    </ProjectReference>
   </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="LibraryOfCongress\Schema\diagnostic.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LibraryOfCongress\Schema\explain.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LibraryOfCongress\Schema\facetedResults.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LibraryOfCongress\Schema\scan.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LibraryOfCongress\Schema\searchResultAnalysis.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LibraryOfCongress\Schema\sruRequest.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LibraryOfCongress\Schema\sruResponse.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LibraryOfCongress\Schema\xcql.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

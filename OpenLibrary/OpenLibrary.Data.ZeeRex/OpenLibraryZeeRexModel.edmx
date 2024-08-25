@@ -1,0 +1,544 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="Model.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'OpenLibrary-LibraryOfCongress-ZEEREX.dbo.attr' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+        <EntityType Name="attr">
+          <Key>
+            <PropertyRef Name="type" />
+          </Key>
+          <Property Name="type" Type="varchar" MaxLength="8000" Nullable="false" />
+          <Property Name="set" Type="varchar" MaxLength="8000" />
+        </EntityType>
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'OpenLibrary-LibraryOfCongress-ZEEREX.dbo.authentication' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+        <EntityType Name="authentication">
+          <Key>
+            <PropertyRef Name="open" />
+          </Key>
+          <Property Name="required" Type="varchar" MaxLength="8000" />
+          <Property Name="open" Type="varchar" MaxLength="8000" Nullable="false" />
+          <Property Name="user" Type="varchar" MaxLength="8000" />
+          <Property Name="group" Type="varchar" MaxLength="8000" />
+          <Property Name="password" Type="varchar" MaxLength="8000" />
+        </EntityType>
+        <!--Errors Found During Generation:
+warning 6013: The table/view 'OpenLibrary-LibraryOfCongress-ZEEREX.dbo.author' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+        <EntityType Name="author">
+          <Property Name="primary" Type="varchar" MaxLength="8000" />
+          <Property Name="lang" Type="varchar" MaxLength="8000" />
+        </EntityType>-->
+        <!--Errors Found During Generation:
+warning 6013: The table/view 'OpenLibrary-LibraryOfCongress-ZEEREX.dbo.contact' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+        <EntityType Name="contact">
+          <Property Name="primary" Type="varchar" MaxLength="8000" />
+          <Property Name="lang" Type="varchar" MaxLength="8000" />
+        </EntityType>-->
+        <!--Errors Found During Generation:
+warning 6013: The table/view 'OpenLibrary-LibraryOfCongress-ZEEREX.dbo.database' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+        <EntityType Name="database">
+          <Property Name="numRecs" Type="varchar" MaxLength="8000" />
+          <Property Name="lastUpdate" Type="varchar" MaxLength="8000" />
+        </EntityType>-->
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'OpenLibrary-LibraryOfCongress-ZEEREX.dbo.default' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+        <EntityType Name="default">
+          <Key>
+            <PropertyRef Name="type" />
+          </Key>
+          <Property Name="type" Type="varchar" MaxLength="8000" Nullable="false" />
+        </EntityType>
+        <!--Errors Found During Generation:
+warning 6013: The table/view 'OpenLibrary-LibraryOfCongress-ZEEREX.dbo.description' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+        <EntityType Name="description">
+          <Property Name="primary" Type="varchar" MaxLength="8000" />
+          <Property Name="lang" Type="varchar" MaxLength="8000" />
+        </EntityType>-->
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'OpenLibrary-LibraryOfCongress-ZEEREX.dbo.elementSet' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+        <EntityType Name="elementSet">
+          <Key>
+            <PropertyRef Name="name" />
+          </Key>
+          <Property Name="name" Type="varchar" MaxLength="8000" Nullable="false" />
+        </EntityType>
+        <!--Errors Found During Generation:
+warning 6013: The table/view 'OpenLibrary-LibraryOfCongress-ZEEREX.dbo.explain' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+        <EntityType Name="explain">
+          <Property Name="authoritative" Type="varchar" MaxLength="8000" />
+          <Property Name="id" Type="varchar" MaxLength="8000" />
+        </EntityType>-->
+        <!--Errors Found During Generation:
+warning 6013: The table/view 'OpenLibrary-LibraryOfCongress-ZEEREX.dbo.extent' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+        <EntityType Name="extent">
+          <Property Name="primary" Type="varchar" MaxLength="8000" />
+          <Property Name="lang" Type="varchar" MaxLength="8000" />
+        </EntityType>-->
+        <!--Errors Found During Generation:
+warning 6013: The table/view 'OpenLibrary-LibraryOfCongress-ZEEREX.dbo.history' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+        <EntityType Name="history">
+          <Property Name="primary" Type="varchar" MaxLength="8000" />
+          <Property Name="lang" Type="varchar" MaxLength="8000" />
+        </EntityType>-->
+        <!--Errors Found During Generation:
+warning 6013: The table/view 'OpenLibrary-LibraryOfCongress-ZEEREX.dbo.implementation' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+        <EntityType Name="implementation">
+          <Property Name="identifier" Type="varchar" MaxLength="8000" />
+          <Property Name="version" Type="varchar" MaxLength="8000" />
+        </EntityType>-->
+        <!--Errors Found During Generation:
+warning 6013: The table/view 'OpenLibrary-LibraryOfCongress-ZEEREX.dbo.index' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+        <EntityType Name="index">
+          <Property Name="id" Type="varchar" MaxLength="8000" />
+          <Property Name="search" Type="varchar" MaxLength="8000" />
+          <Property Name="scan" Type="varchar" MaxLength="8000" />
+          <Property Name="sort" Type="varchar" MaxLength="8000" />
+        </EntityType>-->
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'OpenLibrary-LibraryOfCongress-ZEEREX.dbo.indexInfo' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+        <EntityType Name="indexInfo">
+          <Key>
+            <PropertyRef Name="sortKeyword" />
+          </Key>
+          <Property Name="sortKeyword" Type="varchar" MaxLength="8000" Nullable="false" />
+        </EntityType>
+        <!--Errors Found During Generation:
+warning 6013: The table/view 'OpenLibrary-LibraryOfCongress-ZEEREX.dbo.langUsage' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+        <EntityType Name="langUsage">
+          <Property Name="codes" Type="varchar" MaxLength="8000" />
+          <Property Name="primary" Type="varchar" MaxLength="8000" />
+          <Property Name="lang" Type="varchar" MaxLength="8000" />
+        </EntityType>-->
+        <!--Errors Found During Generation:
+warning 6013: The table/view 'OpenLibrary-LibraryOfCongress-ZEEREX.dbo.link' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+        <EntityType Name="link">
+          <Property Name="type" Type="varchar" MaxLength="8000" />
+        </EntityType>-->
+        <!--Errors Found During Generation:
+warning 6013: The table/view 'OpenLibrary-LibraryOfCongress-ZEEREX.dbo.map' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+        <EntityType Name="map">
+          <Property Name="primary" Type="varchar" MaxLength="8000" />
+        </EntityType>-->
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'OpenLibrary-LibraryOfCongress-ZEEREX.dbo.metaInfo' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+        <EntityType Name="metaInfo">
+          <Key>
+            <PropertyRef Name="dateModified" />
+            <PropertyRef Name="aggregatedFrom" />
+            <PropertyRef Name="dateAggregated" />
+          </Key>
+          <Property Name="dateModified" Type="varchar" MaxLength="8000" Nullable="false" />
+          <Property Name="aggregatedFrom" Type="varchar" MaxLength="8000" Nullable="false" />
+          <Property Name="dateAggregated" Type="varchar" MaxLength="8000" Nullable="false" />
+        </EntityType>
+        <!--Errors Found During Generation:
+warning 6013: The table/view 'OpenLibrary-LibraryOfCongress-ZEEREX.dbo.name' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+        <EntityType Name="name">
+          <Property Name="set" Type="varchar" MaxLength="8000" />
+        </EntityType>-->
+        <!--Errors Found During Generation:
+warning 6013: The table/view 'OpenLibrary-LibraryOfCongress-ZEEREX.dbo.recordSyntax' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+        <EntityType Name="recordSyntax">
+          <Property Name="name" Type="varchar" MaxLength="8000" />
+          <Property Name="identifier" Type="varchar" MaxLength="8000" />
+        </EntityType>-->
+        <!--Errors Found During Generation:
+warning 6013: The table/view 'OpenLibrary-LibraryOfCongress-ZEEREX.dbo.restrictions' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+        <EntityType Name="restrictions">
+          <Property Name="primary" Type="varchar" MaxLength="8000" />
+          <Property Name="lang" Type="varchar" MaxLength="8000" />
+        </EntityType>-->
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'OpenLibrary-LibraryOfCongress-ZEEREX.dbo.schema' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+        <EntityType Name="schema">
+          <Key>
+            <PropertyRef Name="identifier" />
+            <PropertyRef Name="name" />
+          </Key>
+          <Property Name="identifier" Type="varchar" MaxLength="8000" Nullable="false" />
+          <Property Name="name" Type="varchar" MaxLength="8000" Nullable="false" />
+          <Property Name="location" Type="varchar" MaxLength="8000" />
+          <Property Name="sort" Type="varchar" MaxLength="8000" />
+          <Property Name="retrieve" Type="varchar" MaxLength="8000" />
+        </EntityType>
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'OpenLibrary-LibraryOfCongress-ZEEREX.dbo.serverInfo' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+        <EntityType Name="serverInfo">
+          <Key>
+            <PropertyRef Name="host" />
+            <PropertyRef Name="port" />
+          </Key>
+          <Property Name="host" Type="varchar" MaxLength="8000" Nullable="false" />
+          <Property Name="port" Type="varchar" MaxLength="8000" Nullable="false" />
+          <Property Name="protocol" Type="varchar" MaxLength="8000" />
+          <Property Name="version" Type="varchar" MaxLength="8000" />
+          <Property Name="transport" Type="varchar" MaxLength="8000" />
+          <Property Name="wsdl" Type="varchar" MaxLength="8000" />
+        </EntityType>
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'OpenLibrary-LibraryOfCongress-ZEEREX.dbo.set' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+        <EntityType Name="set">
+          <Key>
+            <PropertyRef Name="name" />
+            <PropertyRef Name="identifier" />
+          </Key>
+          <Property Name="name" Type="varchar" MaxLength="8000" Nullable="false" />
+          <Property Name="identifier" Type="varchar" MaxLength="8000" Nullable="false" />
+        </EntityType>
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'OpenLibrary-LibraryOfCongress-ZEEREX.dbo.setting' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+        <EntityType Name="setting">
+          <Key>
+            <PropertyRef Name="type" />
+          </Key>
+          <Property Name="type" Type="varchar" MaxLength="8000" Nullable="false" />
+        </EntityType>
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'OpenLibrary-LibraryOfCongress-ZEEREX.dbo.subjects' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+        <EntityType Name="subjects">
+          <Key>
+            <PropertyRef Name="subject" />
+          </Key>
+          <Property Name="subject" Type="varchar" MaxLength="8000" Nullable="false" />
+        </EntityType>
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'OpenLibrary-LibraryOfCongress-ZEEREX.dbo.supports' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+        <EntityType Name="supports">
+          <Key>
+            <PropertyRef Name="type" />
+          </Key>
+          <Property Name="type" Type="varchar" MaxLength="8000" Nullable="false" />
+        </EntityType>
+        <!--Errors Found During Generation:
+warning 6013: The table/view 'OpenLibrary-LibraryOfCongress-ZEEREX.dbo.title' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+        <EntityType Name="title">
+          <Property Name="primary" Type="varchar" MaxLength="8000" />
+          <Property Name="lang" Type="varchar" MaxLength="8000" />
+        </EntityType>-->
+        <EntityContainer Name="ModelStoreContainer">
+          <EntitySet Name="attr" EntityType="Self.attr" store:Type="Tables" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [attr].[type] AS [type], 
+    [attr].[set] AS [set]
+    FROM [dbo].[attr] AS [attr]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="authentication" EntityType="Self.authentication" store:Type="Tables" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [authentication].[required] AS [required], 
+    [authentication].[open] AS [open], 
+    [authentication].[user] AS [user], 
+    [authentication].[group] AS [group], 
+    [authentication].[password] AS [password]
+    FROM [dbo].[authentication] AS [authentication]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="default" EntityType="Self.default" store:Type="Tables" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [default].[type] AS [type]
+    FROM [dbo].[default] AS [default]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="elementSet" EntityType="Self.elementSet" store:Type="Tables" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [elementSet].[name] AS [name]
+    FROM [dbo].[elementSet] AS [elementSet]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="indexInfo" EntityType="Self.indexInfo" store:Type="Tables" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [indexInfo].[sortKeyword] AS [sortKeyword]
+    FROM [dbo].[indexInfo] AS [indexInfo]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="metaInfo" EntityType="Self.metaInfo" store:Type="Tables" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [metaInfo].[dateModified] AS [dateModified], 
+    [metaInfo].[aggregatedFrom] AS [aggregatedFrom], 
+    [metaInfo].[dateAggregated] AS [dateAggregated]
+    FROM [dbo].[metaInfo] AS [metaInfo]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="schema" EntityType="Self.schema" store:Type="Tables" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [schema].[identifier] AS [identifier], 
+    [schema].[name] AS [name], 
+    [schema].[location] AS [location], 
+    [schema].[sort] AS [sort], 
+    [schema].[retrieve] AS [retrieve]
+    FROM [dbo].[schema] AS [schema]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="serverInfo" EntityType="Self.serverInfo" store:Type="Tables" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [serverInfo].[host] AS [host], 
+    [serverInfo].[port] AS [port], 
+    [serverInfo].[protocol] AS [protocol], 
+    [serverInfo].[version] AS [version], 
+    [serverInfo].[transport] AS [transport], 
+    [serverInfo].[wsdl] AS [wsdl]
+    FROM [dbo].[serverInfo] AS [serverInfo]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="set" EntityType="Self.set" store:Type="Tables" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [set].[name] AS [name], 
+    [set].[identifier] AS [identifier]
+    FROM [dbo].[set] AS [set]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="setting" EntityType="Self.setting" store:Type="Tables" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [setting].[type] AS [type]
+    FROM [dbo].[setting] AS [setting]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="subjects" EntityType="Self.subjects" store:Type="Tables" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [subjects].[subject] AS [subject]
+    FROM [dbo].[subjects] AS [subjects]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="supports" EntityType="Self.supports" store:Type="Tables" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [supports].[type] AS [type]
+    FROM [dbo].[supports] AS [supports]</DefiningQuery>
+          </EntitySet>
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="Model" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="attr">
+          <Key>
+            <PropertyRef Name="type" />
+          </Key>
+          <Property Name="type" Type="String" MaxLength="8000" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="set" Type="String" MaxLength="8000" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="authentication">
+          <Key>
+            <PropertyRef Name="open" />
+          </Key>
+          <Property Name="required" Type="String" MaxLength="8000" FixedLength="false" Unicode="false" />
+          <Property Name="open" Type="String" MaxLength="8000" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="user" Type="String" MaxLength="8000" FixedLength="false" Unicode="false" />
+          <Property Name="group" Type="String" MaxLength="8000" FixedLength="false" Unicode="false" />
+          <Property Name="password" Type="String" MaxLength="8000" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="default">
+          <Key>
+            <PropertyRef Name="type" />
+          </Key>
+          <Property Name="type" Type="String" MaxLength="8000" FixedLength="false" Unicode="false" Nullable="false" />
+        </EntityType>
+        <EntityType Name="elementSet">
+          <Key>
+            <PropertyRef Name="name" />
+          </Key>
+          <Property Name="name" Type="String" MaxLength="8000" FixedLength="false" Unicode="false" Nullable="false" />
+        </EntityType>
+        <EntityType Name="indexInfo">
+          <Key>
+            <PropertyRef Name="sortKeyword" />
+          </Key>
+          <Property Name="sortKeyword" Type="String" MaxLength="8000" FixedLength="false" Unicode="false" Nullable="false" />
+        </EntityType>
+        <EntityType Name="metaInfo">
+          <Key>
+            <PropertyRef Name="dateModified" />
+            <PropertyRef Name="aggregatedFrom" />
+            <PropertyRef Name="dateAggregated" />
+          </Key>
+          <Property Name="dateModified" Type="String" MaxLength="8000" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="aggregatedFrom" Type="String" MaxLength="8000" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="dateAggregated" Type="String" MaxLength="8000" FixedLength="false" Unicode="false" Nullable="false" />
+        </EntityType>
+        <EntityType Name="schema">
+          <Key>
+            <PropertyRef Name="identifier" />
+            <PropertyRef Name="name" />
+          </Key>
+          <Property Name="identifier" Type="String" MaxLength="8000" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="name" Type="String" MaxLength="8000" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="location" Type="String" MaxLength="8000" FixedLength="false" Unicode="false" />
+          <Property Name="sort" Type="String" MaxLength="8000" FixedLength="false" Unicode="false" />
+          <Property Name="retrieve" Type="String" MaxLength="8000" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="serverInfo">
+          <Key>
+            <PropertyRef Name="host" />
+            <PropertyRef Name="port" />
+          </Key>
+          <Property Name="host" Type="String" MaxLength="8000" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="port" Type="String" MaxLength="8000" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="protocol" Type="String" MaxLength="8000" FixedLength="false" Unicode="false" />
+          <Property Name="version" Type="String" MaxLength="8000" FixedLength="false" Unicode="false" />
+          <Property Name="transport" Type="String" MaxLength="8000" FixedLength="false" Unicode="false" />
+          <Property Name="wsdl" Type="String" MaxLength="8000" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="set">
+          <Key>
+            <PropertyRef Name="name" />
+            <PropertyRef Name="identifier" />
+          </Key>
+          <Property Name="name" Type="String" MaxLength="8000" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="identifier" Type="String" MaxLength="8000" FixedLength="false" Unicode="false" Nullable="false" />
+        </EntityType>
+        <EntityType Name="setting">
+          <Key>
+            <PropertyRef Name="type" />
+          </Key>
+          <Property Name="type" Type="String" MaxLength="8000" FixedLength="false" Unicode="false" Nullable="false" />
+        </EntityType>
+        <EntityType Name="subject">
+          <Key>
+            <PropertyRef Name="subject1" />
+          </Key>
+          <Property Name="subject1" Type="String" MaxLength="8000" FixedLength="false" Unicode="false" Nullable="false" />
+        </EntityType>
+        <EntityType Name="support">
+          <Key>
+            <PropertyRef Name="type" />
+          </Key>
+          <Property Name="type" Type="String" MaxLength="8000" FixedLength="false" Unicode="false" Nullable="false" />
+        </EntityType>
+        <EntityContainer Name="OpenLibraryZeeRexEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="attrs" EntityType="Self.attr" />
+          <EntitySet Name="authentications" EntityType="Self.authentication" />
+          <EntitySet Name="defaults" EntityType="Self.default" />
+          <EntitySet Name="elementSets" EntityType="Self.elementSet" />
+          <EntitySet Name="indexInfoes" EntityType="Self.indexInfo" />
+          <EntitySet Name="metaInfoes" EntityType="Self.metaInfo" />
+          <EntitySet Name="schemata" EntityType="Self.schema" />
+          <EntitySet Name="serverInfoes" EntityType="Self.serverInfo" />
+          <EntitySet Name="sets" EntityType="Self.set" />
+          <EntitySet Name="settings" EntityType="Self.setting" />
+          <EntitySet Name="subjects" EntityType="Self.subject" />
+          <EntitySet Name="supports" EntityType="Self.support" />
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="ModelStoreContainer" CdmEntityContainer="OpenLibraryZeeRexEntities">
+          <EntitySetMapping Name="attrs">
+            <EntityTypeMapping TypeName="Model.attr">
+              <MappingFragment StoreEntitySet="attr">
+                <ScalarProperty Name="type" ColumnName="type" />
+                <ScalarProperty Name="set" ColumnName="set" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="authentications">
+            <EntityTypeMapping TypeName="Model.authentication">
+              <MappingFragment StoreEntitySet="authentication">
+                <ScalarProperty Name="required" ColumnName="required" />
+                <ScalarProperty Name="open" ColumnName="open" />
+                <ScalarProperty Name="user" ColumnName="user" />
+                <ScalarProperty Name="group" ColumnName="group" />
+                <ScalarProperty Name="password" ColumnName="password" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="defaults">
+            <EntityTypeMapping TypeName="Model.default">
+              <MappingFragment StoreEntitySet="default">
+                <ScalarProperty Name="type" ColumnName="type" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="elementSets">
+            <EntityTypeMapping TypeName="Model.elementSet">
+              <MappingFragment StoreEntitySet="elementSet">
+                <ScalarProperty Name="name" ColumnName="name" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="indexInfoes">
+            <EntityTypeMapping TypeName="Model.indexInfo">
+              <MappingFragment StoreEntitySet="indexInfo">
+                <ScalarProperty Name="sortKeyword" ColumnName="sortKeyword" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="metaInfoes">
+            <EntityTypeMapping TypeName="Model.metaInfo">
+              <MappingFragment StoreEntitySet="metaInfo">
+                <ScalarProperty Name="dateModified" ColumnName="dateModified" />
+                <ScalarProperty Name="aggregatedFrom" ColumnName="aggregatedFrom" />
+                <ScalarProperty Name="dateAggregated" ColumnName="dateAggregated" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="schemata">
+            <EntityTypeMapping TypeName="Model.schema">
+              <MappingFragment StoreEntitySet="schema">
+                <ScalarProperty Name="identifier" ColumnName="identifier" />
+                <ScalarProperty Name="name" ColumnName="name" />
+                <ScalarProperty Name="location" ColumnName="location" />
+                <ScalarProperty Name="sort" ColumnName="sort" />
+                <ScalarProperty Name="retrieve" ColumnName="retrieve" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="serverInfoes">
+            <EntityTypeMapping TypeName="Model.serverInfo">
+              <MappingFragment StoreEntitySet="serverInfo">
+                <ScalarProperty Name="host" ColumnName="host" />
+                <ScalarProperty Name="port" ColumnName="port" />
+                <ScalarProperty Name="protocol" ColumnName="protocol" />
+                <ScalarProperty Name="version" ColumnName="version" />
+                <ScalarProperty Name="transport" ColumnName="transport" />
+                <ScalarProperty Name="wsdl" ColumnName="wsdl" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="sets">
+            <EntityTypeMapping TypeName="Model.set">
+              <MappingFragment StoreEntitySet="set">
+                <ScalarProperty Name="name" ColumnName="name" />
+                <ScalarProperty Name="identifier" ColumnName="identifier" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="settings">
+            <EntityTypeMapping TypeName="Model.setting">
+              <MappingFragment StoreEntitySet="setting">
+                <ScalarProperty Name="type" ColumnName="type" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="subjects">
+            <EntityTypeMapping TypeName="Model.subject">
+              <MappingFragment StoreEntitySet="subjects">
+                <ScalarProperty Name="subject1" ColumnName="subject" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="supports">
+            <EntityTypeMapping TypeName="Model.support">
+              <MappingFragment StoreEntitySet="supports">
+                <ScalarProperty Name="type" ColumnName="type" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>
