@@ -1,7 +1,9 @@
 ﻿
+using System.Collections.Generic;
 using System.Collections.Specialized;
 
 using OpenLibrary.Service.LibraryOfCongress.Interface;
+using OpenLibrary.Web.Common;
 using OpenLibrary.Web.Service;
 
 namespace OpenLibrary.Service.LibraryOfCongress
@@ -22,23 +24,25 @@ namespace OpenLibrary.Service.LibraryOfCongress
             this.BaseUrl = baseUrl;
         }
 
-        public bool Run(NameValueCollection mandatoryParameters, NameValueCollection optionalParameters)
+        public string Run(IEnumerable<QueryParameter> parameters)
         {
-            var combinedCollection = new NameValueCollection();
+            //var combinedCollection = new NameValueCollection();
 
-            // Mandatory Parameters
-            for (int index = 0; index < mandatoryParameters.Count; index++)
-            {
-                combinedCollection.Add(mandatoryParameters.Keys[index], mandatoryParameters[index]);
-            }
+            //// Mandatory Parameters
+            //for (int index = 0; index < mandatoryParameters.Count; index++)
+            //{
+            //    combinedCollection.Add(mandatoryParameters.Keys[index], mandatoryParameters[index]);
+            //}
 
-            // Optional Parameters
-            for (int index = 0; index < optionalParameters.Count; index++)
-            {
-                combinedCollection.Add(optionalParameters.Keys[index], optionalParameters[index]);
-            }
+            //// Optional Parameters
+            //for (int index = 0; index < optionalParameters.Count; index++)
+            //{
+            //    combinedCollection.Add(optionalParameters.Keys[index], optionalParameters[index]);
+            //}
 
-            return base.Run(combinedCollection);
+            base.Run(parameters);
+
+            return this.Payload;
         }
     }
 }

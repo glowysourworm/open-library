@@ -1,6 +1,9 @@
 ﻿
 using System;
+using System.Collections.Generic;
 using System.Collections.Specialized;
+
+using OpenLibrary.Web.Common;
 
 using WpfCustomUtilities.Extensions.Event;
 
@@ -44,6 +47,6 @@ namespace OpenLibrary.Web.Service.Interface
         /// <summary>
         /// Executes web request synchronously
         /// </summary>
-        bool Run(NameValueCollection queryParameters);
+        bool Run(IEnumerable<QueryParameter> parameters = null);
     }
 }

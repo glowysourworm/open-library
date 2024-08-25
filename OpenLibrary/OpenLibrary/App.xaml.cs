@@ -1,10 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Configuration;
-using System.Data;
-using System.Linq;
-using System.Threading.Tasks;
 using System.Windows;
+using System.Windows.Media;
 
 namespace OpenLibrary
 {
@@ -13,5 +9,11 @@ namespace OpenLibrary
     /// </summary>
     public partial class App : Application
     {
+        public App()
+        {
+            var fontAwesome = new FontFamily(new Uri("pack://application:,,,/OpenLibrary;component/Resource/Font/Font Awesome 6 Free-Solid-900.otf#Font Awesome 6 Free Solid"), "Font Awesome 6 Free Solid");
+
+            this.Resources.Add("FontAwesome", fontAwesome);
+        }
     }
 }

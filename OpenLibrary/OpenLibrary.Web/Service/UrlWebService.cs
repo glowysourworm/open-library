@@ -1,10 +1,14 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Collections.Specialized;
 using System.IO;
+using System.Linq;
 using System.Net;
 
+using OpenLibrary.Web.Common;
 using OpenLibrary.Web.Service.Interface;
 
+using WpfCustomUtilities.Extensions.Collection;
 using WpfCustomUtilities.Extensions.Event;
 
 namespace OpenLibrary.Web.Service
@@ -25,14 +29,13 @@ namespace OpenLibrary.Web.Service
             this.RetryAttempts = retryAttempts;
         }
 
-        public bool Run(NameValueCollection queryParameters = null)
+        public bool Run(IEnumerable<QueryParameter> parameters = null)
         {
-            // NameValueCollection.ToString() -> name=value&name1=value2&...
-
             var builder = new UriBuilder(this.Endpoint);
 
-            if (queryParameters != null && queryParameters.Count > 0)
-                builder.Query = queryParameters.ToString();
+            // See QueryParameter.ToString()
+            if (parameters != null && parameters.Any())
+                builder.Query = parameters.Join("&", x => x.ToString());
 
             // Build URL
             var resolvedUrl = builder.ToString();

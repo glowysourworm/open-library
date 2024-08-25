@@ -1,4 +1,7 @@
-﻿using System.Collections.Specialized;
+﻿using System.Collections.Generic;
+using System.Collections.Specialized;
+
+using OpenLibrary.Web.Common;
 
 namespace OpenLibrary.Service.LibraryOfCongress.Interface
 {
@@ -27,6 +30,6 @@ namespace OpenLibrary.Service.LibraryOfCongress.Interface
         /// <param name="mandatoryParameters">See SRU v1.2:  version, operation, query</param>
         /// <param name="optionalParameters">See SRU v1.2:  https://www.loc.gov/standards/sru/sru-1-2.html</param>
         /// <returns></returns>
-        bool Run(NameValueCollection mandatoryParameters, NameValueCollection optionalParameters);
+        string Run(IEnumerable<QueryParameter> parameters);
     }
 }

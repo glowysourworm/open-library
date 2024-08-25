@@ -7,7 +7,16 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Resource\Font\Font Awesome 6 Free-Regular-400.otf" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Resource\Font\Font Awesome 6 Free-Regular-400.otf" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="EntityFramework" Version="6.2.0" />
+    <PackageReference Include="FontAwesome" Version="4.7.0" />
   </ItemGroup>
 
   <ItemGroup>
