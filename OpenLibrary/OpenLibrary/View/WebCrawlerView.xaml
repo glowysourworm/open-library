@@ -1,0 +1,46 @@
+﻿<UserControl x:Class="OpenLibrary.View.WebCrawlerView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:viewModelWeb="clr-namespace:OpenLibrary.ViewModel.Web">
+
+    <UserControl.Resources>
+        <ResourceDictionary Source="pack://application:,,,/OpenLibrary;component/Resource/Style/OpenLibraryStyle.xaml" />
+    </UserControl.Resources>
+
+    <ListView ItemsSource="{Binding}">
+        <ListView.ItemTemplate>
+            <DataTemplate DataType="{x:Type viewModelWeb:SitemapCrawlerViewModel}">
+                <StackPanel HorizontalAlignment="Stretch" Orientation="Horizontal">
+
+                    <TextBlock Text="{Binding Name}" 
+                                           FontSize="14" 
+                                           Foreground="DimGray" 
+                                           HorizontalAlignment="Stretch" 
+                                           VerticalAlignment="Center" 
+                                           Padding="1" />
+
+                    <TextBlock FontSize="14" 
+                                           Foreground="CornflowerBlue" 
+                                           HorizontalAlignment="Stretch" 
+                                           VerticalAlignment="Center" 
+                                           Padding="1">
+                                    <Run Text="(" />
+                                    <Run Text="{Binding SitemapQueueCount}" />
+                                    <Run Text=")" />
+                    </TextBlock>
+
+                    <TextBlock FontSize="14" 
+                                           Foreground="LimeGreen" 
+                                           HorizontalAlignment="Stretch" 
+                                           VerticalAlignment="Center" 
+                                           Padding="1">
+                                    <Run Text="(" />
+                                    <Run Text="{Binding Running}" />
+                                    <Run Text=")" />
+                    </TextBlock>
+
+                </StackPanel>
+            </DataTemplate>
+        </ListView.ItemTemplate>
+    </ListView>
+</UserControl>

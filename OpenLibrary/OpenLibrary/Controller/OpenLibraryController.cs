@@ -35,8 +35,6 @@ namespace OpenLibrary.Controller
                 SitemapQueueCount = 1
             });
 
-            _viewModel.WebServiceExecuteRequest += OnWebServiceEvent;
-
             // () -> Initialize() (after loaded)
             _libraryOfCongressService = null;
 
@@ -123,7 +121,7 @@ namespace OpenLibrary.Controller
                                 DefaultValue = parameter.DefaultValue,
                                 Description = parameter.Description,
                                 Name = parameter.Name,
-                                UseParameter = true,
+                                UseParameter = parameter.Required,
                                 Value = parameter.DefaultValue
                             };
 
@@ -187,22 +185,32 @@ namespace OpenLibrary.Controller
                 _viewModel.LogMessages.RemoveAt(_viewModel.LogMessages.Count - 1);
         }
 
-        private void OnServiceViewModelExecuteRequest(WebServiceViewModel item1, WebServiceEndpointViewModel item2)
-        {
-            throw new NotImplementedException();
-        }
-
-        private void OnWebServiceEvent(WebServiceViewModel sender, WebServiceEndpointViewModel endpoint)
+        private void OnServiceViewModelExecuteRequest(WebServiceViewModel sender, WebServiceEndpointViewModel endpoint)
         {
             // Get Service Backend
             var service = _libraryOfCongressService.SruServices[sender.Name];
 
+            // Log Execute Message
+            OnMessageEvent("Executing Web Service:  " + endpoint.Endpoint, false);
+
             // Execute (synchronously) - using Resolved Url
-            var result = service.Run(endpoint.Name, endpoint.ResolvedUrl);
+            var result = service.Run(endpoint.Endpoint, endpoint.ResolvedUrl);
 
-            Clipboard.SetText(result);
+            // Log Execute Message
+            OnMessageEvent("Web Service Response:  " + endpoint.Endpoint, false);
 
-            MessageBox.Show("Result copied to clipboard!", "Open Libarary Web Services");
+            if (result != null)
+            {
+                _viewModel.WebServiceResponses.Add(new WebServiceResponseViewModel()
+                {
+                    Created = DateTime.Now,
+                    Endpoint = endpoint.Endpoint,
+                    MimeType = "???",
+                    Payload = result,
+                    RequestUrl = endpoint.ResolvedUrl,
+                    ServiceName = sender.Name
+                });
+            }
         }
 
         public void Dispose()

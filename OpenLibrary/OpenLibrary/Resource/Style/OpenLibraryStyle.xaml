@@ -2,6 +2,8 @@
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
     <ResourceDictionary.MergedDictionaries>
         <ResourceDictionary Source="pack://application:,,,/OpenLibrary;component/Resource/Converter/ConverterDictionary.xaml" />
+        <ResourceDictionary Source="pack://application:,,,/OpenLibrary;component/Resource/Style/Control/ButtonStyleDictionary.xaml" />
         <ResourceDictionary Source="pack://application:,,,/OpenLibrary;component/Resource/Style/Control/ListViewStyleDictionary.xaml" />
+        <ResourceDictionary Source="pack://application:,,,/OpenLibrary;component/Resource/Style/Control/TabControlDictionary.xaml" />
     </ResourceDictionary.MergedDictionaries>
 </ResourceDictionary>

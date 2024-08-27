@@ -1,0 +1,54 @@
+﻿<UserControl x:Class="OpenLibrary.View.Web.WebServiceResponseView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:toolkit="http://schemas.xceed.com/wpf/xaml/toolkit">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="140" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />            
+        </Grid.RowDefinitions>
+
+        <TextBlock Text="Service Name" Style="{StaticResource LabelStyle}" />
+        <TextBlock Text="Service Endpoint" Style="{StaticResource LabelStyle}" Grid.Row="1" />
+        <TextBlock Text="Request Url" Style="{StaticResource LabelStyle}" Grid.Row="2" />
+        <TextBlock Text="Response Mime Type" Style="{StaticResource LabelStyle}" Grid.Row="3" />
+        <TextBlock Text="Response Time" Style="{StaticResource LabelStyle}" Grid.Row="4" />
+
+        <TextBlock Text="{Binding ServiceName}" Style="{StaticResource ValueStyle}" Grid.Column="1" />
+        <TextBlock Text="{Binding Endpoint}" Style="{StaticResource ValueStyle}" Grid.Row="1" Grid.Column="1" />
+        <TextBlock Text="{Binding RequestUrl}" Style="{StaticResource ValueStyle}" Grid.Row="2" Grid.Column="1" />
+        <TextBlock Text="{Binding MimeType}" Style="{StaticResource ValueStyle}" Grid.Row="3" Grid.Column="1" />
+        <TextBlock Text="{Binding Created}" Style="{StaticResource ValueStyle}" Grid.Row="4" Grid.Column="1" />
+
+        <ScrollViewer Grid.Row="5" Grid.ColumnSpan="2" ScrollViewer.VerticalScrollBarVisibility="Auto">
+            <toolkit:RichTextBox Text="{Binding Payload}" 
+                                 FontSize="14"
+                                 IsReadOnly="True" 
+                                 IsTabStop="True"
+                                 IsReadOnlyCaretVisible="False">
+
+                <toolkit:RichTextBox.Resources>
+                    <Style TargetType="Paragraph">
+                        <Setter Property="LineHeight" Value="5" />
+                    </Style>
+                </toolkit:RichTextBox.Resources>
+
+                <toolkit:RichTextBox.TextFormatter>
+                    <toolkit:PlainTextFormatter  />
+                </toolkit:RichTextBox.TextFormatter>
+
+            </toolkit:RichTextBox>
+        </ScrollViewer>
+    </Grid>
+
+</UserControl>

@@ -23,9 +23,11 @@ namespace OpenLibrary.ViewModel.Web
         string _referenceUrl;
         bool _sslRequired;
         SimpleCommand _executeCommand;
+        SimpleCommand _navigateToCommand;
         SimpleCommand _copyToClipboardCommand;
 
         public event SimpleEventHandler<WebServiceEndpointViewModel> ExecuteEvent;
+        public event SimpleEventHandler<WebServiceEndpointViewModel> NavigateToEvent;
 
         public string Name
         {
@@ -61,6 +63,11 @@ namespace OpenLibrary.ViewModel.Web
             get { return _executeCommand; }
             set { this.RaiseAndSetIfChanged(ref _executeCommand, value); }
         }
+        public SimpleCommand NavigateToCommand
+        {
+            get { return _navigateToCommand; }
+            set { this.RaiseAndSetIfChanged(ref _navigateToCommand, value); }
+        }
         public SimpleCommand CopyToClipboardCommand
         {
             get { return _copyToClipboardCommand; }
@@ -85,6 +92,11 @@ namespace OpenLibrary.ViewModel.Web
             {
                 if (this.ExecuteEvent != null)
                     this.ExecuteEvent(this);
+            });
+            this.NavigateToCommand = new SimpleCommand(() =>
+            {
+                if (this.NavigateToEvent != null)
+                    this.NavigateToEvent(this);
             });
             this.CopyToClipboardCommand = new SimpleCommand(() =>
             {

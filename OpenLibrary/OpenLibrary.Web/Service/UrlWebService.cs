@@ -1,6 +1,12 @@
 ﻿using System;
 using System.IO;
 using System.Net;
+using System.Text;
+using System.Web.UI;
+using System.Xml;
+using System.Xml.Linq;
+
+using Newtonsoft.Json;
 
 using OpenLibrary.Web.Service.Interface;
 
@@ -10,16 +16,16 @@ namespace OpenLibrary.Web.Service
 {
     public class UrlWebService : IWebService<string>
     {
-        public string Name { get; }
+        public string Endpoint { get; }
         public int RetryMilliseconds { get; }
         public int RetryAttempts { get; private set; }
         public string Payload { get; private set; }
         public event SimpleEventHandler<string> MessageEvent;
         public event SimpleEventHandler<string, Exception> ErrorEvent;
 
-        public UrlWebService(string name, int retryMilliseconds = 3000, int retryAttempts = 1)
+        public UrlWebService(string endpoint, int retryMilliseconds = 3000, int retryAttempts = 1)
         {
-            this.Name = name;
+            this.Endpoint = endpoint;
             this.RetryMilliseconds = retryMilliseconds;
             this.RetryAttempts = retryAttempts;
         }
@@ -53,7 +59,27 @@ namespace OpenLibrary.Web.Service
                     {
                         using (var reader = new StreamReader(response.GetResponseStream()))
                         {
-                            this.Payload = reader.ReadToEnd();
+                            // Pretty Print
+                            switch (response.ContentType)
+                            {
+                                case ServiceConstants.JsonMimeType:
+                                {
+                                    this.Payload = JsonPrettify(reader.ReadToEnd());
+                                }
+                                break;
+                                case ServiceConstants.XmlMimeType:
+                                {
+                                    this.Payload = XmlPrettify(reader.ReadToEnd());
+                                }
+                                break;
+                                case ServiceConstants.HtmlMimeType:
+                                {
+                                    this.Payload = HtmlPrettify(reader.ReadToEnd());   
+                                }
+                                break;
+                                default:
+                                    throw new Exception("Unhandled Web Service Response mime/type:  " + response.ContentType);
+                            }
                         }
 
                         response.Close();
@@ -73,6 +99,51 @@ namespace OpenLibrary.Web.Service
             }
 
             return false;
+        }
+
+        private string JsonPrettify(string json)
+        {
+            using (var stringReader = new StringReader(json))
+            {
+                using (var stringWriter = new StringWriter())
+                {
+                    var jsonReader = new JsonTextReader(stringReader);
+                    var jsonWriter = new JsonTextWriter(stringWriter) { Formatting = Newtonsoft.Json.Formatting.Indented };
+                    jsonWriter.WriteToken(jsonReader);
+                    return stringWriter.ToString();
+                }
+            }
+        }
+
+        private string XmlPrettify(string xml)
+        {
+            var document = XDocument.Parse(xml);
+            var builder = new StringBuilder();
+            var settings = new XmlWriterSettings()
+            {
+                Indent = true
+            };
+            settings.Indent = true;
+
+            using (var writer = XmlTextWriter.Create(builder, settings))
+            {
+                document.WriteTo(writer);
+                writer.Flush();
+            }
+
+            return builder.ToString();
+        }
+
+        private string HtmlPrettify(string html)
+        {
+            using (var writer = new StringWriter())
+            {
+                var htmlWriter = new HtmlTextWriter(writer);
+
+                htmlWriter.Write(html);
+
+                return htmlWriter.ToString();
+            }
         }
 
         private void OnMessage(string formatMessage, params object[] parameters)

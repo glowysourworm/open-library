@@ -29,7 +29,7 @@ namespace OpenLibrary.Service.LibraryOfCongress
 
         public string Run(string endpointName, string resolvedUrl)
         {
-            var endpoint = this.Endpoints.FirstOrDefault(x => x.Name == endpointName);
+            var endpoint = this.Endpoints.FirstOrDefault(x => x.Endpoint == endpointName);
 
             if (endpoint == null)
                 throw new ArgumentException("Endpoint not found:  " + endpointName);

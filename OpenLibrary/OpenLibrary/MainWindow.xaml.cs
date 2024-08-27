@@ -3,6 +3,7 @@ using System.Windows;
 
 using OpenLibrary.Controller;
 using OpenLibrary.ViewModel;
+using OpenLibrary.ViewModel.Web;
 
 namespace OpenLibrary
 {

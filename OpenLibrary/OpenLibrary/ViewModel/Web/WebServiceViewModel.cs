@@ -17,6 +17,7 @@ namespace OpenLibrary.ViewModel.Web
         string _referenceUrl;
 
         public event SimpleEventHandler<WebServiceViewModel, WebServiceEndpointViewModel> ExecuteRequest;
+        public event SimpleEventHandler<WebServiceViewModel, WebServiceEndpointViewModel> NavigateToRequest;
 
         public string Name
         {
@@ -67,14 +68,26 @@ namespace OpenLibrary.ViewModel.Web
             if (e.OldItems != null)
             {
                 foreach (var endpoint in e.OldItems.Cast<WebServiceEndpointViewModel>())
+                {
                     endpoint.ExecuteEvent -= Endpoint_ExecuteEvent;
+                    endpoint.NavigateToEvent -= Endpoint_NavigateToEvent;
+                }
             }
 
             if (e.NewItems != null)
             {
                 foreach (var endpoint in e.NewItems.Cast<WebServiceEndpointViewModel>())
+                {
                     endpoint.ExecuteEvent += Endpoint_ExecuteEvent;
+                    endpoint.NavigateToEvent += Endpoint_NavigateToEvent;
+                }
             }
+        }
+
+        private void Endpoint_NavigateToEvent(WebServiceEndpointViewModel sender)
+        {
+            if (this.NavigateToRequest != null)
+                this.NavigateToRequest(this, sender);
         }
 
         private void Endpoint_ExecuteEvent(WebServiceEndpointViewModel sender)
