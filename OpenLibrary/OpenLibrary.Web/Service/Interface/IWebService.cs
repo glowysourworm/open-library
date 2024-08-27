@@ -25,11 +25,6 @@ namespace OpenLibrary.Web.Service.Interface
         event SimpleEventHandler<string, Exception> ErrorEvent;
 
         /// <summary>
-        /// Url of service endpoint - without query parameters
-        /// </summary>
-        string Endpoint { get; }
-
-        /// <summary>
         /// Retry interval after failed attempt
         /// </summary>
         int RetryMilliseconds { get; }
@@ -47,6 +42,6 @@ namespace OpenLibrary.Web.Service.Interface
         /// <summary>
         /// Executes web request synchronously
         /// </summary>
-        bool Run(IEnumerable<QueryParameter> parameters = null);
+        bool Run(string resolvedUrl);
     }
 }

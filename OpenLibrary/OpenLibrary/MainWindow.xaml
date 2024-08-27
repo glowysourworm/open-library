@@ -19,8 +19,8 @@
         <TabControl>
 
             <!-- Library Of Congress -->
-            <TabItem Header="Library Of Congress">
-                <view:LibraryOfCongressView DataContext="{Binding LibraryOfCongress}" />
+            <TabItem Header="Web Services">
+                <view:WebServiceView />
             </TabItem>
             
             <!-- Web Crawlers -->

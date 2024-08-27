@@ -1,45 +1,31 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Collections.Specialized;
 using System.IO;
-using System.Linq;
 using System.Net;
 
-using OpenLibrary.Web.Common;
 using OpenLibrary.Web.Service.Interface;
 
-using WpfCustomUtilities.Extensions.Collection;
 using WpfCustomUtilities.Extensions.Event;
 
 namespace OpenLibrary.Web.Service
 {
     public class UrlWebService : IWebService<string>
     {
-        public string Endpoint { get; }
+        public string Name { get; }
         public int RetryMilliseconds { get; }
         public int RetryAttempts { get; private set; }
         public string Payload { get; private set; }
         public event SimpleEventHandler<string> MessageEvent;
         public event SimpleEventHandler<string, Exception> ErrorEvent;
 
-        public UrlWebService(string endpoint, int retryMilliseconds = 3000, int retryAttempts = 1)
+        public UrlWebService(string name, int retryMilliseconds = 3000, int retryAttempts = 1)
         {
-            this.Endpoint = endpoint;
+            this.Name = name;
             this.RetryMilliseconds = retryMilliseconds;
             this.RetryAttempts = retryAttempts;
         }
 
-        public bool Run(IEnumerable<QueryParameter> parameters = null)
+        public bool Run(string resolvedUrl)
         {
-            var builder = new UriBuilder(this.Endpoint);
-
-            // See QueryParameter.ToString()
-            if (parameters != null && parameters.Any())
-                builder.Query = parameters.Join("&", x => x.ToString());
-
-            // Build URL
-            var resolvedUrl = builder.ToString();
-
             OnMessage("Entering Web Request Loop:  {0}", resolvedUrl);
 
             var error = false;

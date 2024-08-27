@@ -1,134 +1,86 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
+﻿using System.Collections.ObjectModel;
+using System.Collections.Specialized;
 using System.Linq;
-using System.Windows;
-
-using OpenLibrary.Web.Common;
 
 using WpfCustomUtilities.Extensions;
-using WpfCustomUtilities.Extensions.Collection;
-using WpfCustomUtilities.Extensions.Command;
 using WpfCustomUtilities.Extensions.Event;
-using WpfCustomUtilities.Extensions.ObservableCollection;
 
 namespace OpenLibrary.ViewModel.Web
 {
     public class WebServiceViewModel : ViewModelBase
     {
         string _name;
+        string _libraryName;
         string _description;
-        string _endpoint;
+        string _system;
+        string _subSystem;
         string _referenceUrl;
-        SimpleCommand _executeCommand;
-        SimpleCommand _copyToClipboardCommand;
 
-        public event SimpleEventHandler<WebServiceViewModel> ExecuteEvent;
+        public event SimpleEventHandler<WebServiceViewModel, WebServiceEndpointViewModel> ExecuteRequest;
 
         public string Name
         {
             get { return _name; }
             set { this.RaiseAndSetIfChanged(ref _name, value); }
         }
+        public string LibraryName
+        {
+            get { return _libraryName; }
+            set { this.RaiseAndSetIfChanged(ref _libraryName, value); }
+        }
         public string Description
         {
             get { return _description; }
             set { this.RaiseAndSetIfChanged(ref _description, value); }
         }
-        public string Endpoint
+        public string System
         {
-            get { return _endpoint; }
-            set { this.RaiseAndSetIfChanged(ref _endpoint, value); }
+            get { return _system; }
+            set { this.RaiseAndSetIfChanged(ref _system, value); }
         }
-        public SimpleCommand CopyToClipboardCommand
+        public string SubSystem
         {
-            get { return _copyToClipboardCommand; }
-            set { this.RaiseAndSetIfChanged(ref _copyToClipboardCommand, value); }
-        }
-        public SimpleCommand ExecuteCommand
-        {
-            get { return _executeCommand; }
-            set { this.RaiseAndSetIfChanged(ref _executeCommand, value); }
+            get { return _subSystem; }
+            set { this.RaiseAndSetIfChanged(ref _subSystem, value); }
         }
         public string ReferenceUrl
         {
             get { return _referenceUrl; }
             set { this.RaiseAndSetIfChanged(ref _referenceUrl, value); }
         }
-        public string ResolvedUrl
-        {
-            get { return GetResolvedUrl(); }
-        }
 
-        public NotifyingObservableCollection<WebServiceParameter> MandatoryParameters { get; set; }
-        public NotifyingObservableCollection<WebServiceParameter> OptionalParameters { get; set; }
+        public ObservableCollection<WebServiceEndpointViewModel> Endpoints { get; set; }
 
         public WebServiceViewModel()
         {
-            this.MandatoryParameters = new NotifyingObservableCollection<WebServiceParameter>();
-            this.OptionalParameters = new NotifyingObservableCollection<WebServiceParameter>();
+            this.Endpoints = new ObservableCollection<WebServiceEndpointViewModel>();
             this.Name = "Default Web Service";
             this.Description = "A default seb service";
-            this.Endpoint = "www.google.com";
+            this.LibraryName = "Default Library";
             this.ReferenceUrl = "www.google.com";
 
-            this.ExecuteCommand = new SimpleCommand(() =>
-            {
-                if (this.ExecuteEvent != null)
-                    this.ExecuteEvent(this);
-            });
-            this.CopyToClipboardCommand = new SimpleCommand(() =>
-            {
-                Clipboard.SetText(GetResolvedUrl());
-            });
-
-            this.PropertyChanged += OnPropertyChanged;
-            this.MandatoryParameters.ItemPropertyChanged += OnParametersChanged;
-            this.OptionalParameters.ItemPropertyChanged += OnParametersChanged;
+            this.Endpoints.CollectionChanged += OnEndpointsCollectionChanged;
         }
 
-        public IEnumerable<QueryParameter> GetParameters()
+        private void OnEndpointsCollectionChanged(object sender, NotifyCollectionChangedEventArgs e)
         {
-            var result = new List<QueryParameter>();
-
-            foreach (var parameter in this.MandatoryParameters)
+            if (e.OldItems != null)
             {
-                result.Add(new QueryParameter(parameter.Name, parameter.Value));
+                foreach (var endpoint in e.OldItems.Cast<WebServiceEndpointViewModel>())
+                    endpoint.ExecuteEvent -= Endpoint_ExecuteEvent;
             }
 
-            foreach (var parameter in this.OptionalParameters)
+            if (e.NewItems != null)
             {
-                if (parameter.UseParameter)
-                    result.Add(new QueryParameter(parameter.Name, parameter.Value));
+                foreach (var endpoint in e.NewItems.Cast<WebServiceEndpointViewModel>())
+                    endpoint.ExecuteEvent += Endpoint_ExecuteEvent;
             }
-
-            return result;
         }
 
-        private void OnParametersChanged(NotifyingObservableCollection<WebServiceParameter> item1,
-                                         WebServiceParameter item2,
-                                         PropertyChangedEventArgs item3)
+        private void Endpoint_ExecuteEvent(WebServiceEndpointViewModel sender)
         {
-            base.OnPropertyChanged("ResolvedUrl");
-        }
-
-        private void OnPropertyChanged(object sender, PropertyChangedEventArgs e)
-        {
-            if (e.PropertyName != "ResolvedUrl")
-                base.OnPropertyChanged("ResolvedUrl");
-        }
-
-        private string GetResolvedUrl()
-        {
-            var builder = new UriBuilder(this.Endpoint);
-
-            // See ToString()
-            var paramStr = this.MandatoryParameters.Where(x => x.UseParameter).Join("&", x => x.ToString()) + "&" +
-                           this.OptionalParameters.Where(y => y.UseParameter).Join("&", y => y.ToString());
-
-            builder.Query = paramStr.TrimEnd(new char[] { '&' });
-
-            return builder.ToString();
+            if (this.ExecuteRequest != null)
+                this.ExecuteRequest(this, sender);
         }
     }
 }

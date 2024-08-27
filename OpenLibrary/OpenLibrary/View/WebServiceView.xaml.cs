@@ -1,10 +1,11 @@
 ﻿using System.Windows.Controls;
+using System.Windows.Data;
 
 namespace OpenLibrary.View
 {
-    public partial class LibraryOfCongressView : UserControl
+    public partial class WebServiceView : UserControl
     {
-        public LibraryOfCongressView()
+        public WebServiceView()
         {
             InitializeComponent();
         }

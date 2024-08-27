@@ -4,9 +4,19 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="fe00c5bea0a748e1beb3d30b51a50863" Name="Diagram1">
-        <EntityTypeShape EntityType="OpenLibraryModel.Sitemap" Width="1.5" PointX="0.75" PointY="0.75" />
+      <Diagram DiagramId="fe00c5bea0a748e1beb3d30b51a50863" Name="Diagram1" ZoomLevel="86">
+        <EntityTypeShape EntityType="OpenLibraryModel.Library" Width="1.5" PointX="0.75" PointY="4" />
+        <EntityTypeShape EntityType="OpenLibraryModel.Sitemap" Width="1.5" PointX="7.75" PointY="0.75" />
+        <EntityTypeShape EntityType="OpenLibraryModel.WebService" Width="1.5" PointX="3" PointY="3.25" />
+        <EntityTypeShape EntityType="OpenLibraryModel.WebServiceEndpoint" Width="1.5" PointX="5.25" PointY="1.125" />
+        <EntityTypeShape EntityType="OpenLibraryModel.WebServiceParameter" Width="1.5" PointX="5.25" PointY="4.5" />
+        <EntityTypeShape EntityType="OpenLibraryModel.WebServiceParameterSetting" Width="1.5" PointX="7.5" PointY="5.375" />
+        <AssociationConnector Association="OpenLibraryModel.FK__WebServic__Refer__29572725" />
         <AssociationConnector Association="OpenLibraryModel.FK__Sitemap__ParentI__24927208" />
+        <AssociationConnector Association="OpenLibraryModel.FK__WebServic__WebSe__2C3393D0" />
+        <AssociationConnector Association="OpenLibraryModel.FK__WebServic__WebSe__300424B4" />
+        <AssociationConnector Association="OpenLibraryModel.FK__WebServic__Paren__2F10007B" />
+        <AssociationConnector Association="OpenLibraryModel.FK__WebServic__WebSe__32E0915F" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

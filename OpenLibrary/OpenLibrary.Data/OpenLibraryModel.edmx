@@ -5,6 +5,12 @@
     <!-- SSDL content -->
     <edmx:StorageModels>
     <Schema Namespace="OpenLibraryModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="Library">
+          <Key>
+            <PropertyRef Name="Name" />
+          </Key>
+          <Property Name="Name" Type="varchar" MaxLength="100" Nullable="false" />
+        </EntityType>
         <EntityType Name="Sitemap">
           <Key>
             <PropertyRef Name="Id" />
@@ -14,6 +20,55 @@
           <Property Name="Name" Type="varchar(max)" Nullable="false" />
           <Property Name="Url" Type="varchar(max)" Nullable="false" />
           <Property Name="LastUpdate" Type="datetime" />
+          <Property Name="LastExpanded" Type="datetime" />
+        </EntityType>
+        <EntityType Name="WebService">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="LibraryName" Type="varchar" MaxLength="100" Nullable="false" />
+          <Property Name="Name" Type="varchar(max)" Nullable="false" />
+          <Property Name="Description" Type="varchar(max)" Nullable="false" />
+          <Property Name="System" Type="varchar(max)" />
+          <Property Name="Subsystem" Type="varchar(max)" />
+          <Property Name="ReferenceUrl" Type="varchar(max)" Nullable="false" />
+        </EntityType>
+        <EntityType Name="WebServiceEndpoint">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="WebServiceId" Type="int" Nullable="false" />
+          <Property Name="Name" Type="varchar(max)" Nullable="false" />
+          <Property Name="Description" Type="varchar(max)" Nullable="false" />
+          <Property Name="Endpoint" Type="varchar(max)" Nullable="false" />
+          <Property Name="ReferenceUrl" Type="varchar(max)" />
+          <Property Name="SSLRequired" Type="bit" Nullable="false" />
+        </EntityType>
+        <EntityType Name="WebServiceParameter">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="ParentId" Type="int" />
+          <Property Name="WebServiceId" Type="int" Nullable="false" />
+          <Property Name="Name" Type="varchar" MaxLength="50" />
+          <Property Name="DefaultValue" Type="varchar" MaxLength="50" />
+          <Property Name="DefaultSearchField" Type="bit" Nullable="false" />
+          <Property Name="Required" Type="bit" Nullable="false" />
+          <Property Name="CommaDelimited" Type="bit" Nullable="false" />
+          <Property Name="ArrayParameter" Type="bit" Nullable="false" />
+          <Property Name="Description" Type="varchar(max)" />
+        </EntityType>
+        <EntityType Name="WebServiceParameterSetting">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="WebServiceParameterId" Type="int" Nullable="false" />
+          <Property Name="PossibleValue" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="Explanation" Type="varchar(max)" Nullable="false" />
         </EntityType>
         <Association Name="FK__Sitemap__ParentI__24927208">
           <End Role="Sitemap" Type="Self.Sitemap" Multiplicity="0..1" />
@@ -27,11 +82,96 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
+        <Association Name="FK__WebServic__Paren__2F10007B">
+          <End Role="WebServiceParameter" Type="Self.WebServiceParameter" Multiplicity="0..1" />
+          <End Role="WebServiceParameter1" Type="Self.WebServiceParameter" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="WebServiceParameter">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="WebServiceParameter1">
+              <PropertyRef Name="ParentId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__WebServic__Refer__29572725">
+          <End Role="Library" Type="Self.Library" Multiplicity="1" />
+          <End Role="WebService" Type="Self.WebService" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Library">
+              <PropertyRef Name="Name" />
+            </Principal>
+            <Dependent Role="WebService">
+              <PropertyRef Name="LibraryName" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__WebServic__WebSe__2C3393D0">
+          <End Role="WebService" Type="Self.WebService" Multiplicity="1" />
+          <End Role="WebServiceEndpoint" Type="Self.WebServiceEndpoint" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="WebService">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="WebServiceEndpoint">
+              <PropertyRef Name="WebServiceId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__WebServic__WebSe__300424B4">
+          <End Role="WebService" Type="Self.WebService" Multiplicity="1" />
+          <End Role="WebServiceParameter" Type="Self.WebServiceParameter" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="WebService">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="WebServiceParameter">
+              <PropertyRef Name="WebServiceId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__WebServic__WebSe__32E0915F">
+          <End Role="WebServiceParameter" Type="Self.WebServiceParameter" Multiplicity="1" />
+          <End Role="WebServiceParameterSetting" Type="Self.WebServiceParameterSetting" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="WebServiceParameter">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="WebServiceParameterSetting">
+              <PropertyRef Name="WebServiceParameterId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
         <EntityContainer Name="OpenLibraryModelStoreContainer">
+          <EntitySet Name="Library" EntityType="Self.Library" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Sitemap" EntityType="Self.Sitemap" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="WebService" EntityType="Self.WebService" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="WebServiceEndpoint" EntityType="Self.WebServiceEndpoint" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="WebServiceParameter" EntityType="Self.WebServiceParameter" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="WebServiceParameterSetting" EntityType="Self.WebServiceParameterSetting" Schema="dbo" store:Type="Tables" />
           <AssociationSet Name="FK__Sitemap__ParentI__24927208" Association="Self.FK__Sitemap__ParentI__24927208">
             <End Role="Sitemap" EntitySet="Sitemap" />
             <End Role="Sitemap1" EntitySet="Sitemap" />
+          </AssociationSet>
+          <AssociationSet Name="FK__WebServic__Paren__2F10007B" Association="Self.FK__WebServic__Paren__2F10007B">
+            <End Role="WebServiceParameter" EntitySet="WebServiceParameter" />
+            <End Role="WebServiceParameter1" EntitySet="WebServiceParameter" />
+          </AssociationSet>
+          <AssociationSet Name="FK__WebServic__Refer__29572725" Association="Self.FK__WebServic__Refer__29572725">
+            <End Role="Library" EntitySet="Library" />
+            <End Role="WebService" EntitySet="WebService" />
+          </AssociationSet>
+          <AssociationSet Name="FK__WebServic__WebSe__2C3393D0" Association="Self.FK__WebServic__WebSe__2C3393D0">
+            <End Role="WebService" EntitySet="WebService" />
+            <End Role="WebServiceEndpoint" EntitySet="WebServiceEndpoint" />
+          </AssociationSet>
+          <AssociationSet Name="FK__WebServic__WebSe__300424B4" Association="Self.FK__WebServic__WebSe__300424B4">
+            <End Role="WebService" EntitySet="WebService" />
+            <End Role="WebServiceParameter" EntitySet="WebServiceParameter" />
+          </AssociationSet>
+          <AssociationSet Name="FK__WebServic__WebSe__32E0915F" Association="Self.FK__WebServic__WebSe__32E0915F">
+            <End Role="WebServiceParameter" EntitySet="WebServiceParameter" />
+            <End Role="WebServiceParameterSetting" EntitySet="WebServiceParameterSetting" />
           </AssociationSet>
         </EntityContainer>
       </Schema></edmx:StorageModels>
@@ -39,23 +179,125 @@
     <edmx:ConceptualModels>
       <Schema Namespace="OpenLibraryModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
         <EntityContainer Name="OpenLibraryEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Libraries" EntityType="OpenLibraryModel.Library" />
           <EntitySet Name="Sitemaps" EntityType="OpenLibraryModel.Sitemap" />
+          <EntitySet Name="WebServices" EntityType="OpenLibraryModel.WebService" />
+          <EntitySet Name="WebServiceEndpoints" EntityType="OpenLibraryModel.WebServiceEndpoint" />
+          <EntitySet Name="WebServiceParameters" EntityType="OpenLibraryModel.WebServiceParameter" />
+          <EntitySet Name="WebServiceParameterSettings" EntityType="OpenLibraryModel.WebServiceParameterSetting" />
+          <AssociationSet Name="FK__WebServic__Refer__29572725" Association="OpenLibraryModel.FK__WebServic__Refer__29572725">
+            <End Role="Library" EntitySet="Libraries" />
+            <End Role="WebService" EntitySet="WebServices" />
+          </AssociationSet>
           <AssociationSet Name="FK__Sitemap__ParentI__24927208" Association="OpenLibraryModel.FK__Sitemap__ParentI__24927208">
             <End Role="Sitemap" EntitySet="Sitemaps" />
             <End Role="Sitemap1" EntitySet="Sitemaps" />
           </AssociationSet>
+          <AssociationSet Name="FK__WebServic__WebSe__2C3393D0" Association="OpenLibraryModel.FK__WebServic__WebSe__2C3393D0">
+            <End Role="WebService" EntitySet="WebServices" />
+            <End Role="WebServiceEndpoint" EntitySet="WebServiceEndpoints" />
+          </AssociationSet>
+          <AssociationSet Name="FK__WebServic__WebSe__300424B4" Association="OpenLibraryModel.FK__WebServic__WebSe__300424B4">
+            <End Role="WebService" EntitySet="WebServices" />
+            <End Role="WebServiceParameter" EntitySet="WebServiceParameters" />
+          </AssociationSet>
+          <AssociationSet Name="FK__WebServic__Paren__2F10007B" Association="OpenLibraryModel.FK__WebServic__Paren__2F10007B">
+            <End Role="WebServiceParameter" EntitySet="WebServiceParameters" />
+            <End Role="WebServiceParameter1" EntitySet="WebServiceParameters" />
+          </AssociationSet>
+          <AssociationSet Name="FK__WebServic__WebSe__32E0915F" Association="OpenLibraryModel.FK__WebServic__WebSe__32E0915F">
+            <End Role="WebServiceParameter" EntitySet="WebServiceParameters" />
+            <End Role="WebServiceParameterSetting" EntitySet="WebServiceParameterSettings" />
+          </AssociationSet>
         </EntityContainer>
+        <EntityType Name="Library">
+          <Key>
+            <PropertyRef Name="Name" />
+          </Key>
+          <Property Name="Name" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="WebServices" Relationship="OpenLibraryModel.FK__WebServic__Refer__29572725" FromRole="Library" ToRole="WebService" />
+        </EntityType>
         <EntityType Name="Sitemap">
           <Key>
             <PropertyRef Name="Id" />
           </Key>
           <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-          <Property Name="ParentId" Type="Int32" Nullable="true" />
+          <Property Name="ParentId" Type="Int32" />
           <Property Name="Name" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="false" />
           <Property Name="Url" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="false" />
           <Property Name="LastUpdate" Type="DateTime" Precision="3" />
+          <Property Name="LastExpanded" Type="DateTime" Precision="3" />
           <NavigationProperty Name="ParentSitemap" Relationship="OpenLibraryModel.FK__Sitemap__ParentI__24927208" FromRole="Sitemap1" ToRole="Sitemap" />
         </EntityType>
+        <EntityType Name="WebService">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="LibraryName" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="Name" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Description" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="System" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Subsystem" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="ReferenceUrl" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="Library" Relationship="OpenLibraryModel.FK__WebServic__Refer__29572725" FromRole="WebService" ToRole="Library" />
+          <NavigationProperty Name="WebServiceEndpoints" Relationship="OpenLibraryModel.FK__WebServic__WebSe__2C3393D0" FromRole="WebService" ToRole="WebServiceEndpoint" />
+          <NavigationProperty Name="WebServiceParameters" Relationship="OpenLibraryModel.FK__WebServic__WebSe__300424B4" FromRole="WebService" ToRole="WebServiceParameter" />
+        </EntityType>
+        <EntityType Name="WebServiceEndpoint">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="WebServiceId" Type="Int32" Nullable="false" />
+          <Property Name="Name" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Description" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Endpoint" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="ReferenceUrl" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="SSLRequired" Type="Boolean" Nullable="false" />
+          <NavigationProperty Name="WebService" Relationship="OpenLibraryModel.FK__WebServic__WebSe__2C3393D0" FromRole="WebServiceEndpoint" ToRole="WebService" />
+        </EntityType>
+        <EntityType Name="WebServiceParameter">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="ParentId" Type="Int32" />
+          <Property Name="WebServiceId" Type="Int32" Nullable="false" />
+          <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="DefaultValue" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="DefaultSearchField" Type="Boolean" Nullable="false" />
+          <Property Name="Required" Type="Boolean" Nullable="false" />
+          <Property Name="CommaDelimited" Type="Boolean" Nullable="false" />
+          <Property Name="ArrayParameter" Type="Boolean" Nullable="false" />
+          <Property Name="Description" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="WebService" Relationship="OpenLibraryModel.FK__WebServic__WebSe__300424B4" FromRole="WebServiceParameter" ToRole="WebService" />
+          <NavigationProperty Name="WebServiceParameter1" Relationship="OpenLibraryModel.FK__WebServic__Paren__2F10007B" FromRole="WebServiceParameter" ToRole="WebServiceParameter1" />
+          <NavigationProperty Name="WebServiceParameter2" Relationship="OpenLibraryModel.FK__WebServic__Paren__2F10007B" FromRole="WebServiceParameter1" ToRole="WebServiceParameter" />
+          <NavigationProperty Name="WebServiceParameterSettings" Relationship="OpenLibraryModel.FK__WebServic__WebSe__32E0915F" FromRole="WebServiceParameter" ToRole="WebServiceParameterSetting" />
+        </EntityType>
+        <EntityType Name="WebServiceParameterSetting">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="WebServiceParameterId" Type="Int32" Nullable="false" />
+          <Property Name="PossibleValue" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Explanation" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="WebServiceParameter" Relationship="OpenLibraryModel.FK__WebServic__WebSe__32E0915F" FromRole="WebServiceParameterSetting" ToRole="WebServiceParameter" />
+        </EntityType>
+        <Association Name="FK__WebServic__Refer__29572725">
+          <End Type="OpenLibraryModel.Library" Role="Library" Multiplicity="1" />
+          <End Type="OpenLibraryModel.WebService" Role="WebService" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Library">
+              <PropertyRef Name="Name" />
+            </Principal>
+            <Dependent Role="WebService">
+              <PropertyRef Name="LibraryName" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
         <Association Name="FK__Sitemap__ParentI__24927208">
           <End Type="OpenLibraryModel.Sitemap" Role="Sitemap" Multiplicity="0..1" />
           <End Type="OpenLibraryModel.Sitemap" Role="Sitemap1" Multiplicity="*" />
@@ -68,19 +310,127 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-      </Schema>
+        <Association Name="FK__WebServic__WebSe__2C3393D0">
+          <End Type="OpenLibraryModel.WebService" Role="WebService" Multiplicity="1" />
+          <End Type="OpenLibraryModel.WebServiceEndpoint" Role="WebServiceEndpoint" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="WebService">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="WebServiceEndpoint">
+              <PropertyRef Name="WebServiceId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__WebServic__WebSe__300424B4">
+          <End Type="OpenLibraryModel.WebService" Role="WebService" Multiplicity="1" />
+          <End Type="OpenLibraryModel.WebServiceParameter" Role="WebServiceParameter" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="WebService">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="WebServiceParameter">
+              <PropertyRef Name="WebServiceId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__WebServic__Paren__2F10007B">
+          <End Type="OpenLibraryModel.WebServiceParameter" Role="WebServiceParameter" Multiplicity="0..1" />
+          <End Type="OpenLibraryModel.WebServiceParameter" Role="WebServiceParameter1" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="WebServiceParameter">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="WebServiceParameter1">
+              <PropertyRef Name="ParentId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__WebServic__WebSe__32E0915F">
+          <End Type="OpenLibraryModel.WebServiceParameter" Role="WebServiceParameter" Multiplicity="1" />
+          <End Type="OpenLibraryModel.WebServiceParameterSetting" Role="WebServiceParameterSetting" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="WebServiceParameter">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="WebServiceParameterSetting">
+              <PropertyRef Name="WebServiceParameterId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        </Schema>
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->
     <edmx:Mappings>
       <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
         <EntityContainerMapping StorageEntityContainer="OpenLibraryModelStoreContainer" CdmEntityContainer="OpenLibraryEntities">
+          <EntitySetMapping Name="Libraries">
+            <EntityTypeMapping TypeName="OpenLibraryModel.Library">
+              <MappingFragment StoreEntitySet="Library">
+                <ScalarProperty Name="Name" ColumnName="Name" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
           <EntitySetMapping Name="Sitemaps">
             <EntityTypeMapping TypeName="OpenLibraryModel.Sitemap">
               <MappingFragment StoreEntitySet="Sitemap">
+                <ScalarProperty Name="LastExpanded" ColumnName="LastExpanded" />
                 <ScalarProperty Name="LastUpdate" ColumnName="LastUpdate" />
                 <ScalarProperty Name="Url" ColumnName="Url" />
                 <ScalarProperty Name="Name" ColumnName="Name" />
                 <ScalarProperty Name="ParentId" ColumnName="ParentId" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="WebServices">
+            <EntityTypeMapping TypeName="OpenLibraryModel.WebService">
+              <MappingFragment StoreEntitySet="WebService">
+                <ScalarProperty Name="ReferenceUrl" ColumnName="ReferenceUrl" />
+                <ScalarProperty Name="Subsystem" ColumnName="Subsystem" />
+                <ScalarProperty Name="System" ColumnName="System" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="LibraryName" ColumnName="LibraryName" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="WebServiceEndpoints">
+            <EntityTypeMapping TypeName="OpenLibraryModel.WebServiceEndpoint">
+              <MappingFragment StoreEntitySet="WebServiceEndpoint">
+                <ScalarProperty Name="SSLRequired" ColumnName="SSLRequired" />
+                <ScalarProperty Name="ReferenceUrl" ColumnName="ReferenceUrl" />
+                <ScalarProperty Name="Endpoint" ColumnName="Endpoint" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="WebServiceId" ColumnName="WebServiceId" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="WebServiceParameters">
+            <EntityTypeMapping TypeName="OpenLibraryModel.WebServiceParameter">
+              <MappingFragment StoreEntitySet="WebServiceParameter">
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="ArrayParameter" ColumnName="ArrayParameter" />
+                <ScalarProperty Name="CommaDelimited" ColumnName="CommaDelimited" />
+                <ScalarProperty Name="Required" ColumnName="Required" />
+                <ScalarProperty Name="DefaultSearchField" ColumnName="DefaultSearchField" />
+                <ScalarProperty Name="DefaultValue" ColumnName="DefaultValue" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="WebServiceId" ColumnName="WebServiceId" />
+                <ScalarProperty Name="ParentId" ColumnName="ParentId" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="WebServiceParameterSettings">
+            <EntityTypeMapping TypeName="OpenLibraryModel.WebServiceParameterSetting">
+              <MappingFragment StoreEntitySet="WebServiceParameterSetting">
+                <ScalarProperty Name="Explanation" ColumnName="Explanation" />
+                <ScalarProperty Name="PossibleValue" ColumnName="PossibleValue" />
+                <ScalarProperty Name="WebServiceParameterId" ColumnName="WebServiceParameterId" />
                 <ScalarProperty Name="Id" ColumnName="Id" />
               </MappingFragment>
             </EntityTypeMapping>

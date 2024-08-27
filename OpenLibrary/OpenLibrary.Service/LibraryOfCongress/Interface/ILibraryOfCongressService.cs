@@ -1,16 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 
 namespace OpenLibrary.Service.LibraryOfCongress.Interface
 {
     public interface ILibraryOfCongressService
     {
         /// <summary>
-        /// SRU service for LOC Online Catalog
+        /// SRU services for LOC: Online Catalog, Name Authority File, Subject Authority File, HLAS, NLS BARD
         /// </summary>
-        ISruService OnlineCatalogService { get; }
+        IDictionary<string, ISruService> SruServices { get; }
     }
 }

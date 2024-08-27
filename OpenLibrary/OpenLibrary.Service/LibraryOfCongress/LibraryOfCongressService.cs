@@ -1,5 +1,12 @@
 ﻿
+using System.Collections.Generic;
+using System.Linq;
+
+using OpenLibrary.Data;
 using OpenLibrary.Service.LibraryOfCongress.Interface;
+using OpenLibrary.Web.Service;
+
+using WpfCustomUtilities.Extensions.Collection;
 
 namespace OpenLibrary.Service.LibraryOfCongress
 {
@@ -8,14 +15,22 @@ namespace OpenLibrary.Service.LibraryOfCongress
     /// </summary>
     public class LibraryOfCongressService : ILibraryOfCongressService
     {
-        public ISruService OnlineCatalogService { get; }
+        public IDictionary<string, ISruService> SruServices { get; }
 
-        public LibraryOfCongressService()
+        public LibraryOfCongressService(IEnumerable<WebService> sruServices)
         {
-            this.OnlineCatalogService = new SruService_v1_2("Library of Congress (SRU) Online Catalog",
-                                                            "A simple URL request / response service for SRU server at (see Base Url)",
-                                                            "z3950.loc.gov:7090",
-                                                            "http://z3950.loc.gov:7090/voyager");
+            this.SruServices = new Dictionary<string, ISruService>();
+
+            foreach (var service in sruServices)
+            {
+                var webServices = service.WebServiceEndpoints
+                                         .Select(endpoint => new UrlWebService(endpoint.Endpoint))
+                                         .Actualize();
+
+                var sruService = new SruService_v1_2(service.Name, service.Description, service.System, service.Subsystem, webServices);
+
+                this.SruServices.Add(service.Name, sruService);
+            }
         }
     }
 }

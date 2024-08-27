@@ -11,18 +11,18 @@ namespace OpenLibrary.Data
 {
     using System;
     using System.Collections.Generic;
-    using System.ComponentModel.DataAnnotations.Schema;
-
-    public partial class Sitemap
-    {
-        public int Id { get; set; }
-        public Nullable<int> ParentId { get; set; }
-        public string Name { get; set; }
-        public string Url { get; set; }
-        public Nullable<System.DateTime> LastUpdate { get; set; }
-        public Nullable<System.DateTime> LastExpanded { get; set; }
     
-        [ForeignKey("ParentId")]
-        public virtual Sitemap ParentSitemap { get; set; }
+    public partial class Library
+    {
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
+        public Library()
+        {
+            this.WebServices = new HashSet<WebService>();
+        }
+    
+        public string Name { get; set; }
+    
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<WebService> WebServices { get; set; }
     }
 }

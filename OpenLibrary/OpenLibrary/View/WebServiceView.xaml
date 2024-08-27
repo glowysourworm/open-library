@@ -1,0 +1,135 @@
+﻿<UserControl x:Class="OpenLibrary.View.WebServiceView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:viewModelWeb="clr-namespace:OpenLibrary.ViewModel.Web"
+             xmlns:viewWeb="clr-namespace:OpenLibrary.View.Web">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <!-- SRU Web Services -->
+        <Border>
+            <ListView x:Name="WebServicesLV" 
+                          ItemsSource="{Binding WebServices}"
+                          ScrollViewer.VerticalScrollBarVisibility="Auto"
+                          ScrollViewer.CanContentScroll="True"
+                          Margin="5">
+
+                <!-- Grouping by Library Name -->
+                <ListView.GroupStyle>
+                    <GroupStyle>
+                        <GroupStyle.ContainerStyle>
+                            <Style TargetType="{x:Type GroupItem}">
+                                <Setter Property="Template">
+                                    <Setter.Value>
+                                        <ControlTemplate>
+
+                                            <Grid>
+                                                <Grid.RowDefinitions>
+                                                    <RowDefinition />
+                                                    <RowDefinition />
+                                                </Grid.RowDefinitions>
+
+                                                <Border Background="#0F000000">
+
+                                                    <!-- Library Name -->
+                                                    <TextBlock Text="{Binding Name}" 
+                                                                   Foreground="DimGray" 
+                                                                   FontSize="18"
+                                                                   Margin="5" />
+
+                                                </Border>
+
+                                                <!-- Libarary Web Services -->
+                                                <ItemsPresenter Grid.Row="1" />
+
+                                            </Grid>
+
+                                        </ControlTemplate>
+                                    </Setter.Value>
+                                </Setter>
+                            </Style>
+                        </GroupStyle.ContainerStyle>
+                    </GroupStyle>
+                </ListView.GroupStyle>
+
+                <!-- Grouped View:  Name, Description, Endpoints + ReferenceUrl -->
+                <ListView.View>
+                    <GridView ScrollViewer.VerticalScrollBarVisibility="Auto"
+                                  ScrollViewer.CanContentScroll="True">
+                        <GridViewColumn Header="Name" Width="120">
+                            <GridViewColumn.CellTemplate>
+                                <DataTemplate>
+                                    <TextBlock Style="{StaticResource ValueStyle}" Text="{Binding Name}" />
+                                </DataTemplate>
+                            </GridViewColumn.CellTemplate>
+                        </GridViewColumn>
+                        <GridViewColumn Header="Description" Width="200">
+                            <GridViewColumn.CellTemplate>
+                                <DataTemplate>
+                                    <TextBlock Style="{StaticResource ValueStyle}" Text="{Binding Description}" />
+                                </DataTemplate>
+                            </GridViewColumn.CellTemplate>
+                        </GridViewColumn>
+                        <GridViewColumn Header="Reference Url" Width="200">
+                            <GridViewColumn.CellTemplate>
+                                <DataTemplate>
+                                    <TextBlock Style="{StaticResource ValueStyle}" Text="{Binding ReferenceUrl}" />
+                                </DataTemplate>
+                            </GridViewColumn.CellTemplate>
+                        </GridViewColumn>
+                        <GridViewColumn Header="Endpoint(s)">
+                            <GridViewColumn.CellTemplate>
+                                <DataTemplate>
+
+                                    <!-- Endpoints -->
+                                    <ListView ItemsSource="{Binding Endpoints}" 
+                                                  Background="Transparent"
+                                                  Style="{StaticResource ListViewNoSelectStyle}">
+                                        <ListView.ItemTemplate>
+                                            <DataTemplate DataType="{x:Type viewModelWeb:WebServiceEndpointViewModel}">
+                                                <TextBlock Text="{Binding Endpoint}" Style="{StaticResource ValueStyle}" Grid.Row="2" Grid.Column="1" />
+                                            </DataTemplate>
+                                        </ListView.ItemTemplate>
+                                    </ListView>
+
+                                </DataTemplate>
+                            </GridViewColumn.CellTemplate>
+                        </GridViewColumn>
+                    </GridView>
+                </ListView.View>
+
+                <!--ListView.ItemTemplate>
+                        <DataTemplate DataType="{x:Type viewModelWeb:WebServiceViewModel}">
+                            <Border BorderBrush="LightGray" BorderThickness="0,1">
+                                <Grid>
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="Auto" />
+                                        <RowDefinition Height="Auto" />
+                                        <RowDefinition Height="Auto" />
+                                    </Grid.RowDefinitions>
+
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="200" />
+                                        <ColumnDefinition Width="*" />
+                                    </Grid.ColumnDefinitions>
+
+                                    <TextBlock Text="Name" Style="{StaticResource LabelStyle}" />
+                                    <TextBlock Text="Description" Style="{StaticResource LabelStyle}" Grid.Row="1" />
+                                    <TextBlock Text="Standards URL" Style="{StaticResource LabelStyle}" Grid.Row="2" />
+
+                                    <TextBlock Text="{Binding Name}" Style="{StaticResource ValueStyle}" Grid.Column="1" />
+                                    <TextBlock Text="{Binding Description}" Style="{StaticResource ValueStyle}" Grid.Row="1" Grid.Column="1" />
+                                    <TextBlock Text="{Binding ReferenceUrl}" Style="{StaticResource ValueStyle}" Grid.Row="2" Grid.Column="1" />
+                                </Grid>
+                            </Border>
+                        </DataTemplate>
+                    </ListView.ItemTemplate-->
+
+            </ListView>
+        </Border>
+
+    </Grid>
+</UserControl>

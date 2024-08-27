@@ -5,6 +5,6 @@
              xmlns:local="clr-namespace:OpenLibrary"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
-
+        <ResourceDictionary Source="pack://application:,,,/OpenLibrary;component/Resource/Style/OpenLibraryStyle.xaml" />
     </Application.Resources>
 </Application>

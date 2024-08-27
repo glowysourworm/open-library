@@ -11,18 +11,14 @@ namespace OpenLibrary.Data
 {
     using System;
     using System.Collections.Generic;
-    using System.ComponentModel.DataAnnotations.Schema;
-
-    public partial class Sitemap
+    
+    public partial class WebServiceParameterSetting
     {
         public int Id { get; set; }
-        public Nullable<int> ParentId { get; set; }
-        public string Name { get; set; }
-        public string Url { get; set; }
-        public Nullable<System.DateTime> LastUpdate { get; set; }
-        public Nullable<System.DateTime> LastExpanded { get; set; }
+        public int WebServiceParameterId { get; set; }
+        public string PossibleValue { get; set; }
+        public string Explanation { get; set; }
     
-        [ForeignKey("ParentId")]
-        public virtual Sitemap ParentSitemap { get; set; }
+        public virtual WebServiceParameter WebServiceParameter { get; set; }
     }
 }

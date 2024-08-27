@@ -2,6 +2,7 @@
 using System.Collections.Specialized;
 
 using OpenLibrary.Web.Common;
+using OpenLibrary.Web.Service;
 
 namespace OpenLibrary.Service.LibraryOfCongress.Interface
 {
@@ -13,23 +14,17 @@ namespace OpenLibrary.Service.LibraryOfCongress.Interface
         string Name { get; }
         string Description { get; }
         string SruVersion { get; }
-
-        /// <summary>
-        /// Url address of the server where the SRU endpoint sits
-        /// </summary>
-        string BaseUrl { get; }
+        string System { get; }
+        string Subsystem { get; }
 
         /// <summary>
         /// Url endpoint of service - to be used to construct the final HTTP request
         /// </summary>
-        string Endpoint { get; }
+        IEnumerable<UrlWebService> Endpoints { get; }
 
         /// <summary>
-        /// Runs SRU service with the proper query paramaters
+        /// Runs SRU service endpoint (by name) with the proper Url
         /// </summary>
-        /// <param name="mandatoryParameters">See SRU v1.2:  version, operation, query</param>
-        /// <param name="optionalParameters">See SRU v1.2:  https://www.loc.gov/standards/sru/sru-1-2.html</param>
-        /// <returns></returns>
-        string Run(IEnumerable<QueryParameter> parameters);
+        string Run(string endpointName, string resolvedUrl);
     }
 }

@@ -5,7 +5,7 @@ SRU Base URL (and Explain record): http://lx2.loc.gov:210/LCDB?
 Sample search. "Marv Throneberry", return 2 MODS records
 http://lx2.loc.gov:210/lcdb?version=1.1&operation=searchRetrieve&query="Marv Throneberry"&startRecord=1&maximumRecords=5&recordSchema=mods
 
-(HAD TO FIGURE THIS OUT! - SSL) (modify URL, remove port, add /sru)
+(HAD TO FIGURE THIS OUT! - SSL) (modify URL, remove port, add /sru) (learned here) https://www.loc.gov/z3950/lcserver.html
 
 https://lx2.loc.gov/sru/lcdb?version=1.1&operation=searchRetrieve&query="Marv Throneberry"&startRecord=1&maximumRecords=5&recordSchema=mods
 

@@ -32,6 +32,8 @@ namespace OpenLibrary
         private void OnLoaded(object sender, RoutedEventArgs e)
         {
             // _controller.StartWebBots();
+
+            _controller.Initialize();
         }
     }
 }

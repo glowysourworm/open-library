@@ -25,6 +25,11 @@ namespace OpenLibrary.Data
             throw new UnintentionalCodeFirstException();
         }
     
+        public virtual DbSet<Library> Libraries { get; set; }
         public virtual DbSet<Sitemap> Sitemaps { get; set; }
+        public virtual DbSet<WebService> WebServices { get; set; }
+        public virtual DbSet<WebServiceEndpoint> WebServiceEndpoints { get; set; }
+        public virtual DbSet<WebServiceParameter> WebServiceParameters { get; set; }
+        public virtual DbSet<WebServiceParameterSetting> WebServiceParameterSettings { get; set; }
     }
 }

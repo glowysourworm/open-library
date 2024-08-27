@@ -52,6 +52,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Library.cs">
+      <DependentUpon>OpenLibraryModel.tt</DependentUpon>
+    </Compile>
     <Compile Include="OpenLibraryModel.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -69,6 +72,18 @@
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Sitemap.cs">
+      <DependentUpon>OpenLibraryModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WebService.cs">
+      <DependentUpon>OpenLibraryModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WebServiceEndpoint.cs">
+      <DependentUpon>OpenLibraryModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WebServiceParameter.cs">
+      <DependentUpon>OpenLibraryModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WebServiceParameterSetting.cs">
       <DependentUpon>OpenLibraryModel.tt</DependentUpon>
     </Compile>
   </ItemGroup>

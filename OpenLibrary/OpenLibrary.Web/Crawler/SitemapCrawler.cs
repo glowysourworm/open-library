@@ -111,20 +111,20 @@ namespace OpenLibrary.Web.Crawler
                 // Run
                 foreach (var service in this.Services)
                 {
-                    // Try the service, record results
-                    var result = service.Run();
+                    //// Try the service, record results
+                    //var result = service.Run();
 
-                    if (!attempts.ContainsKey(service))
-                        attempts.Add(service, result);
+                    //if (!attempts.ContainsKey(service))
+                    //    attempts.Add(service, result);
 
-                    else
-                        attempts[service] = result;
+                    //else
+                    //    attempts[service] = result;
 
-                    // Report
-                    RunThread_Report(service, attempts[service]);
+                    //// Report
+                    //RunThread_Report(service, attempts[service]);
 
-                    // Rest Period
-                    Thread.Sleep(this.RestPeriodMilliseconds);
+                    //// Rest Period
+                    //Thread.Sleep(this.RestPeriodMilliseconds);
                 }
 
                 // Prune
@@ -169,46 +169,48 @@ namespace OpenLibrary.Web.Crawler
         }
         private void RunThread_Report(UrlWebService service, bool success)
         {
-            if (success)
-            {
-                OnServiceMessage(String.Format("Web service succeess:  {0}", service.Endpoint));
+            //if (success)
+            //{
+            //    OnServiceMessage(String.Format("Web service succeess:  {0}", service.Endpoint));
 
-                // Transform Result -> Create Sitemap
-                RunThread_TransformResult(service);
-            }
-            else
-            {
-                OnServiceMessage(String.Format("Web service failed:  {0}", service.Endpoint));
-                OnServiceMessage(String.Format("Web service attempts left:  {0}", service.RetryAttempts));
-            }
+            //    // Transform Result -> Create Sitemap
+            //    RunThread_TransformResult(service);
+            //}
+            //else
+            //{
+            //    OnServiceMessage(String.Format("Web service failed:  {0}", service.Endpoint));
+            //    OnServiceMessage(String.Format("Web service attempts left:  {0}", service.RetryAttempts));
+            //}
         }
         private IEnumerable<Sitemap> RunThread_TransformResult(IWebService<string> service)
         {
-            try
-            {
-                var reader = new SitemapWebReader();
-                var sitemaps = reader.Read(service.Payload, _xPath);
+            //try
+            //{
+            //    var reader = new SitemapWebReader();
+            //    var sitemaps = reader.Read(service.Payload, _xPath);
 
-                // Set parent parameters
-                foreach (var sitemap in sitemaps)
-                {
-                    if (this.CrawlerResultEvent != null)
-                        this.CrawlerResultEvent(new CrawlerResultEventData<Sitemap>()
-                        {
-                            Result = sitemap,
-                            Error = false,
-                            Tag = service.Endpoint
-                        });
-                }
+            //    // Set parent parameters
+            //    foreach (var sitemap in sitemaps)
+            //    {
+            //        if (this.CrawlerResultEvent != null)
+            //            this.CrawlerResultEvent(new CrawlerResultEventData<Sitemap>()
+            //            {
+            //                Result = sitemap,
+            //                Error = false,
+            //                Tag = service.Endpoint
+            //            });
+            //    }
 
-                return sitemaps;
-            }
-            catch (Exception ex)
-            {
-                OnServiceError("Error reading sitemap:  " + service.Endpoint, ex);
+            //    return sitemaps;
+            //}
+            //catch (Exception ex)
+            //{
+            //    OnServiceError("Error reading sitemap:  " + service.Endpoint, ex);
 
-                return null;
-            }
+            //    return null;
+            //}
+
+            return null;
         }
         #endregion
 

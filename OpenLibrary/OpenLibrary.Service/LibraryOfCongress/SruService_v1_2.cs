@@ -1,48 +1,42 @@
 ﻿
+using System;
 using System.Collections.Generic;
-using System.Collections.Specialized;
+using System.Linq;
 
 using OpenLibrary.Service.LibraryOfCongress.Interface;
-using OpenLibrary.Web.Common;
 using OpenLibrary.Web.Service;
 
 namespace OpenLibrary.Service.LibraryOfCongress
 {
-    public class SruService_v1_2 : UrlWebService, ISruService
+    public class SruService_v1_2 : ISruService
     {
         public string Name { get; }
+        public string System { get; }
+        public string Subsystem { get; }
         public string Description { get; }
         public string SruVersion { get; }
-        public string BaseUrl { get; }
+        public IEnumerable<UrlWebService> Endpoints { get; }
 
-        public SruService_v1_2(string name, string description, string baseUrl, string endpoint)
-            : base(endpoint)
+        public SruService_v1_2(string name, string description, string system, string subsystem, IEnumerable<UrlWebService> endpoints)
         {
             this.Name = name;
+            this.System = system;
+            this.Subsystem = subsystem;
             this.Description = description;
             this.SruVersion = "1.2";
-            this.BaseUrl = baseUrl;
+            this.Endpoints = endpoints;
         }
 
-        public string Run(IEnumerable<QueryParameter> parameters)
+        public string Run(string endpointName, string resolvedUrl)
         {
-            //var combinedCollection = new NameValueCollection();
+            var endpoint = this.Endpoints.FirstOrDefault(x => x.Name == endpointName);
 
-            //// Mandatory Parameters
-            //for (int index = 0; index < mandatoryParameters.Count; index++)
-            //{
-            //    combinedCollection.Add(mandatoryParameters.Keys[index], mandatoryParameters[index]);
-            //}
+            if (endpoint == null)
+                throw new ArgumentException("Endpoint not found:  " + endpointName);
 
-            //// Optional Parameters
-            //for (int index = 0; index < optionalParameters.Count; index++)
-            //{
-            //    combinedCollection.Add(optionalParameters.Keys[index], optionalParameters[index]);
-            //}
+            endpoint.Run(resolvedUrl);
 
-            base.Run(parameters);
-
-            return this.Payload;
+            return endpoint.Payload;
         }
     }
 }
