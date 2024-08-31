@@ -1,11 +1,12 @@
 ﻿
 using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.Linq;
 using System.Windows;
 
-using OpenLibrary.Web.Common;
+using OpenLibrary.Service.Web.Common;
 
 using WpfCustomUtilities.Extensions;
 using WpfCustomUtilities.Extensions.Collection;
@@ -17,6 +18,7 @@ namespace OpenLibrary.ViewModel.Web
 {
     public class WebServiceEndpointViewModel : ViewModelBase
     {
+        int _id;
         string _name;
         string _description;
         string _endpoint;
@@ -29,6 +31,11 @@ namespace OpenLibrary.ViewModel.Web
         public event SimpleEventHandler<WebServiceEndpointViewModel> ExecuteEvent;
         public event SimpleEventHandler<WebServiceEndpointViewModel> NavigateToEvent;
 
+        public int Id
+        {
+            get { return _id; }
+            set { this.RaiseAndSetIfChanged(ref _id, value); }
+        }
         public string Name
         {
             get { return _name; }
@@ -78,10 +85,13 @@ namespace OpenLibrary.ViewModel.Web
         public NotifyingObservableCollection<WebServiceParameterViewModel> MandatoryParameters { get; set; }
         public NotifyingObservableCollection<WebServiceParameterViewModel> OptionalParameters { get; set; }
 
+        public ObservableCollection<WebServiceEndpointTaskViewModel> Tasks { get; set; }
+
         public WebServiceEndpointViewModel()
         {
             this.MandatoryParameters = new NotifyingObservableCollection<WebServiceParameterViewModel>();
             this.OptionalParameters = new NotifyingObservableCollection<WebServiceParameterViewModel>();
+            this.Tasks = new ObservableCollection<WebServiceEndpointTaskViewModel>();
             this.Name = "";
             this.Description = "";
             this.Endpoint = "";

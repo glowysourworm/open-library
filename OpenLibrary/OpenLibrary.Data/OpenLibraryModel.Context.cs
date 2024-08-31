@@ -29,6 +29,8 @@ namespace OpenLibrary.Data
         public virtual DbSet<Sitemap> Sitemaps { get; set; }
         public virtual DbSet<WebService> WebServices { get; set; }
         public virtual DbSet<WebServiceEndpoint> WebServiceEndpoints { get; set; }
+        public virtual DbSet<WebServiceEndpointTaskEvent> WebServiceEndpointTaskEvents { get; set; }
+        public virtual DbSet<WebServiceEndpointUrlRequestTask> WebServiceEndpointUrlRequestTasks { get; set; }
         public virtual DbSet<WebServiceParameter> WebServiceParameters { get; set; }
         public virtual DbSet<WebServiceParameterSetting> WebServiceParameterSettings { get; set; }
     }

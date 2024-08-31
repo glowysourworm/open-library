@@ -6,9 +6,9 @@ using System.Windows;
 using OpenLibrary.Controller.Interface;
 using OpenLibrary.Controller.LibraryOfCongress.Event;
 using OpenLibrary.Data;
-using OpenLibrary.Web.Crawler;
-using OpenLibrary.Web.Crawler.Event;
-using OpenLibrary.Web.WebReader;
+using OpenLibrary.Service.Web.Crawler;
+using OpenLibrary.Service.Web.Crawler.Event;
+using OpenLibrary.Service.Web.WebReader;
 
 using WpfCustomUtilities.Extensions.Event;
 

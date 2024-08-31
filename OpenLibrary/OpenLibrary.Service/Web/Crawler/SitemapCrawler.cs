@@ -4,15 +4,14 @@ using System.Linq;
 using System.Threading;
 
 using OpenLibrary.Data;
-using OpenLibrary.Web.Crawler.Event;
-using OpenLibrary.Web.Crawler.Interface;
-using OpenLibrary.Web.Service;
-using OpenLibrary.Web.Service.Interface;
-using OpenLibrary.Web.WebReader;
+using OpenLibrary.Service.DomainService;
+using OpenLibrary.Service.DomainService.Interface;
+using OpenLibrary.Service.Web.Crawler.Event;
+using OpenLibrary.Service.Web.Crawler.Interface;
 
 using WpfCustomUtilities.Extensions.Event;
 
-namespace OpenLibrary.Web.Crawler
+namespace OpenLibrary.Service.Web.Crawler
 {
     /// <summary>
     /// Crawls url's and provides results
@@ -27,7 +26,7 @@ namespace OpenLibrary.Web.Crawler
         /// Not Thread Safe! Inherited classes should have stopped the thread before
         /// accessing the service collection.
         /// </summary>
-        protected List<UrlWebServiceRequest> Services { get; private set; }
+        protected List<IDomainWebService> Services { get; private set; }
 
         readonly string _xPath;
 
@@ -48,26 +47,26 @@ namespace OpenLibrary.Web.Crawler
                               int cycleWaitTimeSeconds = 60,
                               CrawlerBehavior behavior = CrawlerBehavior.PeriodicRetryToPrune)
         {
-            _xPath = xPath;
+            //_xPath = xPath;
 
-            this.Services = urls.Select(url =>
-            {
-                return new UrlWebService(url, 3000, 0);
+            //this.Services = urls.Select(url =>
+            //{
+            //    return new DomainWebService(url, 3000, 0);
 
-            }).ToList();
+            //}).ToList();
 
-            this.RestPeriodMilliseconds = restPeriodMilliseconds;
-            this.CycleWaitTimeSeconds = cycleWaitTimeSeconds;
-            this.Behavior = behavior;
+            //this.RestPeriodMilliseconds = restPeriodMilliseconds;
+            //this.CycleWaitTimeSeconds = cycleWaitTimeSeconds;
+            //this.Behavior = behavior;
 
-            _lockObject = new object();
-            _thread = null;
+            //_lockObject = new object();
+            //_thread = null;
 
-            foreach (var service in this.Services)
-            {
-                service.MessageEvent += OnServiceMessage;
-                service.ErrorEvent += OnServiceError;
-            }
+            //foreach (var service in this.Services)
+            //{
+            //    service.MessageEvent += OnServiceMessage;
+            //    service.ErrorEvent += OnServiceError;
+            //}
         }
 
         public void Start()
@@ -104,70 +103,70 @@ namespace OpenLibrary.Web.Crawler
         }
         private void RunThread()
         {
-            var attempts = new Dictionary<IWebService<string>, bool>();
+            //var attempts = new Dictionary<IWebService<string>, bool>();
 
-            while (this.Services.Count > 0)
-            {
-                // Run
-                foreach (var service in this.Services)
-                {
-                    //// Try the service, record results
-                    //var result = service.Run();
+            //while (this.Services.Count > 0)
+            //{
+            //    // Run
+            //    foreach (var service in this.Services)
+            //    {
+            //        //// Try the service, record results
+            //        //var result = service.Run();
 
-                    //if (!attempts.ContainsKey(service))
-                    //    attempts.Add(service, result);
+            //        //if (!attempts.ContainsKey(service))
+            //        //    attempts.Add(service, result);
 
-                    //else
-                    //    attempts[service] = result;
+            //        //else
+            //        //    attempts[service] = result;
 
-                    //// Report
-                    //RunThread_Report(service, attempts[service]);
+            //        //// Report
+            //        //RunThread_Report(service, attempts[service]);
 
-                    //// Rest Period
-                    //Thread.Sleep(this.RestPeriodMilliseconds);
-                }
+            //        //// Rest Period
+            //        //Thread.Sleep(this.RestPeriodMilliseconds);
+            //    }
 
-                // Prune
-                for (int index = this.Services.Count - 1; index >= 0; index--)
-                {
-                    switch (this.Behavior)
-                    {
-                        case CrawlerBehavior.PeriodicRetry:
-                            break;
-                        case CrawlerBehavior.PeriodicRetryToPrune:
-                        {
-                            // Prune any successful attempts
-                            if (attempts[this.Services[index]])
-                            {
-                                this.Services[index].MessageEvent -= OnServiceMessage;
-                                this.Services[index].ErrorEvent -= OnServiceError;
-                                this.Services.RemoveAt(index);
-                            }
-                        }
-                        break;
-                        case CrawlerBehavior.Default:
-                        default:
-                        {
-                            // Single cycle has executed, so clear results
-                            this.Services[index].MessageEvent -= OnServiceMessage;
-                            this.Services[index].ErrorEvent -= OnServiceError;
-                            this.Services.RemoveAt(index);
-                            break;
-                        }
-                    }
-                }
+            //    // Prune
+            //    for (int index = this.Services.Count - 1; index >= 0; index--)
+            //    {
+            //        switch (this.Behavior)
+            //        {
+            //            case CrawlerBehavior.PeriodicRetry:
+            //                break;
+            //            case CrawlerBehavior.PeriodicRetryToPrune:
+            //            {
+            //                // Prune any successful attempts
+            //                if (attempts[this.Services[index]])
+            //                {
+            //                    this.Services[index].MessageEvent -= OnServiceMessage;
+            //                    this.Services[index].ErrorEvent -= OnServiceError;
+            //                    this.Services.RemoveAt(index);
+            //                }
+            //            }
+            //            break;
+            //            case CrawlerBehavior.Default:
+            //            default:
+            //            {
+            //                // Single cycle has executed, so clear results
+            //                this.Services[index].MessageEvent -= OnServiceMessage;
+            //                this.Services[index].ErrorEvent -= OnServiceError;
+            //                this.Services.RemoveAt(index);
+            //                break;
+            //            }
+            //        }
+            //    }
 
-                OnServiceMessage(String.Format("End of cycle reached. Entering cycle wait period of {0} seconds", this.CycleWaitTimeSeconds));
+            //    OnServiceMessage(String.Format("End of cycle reached. Entering cycle wait period of {0} seconds", this.CycleWaitTimeSeconds));
 
-                // End Cycle
-                Thread.Sleep(this.CycleWaitTimeSeconds * 1000);
-            }
+            //    // End Cycle
+            //    Thread.Sleep(this.CycleWaitTimeSeconds * 1000);
+            //}
 
-            // Signal that crawler has completed, and if there were any failures
-            if (this.CrawlerCompleteEvent != null)
-                this.CrawlerCompleteEvent(attempts.Values.All(result => result));
+            //// Signal that crawler has completed, and if there were any failures
+            //if (this.CrawlerCompleteEvent != null)
+            //    this.CrawlerCompleteEvent(attempts.Values.All(result => result));
         }
-        private void RunThread_Report(UrlWebService service, bool success)
+        private void RunThread_Report(UrlWebServiceRequest service, bool success)
         {
             //if (success)
             //{
@@ -182,7 +181,7 @@ namespace OpenLibrary.Web.Crawler
             //    OnServiceMessage(String.Format("Web service attempts left:  {0}", service.RetryAttempts));
             //}
         }
-        private IEnumerable<Sitemap> RunThread_TransformResult(IWebService<string> service)
+        private IEnumerable<Sitemap> RunThread_TransformResult(IDomainWebService service)
         {
             //try
             //{

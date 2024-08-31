@@ -31,6 +31,15 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="AgileObjects.AgileMapper, Version=1.8.1.0, Culture=neutral, PublicKeyToken=40b730fcfbe52fee, processorArchitecture=MSIL">
+      <HintPath>..\packages\AgileObjects.AgileMapper.1.8.1\lib\net40\AgileObjects.AgileMapper.dll</HintPath>
+    </Reference>
+    <Reference Include="AgileObjects.NetStandardPolyfills, Version=1.5.0.0, Culture=neutral, PublicKeyToken=06131ac1c008ad4e, processorArchitecture=MSIL">
+      <HintPath>..\packages\AgileObjects.NetStandardPolyfills.1.5.0\lib\net40\AgileObjects.NetStandardPolyfills.dll</HintPath>
+    </Reference>
+    <Reference Include="AgileObjects.ReadableExpressions, Version=2.6.0.0, Culture=neutral, PublicKeyToken=9f54ad81db69da8e, processorArchitecture=MSIL">
+      <HintPath>..\packages\AgileObjects.ReadableExpressions.2.6.0\lib\net40\AgileObjects.ReadableExpressions.dll</HintPath>
+    </Reference>
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
     </Reference>
@@ -52,9 +61,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Factory\OpenLibararyDataControllerFactory.cs" />
+    <Compile Include="Interface\IOpenLibraryDataController.cs" />
     <Compile Include="Library.cs">
       <DependentUpon>OpenLibraryModel.tt</DependentUpon>
     </Compile>
+    <Compile Include="OpenLibararyDataController.cs" />
     <Compile Include="OpenLibraryModel.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -78,6 +90,12 @@
       <DependentUpon>OpenLibraryModel.tt</DependentUpon>
     </Compile>
     <Compile Include="WebServiceEndpoint.cs">
+      <DependentUpon>OpenLibraryModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WebServiceEndpointTaskEvent.cs">
+      <DependentUpon>OpenLibraryModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WebServiceEndpointUrlRequestTask.cs">
       <DependentUpon>OpenLibraryModel.tt</DependentUpon>
     </Compile>
     <Compile Include="WebServiceParameter.cs">
@@ -113,6 +131,11 @@
       <LastGenOutput>OpenLibraryModel.cs</LastGenOutput>
     </Content>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\wpf-custom-utilities\src\WpfCustomUtilities\WpfCustomUtilities.csproj">
+      <Project>{49d37a48-e64b-4d55-8680-2294e5814ff4}</Project>
+      <Name>WpfCustomUtilities</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

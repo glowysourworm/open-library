@@ -11,8 +11,7 @@ namespace OpenLibrary.Data
 {
     using System;
     using System.Collections.Generic;
-    using System.ComponentModel.DataAnnotations.Schema;
-
+    
     public partial class Sitemap
     {
         public int Id { get; set; }
@@ -22,7 +21,6 @@ namespace OpenLibrary.Data
         public Nullable<System.DateTime> LastUpdate { get; set; }
         public Nullable<System.DateTime> LastExpanded { get; set; }
     
-        [ForeignKey("ParentId")]
         public virtual Sitemap ParentSitemap { get; set; }
     }
 }

@@ -26,9 +26,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\..\..\wpf-custom-utilities\src\WpfCustomUtilities\WpfCustomUtilities.csproj" />
-    <ProjectReference Include="..\OpenLibrary.Data\OpenLibrary.Data.csproj" />
     <ProjectReference Include="..\OpenLibrary.Service\OpenLibrary.Service.csproj" />
-    <ProjectReference Include="..\OpenLibrary.Web\OpenLibrary.Web.csproj" />
   </ItemGroup>
 
   <ItemGroup>

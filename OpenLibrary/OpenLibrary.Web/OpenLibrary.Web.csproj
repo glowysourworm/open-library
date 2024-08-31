@@ -54,9 +54,6 @@
     <Compile Include="Reader\EntityWebReader.cs" />
     <Compile Include="Reader\Interface\IWebReader.cs" />
     <Compile Include="Reader\SitemapWebReader.cs" />
-    <Compile Include="Service\Constants.cs" />
-    <Compile Include="Service\Interface\IWebService.cs" />
-    <Compile Include="Service\UrlWebService.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\..\wpf-custom-utilities\src\WpfCustomUtilities\WpfCustomUtilities.csproj">

@@ -20,7 +20,6 @@ namespace OpenLibrary.ViewModel
         public ObservableCollection<WebServiceViewModel> WebServices { get; set; }
         public ObservableCollection<SitemapCrawlerViewModel> Crawlers { get; set; }
         public ObservableCollection<LogMessageViewModel> LogMessages { get; set; }
-        public ObservableCollection<WebServiceResponseViewModel> WebServiceResponses { get; set; }
 
         public event SimpleEventHandler<WebServiceViewModel, WebServiceEndpointViewModel> WebServiceExecuteRequest;
 
@@ -33,7 +32,6 @@ namespace OpenLibrary.ViewModel
             this.Crawlers = new ObservableCollection<SitemapCrawlerViewModel>();
             this.LogMessages = new ObservableCollection<LogMessageViewModel>();
             this.WebServices = new ObservableCollection<WebServiceViewModel>();
-            this.WebServiceResponses = new ObservableCollection<WebServiceResponseViewModel>();
 
             // Create grouping for the web services
             var webServicesDefaultView = (CollectionView)CollectionViewSource.GetDefaultView(this.WebServices);
@@ -42,7 +40,13 @@ namespace OpenLibrary.ViewModel
             webServicesDefaultView.GroupDescriptions.Add(new PropertyGroupDescription("LibraryName"));
 
             this.WebServices.CollectionChanged += OnWebServicesCollectionChanged;
-            this.WebServiceResponses.CollectionChanged += OnWebServiceResponsesCollectionChanged;
+            this.TabItemViewModels.CollectionChanged += OnTabItemViewModelsCollectionChanged;
+        }
+
+        private void OnTabItemViewModelsCollectionChanged(object sender, NotifyCollectionChangedEventArgs e)
+        {
+            HookTabEvents(false);
+            HookTabEvents(true);
         }
 
         private void OnWebServicesCollectionChanged(object sender, NotifyCollectionChangedEventArgs e)
@@ -67,29 +71,6 @@ namespace OpenLibrary.ViewModel
 
             // TODO: Make refresh granular
             RefreshTabs();
-        }
-
-        private void OnWebServiceResponsesCollectionChanged(object sender, NotifyCollectionChangedEventArgs e)
-        {
-            HookTabEvents(false);
-
-            foreach (var viewModel in this.WebServiceResponses)
-            {
-                var tabItemViewModel = this.TabItemViewModels.FirstOrDefault(x => x.Data == viewModel);
-
-                if (tabItemViewModel == null)
-                {
-                    this.TabItemViewModels.Add(new TabItemViewModel()
-                    {
-                        Data = viewModel,
-                        DisplayName = viewModel.ServiceName + " (" + viewModel.Created.ToLongTimeString() + ")",
-                        IsCloseable = true,
-                        IsSelected = true
-                    });
-                }
-            }
-
-            HookTabEvents(true);
         }
 
         private void RefreshTabs()
@@ -138,7 +119,8 @@ namespace OpenLibrary.ViewModel
                 {
                     Data = endpoint,
                     DisplayName = endpoint.Name,
-                    IsCloseable = true
+                    IsCloseable = true,
+                    IsSelected = true
                 });
             }
 

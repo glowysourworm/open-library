@@ -9,6 +9,7 @@ namespace OpenLibrary.ViewModel.Web
 {
     public class WebServiceViewModel : ViewModelBase
     {
+        int _id;
         string _name;
         string _libraryName;
         string _description;
@@ -19,6 +20,11 @@ namespace OpenLibrary.ViewModel.Web
         public event SimpleEventHandler<WebServiceViewModel, WebServiceEndpointViewModel> ExecuteRequest;
         public event SimpleEventHandler<WebServiceViewModel, WebServiceEndpointViewModel> NavigateToRequest;
 
+        public int Id
+        {
+            get { return _id; }
+            set { this.RaiseAndSetIfChanged(ref _id, value); }
+        }
         public string Name
         {
             get { return _name; }

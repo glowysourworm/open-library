@@ -12,24 +12,26 @@ namespace OpenLibrary.Data
     using System;
     using System.Collections.Generic;
     
-    public partial class WebServiceEndpoint
+    public partial class WebServiceEndpointUrlRequestTask
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public WebServiceEndpoint()
+        public WebServiceEndpointUrlRequestTask()
         {
-            this.WebServiceEndpointUrlRequestTasks = new HashSet<WebServiceEndpointUrlRequestTask>();
+            this.WebServiceEndpointTaskEvents = new HashSet<WebServiceEndpointTaskEvent>();
         }
     
         public int Id { get; set; }
-        public int WebServiceId { get; set; }
+        public int WebServiceEndpointId { get; set; }
         public string Name { get; set; }
         public string Description { get; set; }
-        public string Endpoint { get; set; }
-        public string ReferenceUrl { get; set; }
-        public bool SSLRequired { get; set; }
+        public string Host { get; set; }
+        public string Method { get; set; }
+        public int TimeoutMilliseconds { get; set; }
+        public string RequestUrl { get; set; }
+        public bool RequestUrlTokenized { get; set; }
     
-        public virtual WebService WebService { get; set; }
+        public virtual WebServiceEndpoint WebServiceEndpoint { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<WebServiceEndpointUrlRequestTask> WebServiceEndpointUrlRequestTasks { get; set; }
+        public virtual ICollection<WebServiceEndpointTaskEvent> WebServiceEndpointTaskEvents { get; set; }
     }
 }

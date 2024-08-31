@@ -56,6 +56,41 @@ CREATE TABLE WebServiceEndpoint(
 	Foreign Key(WebServiceId) References WebService(Id)
 );
 
+CREATE TABLE WebServiceEndpointUrlRequestTask(
+	
+	Id int not null IDENTITY(1,1),
+	WebServiceEndpointId int not null,
+	"Name" varchar(max) not null,
+	"Description" varchar(max) not null,
+	Host varchar(max) not null,
+	Method varchar(10) not null,
+	TimeoutMilliseconds int not null,
+	RequestUrl varchar(max) not null,
+	RequestUrlTokenized bit not null,		 -- curly brackets used for parameter value tokens
+
+	Primary Key(Id),
+	Foreign Key(WebServiceEndpointId) References WebServiceEndpoint(Id)
+);
+
+CREATE TABLE WebServiceEndpointTaskEvent(
+	
+	Id int not null IDENTITY(1,1),
+	WebServiceEndpointUrlRequestTaskId int not null,
+	TaskStatus int not null,
+	"Time" datetime not null,
+	IsError bit not null,
+    LogMessage varchar(max),
+    LogExceptionMessage varchar(max),
+    LogExceptionDetail varchar(max),
+    LogInnerExceptionMessage varchar(max),
+    LogInnerExceptionDetail varchar(max),
+    LogMessageType int not null,
+    LogSeverity int not null
+
+	Primary Key(Id),
+	Foreign Key(WebServiceEndpointUrlRequestTaskId) References WebServiceEndpointUrlRequestTask(Id)
+);
+
 CREATE TABLE WebServiceParameter(
 
 	Id int not null IDENTITY(1,1),

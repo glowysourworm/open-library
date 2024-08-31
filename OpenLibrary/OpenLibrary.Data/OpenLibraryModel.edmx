@@ -46,6 +46,37 @@
           <Property Name="ReferenceUrl" Type="varchar(max)" />
           <Property Name="SSLRequired" Type="bit" Nullable="false" />
         </EntityType>
+        <EntityType Name="WebServiceEndpointTaskEvent">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="WebServiceEndpointUrlRequestTaskId" Type="int" Nullable="false" />
+          <Property Name="TaskStatus" Type="int" Nullable="false" />
+          <Property Name="Time" Type="datetime" Nullable="false" />
+          <Property Name="IsError" Type="bit" Nullable="false" />
+          <Property Name="LogMessage" Type="varchar(max)" />
+          <Property Name="LogExceptionMessage" Type="varchar(max)" />
+          <Property Name="LogExceptionDetail" Type="varchar(max)" />
+          <Property Name="LogInnerExceptionMessage" Type="varchar(max)" />
+          <Property Name="LogInnerExceptionDetail" Type="varchar(max)" />
+          <Property Name="LogMessageType" Type="int" Nullable="false" />
+          <Property Name="LogSeverity" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="WebServiceEndpointUrlRequestTask">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="WebServiceEndpointId" Type="int" Nullable="false" />
+          <Property Name="Name" Type="varchar(max)" Nullable="false" />
+          <Property Name="Description" Type="varchar(max)" Nullable="false" />
+          <Property Name="Host" Type="varchar(max)" Nullable="false" />
+          <Property Name="Method" Type="varchar" MaxLength="10" Nullable="false" />
+          <Property Name="TimeoutMilliseconds" Type="int" Nullable="false" />
+          <Property Name="RequestUrl" Type="varchar(max)" Nullable="false" />
+          <Property Name="RequestUrlTokenized" Type="bit" Nullable="false" />
+        </EntityType>
         <EntityType Name="WebServiceParameter">
           <Key>
             <PropertyRef Name="Id" />
@@ -82,7 +113,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__WebServic__Paren__2F10007B">
+        <Association Name="FK__WebServic__Paren__34C8D9D1">
           <End Role="WebServiceParameter" Type="Self.WebServiceParameter" Multiplicity="0..1" />
           <End Role="WebServiceParameter1" Type="Self.WebServiceParameter" Multiplicity="*" />
           <ReferentialConstraint>
@@ -118,7 +149,31 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__WebServic__WebSe__300424B4">
+        <Association Name="FK__WebServic__WebSe__2F10007B">
+          <End Role="WebServiceEndpoint" Type="Self.WebServiceEndpoint" Multiplicity="1" />
+          <End Role="WebServiceEndpointUrlRequestTask" Type="Self.WebServiceEndpointUrlRequestTask" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="WebServiceEndpoint">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="WebServiceEndpointUrlRequestTask">
+              <PropertyRef Name="WebServiceEndpointId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__WebServic__WebSe__31EC6D26">
+          <End Role="WebServiceEndpointUrlRequestTask" Type="Self.WebServiceEndpointUrlRequestTask" Multiplicity="1" />
+          <End Role="WebServiceEndpointTaskEvent" Type="Self.WebServiceEndpointTaskEvent" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="WebServiceEndpointUrlRequestTask">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="WebServiceEndpointTaskEvent">
+              <PropertyRef Name="WebServiceEndpointUrlRequestTaskId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__WebServic__WebSe__35BCFE0A">
           <End Role="WebService" Type="Self.WebService" Multiplicity="1" />
           <End Role="WebServiceParameter" Type="Self.WebServiceParameter" Multiplicity="*" />
           <ReferentialConstraint>
@@ -130,7 +185,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__WebServic__WebSe__32E0915F">
+        <Association Name="FK__WebServic__WebSe__38996AB5">
           <End Role="WebServiceParameter" Type="Self.WebServiceParameter" Multiplicity="1" />
           <End Role="WebServiceParameterSetting" Type="Self.WebServiceParameterSetting" Multiplicity="*" />
           <ReferentialConstraint>
@@ -147,13 +202,15 @@
           <EntitySet Name="Sitemap" EntityType="Self.Sitemap" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="WebService" EntityType="Self.WebService" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="WebServiceEndpoint" EntityType="Self.WebServiceEndpoint" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="WebServiceEndpointTaskEvent" EntityType="Self.WebServiceEndpointTaskEvent" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="WebServiceEndpointUrlRequestTask" EntityType="Self.WebServiceEndpointUrlRequestTask" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="WebServiceParameter" EntityType="Self.WebServiceParameter" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="WebServiceParameterSetting" EntityType="Self.WebServiceParameterSetting" Schema="dbo" store:Type="Tables" />
           <AssociationSet Name="FK__Sitemap__ParentI__24927208" Association="Self.FK__Sitemap__ParentI__24927208">
             <End Role="Sitemap" EntitySet="Sitemap" />
             <End Role="Sitemap1" EntitySet="Sitemap" />
           </AssociationSet>
-          <AssociationSet Name="FK__WebServic__Paren__2F10007B" Association="Self.FK__WebServic__Paren__2F10007B">
+          <AssociationSet Name="FK__WebServic__Paren__34C8D9D1" Association="Self.FK__WebServic__Paren__34C8D9D1">
             <End Role="WebServiceParameter" EntitySet="WebServiceParameter" />
             <End Role="WebServiceParameter1" EntitySet="WebServiceParameter" />
           </AssociationSet>
@@ -165,11 +222,19 @@
             <End Role="WebService" EntitySet="WebService" />
             <End Role="WebServiceEndpoint" EntitySet="WebServiceEndpoint" />
           </AssociationSet>
-          <AssociationSet Name="FK__WebServic__WebSe__300424B4" Association="Self.FK__WebServic__WebSe__300424B4">
+          <AssociationSet Name="FK__WebServic__WebSe__2F10007B" Association="Self.FK__WebServic__WebSe__2F10007B">
+            <End Role="WebServiceEndpoint" EntitySet="WebServiceEndpoint" />
+            <End Role="WebServiceEndpointUrlRequestTask" EntitySet="WebServiceEndpointUrlRequestTask" />
+          </AssociationSet>
+          <AssociationSet Name="FK__WebServic__WebSe__31EC6D26" Association="Self.FK__WebServic__WebSe__31EC6D26">
+            <End Role="WebServiceEndpointUrlRequestTask" EntitySet="WebServiceEndpointUrlRequestTask" />
+            <End Role="WebServiceEndpointTaskEvent" EntitySet="WebServiceEndpointTaskEvent" />
+          </AssociationSet>
+          <AssociationSet Name="FK__WebServic__WebSe__35BCFE0A" Association="Self.FK__WebServic__WebSe__35BCFE0A">
             <End Role="WebService" EntitySet="WebService" />
             <End Role="WebServiceParameter" EntitySet="WebServiceParameter" />
           </AssociationSet>
-          <AssociationSet Name="FK__WebServic__WebSe__32E0915F" Association="Self.FK__WebServic__WebSe__32E0915F">
+          <AssociationSet Name="FK__WebServic__WebSe__38996AB5" Association="Self.FK__WebServic__WebSe__38996AB5">
             <End Role="WebServiceParameter" EntitySet="WebServiceParameter" />
             <End Role="WebServiceParameterSetting" EntitySet="WebServiceParameterSetting" />
           </AssociationSet>
@@ -183,6 +248,8 @@
           <EntitySet Name="Sitemaps" EntityType="OpenLibraryModel.Sitemap" />
           <EntitySet Name="WebServices" EntityType="OpenLibraryModel.WebService" />
           <EntitySet Name="WebServiceEndpoints" EntityType="OpenLibraryModel.WebServiceEndpoint" />
+          <EntitySet Name="WebServiceEndpointTaskEvents" EntityType="OpenLibraryModel.WebServiceEndpointTaskEvent" />
+          <EntitySet Name="WebServiceEndpointUrlRequestTasks" EntityType="OpenLibraryModel.WebServiceEndpointUrlRequestTask" />
           <EntitySet Name="WebServiceParameters" EntityType="OpenLibraryModel.WebServiceParameter" />
           <EntitySet Name="WebServiceParameterSettings" EntityType="OpenLibraryModel.WebServiceParameterSetting" />
           <AssociationSet Name="FK__WebServic__Refer__29572725" Association="OpenLibraryModel.FK__WebServic__Refer__29572725">
@@ -197,15 +264,23 @@
             <End Role="WebService" EntitySet="WebServices" />
             <End Role="WebServiceEndpoint" EntitySet="WebServiceEndpoints" />
           </AssociationSet>
-          <AssociationSet Name="FK__WebServic__WebSe__300424B4" Association="OpenLibraryModel.FK__WebServic__WebSe__300424B4">
+          <AssociationSet Name="FK__WebServic__WebSe__35BCFE0A" Association="OpenLibraryModel.FK__WebServic__WebSe__35BCFE0A">
             <End Role="WebService" EntitySet="WebServices" />
             <End Role="WebServiceParameter" EntitySet="WebServiceParameters" />
           </AssociationSet>
-          <AssociationSet Name="FK__WebServic__Paren__2F10007B" Association="OpenLibraryModel.FK__WebServic__Paren__2F10007B">
+          <AssociationSet Name="FK__WebServic__WebSe__2F10007B" Association="OpenLibraryModel.FK__WebServic__WebSe__2F10007B">
+            <End Role="WebServiceEndpoint" EntitySet="WebServiceEndpoints" />
+            <End Role="WebServiceEndpointUrlRequestTask" EntitySet="WebServiceEndpointUrlRequestTasks" />
+          </AssociationSet>
+          <AssociationSet Name="FK__WebServic__WebSe__31EC6D26" Association="OpenLibraryModel.FK__WebServic__WebSe__31EC6D26">
+            <End Role="WebServiceEndpointUrlRequestTask" EntitySet="WebServiceEndpointUrlRequestTasks" />
+            <End Role="WebServiceEndpointTaskEvent" EntitySet="WebServiceEndpointTaskEvents" />
+          </AssociationSet>
+          <AssociationSet Name="FK__WebServic__Paren__34C8D9D1" Association="OpenLibraryModel.FK__WebServic__Paren__34C8D9D1">
             <End Role="WebServiceParameter" EntitySet="WebServiceParameters" />
             <End Role="WebServiceParameter1" EntitySet="WebServiceParameters" />
           </AssociationSet>
-          <AssociationSet Name="FK__WebServic__WebSe__32E0915F" Association="OpenLibraryModel.FK__WebServic__WebSe__32E0915F">
+          <AssociationSet Name="FK__WebServic__WebSe__38996AB5" Association="OpenLibraryModel.FK__WebServic__WebSe__38996AB5">
             <End Role="WebServiceParameter" EntitySet="WebServiceParameters" />
             <End Role="WebServiceParameterSetting" EntitySet="WebServiceParameterSettings" />
           </AssociationSet>
@@ -242,7 +317,7 @@
           <Property Name="ReferenceUrl" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="false" />
           <NavigationProperty Name="Library" Relationship="OpenLibraryModel.FK__WebServic__Refer__29572725" FromRole="WebService" ToRole="Library" />
           <NavigationProperty Name="WebServiceEndpoints" Relationship="OpenLibraryModel.FK__WebServic__WebSe__2C3393D0" FromRole="WebService" ToRole="WebServiceEndpoint" />
-          <NavigationProperty Name="WebServiceParameters" Relationship="OpenLibraryModel.FK__WebServic__WebSe__300424B4" FromRole="WebService" ToRole="WebServiceParameter" />
+          <NavigationProperty Name="WebServiceParameters" Relationship="OpenLibraryModel.FK__WebServic__WebSe__35BCFE0A" FromRole="WebService" ToRole="WebServiceParameter" />
         </EntityType>
         <EntityType Name="WebServiceEndpoint">
           <Key>
@@ -256,6 +331,41 @@
           <Property Name="ReferenceUrl" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
           <Property Name="SSLRequired" Type="Boolean" Nullable="false" />
           <NavigationProperty Name="WebService" Relationship="OpenLibraryModel.FK__WebServic__WebSe__2C3393D0" FromRole="WebServiceEndpoint" ToRole="WebService" />
+          <NavigationProperty Name="WebServiceEndpointUrlRequestTasks" Relationship="OpenLibraryModel.FK__WebServic__WebSe__2F10007B" FromRole="WebServiceEndpoint" ToRole="WebServiceEndpointUrlRequestTask" />
+        </EntityType>
+        <EntityType Name="WebServiceEndpointTaskEvent">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="WebServiceEndpointUrlRequestTaskId" Type="Int32" Nullable="false" />
+          <Property Name="TaskStatus" Type="Int32" Nullable="false" />
+          <Property Name="Time" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="IsError" Type="Boolean" Nullable="false" />
+          <Property Name="LogMessage" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="LogExceptionMessage" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="LogExceptionDetail" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="LogInnerExceptionMessage" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="LogInnerExceptionDetail" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="LogMessageType" Type="Int32" Nullable="false" />
+          <Property Name="LogSeverity" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="WebServiceEndpointUrlRequestTask" Relationship="OpenLibraryModel.FK__WebServic__WebSe__31EC6D26" FromRole="WebServiceEndpointTaskEvent" ToRole="WebServiceEndpointUrlRequestTask" />
+        </EntityType>
+        <EntityType Name="WebServiceEndpointUrlRequestTask">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="WebServiceEndpointId" Type="Int32" Nullable="false" />
+          <Property Name="Name" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Description" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Host" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Method" Type="String" Nullable="false" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="TimeoutMilliseconds" Type="Int32" Nullable="false" />
+          <Property Name="RequestUrl" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="RequestUrlTokenized" Type="Boolean" Nullable="false" />
+          <NavigationProperty Name="WebServiceEndpoint" Relationship="OpenLibraryModel.FK__WebServic__WebSe__2F10007B" FromRole="WebServiceEndpointUrlRequestTask" ToRole="WebServiceEndpoint" />
+          <NavigationProperty Name="WebServiceEndpointTaskEvents" Relationship="OpenLibraryModel.FK__WebServic__WebSe__31EC6D26" FromRole="WebServiceEndpointUrlRequestTask" ToRole="WebServiceEndpointTaskEvent" />
         </EntityType>
         <EntityType Name="WebServiceParameter">
           <Key>
@@ -271,10 +381,10 @@
           <Property Name="CommaDelimited" Type="Boolean" Nullable="false" />
           <Property Name="ArrayParameter" Type="Boolean" Nullable="false" />
           <Property Name="Description" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
-          <NavigationProperty Name="WebService" Relationship="OpenLibraryModel.FK__WebServic__WebSe__300424B4" FromRole="WebServiceParameter" ToRole="WebService" />
-          <NavigationProperty Name="WebServiceParameter1" Relationship="OpenLibraryModel.FK__WebServic__Paren__2F10007B" FromRole="WebServiceParameter" ToRole="WebServiceParameter1" />
-          <NavigationProperty Name="WebServiceParameter2" Relationship="OpenLibraryModel.FK__WebServic__Paren__2F10007B" FromRole="WebServiceParameter1" ToRole="WebServiceParameter" />
-          <NavigationProperty Name="WebServiceParameterSettings" Relationship="OpenLibraryModel.FK__WebServic__WebSe__32E0915F" FromRole="WebServiceParameter" ToRole="WebServiceParameterSetting" />
+          <NavigationProperty Name="WebService" Relationship="OpenLibraryModel.FK__WebServic__WebSe__35BCFE0A" FromRole="WebServiceParameter" ToRole="WebService" />
+          <NavigationProperty Name="WebServiceParameter1" Relationship="OpenLibraryModel.FK__WebServic__Paren__34C8D9D1" FromRole="WebServiceParameter" ToRole="WebServiceParameter1" />
+          <NavigationProperty Name="WebServiceParameter2" Relationship="OpenLibraryModel.FK__WebServic__Paren__34C8D9D1" FromRole="WebServiceParameter1" ToRole="WebServiceParameter" />
+          <NavigationProperty Name="WebServiceParameterSettings" Relationship="OpenLibraryModel.FK__WebServic__WebSe__38996AB5" FromRole="WebServiceParameter" ToRole="WebServiceParameterSetting" />
         </EntityType>
         <EntityType Name="WebServiceParameterSetting">
           <Key>
@@ -284,7 +394,7 @@
           <Property Name="WebServiceParameterId" Type="Int32" Nullable="false" />
           <Property Name="PossibleValue" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
           <Property Name="Explanation" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="false" />
-          <NavigationProperty Name="WebServiceParameter" Relationship="OpenLibraryModel.FK__WebServic__WebSe__32E0915F" FromRole="WebServiceParameterSetting" ToRole="WebServiceParameter" />
+          <NavigationProperty Name="WebServiceParameter" Relationship="OpenLibraryModel.FK__WebServic__WebSe__38996AB5" FromRole="WebServiceParameterSetting" ToRole="WebServiceParameter" />
         </EntityType>
         <Association Name="FK__WebServic__Refer__29572725">
           <End Type="OpenLibraryModel.Library" Role="Library" Multiplicity="1" />
@@ -322,7 +432,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__WebServic__WebSe__300424B4">
+        <Association Name="FK__WebServic__WebSe__35BCFE0A">
           <End Type="OpenLibraryModel.WebService" Role="WebService" Multiplicity="1" />
           <End Type="OpenLibraryModel.WebServiceParameter" Role="WebServiceParameter" Multiplicity="*" />
           <ReferentialConstraint>
@@ -334,7 +444,31 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__WebServic__Paren__2F10007B">
+        <Association Name="FK__WebServic__WebSe__2F10007B">
+          <End Type="OpenLibraryModel.WebServiceEndpoint" Role="WebServiceEndpoint" Multiplicity="1" />
+          <End Type="OpenLibraryModel.WebServiceEndpointUrlRequestTask" Role="WebServiceEndpointUrlRequestTask" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="WebServiceEndpoint">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="WebServiceEndpointUrlRequestTask">
+              <PropertyRef Name="WebServiceEndpointId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__WebServic__WebSe__31EC6D26">
+          <End Type="OpenLibraryModel.WebServiceEndpointUrlRequestTask" Role="WebServiceEndpointUrlRequestTask" Multiplicity="1" />
+          <End Type="OpenLibraryModel.WebServiceEndpointTaskEvent" Role="WebServiceEndpointTaskEvent" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="WebServiceEndpointUrlRequestTask">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="WebServiceEndpointTaskEvent">
+              <PropertyRef Name="WebServiceEndpointUrlRequestTaskId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__WebServic__Paren__34C8D9D1">
           <End Type="OpenLibraryModel.WebServiceParameter" Role="WebServiceParameter" Multiplicity="0..1" />
           <End Type="OpenLibraryModel.WebServiceParameter" Role="WebServiceParameter1" Multiplicity="*" />
           <ReferentialConstraint>
@@ -346,7 +480,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__WebServic__WebSe__32E0915F">
+        <Association Name="FK__WebServic__WebSe__38996AB5">
           <End Type="OpenLibraryModel.WebServiceParameter" Role="WebServiceParameter" Multiplicity="1" />
           <End Type="OpenLibraryModel.WebServiceParameterSetting" Role="WebServiceParameterSetting" Multiplicity="*" />
           <ReferentialConstraint>
@@ -405,6 +539,39 @@
                 <ScalarProperty Name="Description" ColumnName="Description" />
                 <ScalarProperty Name="Name" ColumnName="Name" />
                 <ScalarProperty Name="WebServiceId" ColumnName="WebServiceId" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="WebServiceEndpointTaskEvents">
+            <EntityTypeMapping TypeName="OpenLibraryModel.WebServiceEndpointTaskEvent">
+              <MappingFragment StoreEntitySet="WebServiceEndpointTaskEvent">
+                <ScalarProperty Name="LogSeverity" ColumnName="LogSeverity" />
+                <ScalarProperty Name="LogMessageType" ColumnName="LogMessageType" />
+                <ScalarProperty Name="LogInnerExceptionDetail" ColumnName="LogInnerExceptionDetail" />
+                <ScalarProperty Name="LogInnerExceptionMessage" ColumnName="LogInnerExceptionMessage" />
+                <ScalarProperty Name="LogExceptionDetail" ColumnName="LogExceptionDetail" />
+                <ScalarProperty Name="LogExceptionMessage" ColumnName="LogExceptionMessage" />
+                <ScalarProperty Name="LogMessage" ColumnName="LogMessage" />
+                <ScalarProperty Name="IsError" ColumnName="IsError" />
+                <ScalarProperty Name="Time" ColumnName="Time" />
+                <ScalarProperty Name="TaskStatus" ColumnName="TaskStatus" />
+                <ScalarProperty Name="WebServiceEndpointUrlRequestTaskId" ColumnName="WebServiceEndpointUrlRequestTaskId" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="WebServiceEndpointUrlRequestTasks">
+            <EntityTypeMapping TypeName="OpenLibraryModel.WebServiceEndpointUrlRequestTask">
+              <MappingFragment StoreEntitySet="WebServiceEndpointUrlRequestTask">
+                <ScalarProperty Name="RequestUrlTokenized" ColumnName="RequestUrlTokenized" />
+                <ScalarProperty Name="RequestUrl" ColumnName="RequestUrl" />
+                <ScalarProperty Name="TimeoutMilliseconds" ColumnName="TimeoutMilliseconds" />
+                <ScalarProperty Name="Method" ColumnName="Method" />
+                <ScalarProperty Name="Host" ColumnName="Host" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="WebServiceEndpointId" ColumnName="WebServiceEndpointId" />
                 <ScalarProperty Name="Id" ColumnName="Id" />
               </MappingFragment>
             </EntityTypeMapping>

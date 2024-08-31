@@ -46,24 +46,57 @@
     <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
     </Reference>
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.13.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Web" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Data" />
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BackendFactory.cs" />
+    <Compile Include="ControllerMessage\BackendDomainStatusMessage.cs" />
+    <Compile Include="ControllerMessage\BackendMessage.cs" />
+    <Compile Include="ControllerMessage\BackendTaskEventMessage.cs" />
+    <Compile Include="ControllerMessage\BackendTaskMessage.cs" />
+    <Compile Include="ControllerMessage\Constants.cs" />
+    <Compile Include="ControllerMessage\LogMessage.cs" />
+    <Compile Include="ControllerMessage\WebRequestBackendTaskMessage.cs" />
+    <Compile Include="Controller\BackendController.cs" />
+    <Compile Include="Controller\ControllerTask\BackendTask.cs" />
+    <Compile Include="Controller\ControllerTask\BackendTaskEvent.cs" />
+    <Compile Include="Controller\ControllerTask\WebRequestBackendTask.cs" />
+    <Compile Include="Controller\DomainController.cs" />
+    <Compile Include="Controller\Interface\IBackendController.cs" />
+    <Compile Include="Controller\Interface\IDomainController.cs" />
+    <Compile Include="Controller\RunningTask.cs" />
+    <Compile Include="Controller\TaskKey.cs" />
     <Compile Include="Database\Entity\Interface\IRepository.cs" />
     <Compile Include="Database\Entity\Repository.cs" />
-    <Compile Include="LibraryOfCongress\SruService_v1_2.cs" />
-    <Compile Include="LibraryOfCongress\Interface\ILibraryOfCongressService.cs" />
-    <Compile Include="LibraryOfCongress\Interface\ISruService.cs" />
-    <Compile Include="LibraryOfCongress\LibraryOfCongressService.cs" />
+    <Compile Include="DomainService\DomainWebService.cs" />
+    <Compile Include="DomainService\Interface\IDomainWebService.cs" />
+    <Compile Include="Web\Common\QueryParameter.cs" />
+    <Compile Include="Web\Constants.cs" />
+    <Compile Include="Web\Crawler\Constants.cs" />
+    <Compile Include="Web\Crawler\Event\CrawlerResultEventData.cs" />
+    <Compile Include="Web\Crawler\Interface\IWebCrawler.cs" />
+    <Compile Include="Web\Crawler\SitemapCrawler.cs" />
+    <Compile Include="Web\WebReader\EntityWebReader.cs" />
+    <Compile Include="Web\WebReader\Interface\IWebReader.cs" />
+    <Compile Include="Web\WebReader\SitemapWebReader.cs" />
+    <Compile Include="Web\UrlWebServiceRequest.cs" />
+    <Compile Include="Web\UrlWebServiceResponse.cs" />
     <Compile Include="LibraryOfCongress\Schema\sruRequest.Designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -75,10 +108,6 @@
     <ProjectReference Include="..\OpenLibrary.Data\OpenLibrary.Data.csproj">
       <Project>{A35B4FCF-E43D-493C-9F31-2FC4727178D3}</Project>
       <Name>OpenLibrary.Data</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\OpenLibrary.Web\OpenLibrary.Web.csproj">
-      <Project>{2AB9CF76-D6E0-4DCB-B839-2ECC35DF5829}</Project>
-      <Name>OpenLibrary.Web</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
