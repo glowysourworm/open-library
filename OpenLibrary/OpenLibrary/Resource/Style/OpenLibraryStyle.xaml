@@ -6,5 +6,8 @@
         <ResourceDictionary Source="pack://application:,,,/OpenLibrary;component/Resource/Style/Control/ListViewStyleDictionary.xaml" />
         <ResourceDictionary Source="pack://application:,,,/OpenLibrary;component/Resource/Style/Control/LibraryTreeviewStyleDictionary.xaml" />
         <ResourceDictionary Source="pack://application:,,,/OpenLibrary;component/Resource/Style/Control/TabControlDictionary.xaml" />
+        
+        <!-- View -->
+        <ResourceDictionary Source="pack://application:,,,/OpenLibrary;component/Resource/Style/View/WebServiceEndpointStyleDictionary.xaml" />
     </ResourceDictionary.MergedDictionaries>
 </ResourceDictionary>

@@ -28,6 +28,7 @@
                         <RowDefinition Height="Auto" />
                         <RowDefinition Height="Auto" />
                         <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
                     </Grid.RowDefinitions>
 
                     <!-- Explanation / Service Description -->
@@ -190,16 +191,51 @@
                         </Grid>
                     </Border>
 
+                    <!-- Task Description -->
+                    <Border Grid.Row="4" Padding="5">
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="140" />
+                                <ColumnDefinition Width="*" />
+                            </Grid.ColumnDefinitions>
 
-                    <!-- Execute Button -->
-                    <Button Grid.Row="4"
-                        Command="{Binding ExecuteCommand}"
-                        Content="Execute Call"
-                        FontSize="14"
-                        Padding="5"
-                        Margin="0,3,0,0"
-                        HorizontalAlignment="Right"
-                        VerticalAlignment="Center" />
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto" />
+                                <RowDefinition Height="Auto" />
+                                <RowDefinition Height="Auto" />
+                                <RowDefinition Height="Auto" />
+                                <RowDefinition Height="Auto" />
+                            </Grid.RowDefinitions>
+
+                            <TextBlock Text="Name" Style="{StaticResource LabelStyle}" />
+                            <TextBlock Text="Description" Style="{StaticResource LabelStyle}" Grid.Row="1" />
+                            <TextBlock Text="Http Method" Style="{StaticResource LabelStyle}" Grid.Row="2" />
+                            <TextBlock Text="Timeout (ms)" Style="{StaticResource LabelStyle}" Grid.Row="3" />
+                            <TextBlock Text="Url Tokenized" Style="{StaticResource LabelStyle}" Grid.Row="4" />
+
+                            <TextBox Text="{Binding Name}" Style="{StaticResource ValueStyleTextBox}" Grid.Column="1" />
+                            <TextBox Text="{Binding Description}" Style="{StaticResource ValueStyleTextBox}" Grid.Row="1" Grid.Column="1" />
+                            <TextBox Text="{Binding Method}" Style="{StaticResource ValueStyleTextBox}" Grid.Row="2" Grid.Column="1" />
+                            <TextBox Text="{Binding TimeoutMilliseconds}" Style="{StaticResource ValueStyleTextBox}" Grid.Row="3" Grid.Column="1" />
+                            <CheckBox IsChecked="{Binding RequestUrlTokenized}" Style="{StaticResource ValueCheckboxStyle}" Grid.Row="4" Grid.Column="1" />
+                        </Grid>
+                    </Border>                    
+
+                    <!-- Action Buttons -->
+                    <StackPanel Orientation="Horizontal" 
+                                Grid.Row="5" 
+                                HorizontalAlignment="Right" 
+                                VerticalAlignment="Center">
+
+                        <Button Command="{Binding SaveCommand}"
+                                Style="{StaticResource ActionButtonStyle}"
+                                Content="Save" />                        
+                        
+                        <Button Command="{Binding ExecuteCommand}"
+                                Style="{StaticResource ActionButtonStyle}"
+                                Content="Execute" />
+                        
+                    </StackPanel>
 
                 </Grid>
             </Border>

@@ -4,4 +4,9 @@
     <wpfConverter:BoolVisibilityCollapseConverter x:Key="BoolVisibilityCollapseConverter" />
     <wpfConverter:BoolInverseVisibilityCollapseConverter x:Key="BoolInverseVisibilityCollapseConverter" />
     <wpfConverter:BoolInverseConverter x:Key="BoolInverseConverter" />
+    <wpfConverter:CollectionEmptyVisibilityConverter x:Key="CollectionEmptyVisibilityConverter" />
+    <wpfConverter:CollectionNonEmptyVisibilityConverter x:Key="CollectionNonEmptyVisibilityConverter" />
+    <wpfConverter:BoolANDVisibilityMultiConverter x:Key="BoolANDVisibilityMultiConverter" />
+    <wpfConverter:GreaterThanZeroConverter x:Key="GreaterThanZeroConverter" />
+    <wpfConverter:BoolVisibilityHiddenConverter x:Key="BoolVisibilityHiddenConverter" />
 </ResourceDictionary>

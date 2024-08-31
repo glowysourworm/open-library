@@ -49,6 +49,14 @@
         <Setter Property="HorizontalAlignment" Value="Left" />
         <Setter Property="VerticalAlignment" Value="Center" />        
     </Style>
+
+    <Style x:Key="ValueCheckboxStyle" TargetType="CheckBox">
+        <Setter Property="Foreground" Value="DimGray" />
+        <Setter Property="FontSize" Value="12" />
+        <Setter Property="Width" Value="200" />
+        <Setter Property="HorizontalAlignment" Value="Left" />
+        <Setter Property="VerticalContentAlignment" Value="Center" />
+    </Style>    
     <Style x:Key="ValueStyleTextBox" TargetType="TextBox">
         <Setter Property="Foreground" Value="DimGray" />
         <Setter Property="FontSize" Value="12" />
