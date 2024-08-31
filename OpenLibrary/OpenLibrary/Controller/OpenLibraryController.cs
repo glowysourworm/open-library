@@ -61,110 +61,17 @@ namespace OpenLibrary.Controller
             _backendController = BackendFactory.Create();
 
             // Query for entities
-            var webServices = _backendController.GetWebServices();
+            var libraries = _backendController.GetLibaries();
 
-            // Initialize View Model -> Web Services
-            var webServiceViewModels = webServices.Select(service =>
-            {
-                var serviceViewModel = new WebServiceViewModel()
-                {
-                    Id = service.Id,
-                    Description = service.Description,
-                    LibraryName = service.LibraryName,
-                    Name = service.Name,
-                    ReferenceUrl = service.ReferenceUrl,
-                    SubSystem = service.Subsystem,
-                    System = service.System,
-                };
-
-                // Endpoints
-                serviceViewModel.Endpoints.AddRange(service.WebServiceEndpoints.Select(endpoint =>
-                {
-                    var endpointViewModel = new WebServiceEndpointViewModel()
-                    {
-                        Id = endpoint.Id,
-                        Description = endpoint.Description,
-                        Endpoint = endpoint.Endpoint,
-                        Name = endpoint.Name,
-                        ReferenceUrl = endpoint.ReferenceUrl,
-                        SslRequired = endpoint.SSLRequired
-                    };
-
-                    var mandatoryParameters = endpoint.WebService.WebServiceParameters.Where(x => x.Required).Actualize();
-                    var optionalParameters = endpoint.WebService.WebServiceParameters.Where(x => !x.Required).Actualize();
-
-                    // Mandatory Parameters
-                    endpointViewModel.MandatoryParameters.AddRange(mandatoryParameters.Select(parameter =>
-                    {
-
-                        var viewModel = new WebServiceParameterViewModel()
-                        {
-                            ArrayParameter = parameter.ArrayParameter,
-                            CommaDelimited = parameter.CommaDelimited,
-                            DefaultValue = parameter.DefaultValue,
-                            Description = parameter.Description,
-                            Name = parameter.Name,
-                            UseParameter = true,
-                            Value = parameter.DefaultValue
-                        };
-
-                        foreach (var setting in parameter.WebServiceParameterSettings)
-                        {
-                            viewModel.ParameterSettings.Add(new WebServiceParameterSettingViewModel()
-                            {
-                                Explanation = setting.Explanation,
-                                PossibleValue = setting.PossibleValue
-                            });
-                        }
-
-                        return viewModel;
-
-                    }).Actualize());
-
-                    // Optional Parameters
-                    endpointViewModel.OptionalParameters.AddRange(optionalParameters.Select(parameter =>
-                    {
-
-                        var viewModel = new WebServiceParameterViewModel()
-                        {
-                            ArrayParameter = parameter.ArrayParameter,
-                            CommaDelimited = parameter.CommaDelimited,
-                            DefaultValue = parameter.DefaultValue,
-                            Description = parameter.Description,
-                            Name = parameter.Name,
-                            UseParameter = false,
-                            Value = parameter.DefaultValue
-                        };
-
-                        foreach (var setting in parameter.WebServiceParameterSettings)
-                        {
-                            viewModel.ParameterSettings.Add(new WebServiceParameterSettingViewModel()
-                            {
-                                Explanation = setting.Explanation,
-                                PossibleValue = setting.PossibleValue
-                            });
-                        }
-
-                        return viewModel;
-
-                    }).Actualize());
-
-                    return endpointViewModel;
-
-                }).Actualize());
-
-                return serviceViewModel;
-
-            }).Actualize();
+            // Map Library Entities
+            _viewModel.Libraries
+                      .AddRange(libraries.Select(library => ViewModelMapper.MapLibrary(library)).Actualize());
 
             // Setup collection and hook web request event
-            foreach (var viewModel in webServiceViewModels)
+            foreach (var viewModel in _viewModel.Libraries.SelectMany(x => x.WebServices))
             {
                 // Hook event for web requests
                 viewModel.ExecuteRequest += OnServiceViewModelExecuteRequest;
-
-                // Add to primary web service collection
-                _viewModel.WebServices.Add(viewModel);
             }
         }
 
@@ -261,16 +168,16 @@ namespace OpenLibrary.Controller
 
         private void RefreshFromBackend()
         {
-            foreach (var service in _viewModel.WebServices)
-            {
-                foreach (var endpoint in service.Endpoints)
-                {
-                    // TODO: FIX CLASS HIERARCHY
-                    var taskMessages = _backendController.GetTaskStatuses(service.Id, endpoint.Id).Cast<WebRequestBackendTaskMessage>();
+            //foreach (var service in _viewModel.WebServices)
+            //{
+            //    foreach (var endpoint in service.Endpoints)
+            //    {
+            //        // TODO: FIX CLASS HIERARCHY
+            //        var taskMessages = _backendController.GetTaskStatuses(service.Id, endpoint.Id).Cast<WebRequestBackendTaskMessage>();
 
-                    RefreshTaskLogMessages(service, endpoint, taskMessages);
-                }
-            }
+            //        RefreshTaskLogMessages(service, endpoint, taskMessages);
+            //    }
+            //}
         }
 
         private void RefreshTaskLogMessages(WebServiceViewModel service,

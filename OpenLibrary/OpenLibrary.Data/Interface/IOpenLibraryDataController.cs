@@ -5,6 +5,7 @@ namespace OpenLibrary.Data.Interface
 {
     public interface IOpenLibraryDataController : IDisposable
     {
+        IEnumerable<Library> GetLibraries();
         IEnumerable<WebService> GetWebServices();
 
         /// <summary>

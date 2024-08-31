@@ -18,7 +18,6 @@ namespace OpenLibrary.Data
         public WebService()
         {
             this.WebServiceEndpoints = new HashSet<WebServiceEndpoint>();
-            this.WebServiceParameters = new HashSet<WebServiceParameter>();
         }
     
         public int Id { get; set; }
@@ -32,7 +31,5 @@ namespace OpenLibrary.Data
         public virtual Library Library { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<WebServiceEndpoint> WebServiceEndpoints { get; set; }
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<WebServiceParameter> WebServiceParameters { get; set; }
     }
 }

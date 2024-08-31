@@ -23,7 +23,7 @@ namespace OpenLibrary.Data
     
         public int Id { get; set; }
         public Nullable<int> ParentId { get; set; }
-        public int WebServiceId { get; set; }
+        public int WebServiceEndpointId { get; set; }
         public string Name { get; set; }
         public string DefaultValue { get; set; }
         public bool DefaultSearchField { get; set; }
@@ -32,7 +32,7 @@ namespace OpenLibrary.Data
         public bool ArrayParameter { get; set; }
         public string Description { get; set; }
     
-        public virtual WebService WebService { get; set; }
+        public virtual WebServiceEndpoint WebServiceEndpoint { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<WebServiceParameter> WebServiceParameter1 { get; set; }
         public virtual WebServiceParameter WebServiceParameter2 { get; set; }

@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
 
+using OpenLibrary.ViewModel;
 using OpenLibrary.ViewModel.ControlViewModel;
 using OpenLibrary.ViewModel.Web;
 
@@ -20,8 +21,8 @@ namespace OpenLibrary.View.ItemTemplateSelector
             if (tabItemViewModel == null)
                 throw new ArgumentException("Invalid data context for TabItem:  TabControlItemTemplateSelector");
 
-            // Web Services
-            if (tabItemViewModel.Data is IEnumerable<WebServiceViewModel>)
+            // Libraries -> Web Services
+            if (tabItemViewModel.Data is IEnumerable<LibraryViewModel>)
                 return Application.Current.Resources["WebServiceViewTabControlItemTemplate"] as DataTemplate;
 
             // Web Crawlers

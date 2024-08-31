@@ -12,7 +12,7 @@ namespace OpenLibrary.Service.Controller.Interface
     /// </summary>
     public interface IBackendController : IDisposable
     {
-        WebService[] GetWebServices();
+        Library[] GetLibaries();
 
         /// <summary>
         /// Queues backend task, and returns an ID for the task.

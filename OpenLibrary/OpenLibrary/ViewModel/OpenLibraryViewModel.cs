@@ -17,7 +17,7 @@ namespace OpenLibrary.ViewModel
         public ObservableCollection<TabItemViewModel> TabItemViewModels { get; set; }
 
         // Data
-        public ObservableCollection<WebServiceViewModel> WebServices { get; set; }
+        public ObservableCollection<LibraryViewModel> Libraries { get; set; }
         public ObservableCollection<SitemapCrawlerViewModel> Crawlers { get; set; }
         public ObservableCollection<LogMessageViewModel> LogMessages { get; set; }
 
@@ -31,46 +31,39 @@ namespace OpenLibrary.ViewModel
             // Data
             this.Crawlers = new ObservableCollection<SitemapCrawlerViewModel>();
             this.LogMessages = new ObservableCollection<LogMessageViewModel>();
-            this.WebServices = new ObservableCollection<WebServiceViewModel>();
+            this.Libraries = new ObservableCollection<LibraryViewModel>();
 
-            // Create grouping for the web services
-            var webServicesDefaultView = (CollectionView)CollectionViewSource.GetDefaultView(this.WebServices);
-
-            // Add property name for a grouping
-            webServicesDefaultView.GroupDescriptions.Add(new PropertyGroupDescription("LibraryName"));
-
-            this.WebServices.CollectionChanged += OnWebServicesCollectionChanged;
+            this.Libraries.CollectionChanged += OnLibrariesCollectionChanged;
             this.TabItemViewModels.CollectionChanged += OnTabItemViewModelsCollectionChanged;
+        }
+
+        private void OnLibrariesCollectionChanged(object sender, NotifyCollectionChangedEventArgs e)
+        {
+            if (e.OldItems != null)
+            {
+                foreach (var endpoint in e.OldItems.Cast<LibraryViewModel>())
+                {
+                    endpoint.WebServiceExecuteRequest -= OnWebServiceExecuteRequest;
+                    endpoint.WebServiceNavigateRequest -= OnWebServiceNavigateRequest;
+                }
+            }
+
+            if (e.NewItems != null)
+            {
+                foreach (var endpoint in e.NewItems.Cast<LibraryViewModel>())
+                {
+                    endpoint.WebServiceExecuteRequest += OnWebServiceExecuteRequest;
+                    endpoint.WebServiceNavigateRequest += OnWebServiceNavigateRequest;
+                }
+            }
+
+            RefreshTabs();
         }
 
         private void OnTabItemViewModelsCollectionChanged(object sender, NotifyCollectionChangedEventArgs e)
         {
             HookTabEvents(false);
             HookTabEvents(true);
-        }
-
-        private void OnWebServicesCollectionChanged(object sender, NotifyCollectionChangedEventArgs e)
-        {
-            if (e.OldItems != null)
-            {
-                foreach (var service in e.OldItems.Cast<WebServiceViewModel>())
-                {
-                    service.ExecuteRequest -= OnWebServiceExecuteRequest;
-                    service.NavigateToRequest -= OnWebServiceNavigateRequest;
-                }
-            }
-
-            if (e.NewItems != null)
-            {
-                foreach (var service in e.NewItems.Cast<WebServiceViewModel>())
-                {
-                    service.ExecuteRequest += OnWebServiceExecuteRequest;
-                    service.NavigateToRequest += OnWebServiceNavigateRequest;
-                }
-            }
-
-            // TODO: Make refresh granular
-            RefreshTabs();
         }
 
         private void RefreshTabs()
@@ -82,8 +75,8 @@ namespace OpenLibrary.ViewModel
             // Primary Libarary Web Service Tab
             this.TabItemViewModels.Add(new TabItemViewModel()
             {
-                DisplayName = "Web Services",
-                Data = this.WebServices,
+                DisplayName = "Libraries",
+                Data = this.Libraries,
                 IsCloseable = false
             });
 

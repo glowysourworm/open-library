@@ -11,7 +11,6 @@ namespace OpenLibrary.ViewModel.Web
     {
         int _id;
         string _name;
-        string _libraryName;
         string _description;
         string _system;
         string _subSystem;
@@ -29,11 +28,6 @@ namespace OpenLibrary.ViewModel.Web
         {
             get { return _name; }
             set { this.RaiseAndSetIfChanged(ref _name, value); }
-        }
-        public string LibraryName
-        {
-            get { return _libraryName; }
-            set { this.RaiseAndSetIfChanged(ref _libraryName, value); }
         }
         public string Description
         {
@@ -63,7 +57,6 @@ namespace OpenLibrary.ViewModel.Web
             this.Endpoints = new ObservableCollection<WebServiceEndpointViewModel>();
             this.Name = "Default Web Service";
             this.Description = "A default seb service";
-            this.LibraryName = "Default Library";
             this.ReferenceUrl = "www.google.com";
 
             this.Endpoints.CollectionChanged += OnEndpointsCollectionChanged;

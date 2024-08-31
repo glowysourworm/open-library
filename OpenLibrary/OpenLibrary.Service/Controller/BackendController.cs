@@ -47,11 +47,11 @@ namespace OpenLibrary.Service.Controller
             }
         }
 
-        public WebService[] GetWebServices()
+        public Library[] GetLibaries()
         {
             using (var entityController = OpenLibararyDataControllerFactory.Create(true))
             {
-                return entityController.GetWebServices().ToArray();
+                return entityController.GetLibraries().ToArray();
             }
         }
 

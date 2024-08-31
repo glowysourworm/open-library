@@ -16,52 +16,16 @@
 
         <!-- SRU Web Services -->
         <Border>
-            <ListView x:Name="WebServicesLV" 
-                          ItemsSource="{Binding}"
-                          ScrollViewer.VerticalScrollBarVisibility="Auto"
-                          ScrollViewer.CanContentScroll="True"
-                          Margin="5">
-
-                <!-- Grouping by Library Name -->
-                <ListView.GroupStyle>
-                    <GroupStyle>
-                        <GroupStyle.ContainerStyle>
-                            <Style TargetType="{x:Type GroupItem}">
-                                <Setter Property="Template">
-                                    <Setter.Value>
-                                        <ControlTemplate>
-
-                                            <Grid>
-                                                <Grid.RowDefinitions>
-                                                    <RowDefinition />
-                                                    <RowDefinition />
-                                                </Grid.RowDefinitions>
-
-                                                <Border Background="#0F000000">
-
-                                                    <!-- Library Name -->
-                                                    <TextBlock Text="{Binding Name}" 
-                                                                   Foreground="DimGray" 
-                                                                   FontSize="18"
-                                                                   Margin="5" />
-
-                                                </Border>
-
-                                                <!-- Libarary Web Services -->
-                                                <ItemsPresenter Grid.Row="1" />
-
-                                            </Grid>
-
-                                        </ControlTemplate>
-                                    </Setter.Value>
-                                </Setter>
-                            </Style>
-                        </GroupStyle.ContainerStyle>
-                    </GroupStyle>
-                </ListView.GroupStyle>
+            <TreeView x:Name="WebServicesLV" 
+                        ItemsSource="{Binding}"
+                        ItemTemplate="{StaticResource LibraryTreeViewItemTemplate}"
+                        ItemContainerStyle="{StaticResource LibraryTreeViewHeaderItemContainerStyle}"
+                        HorizontalAlignment="Stretch"
+                        HorizontalContentAlignment="Stretch"
+                        Margin="5">
 
                 <!-- Grouped View:  Name, Description, Endpoints + ReferenceUrl -->
-                <ListView.View>
+                <!--ListView.View>
                     <GridView ScrollViewer.VerticalScrollBarVisibility="Auto"
                                   ScrollViewer.CanContentScroll="True">
                         <GridViewColumn Header=" Service Name" Width="120">
@@ -89,7 +53,6 @@
                             <GridViewColumn.CellTemplate>
                                 <DataTemplate>
 
-                                    <!-- Endpoints -->
                                     <ItemsControl ItemsSource="{Binding Endpoints}" 
                                                   Background="Transparent"
                                                   HorizontalContentAlignment="Stretch"
@@ -117,10 +80,8 @@
                                                         <ColumnDefinition Width="Auto" />
                                                     </Grid.ColumnDefinitions>
 
-                                                    <!-- Endpoint Url -->
                                                     <TextBlock VerticalAlignment="Center" HorizontalAlignment="Left" Text="{Binding Endpoint}" Style="{StaticResource ValueStyle}" />
 
-                                                    <!-- Play Button -->
                                                     <Button Style="{StaticResource FontAwesomeButton}"
                                                             VerticalAlignment="Center" HorizontalAlignment="Right"
                                                             ToolTip="Try this endpoint"
@@ -137,9 +98,9 @@
                             </GridViewColumn.CellTemplate>
                         </GridViewColumn>
                     </GridView>
-                </ListView.View>
+                </ListView.View-->
 
-            </ListView>
+            </TreeView>
         </Border>
 
     </Grid>

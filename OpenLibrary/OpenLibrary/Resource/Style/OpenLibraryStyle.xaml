@@ -4,6 +4,7 @@
         <ResourceDictionary Source="pack://application:,,,/OpenLibrary;component/Resource/Converter/ConverterDictionary.xaml" />
         <ResourceDictionary Source="pack://application:,,,/OpenLibrary;component/Resource/Style/Control/ButtonStyleDictionary.xaml" />
         <ResourceDictionary Source="pack://application:,,,/OpenLibrary;component/Resource/Style/Control/ListViewStyleDictionary.xaml" />
+        <ResourceDictionary Source="pack://application:,,,/OpenLibrary;component/Resource/Style/Control/LibraryTreeviewStyleDictionary.xaml" />
         <ResourceDictionary Source="pack://application:,,,/OpenLibrary;component/Resource/Style/Control/TabControlDictionary.xaml" />
     </ResourceDictionary.MergedDictionaries>
 </ResourceDictionary>

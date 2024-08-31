@@ -32,6 +32,7 @@
   <ItemGroup>
     <Reference Include="System.Data.Entity" />
     <Reference Include="System.Web" />
+    <Reference Include="System.Windows" />
   </ItemGroup>
 
 </Project>

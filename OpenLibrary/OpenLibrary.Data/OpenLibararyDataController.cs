@@ -23,12 +23,26 @@ namespace OpenLibrary.Data
             _autoSave = autoSave;
         }
 
+        public IEnumerable<Library> GetLibraries()
+        {
+            return _instance.Libraries
+                            .Include(x => x.WebServices)
+                            .Include(x => x.WebServices.Select(y => y.WebServiceEndpoints))
+                            .Include(x => x.WebServices.Select(y => y.WebServiceEndpoints.Select(z => z.WebServiceParameters)))
+                            .Include(x => x.WebServices.Select(y => y.WebServiceEndpoints.Select(z => z.WebServiceParameters.Select(w => w.WebServiceParameterSettings))))
+                            .Include(x => x.WebServices.Select(y => y.WebServiceEndpoints.Select(z => z.WebServiceEndpointUrlRequestTasks)))
+                            .Include(x => x.WebServices.Select(y => y.WebServiceEndpoints.Select(z => z.WebServiceEndpointUrlRequestTasks.Select(w => w.WebServiceEndpointTaskEvents))))
+                            .Actualize();
+        }
+
         public IEnumerable<WebService> GetWebServices()
         {
             return _instance.WebServices
-                            .Include(x => x.WebServiceEndpoints)
-                            .Include(x => x.WebServiceEndpoints.Select(z => z.WebServiceEndpointUrlRequestTasks))
-                            .Include(x => x.WebServiceParameters)
+                            .Include(y => y.WebServiceEndpoints)
+                            .Include(y => y.WebServiceEndpoints.Select(z => z.WebServiceParameters))
+                            .Include(y => y.WebServiceEndpoints.Select(z => z.WebServiceParameters.Select(w => w.WebServiceParameterSettings)))
+                            .Include(y => y.WebServiceEndpoints.Select(z => z.WebServiceEndpointUrlRequestTasks))
+                            .Include(y => y.WebServiceEndpoints.Select(z => z.WebServiceEndpointUrlRequestTasks.Select(w => w.WebServiceEndpointTaskEvents)))
                             .Actualize();
         }
 

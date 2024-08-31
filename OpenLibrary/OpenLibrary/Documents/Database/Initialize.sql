@@ -95,7 +95,7 @@ CREATE TABLE WebServiceParameter(
 
 	Id int not null IDENTITY(1,1),
 	ParentId int null,
-	WebServiceId int not null,
+	WebServiceEndpointId int not null,
 	"Name" varchar(50),
 	"DefaultValue" varchar(50),
 	"DefaultSearchField" bit not null,
@@ -106,7 +106,7 @@ CREATE TABLE WebServiceParameter(
 
 	Primary Key(Id),
 	Foreign Key(ParentId) References WebServiceParameter(Id),
-	Foreign Key(WebServiceId) References WebService(Id)
+	Foreign Key(WebServiceEndpointId) References WebServiceEndpoint(Id)
 );
 
 CREATE TABLE WebServiceParameterSetting(
@@ -176,83 +176,56 @@ VALUES
 
 SET IDENTITY_INSERT WebServiceEndpoint OFF
 
-INSERT INTO WebServiceParameter (ParentId, WebServiceId, "Name", "DefaultValue", "DefaultSearchField", "Required", CommaDelimited, ArrayParameter, "Description")
+-- Run Cursor:  [1, 15] (Library of Congress)
+DECLARE @EndpointId int;
+DECLARE @EndpointIdCursor as CURSOR;
+
+SET @EndpointIdCursor = CURSOR FOR
+SELECT Id
+FROM WebServiceEndpoint
+WHERE Id BETWEEN 1 AND 15
+
+OPEN @EndpointIdCursor;
+FETCH NEXT FROM @EndpointIdCursor INTO @EndpointId;
+
+WHILE @@Fetch_Status = 0
+BEGIN
+
+	INSERT INTO WebServiceParameter (ParentId, WebServiceEndpointId, "Name", "DefaultValue", "DefaultSearchField", "Required", CommaDelimited, ArrayParameter, "Description")
+	VALUES
+	/*
+		Id int not null IDENTITY(1,1),
+		ParentId int null,
+		WebServiceEndpointId int not null,
+		"Name" varchar(50),
+		"DefaultValue" varchar(50),
+		"DefaultSearchField" bit not null,
+		"Required" bit not null,
+		CommaDelimited bit not null,
+		ArrayParameter bit not null,
+		"Description" varchar(max) null
+	*/
+	(NULL, @EndpointId, 'version', '1.1', 0, 1, 0, 0, 'SRU version. This might refer to SRW wrapper!'),
+	(NULL, @EndpointId, 'operation', 'searchRetrieve', 0, 1, 0, 0, 'Uncertain about other values'),
+	(NULL, @EndpointId, 'query', '<enter query>', 1, 1, 0, 0, 'Query string for the operation'),
+	(NULL, @EndpointId, 'startRecord', null, 0, 0, 0, 0, 'Start record position (indexed from 1)'),
+	(NULL, @EndpointId, 'maximumRecords', null, 0, 0, 0, 0, 'Maximum number of records to return'),
+	(NULL, @EndpointId, 'recordPacking', null, 0, 0,0,  0, 'Supported types are xml / json'),
+	(NULL, @EndpointId, 'recordSchema', null, 0, 0, 0, 0, 'See Library of Congress for details:  dc, mads, mods, marcxml, opacxml'),
+	(NULL, @EndpointId, 'recordXPath', null, 0, 0,  0, 0, 'Uncertain about usage'),
+	(NULL, @EndpointId, 'resultSetTTL', null, 0, 0,  0, 0, 'Uncertain about usage'),
+	(NULL, @EndpointId, 'stylesheet', null, 0, 0, 0, 0, 'Uncertain about usage'),
+	(NULL, @EndpointId, 'extraRequestData', null, 0, 0,  0, 0, 'Uncertain about usage')
+
+    FETCH NEXT FROM @EndpointIdCursor INTO @EndpointId
+
+END
+
+Close @EndpointIdCursor;
+Deallocate @EndpointIdCursor;
+
+INSERT INTO WebServiceParameter (ParentId, WebServiceEndpointId, "Name", "DefaultValue", "DefaultSearchField", "Required", CommaDelimited, ArrayParameter, "Description")
 VALUES
-/*
-	Id int not null IDENTITY(1,1),
-	ParentId int null,
-	WebServiceId int not null,
-	"Name" varchar(50),
-	"DefaultValue" varchar(50),
-	"DefaultSearchField" bit not null,
-	"Required" bit not null,
-	CommaDelimited bit not null,
-	ArrayParameter bit not null,
-	"Description" varchar(max) null
-*/
-(NULL, 1, 'version', '1.1', 0, 1, 0, 0, 'SRU version. This might refer to SRW wrapper!'),
-(NULL, 1, 'operation', 'searchRetrieve', 0, 1, 0, 0, 'Uncertain about other values'),
-(NULL, 1, 'query', '<enter query>', 1, 1, 0, 0, 'Query string for the operation'),
-(NULL, 1, 'startRecord', null, 0, 0, 0, 0, 'Start record position (indexed from 1)'),
-(NULL, 1, 'maximumRecords', null, 0, 0, 0, 0, 'Maximum number of records to return'),
-(NULL, 1, 'recordPacking', null, 0, 0,0,  0, 'Supported types are xml / json'),
-(NULL, 1, 'recordSchema', null, 0, 0, 0, 0, 'See Library of Congress for details:  dc, mads, mods, marcxml, opacxml'),
-(NULL, 1, 'recordXPath', null, 0, 0,  0, 0, 'Uncertain about usage'),
-(NULL, 1, 'resultSetTTL', null, 0, 0,  0, 0, 'Uncertain about usage'),
-(NULL, 1, 'stylesheet', null, 0, 0, 0, 0, 'Uncertain about usage'),
-(NULL, 1, 'extraRequestData', null, 0, 0,  0, 0, 'Uncertain about usage'),
-
-(NULL, 2, 'version', '1.1', 0, 1, 0, 0, 'SRU version. This might refer to SRW wrapper!'),
-(NULL, 2, 'operation', 'searchRetrieve', 0, 1, 0, 0, 'Uncertain about other values'),
-(NULL, 2, 'query', '<enter query>', 1, 1, 0, 0, 'Query string for the operation'),
-(NULL, 2, 'startRecord', null, 0, 0, 0, 0, 'Start record position (indexed from 1)'),
-(NULL, 2, 'maximumRecords', null, 0, 0, 0, 0, 'Maximum number of records to return'),
-(NULL, 2, 'recordPacking', null, 0, 0,0,  0, 'Supported types are xml / json'),
-(NULL, 2, 'recordSchema', null, 0, 0, 0, 0, 'See Library of Congress for details:  dc, mads, mods, marcxml, opacxml'),
-(NULL, 2, 'recordXPath', null, 0, 0,  0, 0, 'Uncertain about usage'),
-(NULL, 2, 'resultSetTTL', null, 0, 0,  0, 0, 'Uncertain about usage'),
-(NULL, 2, 'stylesheet', null, 0, 0, 0, 0, 'Uncertain about usage'),
-(NULL, 2, 'extraRequestData', null, 0, 0,  0, 0, 'Uncertain about usage'),
-
-
-(NULL, 3, 'version', '1.1', 0, 1, 0, 0, 'SRU version. This might refer to SRW wrapper!'),
-(NULL, 3, 'operation', 'searchRetrieve', 0, 1, 0, 0, 'Uncertain about other values'),
-(NULL, 3, 'query', '<enter query>', 1, 1, 0, 0, 'Query string for the operation'),
-(NULL, 3, 'startRecord', null, 0, 0, 0, 0, 'Start record position (indexed from 1)'),
-(NULL, 3, 'maximumRecords', null, 0, 0, 0, 0, 'Maximum number of records to return'),
-(NULL, 3, 'recordPacking', null, 0, 0,0,  0, 'Supported types are xml / json'),
-(NULL, 3, 'recordSchema', null, 0, 0, 0, 0, 'See Library of Congress for details:  dc, mads, mods, marcxml, opacxml'),
-(NULL, 3, 'recordXPath', null, 0, 0,  0, 0, 'Uncertain about usage'),
-(NULL, 3, 'resultSetTTL', null, 0, 0,  0, 0, 'Uncertain about usage'),
-(NULL, 3, 'stylesheet', null, 0, 0, 0, 0, 'Uncertain about usage'),
-(NULL, 3, 'extraRequestData', null, 0, 0,  0, 0, 'Uncertain about usage'),
-
-
-(NULL, 4, 'version', '1.1', 0, 1, 0, 0, 'SRU version. This might refer to SRW wrapper!'),
-(NULL, 4, 'operation', 'searchRetrieve', 0, 1, 0, 0, 'Uncertain about other values'),
-(NULL, 4, 'query', '<enter query>', 1, 1, 0, 0, 'Query string for the operation'),
-(NULL, 4, 'startRecord', null, 0, 0, 0, 0, 'Start record position (indexed from 1)'),
-(NULL, 4, 'maximumRecords', null, 0, 0, 0, 0, 'Maximum number of records to return'),
-(NULL, 4, 'recordPacking', null, 0, 0,0,  0, 'Supported types are xml / json'),
-(NULL, 4, 'recordSchema', null, 0, 0, 0, 0, 'See Library of Congress for details:  dc, mads, mods, marcxml, opacxml'),
-(NULL, 4, 'recordXPath', null, 0, 0,  0, 0, 'Uncertain about usage'),
-(NULL, 4, 'resultSetTTL', null, 0, 0,  0, 0, 'Uncertain about usage'),
-(NULL, 4, 'stylesheet', null, 0, 0, 0, 0, 'Uncertain about usage'),
-(NULL, 4, 'extraRequestData', null, 0, 0,  0, 0, 'Uncertain about usage'),
-
-
-(NULL, 5, 'version', '1.1', 0, 1, 0, 0, 'SRU version. This might refer to SRW wrapper!'),
-(NULL, 5, 'operation', 'searchRetrieve', 0, 1, 0, 0, 'Uncertain about other values'),
-(NULL, 5, 'query', '<enter query>', 1, 1, 0, 0, 'Query string for the operation'),
-(NULL, 5, 'startRecord', null, 0, 0, 0, 0, 'Start record position (indexed from 1)'),
-(NULL, 5, 'maximumRecords', null, 0, 0, 0, 0, 'Maximum number of records to return'),
-(NULL, 5, 'recordPacking', null, 0, 0,0,  0, 'Supported types are xml / json'),
-(NULL, 5, 'recordSchema', null, 0, 0, 0, 0, 'See Library of Congress for details:  dc, mads, mods, marcxml, opacxml'),
-(NULL, 5, 'recordXPath', null, 0, 0,  0, 0, 'Uncertain about usage'),
-(NULL, 5, 'resultSetTTL', null, 0, 0,  0, 0, 'Uncertain about usage'),
-(NULL, 5, 'stylesheet', null, 0, 0, 0, 0, 'Uncertain about usage'),
-(NULL, 5, 'extraRequestData', null, 0, 0,  0, 0, 'Uncertain about usage'),
-
 
 /*
 
@@ -265,12 +238,12 @@ VALUES
 
 */
 
-(NULL, 6, 'q', '<enter query>',1, 1, 0,  0, 'The query string: uses the same query Lucene-like queries supported by Internet Archive Advanced Search'),
-(NULL, 6, 'fields', 'identifier', 0, 0, 1,  0, 'Metadata fields to return, comma delimited'),
-(NULL, 6, 'sorts', null, 0, 0, 1,  0, 'Fields to sort on, comma delimited (if identifier is specified, it must be last)'),
-(NULL, 6, 'count', null, 0, 0, 0,  0, 'Number of results to return (minimum of 100)'),
-(NULL, 6, 'cursor', null, 0, 0, 0,  0, 'A cursor, if any (otherwise, search starts at the beginning)'),
-(NULL, 6, 'total_only', null, 0, 0, 0,  0, 'Set to true for retrieving only the specified count'),
+(NULL, 16, 'q', '<enter query>',1, 1, 0,  0, 'The query string: uses the same query Lucene-like queries supported by Internet Archive Advanced Search'),
+(NULL, 16, 'fields', 'identifier', 0, 0, 1,  0, 'Metadata fields to return, comma delimited'),
+(NULL, 16, 'sorts', null, 0, 0, 1,  0, 'Fields to sort on, comma delimited (if identifier is specified, it must be last)'),
+(NULL, 16, 'count', null, 0, 0, 0,  0, 'Number of results to return (minimum of 100)'),
+(NULL, 16, 'cursor', null, 0, 0, 0,  0, 'A cursor, if any (otherwise, search starts at the beginning)'),
+(NULL, 16, 'total_only', null, 0, 0, 0,  0, 'Set to true for retrieving only the specified count'),
 
 
 /*
@@ -286,48 +259,48 @@ VALUES
 
 */
 
-(NULL, 7, 'avg_rating', NULL, 0, 0, 0,  1, 'Internet Archive Advanced Search Parameter'),
-(NULL, 7, 'backup_location', NULL, 0, 0, 0, 1, 'Internet Archive Advanced Search Parameter'),
-(NULL, 7, 'btih', NULL,0, 0, 0, 1, 'Internet Archive Advanced Search Parameter'),
-(NULL, 7, 'call_number', NULL,0, 0, 0, 1, 'Internet Archive Advanced Search Parameter'),
-(NULL, 7, 'collection', NULL,0, 0, 0, 1, 'Internet Archive Advanced Search Parameter'),
-(NULL, 7, 'contributor', NULL,0, 0, 0, 1, 'Internet Archive Advanced Search Parameter'),
-(NULL, 7, 'coverage', NULL, 0,0, 0, 1, 'Internet Archive Advanced Search Parameter'),
-(NULL, 7, 'creator', NULL, 0,0, 0, 1, 'Internet Archive Advanced Search Parameter'),
-(NULL, 7, 'date', NULL, 0, 0,0, 1, 'Internet Archive Advanced Search Parameter'),
-(NULL, 7, 'description', NULL,0, 0, 0, 1, 'Internet Archive Advanced Search Parameter'),
-(NULL, 7, 'downloads', NULL, 0,0, 0, 1, 'Internet Archive Advanced Search Parameter'),
-(NULL, 7, 'external-identifier', NULL,0, 0, 0, 1, 'Internet Archive Advanced Search Parameter'),
-(NULL, 7, 'foldoutcount', NULL, 0,0, 0, 1, 'Internet Archive Advanced Search Parameter'),
-(NULL, 7, 'format', NULL, 0, 0,0, 1, 'Internet Archive Advanced Search Parameter'),
-(NULL, 7, 'genre', NULL, 0,0, 0, 1, 'Internet Archive Advanced Search Parameter'),
-(NULL, 7, 'identifier', NULL,1, 0, 0, 1, 'Internet Archive Advanced Search Parameter'),
-(NULL, 7, 'imagecount', NULL,0, 0, 0, 1, 'Internet Archive Advanced Search Parameter'),
-(NULL, 7, 'indexflag', NULL,0, 0, 0, 1, 'Internet Archive Advanced Search Parameter'),
-(NULL, 7, 'item_size', NULL,0, 0, 0, 1, 'Internet Archive Advanced Search Parameter'),
-(NULL, 7, 'language', NULL,0, 0, 0, 1, 'Internet Archive Advanced Search Parameter'),
-(NULL, 7, 'licenseurl', NULL,0, 0, 0, 1, 'Internet Archive Advanced Search Parameter'),
-(NULL, 7, 'mediatype', NULL,0, 0, 0, 1, 'Internet Archive Advanced Search Parameter'),
-(NULL, 7, 'members', NULL,0, 0, 0, 1, 'Internet Archive Advanced Search Parameter'),
-(NULL, 7, 'month', NULL,0, 0, 0, 1, 'Internet Archive Advanced Search Parameter'),
-(NULL, 7, 'name', NULL, 0,0, 0, 1, 'Internet Archive Advanced Search Parameter'),
-(NULL, 7, 'noindex', NULL,0, 0, 0, 1, 'Internet Archive Advanced Search Parameter'),
-(NULL, 7, 'num_reviews', NULL,0, 0, 0, 1, 'Internet Archive Advanced Search Parameter'),
-(NULL, 7, 'oai_updatedate', NULL,0, 0, 0, 1, 'Internet Archive Advanced Search Parameter'),
-(NULL, 7, 'publicdate', NULL, 0,0, 0, 1, 'Internet Archive Advanced Search Parameter'),
-(NULL, 7, 'publisher', NULL, 0,0, 0, 1, 'Internet Archive Advanced Search Parameter'),
-(NULL, 7, 'related-external-id', NULL,0, 0, 0, 1, 'Internet Archive Advanced Search Parameter'),
-(NULL, 7, 'reviewdate', NULL, 0,0, 0, 1, 'Internet Archive Advanced Search Parameter'),
-(NULL, 7, 'rights', NULL, 0,0, 0, 1, 'Internet Archive Advanced Search Parameter'),
-(NULL, 7, 'scanningcentre', NULL,0, 0, 0, 1, 'Internet Archive Advanced Search Parameter'),
-(NULL, 7, 'source', NULL, 0,0, 0, 1, 'Internet Archive Advanced Search Parameter'),
-(NULL, 7, 'stripped_tags', NULL,0, 0, 0, 1, 'Internet Archive Advanced Search Parameter'),
-(NULL, 7, 'subject', NULL, 0,0, 0, 1, 'Internet Archive Advanced Search Parameter'),
-(NULL, 7, 'title', NULL, 0,0, 0, 1, 'Internet Archive Advanced Search Parameter'),
-(NULL, 7, 'type', NULL, 0,0, 0, 1, 'Internet Archive Advanced Search Parameter'),
-(NULL, 7, 'volume', NULL,0, 0, 0, 1, 'Internet Archive Advanced Search Parameter'),
-(NULL, 7, 'week', NULL, 0,0, 0, 1, 'Internet Archive Advanced Search Parameter'),
-(NULL, 7, 'year', NULL, 0,0, 0, 1, 'Internet Archive Advanced Search Parameter')
+(NULL, 17, 'avg_rating', NULL, 0, 0, 0,  1, 'Internet Archive Advanced Search Parameter'),
+(NULL, 17, 'backup_location', NULL, 0, 0, 0, 1, 'Internet Archive Advanced Search Parameter'),
+(NULL, 17, 'btih', NULL,0, 0, 0, 1, 'Internet Archive Advanced Search Parameter'),
+(NULL, 17, 'call_number', NULL,0, 0, 0, 1, 'Internet Archive Advanced Search Parameter'),
+(NULL, 17, 'collection', NULL,0, 0, 0, 1, 'Internet Archive Advanced Search Parameter'),
+(NULL, 17, 'contributor', NULL,0, 0, 0, 1, 'Internet Archive Advanced Search Parameter'),
+(NULL, 17, 'coverage', NULL, 0,0, 0, 1, 'Internet Archive Advanced Search Parameter'),
+(NULL, 17, 'creator', NULL, 0,0, 0, 1, 'Internet Archive Advanced Search Parameter'),
+(NULL, 17, 'date', NULL, 0, 0,0, 1, 'Internet Archive Advanced Search Parameter'),
+(NULL, 17, 'description', NULL,0, 0, 0, 1, 'Internet Archive Advanced Search Parameter'),
+(NULL, 17, 'downloads', NULL, 0,0, 0, 1, 'Internet Archive Advanced Search Parameter'),
+(NULL, 17, 'external-identifier', NULL,0, 0, 0, 1, 'Internet Archive Advanced Search Parameter'),
+(NULL, 17, 'foldoutcount', NULL, 0,0, 0, 1, 'Internet Archive Advanced Search Parameter'),
+(NULL, 17, 'format', NULL, 0, 0,0, 1, 'Internet Archive Advanced Search Parameter'),
+(NULL, 17, 'genre', NULL, 0,0, 0, 1, 'Internet Archive Advanced Search Parameter'),
+(NULL, 17, 'identifier', NULL,1, 0, 0, 1, 'Internet Archive Advanced Search Parameter'),
+(NULL, 17, 'imagecount', NULL,0, 0, 0, 1, 'Internet Archive Advanced Search Parameter'),
+(NULL, 17, 'indexflag', NULL,0, 0, 0, 1, 'Internet Archive Advanced Search Parameter'),
+(NULL, 17, 'item_size', NULL,0, 0, 0, 1, 'Internet Archive Advanced Search Parameter'),
+(NULL, 17, 'language', NULL,0, 0, 0, 1, 'Internet Archive Advanced Search Parameter'),
+(NULL, 17, 'licenseurl', NULL,0, 0, 0, 1, 'Internet Archive Advanced Search Parameter'),
+(NULL, 17, 'mediatype', NULL,0, 0, 0, 1, 'Internet Archive Advanced Search Parameter'),
+(NULL, 17, 'members', NULL,0, 0, 0, 1, 'Internet Archive Advanced Search Parameter'),
+(NULL, 17, 'month', NULL,0, 0, 0, 1, 'Internet Archive Advanced Search Parameter'),
+(NULL, 17, 'name', NULL, 0,0, 0, 1, 'Internet Archive Advanced Search Parameter'),
+(NULL, 17, 'noindex', NULL,0, 0, 0, 1, 'Internet Archive Advanced Search Parameter'),
+(NULL, 17, 'num_reviews', NULL,0, 0, 0, 1, 'Internet Archive Advanced Search Parameter'),
+(NULL, 17, 'oai_updatedate', NULL,0, 0, 0, 1, 'Internet Archive Advanced Search Parameter'),
+(NULL, 17, 'publicdate', NULL, 0,0, 0, 1, 'Internet Archive Advanced Search Parameter'),
+(NULL, 17, 'publisher', NULL, 0,0, 0, 1, 'Internet Archive Advanced Search Parameter'),
+(NULL, 17, 'related-external-id', NULL,0, 0, 0, 1, 'Internet Archive Advanced Search Parameter'),
+(NULL, 17, 'reviewdate', NULL, 0,0, 0, 1, 'Internet Archive Advanced Search Parameter'),
+(NULL, 17, 'rights', NULL, 0,0, 0, 1, 'Internet Archive Advanced Search Parameter'),
+(NULL, 17, 'scanningcentre', NULL,0, 0, 0, 1, 'Internet Archive Advanced Search Parameter'),
+(NULL, 17, 'source', NULL, 0,0, 0, 1, 'Internet Archive Advanced Search Parameter'),
+(NULL, 17, 'stripped_tags', NULL,0, 0, 0, 1, 'Internet Archive Advanced Search Parameter'),
+(NULL, 17, 'subject', NULL, 0,0, 0, 1, 'Internet Archive Advanced Search Parameter'),
+(NULL, 17, 'title', NULL, 0,0, 0, 1, 'Internet Archive Advanced Search Parameter'),
+(NULL, 17, 'type', NULL, 0,0, 0, 1, 'Internet Archive Advanced Search Parameter'),
+(NULL, 17, 'volume', NULL,0, 0, 0, 1, 'Internet Archive Advanced Search Parameter'),
+(NULL, 17, 'week', NULL, 0,0, 0, 1, 'Internet Archive Advanced Search Parameter'),
+(NULL, 17, 'year', NULL, 0,0, 0, 1, 'Internet Archive Advanced Search Parameter')
 
 /* 
 	recordSchema parameters: 7, 18, 29, 40, 51
